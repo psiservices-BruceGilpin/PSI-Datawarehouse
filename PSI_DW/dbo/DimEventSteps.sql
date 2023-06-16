@@ -1,0 +1,10 @@
+﻿CREATE TABLE [dbo].[DimEventSteps](
+	[EventStepsID] [int] IDENTITY(1,1) NOT NULL,
+	[EventAssigning] [varchar](255) NULL,
+	[EventStarted] [varchar](255) NULL,
+	[Step] [varchar](255) NULL,
+ CONSTRAINT [PKEventStepsID] PRIMARY KEY CLUSTERED 
+(
+	[EventStepsID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]

@@ -1,0 +1,16 @@
+﻿CREATE TABLE [QATesting].[ReportCenters](
+	[Name] [nvarchar](255) NULL,
+	[Result_ID] [int] NULL,
+	[Candidate_ID] [nvarchar](255) NULL,
+	[FName] [nvarchar](255) NULL,
+	[LName] [nvarchar](255) NULL,
+	[TestLaunch_Date] [datetime] NULL,
+	[Scheduled_Date] [datetime] NULL,
+	[Test_Center_ID] [int] NULL,
+	[Name__dup_col9] [nvarchar](255) NULL,
+	[Global_Test_Center_ID] [nvarchar](255) NULL,
+	[Schedule_ID] [int] NULL,
+	[Is_Reschedule] [int] NULL,
+	[TestAssignment_ID] [int] NULL,
+	[Schedule_ID__dup_col14] [int] NULL
+) ON [PRIMARY]

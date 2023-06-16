@@ -1,0 +1,39 @@
+﻿CREATE TABLE [Test].[FixedFormItem](
+	[FixedFormItemId] [int] IDENTITY(1,1) NOT NULL,
+	[FixedFormItemDBID] [int] NOT NULL,
+	[SourceFixedFormKey] [int] NOT NULL,
+	[SourceItemID] [varchar](20) NOT NULL,
+	[FixedFormKey] [int] NOT NULL,
+	[ItemKey] [int] NOT NULL,
+	[Status] [int] NULL,
+	[CreatedDate] [datetime] NOT NULL,
+	[CurrentFlag] [bit] NOT NULL,
+	[Checksum] [int] NULL,
+	[DisplayOrder] [int] NULL,
+	[ISGType] [smallint] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[FixedFormItemId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+ALTER TABLE [Test].[FixedFormItem] ADD  DEFAULT (getdate()) FOR [CreatedDate]
+GO
+ALTER TABLE [Test].[FixedFormItem] ADD  DEFAULT ((0)) FOR [CurrentFlag]
+GO
+CREATE NONCLUSTERED INDEX [IX_FixedFormItem_FixedFormDBID] ON [Test].[FixedFormItem]
+(
+	[FixedFormItemDBID] ASC
+)
+WHERE ([Currentflag]=(0))
+WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+GO
+CREATE NONCLUSTERED INDEX [IX_FixedFormItem_FixedFormKey] ON [Test].[FixedFormItem]
+(
+	[FixedFormKey] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+GO
+CREATE NONCLUSTERED INDEX [IX_FixedFormItem_ItemKey] ON [Test].[FixedFormItem]
+(
+	[ItemKey] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]

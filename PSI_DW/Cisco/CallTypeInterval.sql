@@ -1,0 +1,72 @@
+﻿CREATE TABLE [Cisco].[CallTypeInterval](
+	[CallTypeIntervalID] [bigint] IDENTITY(1,1) NOT NULL,
+	[Date] [date] NULL,
+	[Time] [time](7) NULL,
+	[CallTypeKey] [int] NULL,
+	[SourceSystemKey] [int] NULL,
+	[TimeZone] [int] NULL,
+	[RouterQueueWaitTime] [int] NULL,
+	[RouterQueueCalls] [int] NULL,
+	[AvgRouterDelayQ] [int] NULL,
+	[RouterCallsAbandQ] [int] NULL,
+	[RouterQueueCallTypeLimit] [int] NULL,
+	[CallsRouted] [int] NULL,
+	[ErrorCount] [int] NULL,
+	[ReturnRing] [int] NULL,
+	[AnswerWaitTime] [int] NULL,
+	[CallsHandled] [int] NULL,
+	[CallsOffered] [int] NULL,
+	[HandleTime] [int] NULL,
+	[ServiceLevelAband] [int] NULL,
+	[ServiceLevelCalls] [int] NULL,
+	[ServiceLevelCallsOffered] [int] NULL,
+	[ServiceLevel] [real] NULL,
+	[TalkTime] [int] NULL,
+	[OverflowOut] [int] NULL,
+	[HoldTime] [int] NULL,
+	[IncompleteCalls] [int] NULL,
+	[ShortCalls] [int] NULL,
+	[DelayQAbandTime] [int] NULL,
+	[CallsAnswered] [int] NULL,
+	[CallsRoutedNonAgent] [int] NULL,
+	[CallsRONA] [int] NULL,
+	[ReturnRelease] [int] NULL,
+	[CallsQHandled] [int] NULL,
+	[VruForcedXferredCalls] [int] NULL,
+	[ServiceLevelType] [int] NULL,
+	[BucketIntervalID] [int] NULL,
+	[CallsRequeried] [int] NULL,
+	[RouterCallsAbandToAgent] [int] NULL,
+	[TotalCallsAband] [int] NULL,
+	[DelayAgentAbandTime] [int] NULL,
+	[CallDelayAbandTime] [int] NULL,
+	[CTDelayAbandTime] [int] NULL,
+	[ServiceLevelError] [int] NULL,
+	[ServiceLevelRONA] [int] NULL,
+	[AgentErrorCount] [int] NULL,
+	[VRUTime] [int] NULL,
+	[CTVRUTime] [int] NULL,
+	[CallsOnHold] [int] NULL,
+	[MaxHoldTime] [int] NULL,
+	[ReportingHalfHour] [int] NULL,
+	[ReportingInterval] [int] NULL,
+	[MaxCallWaitTime] [int] NULL,
+	[MaxCallsQueued] [int] NULL,
+	[RunID] [int] NULL,
+	[EffectiveFrom] [datetime] NULL,
+	[CheckSum] [int] NULL,
+	[EffectiveTo] [datetime] NULL,
+ CONSTRAINT [PKCallTypeIntervalID] PRIMARY KEY NONCLUSTERED 
+(
+	[CallTypeIntervalID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+ALTER TABLE [Cisco].[CallTypeInterval] ADD  CONSTRAINT [dfCallTypeIntervalEffectiveTo]  DEFAULT ('2999-12-31') FOR [EffectiveTo]
+GO
+CREATE CLUSTERED INDEX [CX_CallTypeInterval] ON [Cisco].[CallTypeInterval]
+(
+	[Date] ASC,
+	[Time] ASC,
+	[CallTypeKey] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]

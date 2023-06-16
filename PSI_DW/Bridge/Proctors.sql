@@ -1,0 +1,18 @@
+﻿CREATE TABLE [Bridge].[Proctors](
+	[ProctorId] [int] IDENTITY(1,1) NOT NULL,
+	[AgentLogin] [varchar](50) NOT NULL,
+	[AgentRole] [varchar](25) NULL,
+	[CreateDate] [datetime] NOT NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[ProctorId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+ALTER TABLE [Bridge].[Proctors] ADD  DEFAULT (getdate()) FOR [CreateDate]
+GO
+CREATE NONCLUSTERED INDEX [IX_Proctors_AgentLogin] ON [Bridge].[Proctors]
+(
+	[AgentLogin] ASC
+)
+INCLUDE([AgentRole]) WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]

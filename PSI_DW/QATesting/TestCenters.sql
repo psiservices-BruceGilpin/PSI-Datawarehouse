@@ -1,0 +1,14 @@
+﻿CREATE TABLE [QATesting].[TestCenters](
+	[Name] [varchar](255) NULL,
+	[Result_ID] [varchar](20) NULL,
+	[Candidate_ID] [varchar](255) NULL,
+	[FName] [varchar](255) NULL,
+	[LName] [varchar](255) NULL,
+	[TestLaunch_Date] [datetime] NULL,
+	[Scheduled_Date] [datetime] NULL,
+	[Test_Center_ID] [int] NULL,
+	[Global_Test_Center_ID] [nvarchar](255) NULL,
+	[Schedule_ID] [int] NULL,
+	[Is_Reschedule] [int] NULL,
+	[TestAssignment_ID] [int] NULL
+) ON [PRIMARY]

@@ -1,0 +1,62 @@
+﻿CREATE TABLE [Reporting].[CiscoAgentStats](
+	[CiscoAgentStatsID] [bigint] IDENTITY(1,1) NOT NULL,
+	[Date] [date] NULL,
+	[TimeZone] [int] NULL,
+	[AgentsKey] [int] NULL,
+	[AgentLoggedOnTime] [int] NULL,
+	[CallsHandled] [int] NULL,
+	[RedirectCalls] [int] NULL,
+	[InCallsOnHold] [int] NULL,
+	[TransferInCalls] [int] NULL,
+	[TransferOutCalls] [int] NULL,
+	[HoldTime] [int] NULL,
+	[HandledCallsTime] [int] NULL,
+	[OnHoldTime] [int] NULL,
+	[NotReadyTime] [int] NULL,
+	[WrapTime] [int] NULL,
+	[OutExtnCalls] [int] NULL,
+	[TalkTime] [int] NULL,
+	[AvailTime] [int] NULL,
+	[AgentOutCallsTime] [int] NULL,
+	[AgentOutCallsTalkTime] [int] NULL,
+	[AgentTerminatedCalls] [int] NULL,
+	[TotalNotReady] [int] NULL,
+	[TotalApprovedNRTime] [int] NULL,
+	[TotalNotApprovedNRTime] [int] NULL,
+	[Login/NoCode] [int] NULL,
+	[Lunch] [int] NULL,
+	[Break] [int] NULL,
+	[Meeting/Training] [int] NULL,
+	[Personal] [int] NULL,
+	[FollowUpWork] [int] NULL,
+	[Email] [int] NULL,
+	[POCTask] [int] NULL,
+	[Chat] [int] NULL,
+	[OutboundCalls] [int] NULL,
+	[ExamAccomodations] [int] NULL,
+	[ManagementApproval] [int] NULL,
+	[AssignTasks-Other] [int] NULL,
+	[DisplacedCD] [int] NULL,
+	[ACW] [int] NULL,
+	[SocialMedia] [int] NULL,
+	[ClosedFinesseW/OLogoutorError] [int] NULL,
+	[DidNotAnswerCall] [int] NULL,
+	[Zendesk] [int] NULL,
+	[Voicemail] [int] NULL,
+	[TimeInOtherRCs] [int] NULL,
+	[Tech] [int] NULL,
+	[Coaching] [int] NULL,
+	[RunID] [int] NULL,
+	[RunDate] [datetime] NULL,
+	[CheckSum] [int] NULL,
+ CONSTRAINT [PKCiscoAgentStatsID] PRIMARY KEY NONCLUSTERED 
+(
+	[CiscoAgentStatsID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+CREATE CLUSTERED INDEX [CX_CiscoAgentStats] ON [Reporting].[CiscoAgentStats]
+(
+	[Date] ASC,
+	[AgentsKey] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
