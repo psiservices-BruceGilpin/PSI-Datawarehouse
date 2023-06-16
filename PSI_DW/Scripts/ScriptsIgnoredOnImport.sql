@@ -1336,3 +1336,317 @@ GO
 
 SET ANSI_PADDING ON
 GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+/****** Object:  StoredProcedure [dbo].[ExamHistoryBackfill]    Script Date: 6/16/2023 3:42:34 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+/****** Object:  StoredProcedure [dbo].[uspCheckinDurationMaint]    Script Date: 6/16/2023 3:42:34 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+/****** Object:  StoredProcedure [dbo].[uspDeleteExamHistory]    Script Date: 6/16/2023 3:42:34 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+/****** Object:  StoredProcedure [dbo].[uspDossierMaint]    Script Date: 6/16/2023 3:42:34 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+/****** Object:  StoredProcedure [dbo].[uspDossierMaint_Backfill]    Script Date: 6/16/2023 3:42:34 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+/****** Object:  StoredProcedure [dbo].[uspExamNotesProcessing]    Script Date: 6/16/2023 3:42:34 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+/****** Object:  StoredProcedure [dbo].[uspExamNotesProcessing_Backfill]    Script Date: 6/16/2023 3:42:34 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+/****** Object:  StoredProcedure [dbo].[uspExamStepProcessing]    Script Date: 6/16/2023 3:42:34 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+/****** Object:  StoredProcedure [dbo].[uspExamStepProcessing_Backfill]    Script Date: 6/16/2023 3:42:34 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+/****** Object:  StoredProcedure [dbo].[uspInsertIntoControls]    Script Date: 6/16/2023 3:42:34 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+/****** Object:  StoredProcedure [dbo].[uspInsertIntoPackages]    Script Date: 6/16/2023 3:42:34 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+/****** Object:  StoredProcedure [dbo].[uspInsertIntoScheduleRuns]    Script Date: 6/16/2023 3:42:34 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+/****** Object:  StoredProcedure [dbo].[uspItemAccountXrefMaint]    Script Date: 6/16/2023 3:42:34 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+/****** Object:  StoredProcedure [dbo].[uspItemMeasures]    Script Date: 6/16/2023 3:42:34 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+/****** Object:  StoredProcedure [dbo].[uspItemMeasuresMaint]    Script Date: 6/16/2023 3:42:34 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+/****** Object:  StoredProcedure [dbo].[uspRunCheckSumCalculation]    Script Date: 6/16/2023 3:42:34 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+/****** Object:  StoredProcedure [dbo].[uspSessionStepDurationMaint]    Script Date: 6/16/2023 3:42:34 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+/****** Object:  StoredProcedure [dbo].[uspStepCountUpdate]    Script Date: 6/16/2023 3:42:34 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+/****** Object:  StoredProcedure [dbo].[uspStepDurationSummary]    Script Date: 6/16/2023 3:42:34 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+/****** Object:  StoredProcedure [dbo].[uspStepOrderDurationSummary]    Script Date: 6/16/2023 3:42:34 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+/****** Object:  StoredProcedure [dbo].[uspTestMapMaint]    Script Date: 6/16/2023 3:42:34 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+/****** Object:  StoredProcedure [dbo].[uspUpdateControls]    Script Date: 6/16/2023 3:42:34 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+/****** Object:  StoredProcedure [dbo].[uspUpdateControlsRowsInserted]    Script Date: 6/16/2023 3:42:34 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+/****** Object:  StoredProcedure [dbo].[uspUpdateDataDictionary]    Script Date: 6/16/2023 3:42:34 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+/****** Object:  StoredProcedure [dbo].[uspUpdatePackages]    Script Date: 6/16/2023 3:42:34 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+/****** Object:  StoredProcedure [dbo].[uspUpdatePortionsRetakeCount]    Script Date: 6/16/2023 3:42:34 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+/****** Object:  StoredProcedure [dbo].[uspUpdateScheduleRuns]    Script Date: 6/16/2023 3:42:34 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+/****** Object:  StoredProcedure [dbo].[uspUpdateScheduleRunsErrorMsg]    Script Date: 6/16/2023 3:42:34 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+/****** Object:  StoredProcedure [Reporting].[uspTestSessionNoNotes]    Script Date: 6/16/2023 3:42:34 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+/****** Object:  StoredProcedure [Reporting].[uspTestSessionWithNotes]    Script Date: 6/16/2023 3:42:34 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+/****** Object:  StoredProcedure [Summary].[uspFormMeansAndReliabiltyMaint]    Script Date: 6/16/2023 3:42:34 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+/****** Object:  StoredProcedure [Summary].[uspItemAnalysisMaint]    Script Date: 6/16/2023 3:42:34 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+/****** Object:  StoredProcedure [Summary].[uspItemLevelMaintenance]    Script Date: 6/16/2023 3:42:34 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+/****** Object:  StoredProcedure [Summary].[uspItemMeasures]    Script Date: 6/16/2023 3:42:34 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+/****** Object:  StoredProcedure [Summary].[uspItemStatus]    Script Date: 6/16/2023 3:42:34 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+/****** Object:  StoredProcedure [Summary].[UspPassRatesMaint]    Script Date: 6/16/2023 3:42:34 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+/****** Object:  StoredProcedure [Summary].[USPPortionFormMeasures]    Script Date: 6/16/2023 3:42:34 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+/****** Object:  StoredProcedure [Summary].[uspSchoolPassRatesMaint]    Script Date: 6/16/2023 3:42:34 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+/****** Object:  StoredProcedure [Summary].[uspScoreMeansReliablityMaint]    Script Date: 6/16/2023 3:42:34 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+/****** Object:  StoredProcedure [Summary].[uspScoreMeansReliablityMaintqtrly]    Script Date: 6/16/2023 3:42:34 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+/****** Object:  UserDefinedFunction [dbo].[udf_StripHTML]    Script Date: 6/16/2023 3:48:05 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+/****** Object:  UserDefinedFunction [Test].[pBIS]    Script Date: 6/16/2023 3:48:06 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+/****** Object:  UserDefinedFunction [Test].[pBIS_Corrected]    Script Date: 6/16/2023 3:48:06 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+/****** Object:  UserDefinedFunction [TzDb].[UtcToLocal]    Script Date: 6/16/2023 3:48:06 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO

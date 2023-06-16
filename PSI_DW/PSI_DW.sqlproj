@@ -77,6 +77,12 @@
     <Folder Include="Test\" />
     <Folder Include="TzDb\" />
     <Folder Include="Storage\" />
+    <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="Reporting\Stored Procedures\" />
+    <Folder Include="Summary\Stored Procedures\" />
+    <Folder Include="dbo\Functions\" />
+    <Folder Include="Test\Functions\" />
+    <Folder Include="TzDb\Functions\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\Account.sql" />
@@ -308,5 +314,50 @@
     <Build Include="Storage\CandidateResponseSelection.sql" />
     <Build Include="Storage\CastedForm_1.sql" />
     <Build Include="Storage\PassRates_1.sql" />
+    <Build Include="dbo\Stored Procedures\CheckSumCalculation.sql" />
+    <Build Include="dbo\Stored Procedures\ExamHistoryBackfill.sql" />
+    <Build Include="dbo\Stored Procedures\uspCheckinDurationMaint.sql" />
+    <Build Include="dbo\Stored Procedures\uspDeleteExamHistory.sql" />
+    <Build Include="dbo\Stored Procedures\uspDossierMaint.sql" />
+    <Build Include="dbo\Stored Procedures\uspDossierMaint_Backfill.sql" />
+    <Build Include="dbo\Stored Procedures\uspExamNotesProcessing.sql" />
+    <Build Include="dbo\Stored Procedures\uspExamNotesProcessing_Backfill.sql" />
+    <Build Include="dbo\Stored Procedures\uspExamStepProcessing.sql" />
+    <Build Include="dbo\Stored Procedures\uspExamStepProcessing_Backfill.sql" />
+    <Build Include="dbo\Stored Procedures\uspInsertIntoControls.sql" />
+    <Build Include="dbo\Stored Procedures\uspInsertIntoPackages.sql" />
+    <Build Include="dbo\Stored Procedures\uspInsertIntoScheduleRuns.sql" />
+    <Build Include="dbo\Stored Procedures\uspItemAccountXrefMaint.sql" />
+    <Build Include="dbo\Stored Procedures\uspItemMeasures.sql" />
+    <Build Include="dbo\Stored Procedures\uspItemMeasuresMaint.sql" />
+    <Build Include="dbo\Stored Procedures\uspRunCheckSumCalculation.sql" />
+    <Build Include="dbo\Stored Procedures\uspSessionStepDurationMaint.sql" />
+    <Build Include="dbo\Stored Procedures\uspStepCountUpdate.sql" />
+    <Build Include="dbo\Stored Procedures\uspStepDurationSummary.sql" />
+    <Build Include="dbo\Stored Procedures\uspStepOrderDurationSummary.sql" />
+    <Build Include="dbo\Stored Procedures\uspTestMapMaint.sql" />
+    <Build Include="dbo\Stored Procedures\uspUpdateControls.sql" />
+    <Build Include="dbo\Stored Procedures\uspUpdateControlsRowsInserted.sql" />
+    <Build Include="dbo\Stored Procedures\uspUpdateDataDictionary.sql" />
+    <Build Include="dbo\Stored Procedures\uspUpdatePackages.sql" />
+    <Build Include="dbo\Stored Procedures\uspUpdatePortionsRetakeCount.sql" />
+    <Build Include="dbo\Stored Procedures\uspUpdateScheduleRuns.sql" />
+    <Build Include="dbo\Stored Procedures\uspUpdateScheduleRunsErrorMsg.sql" />
+    <Build Include="Reporting\Stored Procedures\uspTestSessionNoNotes.sql" />
+    <Build Include="Reporting\Stored Procedures\uspTestSessionWithNotes.sql" />
+    <Build Include="Summary\Stored Procedures\uspFormMeansAndReliabiltyMaint.sql" />
+    <Build Include="Summary\Stored Procedures\uspItemAnalysisMaint.sql" />
+    <Build Include="Summary\Stored Procedures\uspItemLevelMaintenance.sql" />
+    <Build Include="Summary\Stored Procedures\uspItemMeasures.sql" />
+    <Build Include="Summary\Stored Procedures\uspItemStatus.sql" />
+    <Build Include="Summary\Stored Procedures\UspPassRatesMaint.sql" />
+    <Build Include="Summary\Stored Procedures\USPPortionFormMeasures.sql" />
+    <Build Include="Summary\Stored Procedures\uspSchoolPassRatesMaint.sql" />
+    <Build Include="Summary\Stored Procedures\uspScoreMeansReliablityMaint.sql" />
+    <Build Include="Summary\Stored Procedures\uspScoreMeansReliablityMaintqtrly.sql" />
+    <Build Include="dbo\Functions\udf_StripHTML.sql" />
+    <Build Include="Test\Functions\pBIS.sql" />
+    <Build Include="Test\Functions\pBIS_Corrected.sql" />
+    <Build Include="TzDb\Functions\UtcToLocal.sql" />
   </ItemGroup>
 </Project>
