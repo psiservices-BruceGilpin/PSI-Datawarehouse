@@ -83,6 +83,10 @@
     <Folder Include="dbo\Functions\" />
     <Folder Include="Test\Functions\" />
     <Folder Include="TzDb\Functions\" />
+    <Folder Include="Account\Synonyms\" />
+    <Folder Include="Candidate\Synonyms\" />
+    <Folder Include="dbo\Synonyms\" />
+    <Folder Include="Test\Synonyms\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\Account.sql" />
@@ -359,6 +363,31 @@
     <Build Include="Test\Functions\pBIS.sql" />
     <Build Include="Test\Functions\pBIS_Corrected.sql" />
     <Build Include="TzDb\Functions\UtcToLocal.sql" />
+    <Build Include="Account\Synonyms\Accounts_vw.sql" />
+    <Build Include="Account\Synonyms\AccountSchool_vw.sql" />
+    <Build Include="Candidate\Synonyms\CandidateResponses_vw.sql" />
+    <Build Include="Candidate\Synonyms\Candidates_VW.sql" />
+    <Build Include="Candidate\Synonyms\CandidateSchedule_vw.sql" />
+    <Build Include="Candidate\Synonyms\CompositeTestView.sql" />
+    <Build Include="Candidate\Synonyms\Response_Vw.sql" />
+    <Build Include="Candidate\Synonyms\ResponseSelection_vw.sql" />
+    <Build Include="Candidate\Synonyms\TestAssignmentPortions_vw.sql" />
+    <Build Include="Candidate\Synonyms\TestAssignments_vw.sql" />
+    <Build Include="Candidate\Synonyms\TestLaunch_vw.sql" />
+    <Build Include="dbo\Synonyms\QuarterlyCalendar_vw.sql" />
+    <Build Include="dbo\Synonyms\TestSchedule_vw.sql" />
+    <Build Include="Test\Synonyms\FixedForm_vw.sql" />
+    <Build Include="Test\Synonyms\FixedFormItem_vw.sql" />
+    <Build Include="Test\Synonyms\Item_vw.sql" />
+    <Build Include="Test\Synonyms\ItemOption_vw.sql" />
+    <Build Include="Test\Synonyms\ItemOptions_vw.sql" />
+    <Build Include="Test\Synonyms\ItemPool_vw.sql" />
+    <Build Include="Test\Synonyms\Portion_vw.sql" />
+    <Build Include="Test\Synonyms\Test_vw.sql" />
+    <Build Include="Test\Synonyms\TestCenter_vw.sql" />
+    <Build Include="Test\Synonyms\TestCenterSchedule_vw.sql" />
+    <Build Include="Test\Synonyms\TestDefinition_vw.sql" />
+    <Build Include="Test\Synonyms\TestStructure_vw.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Dev_PSI_DW.publish.xml" />
