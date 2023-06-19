@@ -360,4 +360,11 @@
     <Build Include="Test\Functions\pBIS_Corrected.sql" />
     <Build Include="TzDb\Functions\UtcToLocal.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Dev_PSI_DW.publish.xml" />
+    <None Include="QA_PSI_DW.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="PSI_DW.refactorlog" />
+  </ItemGroup>
 </Project>

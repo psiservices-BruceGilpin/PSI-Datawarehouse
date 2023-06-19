@@ -1,0 +1,2 @@
+﻿/****** Object:  Synonym [Candidate].[CandidateResponses_vw]    Script Date: 6/19/2023 10:44:18 AM ******/
+CREATE SYNONYM [Candidate].[CandidateResponses_vw] FOR [PSI_Reporting].[Candidates].[CandidateResponse_vw]
