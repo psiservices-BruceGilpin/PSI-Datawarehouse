@@ -56,11 +56,109 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Schemas" />
+    <Folder Include="Test\" />
+    <Folder Include="Summary\" />
+    <Folder Include="LookupTables\" />
+    <Folder Include="Reporting\" />
+    <Folder Include="Account\" />
+    <Folder Include="Account\Views\" />
+    <Folder Include="Candidate\" />
+    <Folder Include="dbo\" />
+    <Folder Include="Scripts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PSI_DW\PSI_DW.sqlproj">
+      <Name>PSI_DW</Name>
+      <Project>{d7641b63-f433-40ca-9ffd-9d707cc7782c}</Project>
+      <Private>True</Private>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+      <DatabaseSqlCmdVariable>PSI_DW</DatabaseSqlCmdVariable>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <SqlCmdVariable Include="PSI_DW">
       <DefaultValue>PSI_DW</DefaultValue>
       <Value>$(SqlCmdVar__1)</Value>
     </SqlCmdVariable>
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Schemas\Account.sql" />
+    <Build Include="Schemas\Bridge.sql" />
+    <Build Include="Schemas\Candidate.sql" />
+    <Build Include="Schemas\LookupTables.sql" />
+    <Build Include="Schemas\Summary.sql" />
+    <Build Include="Schemas\Test.sql" />
+    <None Include="Scripts\ScriptsIgnoredOnImport.sql" />
+    <Build Include="Account\Accounts_vw.sql" />
+    <Build Include="Account\AccountSchool_vw.sql" />
+    <Build Include="Candidate\CandidateResponse_vw.sql" />
+    <Build Include="Candidate\CandidateResponseSelection_vw.sql" />
+    <Build Include="Candidate\Candidates_vw.sql" />
+    <Build Include="Candidate\CandidateSchedule_vw.sql" />
+    <Build Include="Candidate\CompositeTest_vw.sql" />
+    <Build Include="Candidate\CompositeTestPortionScores_vw.sql" />
+    <Build Include="Candidate\TestAssignmentPortions_vw.sql" />
+    <Build Include="Candidate\TestAssignments_vw.sql" />
+    <Build Include="dbo\Countries.sql" />
+    <Build Include="dbo\QuarterlyCalendar_vw.sql" />
+    <Build Include="LookupTables\ActiveStatus_vw.sql" />
+    <Build Include="LookupTables\Calendar_vw.sql" />
+    <Build Include="LookupTables\CandidateIDType_vw.sql" />
+    <Build Include="LookupTables\CastingType_vw.sql" />
+    <Build Include="LookupTables\Countries_vw.sql" />
+    <Build Include="LookupTables\DeliveryMethods_vw.sql" />
+    <Build Include="LookupTables\ExhibitCategory_vw.sql" />
+    <Build Include="LookupTables\ExhibitType_vw.sql" />
+    <Build Include="LookupTables\ExtendedAccomodations_vw.sql" />
+    <Build Include="LookupTables\FixedFormItemStatus_vw.sql" />
+    <Build Include="LookupTables\FixedFormStatus_vw.sql" />
+    <Build Include="LookupTables\ISG_vw.sql" />
+    <Build Include="LookupTables\LanguageMaster_vw.sql" />
+    <Build Include="LookupTables\PortionType_vw.sql" />
+    <Build Include="LookupTables\States_vw.sql" />
+    <Build Include="LookupTables\TestStatus_vw.sql" />
+    <Build Include="LookupTables\TimeZones_vw.sql" />
+    <Build Include="Reporting\vw_TestSessions_NoNotes.sql" />
+    <Build Include="Reporting\vwDailyStepCount.sql" />
+    <Build Include="Reporting\vwExamSteps.sql" />
+    <Build Include="Reporting\vwNHAAbsentAndTestedCandidates.sql" />
+    <Build Include="Reporting\vwNHARPData.sql" />
+    <Build Include="Reporting\vwTestsByAccountWeek.sql" />
+    <Build Include="Reporting\vwTestSectionDefinitions.sql" />
+    <Build Include="Reporting\vwTestSessions.sql" />
+    <Build Include="Reporting\vwTestSessions_NoNotes.sql" />
+    <Build Include="Reporting\vwTestSessions_WithNotes.sql" />
+    <Build Include="Reporting\vwTestSessionSections.sql" />
+    <Build Include="Summary\ItemStatsuByAccountTest_vw.sql" />
+    <Build Include="Summary\PassRates_vw.sql" />
+    <Build Include="Summary\PassRatesCalendar_VW.sql" />
+    <Build Include="Summary\TestItemsWithMeasures.sql" />
+    <Build Include="Summary\TestPassRates_vw.sql" />
+    <Build Include="Test\FixedForm_vw.sql" />
+    <Build Include="Test\FixedFormItem_vw.sql" />
+    <Build Include="Test\GroupInfo_vw.sql" />
+    <Build Include="Test\Item_vw.sql" />
+    <Build Include="Test\ItemAccountXref_vw.sql" />
+    <Build Include="Test\ItemBank_vw.sql" />
+    <Build Include="Test\ItemOption_vw.sql" />
+    <Build Include="Test\ItemPool_vw.sql" />
+    <Build Include="Test\ItemPoolStatus_vw.sql" />
+    <Build Include="Test\Portion_vw.sql" />
+    <Build Include="Test\SampleGroup_vw.sql" />
+    <Build Include="Test\Taxonomy_vw.sql" />
+    <Build Include="Test\TestCenter_vw.sql" />
+    <Build Include="Test\TestCenterSchedule_vw.sql" />
+    <Build Include="Test\TestCenterTestOfferings_vw.sql" />
+    <Build Include="Test\TestDefinition_vw.sql" />
+    <Build Include="Test\TestPortionTopicArea_vw.sql" />
+    <Build Include="Test\TestResponse_Vw.sql" />
+    <Build Include="Test\Tests_vw.sql" />
+    <Build Include="Test\TestStructure_vw.sql" />
+    <Build Include="Test\TopicAreaSampleGroup_vw.sql" />
+    <Build Include="Schemas\Reporting.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dev_PSIReporting.publish.xml" />
   </ItemGroup>
 </Project>
