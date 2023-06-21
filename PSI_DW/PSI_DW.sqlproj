@@ -22,6 +22,8 @@
     <SqlServerVerification>False</SqlServerVerification>
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseSet>True</TargetDatabaseSet>
+    <Recovery>SIMPLE</Recovery>
+    <DatabaseChaining>True</DatabaseChaining>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -388,6 +390,7 @@
     <Build Include="Test\Synonyms\TestCenterSchedule_vw.sql" />
     <Build Include="Test\Synonyms\TestDefinition_vw.sql" />
     <Build Include="Test\Synonyms\TestStructure_vw.sql" />
+    <Build Include="Candidate\Synonyms\CompositeTestPortionScores_vw.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Dev_PSI_DW.publish.xml" />

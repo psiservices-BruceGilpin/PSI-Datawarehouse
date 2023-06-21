@@ -160,5 +160,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Dev_PSIReporting.publish.xml" />
+    <None Include="QA_PSIReporting.publish.xml" />
   </ItemGroup>
 </Project>

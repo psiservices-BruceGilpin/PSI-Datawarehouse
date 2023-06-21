@@ -6,8 +6,11 @@ CREATE VIEW [Candidate].[CompositeTestPortionScores_vw]
 
 select 
 i.AccountName
-, a.SourceCandidateKey TestRegn_id
-, h.CandidateIDType
+, n.CandidateIDType 'Alt Candidate ID Type'
+, case 
+	when n.CandidateIDType <> 'SSN' then m.IdentityValue 
+	else '999-99-9999'
+	end TestRegn_ID
 , a.firstname
 , a.LastName
 ,f.TestName
@@ -17,18 +20,19 @@ i.AccountName
 ,c.SchoolName
 ,b.TestDate
 ,e.PortionName
+,isnull(d.Take#,0) attempt
+,d.ComputedAttempt#
 ,e.Duration 'Time Allowed'
 ,d.ElapsedTime
 ,d.ExtendedTimeAllowed
 ,k.ExAccDescription 'Extended Time Reason'
-,j.FormName
 ,g.PortionTypeID
 ,d.Result
 ,d.RawScore
 ,d.ScaledScore
 ,e.RawCut
 ,e.ScaledCut
-,isnull(d.Take#,0) attempt
+
 
 from
 	[$(PSI_DW)].Account.Accounts i with (nolock) join
@@ -52,15 +56,17 @@ from
 		a.CandidateTypeKey = h.CandidateTypeId join
 	[$(PSI_DW)].Account.AccountSchool c with (nolock) on
 		a.SchoolKey = c.AccountSchoolDBId and
-		c.CurrentFlag = 0	
-		left join
-	[$(PSI_DW)].test.FixedForm j on
-		e.PortionDBID = j.PortionKey left join
+		c.CurrentFlag = 0		join
 	[$(PSI_DW)]..DimPortionType g with (nolock) on
 		e.PortionTypeKey = g.PortionIDid join
 	[$(PSI_DW)]..DimExtendedAccomodations k on
 		d.ExtendedAccomodationsKey = k.ExtendedAccomodationId join
 	[$(PSI_DW)]..DimDeliveryMethods l on
-		b.DeleiveryMethodKey = l.DeliveryMethodId
+		b.DeleiveryMethodKey = l.DeliveryMethodId join
+	[$(PSI_DW)].dbo.CandidatePPI m on 
+		a.CandidateDBId = m.CandidateKey join
+	[$(PSI_DW)].dbo.DimCandidateIDType n on
+		m.CandidateTypeKey = n.CandidateTypeId
+		
 
 where i.CurrentFlag = 0

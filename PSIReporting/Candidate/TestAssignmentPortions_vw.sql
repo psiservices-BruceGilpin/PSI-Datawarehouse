@@ -8,6 +8,8 @@ SELECT a.[TestAssignPortionDBId]
       ,a.[TestPortionKey]
       ,a.[TestAssignKey]
       ,b.[PortionName]
+       ,a.[Take#]
+       ,a.[ComputedAttempt#]
       ,b.PortionDBID
       ,a.[Score]
       ,a.[Result]
@@ -23,7 +25,7 @@ SELECT a.[TestAssignPortionDBId]
       ,a.[ScaledScore]
       ,a.[CurrentFlag]
       ,a.[CastedForm]
-      ,a.[Take#]
+
   FROM [$(PSI_DW)].Candidate.[TestAssignmentPortions] a with (nolock) join
        [$(PSI_DW)].test.Portion b with (nolock)  on
         a.TestPortionKey = b.PortionDBID 
