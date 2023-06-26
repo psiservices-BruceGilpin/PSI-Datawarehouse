@@ -7,4 +7,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="ComputedAttempt#" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="f6955638-1061-4230-9adc-b4f8801f6d0f" ChangeDateTime="06/21/2023 17:53:01">
+    <Property Name="ElementName" Value="[Global].[CandidateResponses].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Global].[CandidateResponses]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CandidateResponseId" />
+  </Operation>
 </Operations>

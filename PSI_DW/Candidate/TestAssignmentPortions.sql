@@ -24,6 +24,7 @@
 	[ExtendedAccomodationsKey] [int] NULL,
 	[LanguageKey] [int] NULL,
 [ComputedAttempt#] TINYINT NULL, 
+    [FixedFormKey] BIGINT NULL, 
     PRIMARY KEY CLUSTERED 
 (
 	[TestAssgnPortionId] ASC
@@ -44,7 +45,8 @@ CREATE NONCLUSTERED INDEX [IX_TestAssignmentPortions_CurrentFlag] ON [Candidate]
 (
 	[CurrentFlag] ASC
 )
-INCLUDE([TestPortionKey],[TestAssignKey],[Result],[RawScore],[ScaledScore],[Take#]) WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+INCLUDE ([TestPortionKey],[TestAssignKey],[Result],[ElapsedTime],[RawScore],[ScaledScore],[TestAssignPortionDBId],[ExtendedTimeAllowed],[Take#],[ExtendedAccomodationsKey],[ComputedAttempt#])
+ WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 GO
 CREATE NONCLUSTERED INDEX [IX_TestAssignmentPortions_TestAssignmentKey] ON [Candidate].[TestAssignmentPortions]
 (

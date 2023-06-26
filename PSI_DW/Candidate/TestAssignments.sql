@@ -61,9 +61,9 @@ CREATE NONCLUSTERED INDEX [IX_TestAssignments_Column] ON [Candidate].[TestAssign
 GO
 CREATE NONCLUSTERED INDEX [IX_TestAssignments_CurrentFlag] ON [Candidate].[TestAssignments]
 (
-	[CurrentFlag] ASC
+	[CurrentFlag] ASC, [TestDate]
 )
-INCLUDE([CandidateKey],[TestDate],[TestAssignmentDBID]) WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+INCLUDE([TestKey],[CandidateKey],[TestAssignmentDBID],[DeleiveryMethodKey]) WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 GO
 CREATE NONCLUSTERED INDEX [IX_TestAssignments_SourceTestAssignKeyCurrentflag] ON [Candidate].[TestAssignments]
 (

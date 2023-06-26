@@ -9,8 +9,7 @@
     <ProjectGuid>{d7641b63-f433-40ca-9ffd-9d707cc7782c}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
-    <RootPath>
-    </RootPath>
+    <RootPath />
     <RootNamespace>PSI_DW</RootNamespace>
     <AssemblyName>PSI_DW</AssemblyName>
     <ModelCollation>1033, CI</ModelCollation>
@@ -50,7 +49,6 @@
   </PropertyGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
-    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
     <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
     <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
   </PropertyGroup>
@@ -89,6 +87,7 @@
     <Folder Include="Candidate\Synonyms\" />
     <Folder Include="dbo\Synonyms\" />
     <Folder Include="Test\Synonyms\" />
+    <Folder Include="Global" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\Account.sql" />
@@ -391,6 +390,8 @@
     <Build Include="Test\Synonyms\TestDefinition_vw.sql" />
     <Build Include="Test\Synonyms\TestStructure_vw.sql" />
     <Build Include="Candidate\Synonyms\CompositeTestPortionScores_vw.sql" />
+    <Build Include="Security\Global.sql" />
+    <Build Include="Global\CandidateResponses.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Dev_PSI_DW.publish.xml" />

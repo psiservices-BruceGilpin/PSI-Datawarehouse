@@ -20,6 +20,7 @@ i.AccountName
 ,c.SchoolName
 ,b.TestDate
 ,e.PortionName
+,o.FormName
 ,isnull(d.Take#,0) attempt
 ,d.ComputedAttempt#
 ,e.Duration 'Time Allowed'
@@ -66,7 +67,10 @@ from
 	[$(PSI_DW)].dbo.CandidatePPI m on 
 		a.CandidateDBId = m.CandidateKey join
 	[$(PSI_DW)].dbo.DimCandidateIDType n on
-		m.CandidateTypeKey = n.CandidateTypeId
+		m.CandidateTypeKey = n.CandidateTypeId left join
+	[$(PSI_DW)].Test.FixedForm o on
+		d.FixedFormKey = o.FixedFormDBID and
+		o.CurrentFlag = 0
 		
 
 where i.CurrentFlag = 0

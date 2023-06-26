@@ -25,6 +25,7 @@ SELECT a.[TestAssignPortionDBId]
       ,a.[ScaledScore]
       ,a.[CurrentFlag]
       ,a.[CastedForm]
+      ,a.[FixedFormKey]
 
   FROM [$(PSI_DW)].Candidate.[TestAssignmentPortions] a with (nolock) join
        [$(PSI_DW)].test.Portion b with (nolock)  on
