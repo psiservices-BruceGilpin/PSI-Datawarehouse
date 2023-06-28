@@ -28,7 +28,13 @@
 	[CandidateDBId] [int] NULL,
 	[AtlasCloudCandidateID] [bigint] NULL,
 	[DimensionsStudentID] [uniqueidentifier] NULL,
-PRIMARY KEY CLUSTERED 
+[Birthdate] DATE NULL, 
+    [GenderCode] INT NULL, 
+    [AgeRangeCode] INT NULL, 
+    [EducationCode] INT NULL, 
+	[RaceCode] Int Null,
+	[EthnicCode] Int Null,
+    PRIMARY KEY CLUSTERED 
 (
 	[CandidateId] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33801.447
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "SSIS ScratchPad", "SSIS ScratchPad.dtproj", "{61B7D03B-C2F7-4737-92D4-4640B1A47CD0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Azure|Default = Azure|Default
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{61B7D03B-C2F7-4737-92D4-4640B1A47CD0}.Azure|Default.ActiveCfg = Azure
+		{61B7D03B-C2F7-4737-92D4-4640B1A47CD0}.Azure|Default.Build.0 = Azure
+		{61B7D03B-C2F7-4737-92D4-4640B1A47CD0}.Development|Default.ActiveCfg = Development
+		{61B7D03B-C2F7-4737-92D4-4640B1A47CD0}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {843E30F0-CC48-4D42-9B9E-5A336EFE359E}
+	EndGlobalSection
+EndGlobal

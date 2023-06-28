@@ -88,6 +88,7 @@
     <Folder Include="dbo\Synonyms\" />
     <Folder Include="Test\Synonyms\" />
     <Folder Include="Global" />
+    <Folder Include="Candidate\StoredProcedures" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\Account.sql" />
@@ -392,6 +393,10 @@
     <Build Include="Candidate\Synonyms\CompositeTestPortionScores_vw.sql" />
     <Build Include="Security\Global.sql" />
     <Build Include="Global\CandidateResponses.sql" />
+    <Build Include="Candidate\Demographics.sql" />
+    <Build Include="Candidate\DemographicTypes.sql" />
+    <Build Include="Candidate\StoredProcedures\uspAttributeList.sql" />
+    <Build Include="Candidate\DemographicCodes.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Dev_PSI_DW.publish.xml" />

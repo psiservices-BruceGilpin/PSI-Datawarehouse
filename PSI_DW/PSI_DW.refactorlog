@@ -14,4 +14,32 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="CandidateResponseId" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="7ca1f965-8413-47c9-b01a-4cdc30b005a7" ChangeDateTime="06/26/2023 15:31:40">
+    <Property Name="ElementName" Value="[Candidate].[Demographics].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Candidate].[Demographics]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DemographicId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f1e7fffc-81d8-4139-af89-4759cc2d22be" ChangeDateTime="06/26/2023 15:35:44">
+    <Property Name="ElementName" Value="[Candidate].[DemographicTypes].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Candidate].[DemographicTypes]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DemoGraphicTypeId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a1cdb235-c32d-44cc-ad96-8ea1a997fce8" ChangeDateTime="06/27/2023 19:33:52">
+    <Property Name="ElementName" Value="[Candidate].[Candidates].[GenderCode]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Candidate].[Candidates]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Birthdate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="88af9008-a02b-4ef1-b595-2f5dd30e6a0a" ChangeDateTime="06/27/2023 19:33:59">
+    <Property Name="ElementName" Value="[Candidate].[Candidates].[Age]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Candidate].[Candidates]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="GenderCode" />
+  </Operation>
 </Operations>
