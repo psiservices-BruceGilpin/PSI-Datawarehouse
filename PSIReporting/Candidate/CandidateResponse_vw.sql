@@ -5,6 +5,7 @@ CREATE VIEW [Candidate].[CandidateResponse_vw]
 		select
 		isCorrect,
 		isMarked, 
+		DisplayOrder,
 		TimeElapsed,
 		TimeAllowed
 		TotalWeightage,
@@ -13,6 +14,7 @@ CREATE VIEW [Candidate].[CandidateResponse_vw]
 		FixedFormKey,
 		TestAssignPortionKey,
 		ItemBankKey,
+		ISGFlag,
 		Comments
 		from [$(PSI_DW)].Candidate.Responses
 		where CurrentFlag = 0
