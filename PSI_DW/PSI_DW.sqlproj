@@ -397,6 +397,8 @@
     <Build Include="Candidate\DemographicTypes.sql" />
     <Build Include="Candidate\StoredProcedures\uspAttributeList.sql" />
     <Build Include="Candidate\DemographicCodes.sql" />
+    <Build Include="Candidate\TestTopicScore.sql" />
+    <Build Include="Test\TopicArea.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Dev_PSI_DW.publish.xml" />

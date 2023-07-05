@@ -25,6 +25,7 @@
 	[LanguageKey] [int] NULL,
 [ComputedAttempt#] TINYINT NULL, 
     [FixedFormKey] BIGINT NULL, 
+    [ItemCount] INT NULL, 
     PRIMARY KEY CLUSTERED 
 (
 	[TestAssgnPortionId] ASC

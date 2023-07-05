@@ -23,6 +23,7 @@ i.AccountName
 ,o.FormName
 ,isnull(d.Take#,0) attempt
 ,d.ComputedAttempt#
+,d.ItemCount
 ,e.Duration 'Time Allowed'
 ,d.ElapsedTime
 ,d.ExtendedTimeAllowed
