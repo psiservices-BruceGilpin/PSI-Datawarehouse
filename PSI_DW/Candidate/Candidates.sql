@@ -28,12 +28,11 @@
 	[CandidateDBId] [int] NULL,
 	[AtlasCloudCandidateID] [bigint] NULL,
 	[DimensionsStudentID] [uniqueidentifier] NULL,
-[Birthdate] DATE NULL, 
+	[Birthdate] DATE NULL, 
     [GenderCode] INT NULL, 
     [AgeRangeCode] INT NULL, 
     [EducationCode] INT NULL, 
-	[RaceCode] Int Null,
-	[EthnicCode] Int Null,
+    [LanguageCode] INT NULL, 
     PRIMARY KEY CLUSTERED 
 (
 	[CandidateId] ASC

@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [Candidate].[TestTopicScore]
 (
-	[TestTopicScoreId] BIGINT NOT NULL PRIMARY KEY, 
+	[TestTopicScoreId] BIGINT NOT NULL Identity(1,1) PRIMARY KEY, 
     [SourceSystemKey] SMALLINT NOT NULL, 
     [SourceTopicScoreID] VARCHAR(20) NOT NULL, 
     [TestTopicScoreDbID] BIGINT NOT NULL, 
