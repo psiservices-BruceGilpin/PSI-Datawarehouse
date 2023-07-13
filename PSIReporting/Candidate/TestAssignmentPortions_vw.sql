@@ -5,6 +5,7 @@ CREATE VIEW [Candidate].[TestAssignmentPortions_vw]
 
 SELECT a.[TestAssignPortionDBId]
       ,a.[SourceSystemKey]
+      ,b.SourcePortionKey 'AtlasLC Portion Id'
       ,a.[TestPortionKey]
       ,a.[TestAssignKey]
       ,b.[PortionName]
