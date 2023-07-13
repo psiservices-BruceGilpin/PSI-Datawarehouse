@@ -4,7 +4,6 @@ CREATE VIEW [Candidate].[Candidates_vw]
 	AS SELECT 
 	CandidateDBId,
 	a.CandidateAltKey,
-	a.source
 	try_cast(a.SourceCandidateKey as numeric) TestRegn_ID,
 	a.FirstName,
 	a.LastName,
