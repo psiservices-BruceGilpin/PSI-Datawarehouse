@@ -33,6 +33,8 @@
     [AgeRangeCode] INT NULL, 
     [EducationCode] INT NULL, 
     [LanguageCode] INT NULL, 
+    [RaceCode] INT NULL, 
+    [EthnicityCode] INT NULL, 
     PRIMARY KEY CLUSTERED 
 (
 	[CandidateId] ASC

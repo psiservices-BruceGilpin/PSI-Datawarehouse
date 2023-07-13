@@ -49,4 +49,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="TopicStatus" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="30dd69c9-f5d9-45e8-bdc8-6de45ff50860" ChangeDateTime="07/11/2023 19:30:14">
+    <Property Name="ElementName" Value="[Candidate].[DemographicTypes].[SourceAddributeID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Candidate].[DemographicTypes]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SourceAttributeID" />
+  </Operation>
 </Operations>

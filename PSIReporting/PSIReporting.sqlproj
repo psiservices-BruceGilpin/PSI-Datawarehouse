@@ -157,6 +157,8 @@
     <Build Include="Test\TestStructure_vw.sql" />
     <Build Include="Test\TopicAreaSampleGroup_vw.sql" />
     <Build Include="Schemas\Reporting.sql" />
+    <Build Include="Candidate\TestTopicScore_vw.sql" />
+    <Build Include="Test\TopicArea_vw.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Dev_PSIReporting.publish.xml" />

@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="52"
-  DTS:VersionGUID="{CBFFDBE5-2815-4E4B-94C2-491F622095F9}">
+  DTS:VersionBuild="57"
+  DTS:VersionGUID="{E062442A-7AFA-4B78-A109-EAE7985F4DE2}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -192,7 +192,7 @@
                   expressionType="Notify"
                   name="SqlCommandParam"
                   UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from (select * from [Candidate].[Demographics]) [refTable]
-where [refTable].[DemographicTypeKey] = ? and [refTable].[DemographicValue] = ?</property>
+where upper([refTable].[DemographicTypeKey]) = ? and upper([refTable].[DemographicValue]) = ?</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the type of connection used to access the reference dataset."
@@ -202,7 +202,7 @@ where [refTable].[DemographicTypeKey] = ? and [refTable].[DemographicValue] = ?<
                   dataType="System.Int32"
                   description="Specifies the cache type of the lookup table."
                   name="CacheType"
-                  typeConverter="CacheType">0</property>
+                  typeConverter="CacheType">1</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
@@ -255,7 +255,7 @@ where [refTable].[DemographicTypeKey] = ? and [refTable].[DemographicValue] = ?<
                       refId="Package\AdditionalAttributes\Lookup.Inputs[Lookup Input].Columns[Variable_Value]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="150"
                       cachedName="Variable_Value"
                       lineageId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Output].Columns[Variable_Value]">
                       <properties>
@@ -418,7 +418,7 @@ where [refTable].[DemographicTypeKey] = ? and [refTable].[DemographicValue] = ?<
                       refId="Package\AdditionalAttributes\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Variable_Value]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="150"
                       cachedName="Variable_Value"
                       externalMetadataColumnId="Package\AdditionalAttributes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DemographicValue]"
                       lineageId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Output].Columns[Variable_Value]" />
@@ -552,7 +552,7 @@ where [refTable].[DemographicTypeKey] = ? and [refTable].[DemographicValue] = ?<
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Variable_Value]"
-                      length="50"
+                      length="150"
                       lineageId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Output].Columns[Variable_Value]"
                       name="Variable_Value"
                       truncationRowDisposition="IgnoreFailure" />
@@ -1470,7 +1470,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-61.55638671875,47.5,111.6127734375,11.609375"
+              BoundingBox="-70.4250390625,47.5,129.350078125,16"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -1504,7 +1504,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:boolean">true</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>

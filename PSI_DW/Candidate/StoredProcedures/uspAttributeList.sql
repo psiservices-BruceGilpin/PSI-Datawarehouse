@@ -1,10 +1,11 @@
 ﻿CREATE PROC [Candidate].[uspAttributeList]
+	@valueslist varchar(1000) output
 
 AS
 BEGIN
-	declare @valueslist varchar(1000), @value varchar(5)
+	declare @value varchar(5)
 	declare CU1 cursor for
-		select cast(SourceAddributeID as varchar(5))
+		select cast(SourceAttributeID as varchar(5))
 			from Candidate.DemographicTypes
 	Open CU1
 	set @valueslist = '('
