@@ -160,6 +160,8 @@
     <Build Include="Candidate\TestTopicScore_vw.sql" />
     <Build Include="Test\TopicArea_vw.sql" />
     <Build Include="dbo\DimIsg.sql" />
+    <Build Include="Candidate\Demographics_vw.sql" />
+    <Build Include="Candidate\DemographicTypes_vw.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Dev_PSIReporting.publish.xml" />

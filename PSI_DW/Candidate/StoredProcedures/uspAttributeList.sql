@@ -1,9 +1,8 @@
 ﻿CREATE PROC [Candidate].[uspAttributeList]
-	@valueslist varchar(1000) output
-
+	
 AS
 BEGIN
-	declare @value varchar(5)
+	declare @value varchar(5), @valueslist varchar(1000)
 	declare CU1 cursor for
 		select cast(SourceAttributeID as varchar(5))
 			from Candidate.DemographicTypes

@@ -13,6 +13,12 @@ CREATE VIEW [Candidate].[Candidates_vw]
 	a.StatusCode,
 	e.CandidateIDType,
 	a.sourceCandidatekey,
+	a.GenderCode,
+	a.AgeRangeCode,
+	a.EducationCode,
+	a.LanguageCode,
+	a.RaceCode,
+	a.EthnicityCode,
 	case 
 	when a.SchoolKey = 0 then 'No School Provided'
 	else d.SchoolName

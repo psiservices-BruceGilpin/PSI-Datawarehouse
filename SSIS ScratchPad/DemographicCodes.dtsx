@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="57"
-  DTS:VersionGUID="{E062442A-7AFA-4B78-A109-EAE7985F4DE2}">
+  DTS:VersionBuild="61"
+  DTS:VersionGUID="{8126C0AB-669B-49B9-A80D-839D5230EBE4}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -80,7 +80,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="SQLStatementIn">
       <DTS:VariableValue
-        DTS:DataType="8">Select distinct Variable_ID, Cast(Variable_Value as Varchar(150)) Variable_Value from  Candidate_AdditionalAttributeValues where Variable_value is not null </DTS:VariableValue>
+        DTS:DataType="8">Select distinct Variable_ID, Cast(Variable_Value as Varchar(255)) Variable_Value from  Candidate_AdditionalAttributeValues where Variable_value != ' '</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
@@ -192,7 +192,7 @@
                   expressionType="Notify"
                   name="SqlCommandParam"
                   UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from (select * from [Candidate].[Demographics]) [refTable]
-where upper([refTable].[DemographicTypeKey]) = ? and upper([refTable].[DemographicValue]) = ?</property>
+where [refTable].[DemographicValue] = ?</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the type of connection used to access the reference dataset."
@@ -202,7 +202,7 @@ where upper([refTable].[DemographicTypeKey]) = ? and upper([refTable].[Demograph
                   dataType="System.Int32"
                   description="Specifies the cache type of the lookup table."
                   name="CacheType"
-                  typeConverter="CacheType">1</property>
+                  typeConverter="CacheType">0</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
@@ -223,12 +223,12 @@ where upper([refTable].[DemographicTypeKey]) = ? and upper([refTable].[Demograph
                 <property
                   dataType="System.String"
                   description="Indicates whether to reference metadata in an XML format."
-                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="DemographicId" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SourceSystemKey" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CreateDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DemographicTypeKey" dataType="DT_I2" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DemographicValue" dataType="DT_STR" length="150" precision="0" scale="0" codePage="1252"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="DemographicId" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SourceSystemKey" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CreateDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DemographicTypeKey" dataType="DT_I2" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DemographicValue" dataType="DT_STR" length="255" precision="0" scale="0" codePage="1252"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
                 <property
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Output].Columns[Variable_ID]};#{Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Output].Columns[Variable_Value]};</property>
+                  name="ParameterMap">#{Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Output].Columns[Variable_Value]};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -255,7 +255,7 @@ where upper([refTable].[DemographicTypeKey]) = ? and upper([refTable].[Demograph
                       refId="Package\AdditionalAttributes\Lookup.Inputs[Lookup Input].Columns[Variable_Value]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="150"
+                      cachedLength="255"
                       cachedName="Variable_Value"
                       lineageId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Output].Columns[Variable_Value]">
                       <properties>
@@ -263,22 +263,6 @@ where upper([refTable].[DemographicTypeKey]) = ? and upper([refTable].[Demograph
                           dataType="System.String"
                           description="Specifies the column in the reference table that a column joins."
                           name="JoinToReferenceColumn">DemographicValue</property>
-                        <property
-                          dataType="System.Null"
-                          description="Specifies the column in the reference table from which a column is copied."
-                          name="CopyFromReferenceColumn" />
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\AdditionalAttributes\Lookup.Inputs[Lookup Input].Columns[Variable_ID]"
-                      cachedDataType="i2"
-                      cachedName="Variable_ID"
-                      lineageId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Output].Columns[Variable_ID]">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          description="Specifies the column in the reference table that a column joins."
-                          name="JoinToReferenceColumn">DemographicTypeKey</property>
                         <property
                           dataType="System.Null"
                           description="Specifies the column in the reference table from which a column is copied."
@@ -410,7 +394,7 @@ where upper([refTable].[DemographicTypeKey]) = ? and upper([refTable].[Demograph
                       lineageId="Package\AdditionalAttributes\Derived Column.Outputs[Derived Column Output].Columns[SourceSystemID]" />
                     <inputColumn
                       refId="Package\AdditionalAttributes\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Variable_ID]"
-                      cachedDataType="i2"
+                      cachedDataType="i4"
                       cachedName="Variable_ID"
                       externalMetadataColumnId="Package\AdditionalAttributes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DemographicTypeKey]"
                       lineageId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Output].Columns[Variable_ID]" />
@@ -418,7 +402,7 @@ where upper([refTable].[DemographicTypeKey]) = ? and upper([refTable].[Demograph
                       refId="Package\AdditionalAttributes\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Variable_Value]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="150"
+                      cachedLength="255"
                       cachedName="Variable_Value"
                       externalMetadataColumnId="Package\AdditionalAttributes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DemographicValue]"
                       lineageId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Output].Columns[Variable_Value]" />
@@ -445,7 +429,7 @@ where upper([refTable].[DemographicTypeKey]) = ? and upper([refTable].[Demograph
                       refId="Package\AdditionalAttributes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DemographicValue]"
                       codePage="1252"
                       dataType="str"
-                      length="150"
+                      length="255"
                       name="DemographicValue" />
                   </externalMetadataColumns>
                 </input>
@@ -538,7 +522,7 @@ where upper([refTable].[DemographicTypeKey]) = ? and upper([refTable].[Demograph
                   <outputColumns>
                     <outputColumn
                       refId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Output].Columns[Variable_ID]"
-                      dataType="i2"
+                      dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Variable_ID]"
@@ -552,7 +536,7 @@ where upper([refTable].[DemographicTypeKey]) = ? and upper([refTable].[Demograph
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Variable_Value]"
-                      length="150"
+                      length="255"
                       lineageId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Output].Columns[Variable_Value]"
                       name="Variable_Value"
                       truncationRowDisposition="IgnoreFailure" />
@@ -567,7 +551,7 @@ where upper([refTable].[DemographicTypeKey]) = ? and upper([refTable].[Demograph
                       refId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Variable_Value]"
                       codePage="1252"
                       dataType="str"
-                      length="150"
+                      length="255"
                       name="Variable_Value" />
                   </externalMetadataColumns>
                 </output>
@@ -585,7 +569,7 @@ where upper([refTable].[DemographicTypeKey]) = ? and upper([refTable].[Demograph
                       refId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Variable_Value]"
                       codePage="1252"
                       dataType="str"
-                      length="150"
+                      length="255"
                       lineageId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Variable_Value]"
                       name="Variable_Value" />
                     <outputColumn
@@ -627,35 +611,13 @@ where upper([refTable].[DemographicTypeKey]) = ? and upper([refTable].[Demograph
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\Execute SQL Task"
-      DTS:CreationName="Microsoft.ExecuteSQLTask"
-      DTS:Description="Execute SQL Task"
-      DTS:DTSID="{A8E87A33-B33F-4916-B8FF-470C3D325311}"
-      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Execute SQL Task"
-      DTS:ThreadHint="0">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <SQLTask:SqlTaskData
-          SQLTask:Connection="{592C6DFB-FA23-4EE4-8631-5862F51A5DB6}"
-          SQLTask:BypassPrepare="False"
-          SQLTask:SqlStatementSource="EXEC [Candidate].[uspAttributeList]"
-          SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
-          <SQLTask:ResultBinding
-            SQLTask:ResultName="0"
-            SQLTask:DtsVariableName="User::attributeCodes" />
-        </SQLTask:SqlTaskData>
-      </DTS:ObjectData>
-    </DTS:Executable>
-    <DTS:Executable
-      DTS:refId="Package\Script Task"
+      DTS:refId="Package\Create SQL Extract Query"
       DTS:CreationName="Microsoft.ScriptTask"
       DTS:Description="Script Task"
       DTS:DTSID="{A68E9D8F-5AC2-4DB0-BB91-F3AC7AC1E785}"
       DTS:ExecutableType="Microsoft.ScriptTask"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Script Task"
+      DTS:ObjectName="Create SQL Extract Query"
       DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -916,7 +878,7 @@ namespace ST_dd30307b81d94ad0a43a4835475e89d9
                 Dts.Variables["User::SQLStatementIn"].Value.ToString() + " and Variable_Id in " + Dts.Variables["User::attributeCodes"].Value.ToString();
           //  Dts.Variables["User::SqlStatementIn"].Value = "New Value";
             Dts.Variables["User::SQLStatementIn"].Value = (string) tempvar;
-            MessageBox.Show(Dts.Variables["User::SQLStatementIn"].Value.ToString());
+          //  MessageBox.Show(Dts.Variables["User::SQLStatementIn"].Value.ToString());
      
 
         }
@@ -1031,7 +993,7 @@ namespace ST_dd30307b81d94ad0a43a4835475e89d9
     <msb:CodeName>ST_dd30307b81d94ad0a43a4835475e89d9</msb:CodeName>
     <msb:Language>msBuild</msb:Language>
     <msb:DisplayName>ST_dd30307b81d94ad0a43a4835475e89d9</msb:DisplayName>
-    <msb:ProjectId>{122DA557-C864-4C03-AF5B-FC8788BA2339}</msb:ProjectId>
+    <msb:ProjectId>{FD6F5CA4-BA7D-4315-8C3E-E78DD9922B86}</msb:ProjectId>
   </msb:PropertyGroup>
   <msb:ItemGroup>
     <msb:Project Include="ST_dd30307b81d94ad0a43a4835475e89d9.csproj" />
@@ -1153,80 +1115,80 @@ namespace ST_dd30307b81d94ad0a43a4835475e89d9.Properties {
           <BinaryItem
             Name="ST_dd30307b81d94ad0a43a4835475e89d9.dll">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
-ZGUuDQ0KJAAAAAAAAABQRQAATAEDAEJtrGQAAAAAAAAAAOAAIiALATAAABAAAAAIAAAAAAAA3i4A
+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
-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
+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
-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
+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
-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
+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
-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
-WCEAAAAAhhgvBAYAAgBgIQAAAACRGDUEogACAAAAAQDmAgkALwQBABEALwQGABkALwQKACkALwQQ
-ADEALwQQADkALwQQAEEALwQQAEkALwQQAFEALwQQAFkALwQQAGEALwQQAGkALwQGAIEALwQGAKkA
-LwQVALkALwQGAHEANQUfAMEAAQUkAMkApwMpANEA0gIvAIkABgMzANkASwU3ANEA3AI+AOEAcgVD
-AHEALwQGAIkALwQGAPEAiQBJAPEAggVQAJEALwRWALEALwQGAAgAFABwAAgAGAB1ACkAcwDdAC4A
-CwC1AC4AEwC+AC4AGwDdAC4AIwDmAC4AKwAPAS4AMwAPAS4AOwAPAS4AQwDmAC4ASwAVAS4AUwAP
-AS4AWwAsAUMAYwB1AEkAcwDdAGEAewB1AGMAawB1ABsAAwABAAQAAwAAAB8EpgAAAOgAqwAAAF0F
-sAACAAQAAwACAAUABQABAAYABQACAAcABwAEgAAAAQAAAI8heW4AAAAAAAABAAAABAAAAAAAAAAA
-AAAAXgBVAAAAAAAOAAAAAAAAAAAAAABnAA8DAAAAAAQAAAAAAAAAAAAAAF4AsAMAAAAADgAAAAAA
-AAAAAAAAZwAuAAAAAAAEAAAAAAAAAAAAAABeABgFAAAAAAAAAAABAAAAgAQAAAUAAgAAAAAAAFNU
-X2RkMzAzMDdiODFkOTRhZDBhNDNhNDgzNTQ3NWU4OWQ5ADxNb2R1bGU+AE1pY3Jvc29mdC5TcWxT
-ZXJ2ZXIuTWFuYWdlZERUUwB2YWx1ZV9fAG1zY29ybGliAGRlZmF1bHRJbnN0YW5jZQBWYXJpYWJs
-ZQBSdW50aW1lVHlwZUhhbmRsZQBHZXRUeXBlRnJvbUhhbmRsZQBNaWNyb3NvZnQuU3FsU2VydmVy
-LkR0cy5SdW50aW1lAFR5cGUARmFpbHVyZQBnZXRfQ3VsdHVyZQBzZXRfQ3VsdHVyZQByZXNvdXJj
-ZUN1bHR1cmUAVlNUQVJUU2NyaXB0T2JqZWN0TW9kZWxCYXNlAEFwcGxpY2F0aW9uU2V0dGluZ3NC
-YXNlAEVkaXRvckJyb3dzYWJsZVN0YXRlAENvbXBpbGVyR2VuZXJhdGVkQXR0cmlidXRlAERlYnVn
-Z2VyTm9uVXNlckNvZGVBdHRyaWJ1dGUARGVidWdnYWJsZUF0dHJpYnV0ZQBFZGl0b3JCcm93c2Fi
-bGVBdHRyaWJ1dGUAQXNzZW1ibHlUaXRsZUF0dHJpYnV0ZQBBc3NlbWJseVRyYWRlbWFya0F0dHJp
-YnV0ZQBUYXJnZXRGcmFtZXdvcmtBdHRyaWJ1dGUAQXNzZW1ibHlDb25maWd1cmF0aW9uQXR0cmli
-dXRlAEFzc2VtYmx5RGVzY3JpcHRpb25BdHRyaWJ1dGUAQ29tcGlsYXRpb25SZWxheGF0aW9uc0F0
-dHJpYnV0ZQBBc3NlbWJseVByb2R1Y3RBdHRyaWJ1dGUAQXNzZW1ibHlDb3B5cmlnaHRBdHRyaWJ1
-dGUAU1NJU1NjcmlwdFRhc2tFbnRyeVBvaW50QXR0cmlidXRlAEFzc2VtYmx5Q29tcGFueUF0dHJp
-YnV0ZQBSdW50aW1lQ29tcGF0aWJpbGl0eUF0dHJpYnV0ZQBnZXRfVmFsdWUAc2V0X1ZhbHVlAHZh
-bHVlAFN5c3RlbS5SdW50aW1lLlZlcnNpb25pbmcAVG9TdHJpbmcATWljcm9zb2Z0LlNxbFNlcnZl
-ci5TY3JpcHRUYXNrAE1pY3Jvc29mdC5TcWxTZXJ2ZXIuRHRzLlRhc2tzLlNjcmlwdFRhc2sAU2Ny
-aXB0T2JqZWN0TW9kZWwAU3lzdGVtLkNvbXBvbmVudE1vZGVsAFNUX2RkMzAzMDdiODFkOTRhZDBh
-NDNhNDgzNTQ3NWU4OWQ5LmRsbABnZXRfSXRlbQBTeXN0ZW0ARW51bQByZXNvdXJjZU1hbgBTY3Jp
-cHRNYWluAFN5c3RlbS5Db25maWd1cmF0aW9uAFN5c3RlbS5HbG9iYWxpemF0aW9uAFN5c3RlbS5S
-ZWZsZWN0aW9uAEN1bHR1cmVJbmZvAGdldF9SZXNvdXJjZU1hbmFnZXIALmN0b3IALmNjdG9yAFN5
-c3RlbS5EaWFnbm9zdGljcwBTeXN0ZW0uUnVudGltZS5Db21waWxlclNlcnZpY2VzAFN5c3RlbS5S
-ZXNvdXJjZXMAU1RfZGQzMDMwN2I4MWQ5NGFkMGE0M2E0ODM1NDc1ZTg5ZDkuUHJvcGVydGllcy5S
-ZXNvdXJjZXMucmVzb3VyY2VzAERlYnVnZ2luZ01vZGVzAFNUX2RkMzAzMDdiODFkOTRhZDBhNDNh
-NDgzNTQ3NWU4OWQ5LlByb3BlcnRpZXMAZ2V0X1ZhcmlhYmxlcwBTZXR0aW5ncwBTeXN0ZW0uV2lu
-ZG93cy5Gb3JtcwBTdWNjZXNzAGdldF9EdHMAU2NyaXB0UmVzdWx0cwBDb25jYXQAT2JqZWN0AGdl
-dF9EZWZhdWx0AERpYWxvZ1Jlc3VsdABTaG93AE1lc3NhZ2VCb3gAZ2V0X0Fzc2VtYmx5AAAAKVUA
-cwBlAHIAOgA6AFMAUQBMAFMAdABhAHQAZQBtAGUAbgB0AEkAbgAAKSAAYQBuAGQAIABWAGEAcgBp
-AGEAYgBsAGUAXwBJAGQAIABpAG4AIAAAKVUAcwBlAHIAOgA6AGEAdAB0AHIAaQBiAHUAdABlAEMA
-bwBkAGUAcwAAcVMAVABfAGQAZAAzADAAMwAwADcAYgA4ADEAZAA5ADQAYQBkADAAYQA0ADMAYQA0
-ADgAMwA1ADQANwA1AGUAOAA5AGQAOQAuAFAAcgBvAHAAZQByAHQAaQBlAHMALgBSAGUAcwBvAHUA
-cgBjAGUAcwAAAAAAyCEaoFORxEWiu98GP5GR/wAEIAEBCAMgAAEFIAEBEREEIAEBDgUgAQERUQMH
-AQ4EIAASYQQgABJlBSABEmkcAyAAHAMgAA4GAAMODg4OBCABARwFAAERdQ4GAAESeRF9BSAAEoCB
-ByACAQ4SgIEIt3pcVhk04IkIiYRdzYCAzJEEAAAAAAQBAAAAAwYSSQMGEk0DBhIQAgYIAwYRFAQA
-ABJJBAAAEk0FAAEBEk0EAAASEAMAAAEECAASSQQIABJNBAgAEhAIAQAIAAAAAAAeAQABAFQCFldy
-YXBOb25FeGNlcHRpb25UaHJvd3MBCAEAAgAAAAAAKAEAI1NUX2RkMzAzMDdiODFkOTRhZDBhNDNh
-NDgzNTQ3NWU4OWQ5AAAFAQAAAAAWAQARQ29weXJpZ2h0IEAgIDIwMjMAAEkBABouTkVURnJhbWV3
-b3JrLFZlcnNpb249djQuNQEAVA4URnJhbWV3b3JrRGlzcGxheU5hbWUSLk5FVCBGcmFtZXdvcmsg
-NC41AAC0AAAAzsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIsIG1z
-Y29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49
-Yjc3YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNvdXJjZVNldAIAAAAA
-AAAAAAAAAFBBRFBBRFC0AAAAtC4AAAAAAAAAAAAAzi4AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AMAuAAAAAAAAAAAAAAAAX0NvckRsbE1haW4AbXNjb3JlZS5kbGwAAAAAAP8lACAAEAAAAAAAAAAA
+VQAAcG8SAAAKbxMAAApvFAAACigVAAAKCgIoEAAACm8RAAAKcgEAAHBvEgAACgZvFgAACioeAigX
+AAAKKh4CKBgAAAoqrn4BAAAELR5yfwAAcNADAAACKBkAAApvGgAACnMbAAAKgAEAAAR+AQAABCoa
+fgIAAAQqHgKAAgAABCoafgMAAAQqHgIoHAAACioucwgAAAaAAwAABCoAQlNKQgEAAQAAAAAADAAA
+AHY0LjAuMzAzMTkAAAAABQBsAAAAyAMAACN+AAA0BAAAYAUAACNTdHJpbmdzAAAAAJQJAAD0AAAA
+I1VTAIgKAAAQAAAAI0dVSUQAAACYCgAAcAEAACNCbG9iAAAAAAAAAAIAAAFXHaIBCQMAAAD6ATMA
+FgAAAQAAAB4AAAAFAAAABgAAAAkAAAABAAAAHAAAAAIAAAAQAAAAAQAAAAIAAAADAAAABAAAAAEA
+AAAEAAAAAQAAAAEAAAAAAH8DAQAAAAAABgAlAk8EBgC0Ak8EBgBxATwEDwDDBAAABgCeAf0DBgAI
+Av0DBgDpAf0DBgCbAv0DBgBFAv0DBgBeAv0DBgC1Af0DBgDQAewCCgB5Ai4DCgDwAC4DBgC3A7AD
+BgBUATwEBgA9BbADBgAfBG8EBgAPBOgDDgAkAWkDDgCFAWkDDgAMAdMDBgA5AU8ECgBXAy4DEgAF
+BZsAEgBuAJsABgAIA7ADBgC7ALADBgB3ALADBgBUBf0DAAAAACUAAAAAAAEAAQABABAAyAMBADkA
+AQABAAAAEAB2BNIERQABAAMAAAEQAA8F0gRZAAMABwADAQAAKAUAAD0ABAAKABEAvANyABEA4AB2
+ABEAXgB6AAYGTQB+AFaAGAWBAFaAwACBAFAgAAAAAIYAzgMGAAEA4SAAAAAAhhgvBAYAAQDpIAAA
+AACDGC8EBgABAPEgAAAAAJMIGwSFAAEAHSEAAAAAkwjIAIoAAQAkIQAAAACTCNQAjwABACwhAAAA
+AJYIRAWVAAIAMyEAAAAAhhgvBAYAAgA7IQAAAACRGDUEmgACAAAAAQDmAgkALwQBABEALwQGABkA
+LwQKACkALwQQADEALwQQADkALwQQAEEALwQQAEkALwQQAFEALwQQAFkALwQQAGEALwQQAGkALwQG
+AIEALwQGAKkALwQVALkALwQGAHEAIAUfAMEAAQUkAMkApwMpANEA0gIvAIkABgMzANkANgU3ANEA
+3AI+AHEALwQGAIkALwQGAOEAiQBDAOEAUAVKAJEALwRPALEALwQGAAgAFABoAAgAGABtACkAcwDV
+AC4ACwCtAC4AEwC2AC4AGwDVAC4AIwDeAC4AKwAHAS4AMwAHAS4AOwAHAS4AQwDeAC4ASwANAS4A
+UwAHAS4AWwAkAUMAYwBtAEkAcwDVAGEAewBtAGMAawBtABsAAwABAAQAAwAAAB8EngAAAOgAowAA
+AEgFqAACAAQAAwACAAUABQABAAYABQACAAcABwAEgAAAAQAAAJYh30EAAAAAAAABAAAABAAAAAAA
+AAAAAAAAVgBVAAAAAAAOAAAAAAAAAAAAAABfAA8DAAAAAAQAAAAAAAAAAAAAAFYAsAMAAAAADgAA
+AAAAAAAAAAAAXwAuAAAAAAAAAAAAAQAAAIAEAAAFAAIAAAAAU1RfZGQzMDMwN2I4MWQ5NGFkMGE0
+M2E0ODM1NDc1ZTg5ZDkAPE1vZHVsZT4ATWljcm9zb2Z0LlNxbFNlcnZlci5NYW5hZ2VkRFRTAHZh
+bHVlX18AbXNjb3JsaWIAZGVmYXVsdEluc3RhbmNlAFZhcmlhYmxlAFJ1bnRpbWVUeXBlSGFuZGxl
+AEdldFR5cGVGcm9tSGFuZGxlAE1pY3Jvc29mdC5TcWxTZXJ2ZXIuRHRzLlJ1bnRpbWUAVHlwZQBG
+YWlsdXJlAGdldF9DdWx0dXJlAHNldF9DdWx0dXJlAHJlc291cmNlQ3VsdHVyZQBWU1RBUlRTY3Jp
+cHRPYmplY3RNb2RlbEJhc2UAQXBwbGljYXRpb25TZXR0aW5nc0Jhc2UARWRpdG9yQnJvd3NhYmxl
+U3RhdGUAQ29tcGlsZXJHZW5lcmF0ZWRBdHRyaWJ1dGUARGVidWdnZXJOb25Vc2VyQ29kZUF0dHJp
+YnV0ZQBEZWJ1Z2dhYmxlQXR0cmlidXRlAEVkaXRvckJyb3dzYWJsZUF0dHJpYnV0ZQBBc3NlbWJs
+eVRpdGxlQXR0cmlidXRlAEFzc2VtYmx5VHJhZGVtYXJrQXR0cmlidXRlAFRhcmdldEZyYW1ld29y
+a0F0dHJpYnV0ZQBBc3NlbWJseUNvbmZpZ3VyYXRpb25BdHRyaWJ1dGUAQXNzZW1ibHlEZXNjcmlw
+dGlvbkF0dHJpYnV0ZQBDb21waWxhdGlvblJlbGF4YXRpb25zQXR0cmlidXRlAEFzc2VtYmx5UHJv
+ZHVjdEF0dHJpYnV0ZQBBc3NlbWJseUNvcHlyaWdodEF0dHJpYnV0ZQBTU0lTU2NyaXB0VGFza0Vu
+dHJ5UG9pbnRBdHRyaWJ1dGUAQXNzZW1ibHlDb21wYW55QXR0cmlidXRlAFJ1bnRpbWVDb21wYXRp
+YmlsaXR5QXR0cmlidXRlAGdldF9WYWx1ZQBzZXRfVmFsdWUAdmFsdWUAU3lzdGVtLlJ1bnRpbWUu
+VmVyc2lvbmluZwBUb1N0cmluZwBNaWNyb3NvZnQuU3FsU2VydmVyLlNjcmlwdFRhc2sATWljcm9z
+b2Z0LlNxbFNlcnZlci5EdHMuVGFza3MuU2NyaXB0VGFzawBTY3JpcHRPYmplY3RNb2RlbABTeXN0
+ZW0uQ29tcG9uZW50TW9kZWwAU1RfZGQzMDMwN2I4MWQ5NGFkMGE0M2E0ODM1NDc1ZTg5ZDkuZGxs
+AGdldF9JdGVtAFN5c3RlbQBFbnVtAHJlc291cmNlTWFuAFNjcmlwdE1haW4AU3lzdGVtLkNvbmZp
+Z3VyYXRpb24AU3lzdGVtLkdsb2JhbGl6YXRpb24AU3lzdGVtLlJlZmxlY3Rpb24AQ3VsdHVyZUlu
+Zm8AZ2V0X1Jlc291cmNlTWFuYWdlcgAuY3RvcgAuY2N0b3IAU3lzdGVtLkRpYWdub3N0aWNzAFN5
+c3RlbS5SdW50aW1lLkNvbXBpbGVyU2VydmljZXMAU3lzdGVtLlJlc291cmNlcwBTVF9kZDMwMzA3
+YjgxZDk0YWQwYTQzYTQ4MzU0NzVlODlkOS5Qcm9wZXJ0aWVzLlJlc291cmNlcy5yZXNvdXJjZXMA
+RGVidWdnaW5nTW9kZXMAU1RfZGQzMDMwN2I4MWQ5NGFkMGE0M2E0ODM1NDc1ZTg5ZDkuUHJvcGVy
+dGllcwBnZXRfVmFyaWFibGVzAFNldHRpbmdzAFN1Y2Nlc3MAZ2V0X0R0cwBTY3JpcHRSZXN1bHRz
+AENvbmNhdABPYmplY3QAZ2V0X0RlZmF1bHQAZ2V0X0Fzc2VtYmx5AAAAAAApVQBzAGUAcgA6ADoA
+UwBRAEwAUwB0AGEAdABlAG0AZQBuAHQASQBuAAApIABhAG4AZAAgAFYAYQByAGkAYQBiAGwAZQBf
+AEkAZAAgAGkAbgAgAAApVQBzAGUAcgA6ADoAYQB0AHQAcgBpAGIAdQB0AGUAQwBvAGQAZQBzAABx
+UwBUAF8AZABkADMAMAAzADAANwBiADgAMQBkADkANABhAGQAMABhADQAMwBhADQAOAAzADUANAA3
+ADUAZQA4ADkAZAA5AC4AUAByAG8AcABlAHIAdABpAGUAcwAuAFIAZQBzAG8AdQByAGMAZQBzAAAA
+AACbipugmbhtSppncDYVZb8+AAQgAQEIAyAAAQUgAQEREQQgAQEOBSABARFRAwcBDgQgABJhBCAA
+EmUFIAESaRwDIAAcAyAADgYAAw4ODg4EIAEBHAYAARJxEXUEIAASeQYgAgEOEnkIt3pcVhk04IkI
+iYRdzYCAzJEEAAAAAAQBAAAAAwYSSQMGEk0DBhIQAgYIAwYRFAQAABJJBAAAEk0FAAEBEk0EAAAS
+EAMAAAEECAASSQQIABJNBAgAEhAIAQAIAAAAAAAeAQABAFQCFldyYXBOb25FeGNlcHRpb25UaHJv
+d3MBCAEAAgAAAAAAKAEAI1NUX2RkMzAzMDdiODFkOTRhZDBhNDNhNDgzNTQ3NWU4OWQ5AAAFAQAA
+AAAWAQARQ29weXJpZ2h0IEAgIDIwMjMAAEkBABouTkVURnJhbWV3b3JrLFZlcnNpb249djQuNQEA
+VA4URnJhbWV3b3JrRGlzcGxheU5hbWUSLk5FVCBGcmFtZXdvcmsgNC41AAC0AAAAzsrvvgEAAACR
+AAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIsIG1zY29ybGliLCBWZXJzaW9uPTQu
+MC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSNT
+eXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNvdXJjZVNldAIAAAAAAAAAAAAAAFBBRFBBRFC0AAAA
+MC4AAAAAAAAAAAAASi4AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwuAAAAAAAAAAAAAAAAX0Nv
+ckRsbE1haW4AbXNjb3JlZS5kbGwAAAAAAP8lACAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -1234,14 +1196,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAABABAAAAAYAACAAAAAAAAAAAAAAAAAAAABAAEAAAAwAACAAAAAAAAAAAAAAAAAAAABAAAA
 AABIAAAAWEAAABoEAAAAAAAAAAAAABoENAAAAFYAUwBfAFYARQBSAFMASQBPAE4AXwBJAE4ARgBP
-AAAAAAC9BO/+AAABAAAAAQB5bo8hAAABAHlujyE/AAAAAAAAAAQAAAACAAAAAAAAAAAAAAAAAAAA
+AAAAAAC9BO/+AAABAAAAAQDfQZYhAAABAN9BliE/AAAAAAAAAAQAAAACAAAAAAAAAAAAAAAAAAAA
 RAAAAAEAVgBhAHIARgBpAGwAZQBJAG4AZgBvAAAAAAAkAAQAAABUAHIAYQBuAHMAbABhAHQAaQBv
 AG4AAAAAAAAAsAR6AwAAAQBTAHQAcgBpAG4AZwBGAGkAbABlAEkAbgBmAG8AAABWAwAAAQAwADAA
 MAAwADAANABiADAAAAAaAAEAAQBDAG8AbQBtAGUAbgB0AHMAAAAAAAAAIgABAAEAQwBvAG0AcABh
 AG4AeQBOAGEAbQBlAAAAAAAAAAAAcAAkAAEARgBpAGwAZQBEAGUAcwBjAHIAaQBwAHQAaQBvAG4A
 AAAAAFMAVABfAGQAZAAzADAAMwAwADcAYgA4ADEAZAA5ADQAYQBkADAAYQA0ADMAYQA0ADgAMwA1
 ADQANwA1AGUAOAA5AGQAOQAAAD4ADwABAEYAaQBsAGUAVgBlAHIAcwBpAG8AbgAAAAAAMQAuADAA
-LgA4ADUAOQAxAC4AMgA4ADIAOAAxAAAAAABwACgAAQBJAG4AdABlAHIAbgBhAGwATgBhAG0AZQAA
+LgA4ADUAOQA4AC4AMQA2ADgANgAzAAAAAABwACgAAQBJAG4AdABlAHIAbgBhAGwATgBhAG0AZQAA
 AFMAVABfAGQAZAAzADAAMwAwADcAYgA4ADEAZAA5ADQAYQBkADAAYQA0ADMAYQA0ADgAMwA1ADQA
 NwA1AGUAOAA5AGQAOQAuAGQAbABsAAAASAASAAEATABlAGcAYQBsAEMAbwBwAHkAcgBpAGcAaAB0
 AAAAQwBvAHAAeQByAGkAZwBoAHQAIABAACAAIAAyADAAMgAzAAAAKgABAAEATABlAGcAYQBsAFQA
@@ -1250,15 +1212,15 @@ AGEAbQBlAAAAUwBUAF8AZABkADMAMAAzADAANwBiADgAMQBkADkANABhAGQAMABhADQAMwBhADQA
 OAAzADUANAA3ADUAZQA4ADkAZAA5AC4AZABsAGwAAABoACQAAQBQAHIAbwBkAHUAYwB0AE4AYQBt
 AGUAAAAAAFMAVABfAGQAZAAzADAAMwAwADcAYgA4ADEAZAA5ADQAYQBkADAAYQA0ADMAYQA0ADgA
 MwA1ADQANwA1AGUAOAA5AGQAOQAAAEIADwABAFAAcgBvAGQAdQBjAHQAVgBlAHIAcwBpAG8AbgAA
-ADEALgAwAC4AOAA1ADkAMQAuADIAOAAyADgAMQAAAAAARgAPAAEAQQBzAHMAZQBtAGIAbAB5ACAA
-VgBlAHIAcwBpAG8AbgAAADEALgAwAC4AOAA1ADkAMQAuADIAOAAyADgAMQAAAAAAAAAAAAAAAAAA
+ADEALgAwAC4AOAA1ADkAOAAuADEANgA4ADYAMwAAAAAARgAPAAEAQQBzAHMAZQBtAGIAbAB5ACAA
+VgBlAHIAcwBpAG8AbgAAADEALgAwAC4AOAA1ADkAOAAuADEANgA4ADYAMwAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAwAAADgPgAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAwAAABcPgAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -1271,21 +1233,43 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
         </ScriptProject>
       </DTS:ObjectData>
     </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Get Attribute Codes"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{A8E87A33-B33F-4916-B8FF-470C3D325311}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Get Attribute Codes"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{592C6DFB-FA23-4EE4-8631-5862F51A5DB6}"
+          SQLTask:BypassPrepare="False"
+          SQLTask:SqlStatementSource="EXEC [Candidate].[uspAttributeList]"
+          SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ResultBinding
+            SQLTask:ResultName="0"
+            SQLTask:DtsVariableName="User::attributeCodes" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
   </DTS:Executables>
   <DTS:PrecedenceConstraints>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
       DTS:DTSID="{BC52BB56-80F8-4D58-9FB5-B9FBAEA4C4D7}"
-      DTS:From="Package\Execute SQL Task"
+      DTS:From="Package\Get Attribute Codes"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
-      DTS:To="Package\Script Task" />
+      DTS:To="Package\Create SQL Extract Query" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
       DTS:CreationName=""
-      DTS:DTSID="{00B04215-9F3F-432A-9D2B-9D03415330D2}"
-      DTS:From="Package\Script Task"
+      DTS:DTSID="{CAACD271-188D-47A6-AB72-025833AD4883}"
+      DTS:From="Package\Create SQL Extract Query"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 1"
       DTS:To="Package\AdditionalAttributes" />
@@ -1305,29 +1289,29 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
         <NodeLayout
           Size="174,42"
           Id="Package\AdditionalAttributes"
-          TopLeft="481,451" />
+          TopLeft="482,398" />
         <NodeLayout
-          Size="170,42"
-          Id="Package\Execute SQL Task"
+          Size="175,42"
+          Id="Package\Get Attribute Codes"
           TopLeft="485,120" />
         <NodeLayout
-          Size="134,42"
-          Id="Package\Script Task"
-          TopLeft="499,348" />
+          Size="207,42"
+          Id="Package\Create SQL Extract Query"
+          TopLeft="465,243" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="568,162">
+          TopLeft="570.5,162">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,186"
+              EndConnector="0,81"
               Start="0,0"
-              End="0,178.5">
+              End="0,73.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,178.5" />
+                    End="0,73.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1338,18 +1322,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="567,390">
+          TopLeft="568.75,285">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,61"
+              EndConnector="0,113"
               Start="0,0"
-              End="0,53.5">
+              End="0,105.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,53.5" />
+                    End="0,105.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1367,10 +1351,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="177,42"
-          Id="Package\AdditionalAttributes\OLE DB Destination"
-          TopLeft="489,402" />
-        <NodeLayout
           Size="157,42"
           Id="Package\AdditionalAttributes\OLE DB Source"
           TopLeft="502,55" />
@@ -1378,6 +1358,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           Size="158,42"
           Id="Package\AdditionalAttributes\Derived Column"
           TopLeft="500,321" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\AdditionalAttributes\OLE DB Destination"
+          TopLeft="489,402" />
         <EdgeLayout
           Id="Package\AdditionalAttributes.Paths[Derived Column Output]"
           TopLeft="578.25,363">
@@ -1403,33 +1387,33 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
         <NodeLayout
           Size="115,42"
           Id="Package\AdditionalAttributes\Lookup"
-          TopLeft="533,194" />
+          TopLeft="511,164" />
         <EdgeLayout
           Id="Package\AdditionalAttributes.Paths[OLE DB Source Output]"
           TopLeft="580.5,97">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="10,97"
+              EndConnector="-12,67"
               Start="0,0"
-              End="10,89.5">
+              End="-12,59.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,44.5" />
+                    End="0,29.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,44.5"
-                    Point2="0,48.5"
-                    Point3="4,48.5" />
+                    Point1="0,29.5"
+                    Point2="0,33.5"
+                    Point3="-4,33.5" />
                   <mssgle:LineSegment
-                    End="6,48.5" />
+                    End="-8,33.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="6,48.5"
-                    Point2="10,48.5"
-                    Point3="10,52.5" />
+                    Point1="-8,33.5"
+                    Point2="-12,33.5"
+                    Point3="-12,37.5" />
                   <mssgle:LineSegment
-                    End="10,89.5" />
+                    End="-12,59.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1440,43 +1424,51 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\AdditionalAttributes.Paths[Lookup No Match Output]"
-          TopLeft="590.5,236">
+          TopLeft="568.5,206">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-11.5,85"
+              EndConnector="10.5,115"
               Start="0,0"
-              End="-11.5,77.5">
+              End="10.5,107.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,38.5" />
+                    End="0,53.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,38.5"
-                    Point2="0,42.5"
-                    Point3="-4,42.5" />
+                    Point1="0,53.5"
+                    Point2="0,57.5"
+                    Point3="4,57.5" />
                   <mssgle:LineSegment
-                    End="-7.5,42.5" />
+                    End="6.5,57.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="-7.5,42.5"
-                    Point2="-11.5,42.5"
-                    Point3="-11.5,46.5" />
+                    Point1="6.5,57.5"
+                    Point2="10.5,57.5"
+                    Point3="10.5,61.5" />
                   <mssgle:LineSegment
-                    End="-11.5,77.5" />
+                    End="10.5,107.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-70.4250390625,47.5,129.350078125,16"
+              BoundingBox="-50.55638671875,62.5,111.6127734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\AdditionalAttributes\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\AdditionalAttributes\OLE DB Destination">
     <Properties>
@@ -1491,20 +1483,12 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\AdditionalAttributes\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\AdditionalAttributes\Lookup">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">true</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
