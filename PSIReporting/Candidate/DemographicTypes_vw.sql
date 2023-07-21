@@ -1,6 +1,7 @@
 ﻿CREATE VIEW [Candidate].[DemographicTypes_vw]
 	AS 
 	Select 
+		SourceAttributeID,
 		Demographic,
 		DemographicTypeDBId,
 		CandidateColumnName

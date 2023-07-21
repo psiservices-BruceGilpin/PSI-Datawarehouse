@@ -400,6 +400,8 @@
     <Build Include="Test\TopicArea.sql" />
     <Build Include="Staging\CandidateDemographics.sql" />
     <Build Include="Candidate\StoredProcedures\uspLoadCandidateDemographics.sql" />
+    <Build Include="Candidate\Synonyms\Demographics_vw.sql" />
+    <Build Include="Candidate\Synonyms\DemographicTypes_vw.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Dev_PSI_DW.publish.xml" />
