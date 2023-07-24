@@ -6,3 +6,7 @@
     [DemographicTypeKey] SMALLINT NOT NULL, 
     [DemographicValue] VARCHAR(255) NOT NULL
 )
+
+GO
+
+CREATE INDEX [IX_Demographics_DemographicValue] ON [Candidate].[Demographics] ( [DemographicValue])

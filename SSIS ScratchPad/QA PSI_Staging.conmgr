@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="ol-dwdevdb01.dc.onepsi.net.PSI_Staging"
+  DTS:DTSID="{DA76D3BD-5996-42FC-B4A1-DFBD09595812}"
+  DTS:CreationName="OLEDB">
+  <DTS:PropertyExpression
+    DTS:Name="InitialCatalog">@[$Project::StagingDatabase]</DTS:PropertyExpression>
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=ol-dwdevdb01.dc.onepsi.net;Initial Catalog=PSI_Staging;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package1-{DA76D3BD-5996-42FC-B4A1-DFBD09595812}ol-dwdevdb01.dc.onepsi.net.PSI_Staging;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

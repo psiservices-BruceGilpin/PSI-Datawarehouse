@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="65"
-  DTS:VersionGUID="{BB8655D6-BCB3-41DE-AA69-5C586D2B4BF1}">
+  DTS:VersionBuild="75"
+  DTS:VersionGUID="{88BEDA9D-F611-4D2B-80FB-E917175CD53F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -21,33 +21,37 @@
       DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
       DTS:DTSID="{592C6DFB-FA23-4EE4-8631-5862F51A5DB6}"
       DTS:ObjectName="ADOPSI_DW">
+      <DTS:PropertyExpression
+        DTS:Name="InitialCatalog">@[$Project::DWDatabase]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectionString="Data Source=OL-DWDEVDB01.dc.onepsi.net;Initial Catalog=PSI_DW;Integrated Security=True;Application Name=SSIS-Package-{592C6DFB-FA23-4EE4-8631-5862F51A5DB6}OL-DWDEVDB01.dc.onepsi.net.PSI_DW1;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[ol-dwdevdb01.dc.onepsi.net.PSI_DW]"
+      DTS:refId="Package.ConnectionManagers[ol-dwqadb01.dc.onepsi.net.PSI_DW]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{3E587A5D-DA34-476B-A958-6215F3C4C3F3}"
-      DTS:ObjectName="ol-dwdevdb01.dc.onepsi.net.PSI_DW">
+      DTS:DTSID="{28544545-E0FF-4235-A2E0-F30D902D952E}"
+      DTS:ObjectName="ol-dwqadb01.dc.onepsi.net.PSI_DW">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=ol-dwdevdb01.dc.onepsi.net;Initial Catalog=PSI_DW;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=ol-dwqadb01.dc.onepsi.net;Initial Catalog=PSI_DW;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{28544545-E0FF-4235-A2E0-F30D902D952E}ol-dwqadb01.dc.onepsi.net.PSI_DW;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[ol-dwdevdb01.dc.onepsi.net.PSI_DW 1]"
+      DTS:refId="Package.ConnectionManagers[PSI_Staging]"
       DTS:CreationName="OLEDB"
       DTS:DTSID="{E9C48D4D-33ED-465E-AE5E-94C6B8C9C36C}"
-      DTS:ObjectName="ol-dwdevdb01.dc.onepsi.net.PSI_DW 1">
+      DTS:ObjectName="PSI_Staging">
+      <DTS:PropertyExpression
+        DTS:Name="InitialCatalog">@[$Project::StagingDatabase]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=ol-dwdevdb01.dc.onepsi.net;Initial Catalog=PSI_DW;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=ol-dwdevdb01.dc.onepsi.net;Initial Catalog=PSI_Staging;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -192,7 +196,7 @@
                   expressionType="Notify"
                   name="SqlCommandParam"
                   UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from (select * from [Candidate].[Demographics]) [refTable]
-where [refTable].[DemographicValue] = ?</property>
+where [refTable].[DemographicTypeKey] = ?</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the type of connection used to access the reference dataset."
@@ -228,7 +232,7 @@ where [refTable].[DemographicValue] = ?</property>
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Output].Columns[Variable_Value]};</property>
+                  name="ParameterMap">#{Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Output].Columns[variableID]};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -241,8 +245,8 @@ where [refTable].[DemographicValue] = ?</property>
               <connections>
                 <connection
                   refId="Package\AdditionalAttributes\Lookup.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[ol-dwdevdb01.dc.onepsi.net.PSI_DW]"
-                  connectionManagerRefId="Package.ConnectionManagers[ol-dwdevdb01.dc.onepsi.net.PSI_DW]"
+                  connectionManagerID="Package.ConnectionManagers[ol-dwqadb01.dc.onepsi.net.PSI_DW]"
+                  connectionManagerRefId="Package.ConnectionManagers[ol-dwqadb01.dc.onepsi.net.PSI_DW]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -252,17 +256,15 @@ where [refTable].[DemographicValue] = ?</property>
                   name="Lookup Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\AdditionalAttributes\Lookup.Inputs[Lookup Input].Columns[Variable_Value]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="255"
-                      cachedName="Variable_Value"
-                      lineageId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Output].Columns[Variable_Value]">
+                      refId="Package\AdditionalAttributes\Lookup.Inputs[Lookup Input].Columns[variableID]"
+                      cachedDataType="i2"
+                      cachedName="variableID"
+                      lineageId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Output].Columns[variableID]">
                       <properties>
                         <property
                           dataType="System.String"
                           description="Specifies the column in the reference table that a column joins."
-                          name="JoinToReferenceColumn">DemographicValue</property>
+                          name="JoinToReferenceColumn">DemographicTypeKey</property>
                         <property
                           dataType="System.Null"
                           description="Specifies the column in the reference table from which a column is copied."
@@ -373,8 +375,8 @@ where [refTable].[DemographicValue] = ?</property>
               <connections>
                 <connection
                   refId="Package\AdditionalAttributes\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[ol-dwdevdb01.dc.onepsi.net.PSI_DW 1]"
-                  connectionManagerRefId="Package.ConnectionManagers[ol-dwdevdb01.dc.onepsi.net.PSI_DW 1]"
+                  connectionManagerID="Package.ConnectionManagers[ol-dwqadb01.dc.onepsi.net.PSI_DW]"
+                  connectionManagerRefId="Package.ConnectionManagers[ol-dwqadb01.dc.onepsi.net.PSI_DW]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -393,19 +395,19 @@ where [refTable].[DemographicValue] = ?</property>
                       externalMetadataColumnId="Package\AdditionalAttributes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SourceSystemKey]"
                       lineageId="Package\AdditionalAttributes\Derived Column.Outputs[Derived Column Output].Columns[SourceSystemID]" />
                     <inputColumn
-                      refId="Package\AdditionalAttributes\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Variable_ID]"
-                      cachedDataType="i4"
-                      cachedName="Variable_ID"
+                      refId="Package\AdditionalAttributes\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[variableID]"
+                      cachedDataType="i2"
+                      cachedName="variableID"
                       externalMetadataColumnId="Package\AdditionalAttributes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DemographicTypeKey]"
-                      lineageId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Output].Columns[Variable_ID]" />
+                      lineageId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Output].Columns[variableID]" />
                     <inputColumn
-                      refId="Package\AdditionalAttributes\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Variable_Value]"
+                      refId="Package\AdditionalAttributes\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[variablevalue]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="255"
-                      cachedName="Variable_Value"
+                      cachedName="variablevalue"
                       externalMetadataColumnId="Package\AdditionalAttributes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DemographicValue]"
-                      lineageId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Output].Columns[Variable_Value]" />
+                      lineageId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Output].Columns[variablevalue]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -475,7 +477,7 @@ where [refTable].[DemographicValue] = ?</property>
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset"></property>
+                  name="OpenRowset">[Staging].[CandidateAdditionalAttributeValues]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -484,7 +486,8 @@ where [refTable].[DemographicValue] = ?</property>
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">Select distinct cast(variableID as smallint) variableID, variablevalue
+from staging.CandidateAdditionalAttributevalues</property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -501,7 +504,7 @@ where [refTable].[DemographicValue] = ?</property>
                   dataType="System.Int32"
                   description="Specifies the mode used to access the database."
                   name="AccessMode"
-                  typeConverter="AccessMode">3</property>
+                  typeConverter="AccessMode">2</property>
                 <property
                   dataType="System.String"
                   description="The mappings between the parameters in the SQL command and variables."
@@ -510,8 +513,8 @@ where [refTable].[DemographicValue] = ?</property>
               <connections>
                 <connection
                   refId="Package\AdditionalAttributes\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="{583203C2-714A-4CA9-B6E4-5054312D33DD}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[lcprodreportingdb.resources.psi.psi_db.bruce.gilpin]"
+                  connectionManagerID="Package.ConnectionManagers[PSI_Staging]"
+                  connectionManagerRefId="Package.ConnectionManagers[PSI_Staging]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -521,38 +524,38 @@ where [refTable].[DemographicValue] = ?</property>
                   name="OLE DB Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Output].Columns[Variable_ID]"
-                      dataType="i4"
+                      refId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Output].Columns[variableID]"
+                      dataType="i2"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Variable_ID]"
-                      lineageId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Output].Columns[Variable_ID]"
-                      name="Variable_ID"
+                      externalMetadataColumnId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[variableID]"
+                      lineageId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Output].Columns[variableID]"
+                      name="variableID"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Output].Columns[Variable_Value]"
+                      refId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Output].Columns[variablevalue]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Variable_Value]"
+                      externalMetadataColumnId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[variablevalue]"
                       length="255"
-                      lineageId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Output].Columns[Variable_Value]"
-                      name="Variable_Value"
-                      truncationRowDisposition="IgnoreFailure" />
+                      lineageId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Output].Columns[variablevalue]"
+                      name="variablevalue"
+                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Variable_ID]"
-                      dataType="i4"
-                      name="Variable_ID" />
+                      refId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[variableID]"
+                      dataType="i2"
+                      name="variableID" />
                     <externalMetadataColumn
-                      refId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Variable_Value]"
+                      refId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[variablevalue]"
                       codePage="1252"
                       dataType="str"
                       length="255"
-                      name="Variable_Value" />
+                      name="variablevalue" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -561,17 +564,17 @@ where [refTable].[DemographicValue] = ?</property>
                   name="OLE DB Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Variable_ID]"
-                      dataType="i4"
-                      lineageId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Variable_ID]"
-                      name="Variable_ID" />
+                      refId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[variableID]"
+                      dataType="i2"
+                      lineageId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[variableID]"
+                      name="variableID" />
                     <outputColumn
-                      refId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Variable_Value]"
+                      refId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[variablevalue]"
                       codePage="1252"
                       dataType="str"
                       length="255"
-                      lineageId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Variable_Value]"
-                      name="Variable_Value" />
+                      lineageId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[variablevalue]"
+                      name="variablevalue" />
                     <outputColumn
                       refId="Package\AdditionalAttributes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
@@ -628,6 +631,15 @@ where [refTable].[DemographicValue] = ?</property>
           Language="CSharp"
           ReadOnlyVariables="User::attributeCodes"
           ReadWriteVariables="User::SQLStatementIn">
+          <ProjectItem
+            Name="Properties\Settings.settings"
+            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.resx"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -747,35 +759,6 @@ where [refTable].[DemographicValue] = ?</property>
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 </root>]]></ProjectItem>
-          <ProjectItem
-            Name="Properties\Settings.Designer.cs"
-            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_dd30307b81d94ad0a43a4835475e89d9.Properties.Settings.get_Default():ST_dd30307b81d94ad0a43a4835475e89d9.Properties.Sett" +
-    "ings")]
-
-namespace ST_dd30307b81d94ad0a43a4835475e89d9.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
           <ProjectItem
             Name="ScriptMain.cs"
             Encoding="UTF8"><![CDATA[#region Help:  Introduction to the script task
@@ -1007,6 +990,35 @@ namespace ST_dd30307b81d94ad0a43a4835475e89d9
   </msb:ItemGroup>
 </c:Project>]]></ProjectItem>
           <ProjectItem
+            Name="Properties\Settings.Designer.cs"
+            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_dd30307b81d94ad0a43a4835475e89d9.Properties.Settings.get_Default():ST_dd30307b81d94ad0a43a4835475e89d9.Properties.Sett" +
+    "ings")]
+
+namespace ST_dd30307b81d94ad0a43a4835475e89d9.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
+          <ProjectItem
             Name="Properties\AssemblyInfo.cs"
             Encoding="UTF8"><![CDATA[using System.Reflection;
 using System.Runtime.CompilerServices;
@@ -1036,15 +1048,6 @@ using System.Runtime.CompilerServices;
 // by using the '*' as shown below:
 
 [assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
-          <ProjectItem
-            Name="Properties\Settings.settings"
-            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.Designer.cs"
             Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -1292,13 +1295,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           Id="Package\AdditionalAttributes"
           TopLeft="482,398" />
         <NodeLayout
-          Size="175,42"
-          Id="Package\Get Attribute Codes"
-          TopLeft="485,120" />
-        <NodeLayout
           Size="207,42"
           Id="Package\Create SQL Extract Query"
           TopLeft="465,243" />
+        <NodeLayout
+          Size="175,42"
+          Id="Package\Get Attribute Codes"
+          TopLeft="485,120" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="570.5,162">
@@ -1352,69 +1355,47 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="157,42"
-          Id="Package\AdditionalAttributes\OLE DB Source"
-          TopLeft="502,55" />
+          Size="177,42"
+          Id="Package\AdditionalAttributes\OLE DB Destination"
+          TopLeft="489,402" />
+        <NodeLayout
+          Size="115,42"
+          Id="Package\AdditionalAttributes\Lookup"
+          TopLeft="511,164" />
         <NodeLayout
           Size="158,42"
           Id="Package\AdditionalAttributes\Derived Column"
           TopLeft="500,321" />
         <NodeLayout
-          Size="177,42"
-          Id="Package\AdditionalAttributes\OLE DB Destination"
-          TopLeft="489,402" />
-        <EdgeLayout
-          Id="Package\AdditionalAttributes.Paths[Derived Column Output]"
-          TopLeft="578.25,363">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,39"
-              Start="0,0"
-              End="0,31.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="115,42"
-          Id="Package\AdditionalAttributes\Lookup"
-          TopLeft="511,164" />
+          Size="157,42"
+          Id="Package\AdditionalAttributes\OLE DB Source"
+          TopLeft="498,54" />
         <EdgeLayout
           Id="Package\AdditionalAttributes.Paths[OLE DB Source Output]"
-          TopLeft="580.5,97">
+          TopLeft="576.5,96">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-12,67"
+              EndConnector="-8,68"
               Start="0,0"
-              End="-12,59.5">
+              End="-8,60.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,29.5" />
+                    End="0,30" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,29.5"
-                    Point2="0,33.5"
-                    Point3="-4,33.5" />
+                    Point1="0,30"
+                    Point2="0,34"
+                    Point3="-4,34" />
                   <mssgle:LineSegment
-                    End="-8,33.5" />
+                    End="-4,34" />
                   <mssgle:CubicBezierSegment
-                    Point1="-8,33.5"
-                    Point2="-12,33.5"
-                    Point3="-12,37.5" />
+                    Point1="-4,34"
+                    Point2="-8,34"
+                    Point3="-8,38" />
                   <mssgle:LineSegment
-                    End="-12,59.5" />
+                    End="-8,60.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1459,17 +1440,31 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\AdditionalAttributes.Paths[Derived Column Output]"
+          TopLeft="578.25,363">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,39"
+              Start="0,0"
+              End="0,31.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\AdditionalAttributes\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\AdditionalAttributes\OLE DB Destination">
     <Properties>
@@ -1503,6 +1498,19 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\AdditionalAttributes\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

@@ -55,6 +55,7 @@ Begin try
 
 
 			Exec (@sql1)
+	--	select @sql1
 			Fetch Next from c1 into @demographic, @CandidateColumnName
 	end
 	end try

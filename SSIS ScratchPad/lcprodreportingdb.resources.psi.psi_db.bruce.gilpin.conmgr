@@ -1,16 +1,18 @@
 ﻿<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:ObjectName="lcprodreportingdb.resources.psi.psi_db.bruce.gilpin"
-  DTS:DTSID="{583203C2-714A-4CA9-B6E4-5054312D33DD}"
+  DTS:DTSID="{14F41804-AD71-4558-9A17-BC1A068B788A}"
   DTS:CreationName="OLEDB">
+  <DTS:PropertyExpression
+    DTS:Name="Password">@[$Project::AtlasLCPW]</DTS:PropertyExpression>
   <DTS:ObjectData>
     <DTS:ConnectionManager
       DTS:ConnectRetryCount="1"
       DTS:ConnectRetryInterval="5"
-      DTS:ConnectionString="Data Source=lcprodreportingdb.resources.psi;User ID=bruce.gilpin;Initial Catalog=psi_db;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+      DTS:ConnectionString="Data Source=lcprodreportingdb.resources.psi;User ID=bruce.gilpin;Initial Catalog=psi_db;Provider=SQLNCLI11.1;Application Name=SSIS-Package1-{14F41804-AD71-4558-9A17-BC1A068B788A}lcprodreportingdb.resources.psi.psi_db.bruce.gilpin;Auto Translate=False;">
       <DTS:Password
         DTS:Name="Password"
-        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAeSTdqFLsb0qmumOwDtttDgAAAAACAAAAAAADZgAAwAAAABAAAAAJaWZUPejv/+DbOM6yNTFDAAAAAASAAACgAAAAEAAAAIrgdKpzZ1XIa+lfyGxycOV4AAAA/Cqb/BKOKYNczzQeYaYwaw+ey4JQ07R5kQALqTiZygeDcRDnReJC8oSlg0blRPIkYAWHvdahQ4YeSgobuj3OfMXykUh+zcAeGFfv5Cb20G3ISMnXjaJ8MhJvhkQ9kNwZ1whoiWRNp0P6NLOAaVEwEIGuZ2cOFcnjFAAAAMVLr1xQUfSaMTrJlJOx0uCx4U5f</DTS:Password>
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAKu8AgB5DEEyooTr33saZDwAAAAACAAAAAAADZgAAwAAAABAAAACsSCJMthMqNvC+jK5DIhD1AAAAAASAAACgAAAAEAAAAPCcMDK846nA9qLFPrgZ4ud4AAAAa64pU00JcJjHRwIoFcLE+83T8I2rtNmSjxorrlTAp3Yll90LZTNgwQg/PmDrmN8qxYctC79yEFdfziIzzyWw0RvekhdEtx1oF/jkS8RvEv+s1Y8PQi6UgpuTkx3t0pWHjjls3HuW4aVdDlyBSg8AOifKWfmbaCIiFAAAAAgkeuliBkPe/dgsWd74PrWmPGWj</DTS:Password>
     </DTS:ConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>
