@@ -1,4 +1,4 @@
-﻿CREATE VIEW [Candidate].[CandidatesWithDemographics_vw]
+﻿CREATE VIEW [Candidate].[candidatesWithDemographics_vw]
 	AS SELECT 
 
   a.candidatedbid, 
@@ -15,7 +15,7 @@ from
       a.candidatedbid, 
       try_cast(a.SourceCandidateKey as numeric) TestRegn_ID 
     from 
-      [$(PSI_DW)].Candidate.Candidates a 
+     [$(PSI_DW)].Candidate.Candidates a 
     where 
       a.GenderCode is not null 
       and a.LanguageCode is not null 
@@ -145,5 +145,3 @@ from
       and DemographicValue != 'UNSPECIFIED'
       and a.CurrentFlag = 0
   ) g on a.CandidateDBId = g.CandidateDBId
-
-
