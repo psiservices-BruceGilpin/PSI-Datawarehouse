@@ -13,6 +13,7 @@ CREATE VIEW [Candidate].[Candidates_vw]
 	a.StatusCode,
 	e.CandidateIDType,
 	a.sourceCandidatekey,
+	a.Birthdate,
 	a.GenderCode,
 	a.AgeRangeCode,
 	a.EducationCode,
