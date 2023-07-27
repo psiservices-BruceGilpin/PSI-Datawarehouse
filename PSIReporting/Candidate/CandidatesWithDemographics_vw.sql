@@ -3,6 +3,7 @@
 
   a.candidatedbid, 
   a.TestRegn_ID, 
+  a.Birthdate,
   b.DemographicValue 'Gender Code', 
   c.DemographicValue 'Race Code', 
   d.DemographicValue 'Age Range', 
@@ -13,16 +14,17 @@ from
   (
     select 
       a.candidatedbid, 
-      try_cast(a.SourceCandidateKey as numeric) TestRegn_ID 
+      try_cast(a.SourceCandidateKey as numeric) TestRegn_ID,
+      a.Birthdate
     from 
      [$(PSI_DW)].Candidate.Candidates a 
     where 
-      a.GenderCode is not null 
-      and a.LanguageCode is not null 
-      and a.RaceCode is not null 
-      and a.EthnicityCode is not null 
-      and a.EducationCode is not null 
-      and a.AgeRangeCode is not null
+      (a.GenderCode is not null 
+      or a.LanguageCode is not null 
+      or a.RaceCode is not null 
+      or a.EthnicityCode is not null 
+      or a.EducationCode is not null 
+      or a.AgeRangeCode is not null )
       and a.CurrentFlag = 0
   ) a 
   left join -- Gender

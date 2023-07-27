@@ -58,6 +58,15 @@ Begin try
 	--	select @sql1
 			Fetch Next from c1 into @demographic, @CandidateColumnName
 	end
+	-- Birthdate
+		update
+	candidate.candidates
+		set birthdate = try_cast(variablevalue as date)
+	from
+		candidate.Candidates a join
+		psi_staging.staging.candidateadditionalattributevalues b on
+			try_cast(a.SourceCandidateKey as numeric)  = b.TestRegnKey
+		where b.VariableID = 4
 	end try
 	Begin catch
 		Insert Logging.SQLErrors (
