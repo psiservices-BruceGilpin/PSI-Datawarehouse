@@ -34,7 +34,6 @@
 	[ScaledScore] [int] NULL,
 	[CheckSum] [bigint] NOT NULL,
 	[LoadDate] [datetime] NOT NULL,
-[StudentKey] BIGINT NULL, 
     PRIMARY KEY CLUSTERED 
 (
 	[StudentScoreId] ASC
