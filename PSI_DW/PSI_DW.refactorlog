@@ -56,4 +56,74 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="SourceAttributeID" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="7b5f224e-c5dd-4dad-a288-7836f2cd6075" ChangeDateTime="08/18/2023 14:18:37">
+    <Property Name="ElementName" Value="[Dimensions].[StudentCodes].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[StudentCodes]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="StudentCodeId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="74b48f3c-449a-41d1-b1ab-333d5c7cbcd1" ChangeDateTime="08/18/2023 17:40:16">
+    <Property Name="ElementName" Value="[dbo].[StudentTestAttributes].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[StudentTestAttributes]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="StudAttribId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="32e28c76-a7c3-41f2-93c9-3f78c59569d0" ChangeDateTime="08/18/2023 17:48:51">
+    <Property Name="ElementName" Value="[dbo].[StudentTestAttributes].[Exa]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[StudentTestAttributes]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ExternalExamID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c015549d-11f8-4e8f-9efc-49b2a2ea3eb2" ChangeDateTime="08/18/2023 18:19:04">
+    <Property Name="ElementName" Value="[dbo].[StudentTestAttributes].[AspenApplicantID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[StudentTestAttributes]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AspenApplicantKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="74277d98-434c-4bdf-a84e-d104aad4ba9b" ChangeDateTime="08/18/2023 18:19:15">
+    <Property Name="ElementName" Value="[dbo].[StudentTestAttributes].[ExternalApplicantID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[StudentTestAttributes]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ExternalApplicantKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e8b43c66-2816-400d-b4b5-e470ac7408f7" ChangeDateTime="08/18/2023 18:19:34">
+    <Property Name="ElementName" Value="[dbo].[StudentTestAttributes].[ExternalExamID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[StudentTestAttributes]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ExternalExamKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="37247137-4b4c-4618-9f7a-d91dbf74e333" ChangeDateTime="08/18/2023 18:36:02">
+    <Property Name="ElementName" Value="[dbo].[StudentTestAttributes].[ADAMultipliere]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[StudentTestAttributes]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ADAMultiplier" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3f7a6b32-675c-4811-9d53-7cc1a0f694c2" ChangeDateTime="08/18/2023 18:48:14">
+    <Property Name="ElementName" Value="[dbo].[StudentTestAttributes].[ScaledScoreIG]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[StudentTestAttributes]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="NationStateCd" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="32dd239c-b049-474f-8b8b-97a6d557dc0f" ChangeDateTime="08/18/2023 18:49:39">
+    <Property Name="ElementName" Value="[dbo].[StudentTestAttributes].[Lisense]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[StudentTestAttributes]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Licsense" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6b3bac53-88a5-4211-8aa2-e3c779e6ca98" ChangeDateTime="08/18/2023 18:50:50">
+    <Property Name="ElementName" Value="[dbo].[StudentTestAttributes].[DeploymentMethod]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[StudentTestAttributes]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DeploymentEnable" />
+  </Operation>
 </Operations>

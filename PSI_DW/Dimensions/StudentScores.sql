@@ -7,6 +7,7 @@
 	[StudentListKey] [bigint] NULL,
 	[TestScheduleKey] [bigint] NULL,
 	[TestListKey] [bigint] NULL,
+	[TestCenterKey] int null,
 	[ScoreStatus] [int] NOT NULL,
 	[StartDate] [datetime] NULL,
 	[Enddate] [datetime] NULL,
