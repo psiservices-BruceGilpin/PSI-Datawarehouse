@@ -1,6 +1,10 @@
 ﻿CREATE TABLE [dbo].[StudentTestAttributes]
 (
 	[StudAttribId] BIGINT NOT NULL Identity(1,1) PRIMARY KEY, 
+    [StudAttribDBID] Bigint not null,
+    [CurrentFlag] Bit not null DEFAULT 0,
+    [LoadDate]  DateTime not null DEFAULT getdate(),
+    [CheckSum] BigInt not null,
     [StudentKey] BigInt Not Null,
     [SchoolKey] INT NOT NULL, 
     [TestCenterKey] INT NOT NULL, 
@@ -42,3 +46,8 @@
 GO
 
 CREATE INDEX [IX_StudentTestAttributes_StudentKey] ON [dbo].[StudentTestAttributes] ([StudentKey])
+
+GO
+
+CREATE INDEX [IX_StudentTestAttributes_CurrentFlag] ON [dbo].[StudentTestAttributes] ([CurrentFlag])
+Include (StudentKey)
