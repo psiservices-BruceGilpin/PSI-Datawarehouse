@@ -126,4 +126,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="DeploymentEnable" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="e9c8a14a-f2e6-4772-ba51-fd6ebbefe7a9" ChangeDateTime="08/22/2023 18:44:39">
+    <Property Name="ElementName" Value="[dbo].[StudentTestAttributes].[PortionCode]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[StudentTestAttributes]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ExamPortionCode" />
+  </Operation>
 </Operations>
