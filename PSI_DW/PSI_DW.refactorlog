@@ -133,4 +133,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="ExamPortionCode" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="6302819f-5e03-48fb-a6b9-b0ac33a2a77d" ChangeDateTime="08/22/2023 20:04:00">
+    <Property Name="ElementName" Value="[Dimensions].[StudentCodes].[PoolsKey]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[StudentCodes]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PoolCodeGroupKey" />
+  </Operation>
 </Operations>

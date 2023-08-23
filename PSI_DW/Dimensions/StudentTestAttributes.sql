@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[StudentTestAttributes]
+﻿CREATE TABLE [Dimensions].[StudentTestAttributes]
 (
 	[StudAttribId] BIGINT NOT NULL Identity(1,1) PRIMARY KEY, 
     [StudAttribDBID] Bigint not null,
@@ -46,9 +46,9 @@
 
 GO
 
-CREATE INDEX [IX_StudentTestAttributes_StudentKey] ON [dbo].[StudentTestAttributes] ([StudentKey])
+CREATE INDEX [IX_StudentTestAttributes_StudentKey] ON [Dimensions].[StudentTestAttributes] ([StudentKey])
 
 GO
 
-CREATE INDEX [IX_StudentTestAttributes_CurrentFlag] ON [dbo].[StudentTestAttributes] ([CurrentFlag])
+CREATE INDEX [IX_StudentTestAttributes_CurrentFlag] ON [Dimensions].[StudentTestAttributes] ([CurrentFlag])
 Include (StudentKey)
