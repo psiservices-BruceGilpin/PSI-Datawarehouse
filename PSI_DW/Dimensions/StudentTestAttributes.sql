@@ -8,7 +8,7 @@
     [StudentKey] BigInt Not Null,
     [SchoolKey] INT NOT NULL, 
     [TestCenterKey] INT NOT NULL, 
-    [BookingID] Varchar(36) Null,
+    [TestScheduleKey] Int Not null,
     [ExternalExamKey] INT NULL, 
     [SchoolCode] VARCHAR(40) NULL, 
     [ClientCode] VARCHAR(12) NULL, 
