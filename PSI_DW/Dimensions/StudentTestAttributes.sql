@@ -6,7 +6,6 @@
     [LoadDate]  DateTime not null DEFAULT getdate(),
     [CheckSum] BigInt not null,
     [StudentKey] BigInt Not Null,
-    [SchoolKey] INT NOT NULL, 
     [TestCenterKey] INT NOT NULL, 
     [TestScheduleKey] Int Not null,
     [ExternalExamKey] INT NULL, 
