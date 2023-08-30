@@ -6,6 +6,7 @@ CREATE VIEW [Candidate].[CompositeTestPortionScores_vw]
 
 select 
 i.AccountName
+, a.CandidateAltKey 'Candidate ID'
 , n.CandidateIDType 'Alt Candidate ID Type'
 , case 
 	when n.CandidateIDType <> 'SSN' then m.IdentityValue 

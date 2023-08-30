@@ -50,4 +50,4 @@ CREATE INDEX [IX_StudentTestAttributes_StudentKey] ON [Dimensions].[StudentTestA
 GO
 
 CREATE INDEX [IX_StudentTestAttributes_CurrentFlag] ON [Dimensions].[StudentTestAttributes] ([CurrentFlag])
-Include (StudentKey)
+Include (StudentKey, DateSched)
