@@ -1,15 +1,16 @@
 ﻿CREATE TABLE [Dimensions].[Clients](
 	[ClientId] [int] IDENTITY(1,1) NOT NULL,
-	[ClientDBID] [int] NOT NULL,
+	[ClientDBID] [int] NULL,
 	[CurrentFlag] [bit] NOT NULL,
 	[SourceSystemKey] [smallint] NOT NULL,
-	[SourceSystemID] [varchar](20) NOT NULL,
+	[SourceSystemID] [varchar](20) NULL,
 	[CreateDate] [datetime] NOT NULL,
 	[Code] [varchar](16) NOT NULL,
 	[Description] [varchar](256) NOT NULL,
 	[AtlasAccountCode] [varchar](32) NOT NULL,
-	[AtlasAccountID] [int] NULL,
-PRIMARY KEY CLUSTERED 
+	[PoolKey] BIGINT NULL, 
+    [Checksum] BIGINT NOT NULL, 
+    PRIMARY KEY CLUSTERED 
 (
 	[ClientId] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
