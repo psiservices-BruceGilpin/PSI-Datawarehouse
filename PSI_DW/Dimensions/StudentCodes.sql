@@ -4,7 +4,8 @@
     [StudentScoresKey] BIGINT NOT NULL, 
     [PoolCodeGroupKey] BIGINT NOT NULL, 
     [CreateDate] DATETIME NOT NULL DEFAULT getdate(), 
-    [CheckSum] BIGINT NOT NULL
+    [CheckSum] BIGINT NOT NULL, 
+    [PoolCode] BIGINT NULL
 )
 
 GO

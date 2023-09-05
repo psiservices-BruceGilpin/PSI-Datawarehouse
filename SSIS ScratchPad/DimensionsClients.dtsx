@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="8"
-  DTS:VersionGUID="{BC85DC53-AE09-4A54-B1EF-16DC6F481D6E}">
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{EAE8F16C-7DBF-4810-9F9A-0A2F7EFF5403}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -524,8 +524,8 @@ where [refTable].[SourcePoolID] = ?</property>
               <connections>
                 <connection
                   refId="Package\Data Flow Task\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[ol-dwdevdb01.dc.onepsi.net.PSI_DW]"
-                  connectionManagerRefId="Package.ConnectionManagers[ol-dwdevdb01.dc.onepsi.net.PSI_DW]"
+                  connectionManagerID="Package.ConnectionManagers[ol-dwqadb01.dc.onepsi.net.PSI_DW 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[ol-dwqadb01.dc.onepsi.net.PSI_DW 1]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1070,7 +1070,7 @@ where [refTable].[SourcePoolID] = ?</property>
         <NodeLayout
           Size="158,42"
           Id="Package\Data Flow Task\Derived Column"
-          TopLeft="306,248" />
+          TopLeft="415,255" />
         <NodeLayout
           Size="177,42"
           Id="Package\Data Flow Task\OLE DB Destination"
@@ -1103,62 +1103,62 @@ where [refTable].[SourcePoolID] = ?</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-11.5,52"
+              EndConnector="97.5,59"
               Start="0,0"
-              End="-11.5,44.5">
+              End="97.5,51.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,22" />
+                    End="0,25.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,22"
-                    Point2="0,26"
-                    Point3="-4,26" />
+                    Point1="0,25.5"
+                    Point2="0,29.5"
+                    Point3="4,29.5" />
                   <mssgle:LineSegment
-                    End="-7.5,26" />
+                    End="93.5,29.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="-7.5,26"
-                    Point2="-11.5,26"
-                    Point3="-11.5,30" />
+                    Point1="93.5,29.5"
+                    Point2="97.5,29.5"
+                    Point3="97.5,33.5" />
                   <mssgle:LineSegment
-                    End="-11.5,44.5" />
+                    End="97.5,51.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-53.94138671875,31,96.3827734375,11.609375"
+              BoundingBox="0.558613281249997,34.5,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Derived Column Output]"
-          TopLeft="385,290">
+          TopLeft="494,297">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="351.5,83"
+              EndConnector="242.5,76"
               Start="0,0"
-              End="351.5,75.5">
+              End="242.5,68.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,37.5" />
+                    End="0,34" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,37.5"
-                    Point2="0,41.5"
-                    Point3="4,41.5" />
+                    Point1="0,34"
+                    Point2="0,38"
+                    Point3="4,38" />
                   <mssgle:LineSegment
-                    End="347.5,41.5" />
+                    End="238.5,38" />
                   <mssgle:CubicBezierSegment
-                    Point1="347.5,41.5"
-                    Point2="351.5,41.5"
-                    Point3="351.5,45.5" />
+                    Point1="238.5,38"
+                    Point2="242.5,38"
+                    Point3="242.5,42" />
                   <mssgle:LineSegment
-                    End="351.5,75.5" />
+                    End="242.5,68.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
