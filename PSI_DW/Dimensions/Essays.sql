@@ -5,7 +5,8 @@
     [Essay] VARCHAR(MAX) NOT NULL, 
     [CurrentFlag] BIT NOT NULL DEFAULT 0, 
     [LoadDate] DATETIME NOT NULL DEFAULT getdate(), 
-    [Checksum] BIGINT NOT NULL
+    [Checksum] BIGINT NOT NULL, 
+    [EssayDBID] BIGINT NOT NULL
 )
 
 GO
