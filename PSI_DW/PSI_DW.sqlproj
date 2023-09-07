@@ -404,6 +404,8 @@
     <Build Include="Candidate\Synonyms\DemographicTypes_vw.sql" />
     <Build Include="Dimensions\StudentCodes.sql" />
     <Build Include="Dimensions\StudentTestAttributes.sql" />
+    <Build Include="Dimensions\StudentResponses.sql" />
+    <Build Include="Dimensions\Essays.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Dev_PSI_DW.publish.xml" />
