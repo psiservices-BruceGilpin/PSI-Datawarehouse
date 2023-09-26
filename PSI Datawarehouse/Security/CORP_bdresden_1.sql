@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [CORP\bdresden]
+    FROM WINDOWS WITH DEFAULT_LANGUAGE = [us_english];
+

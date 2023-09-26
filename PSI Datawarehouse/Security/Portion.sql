@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [Portion]
+    AUTHORIZATION [dbo];
+

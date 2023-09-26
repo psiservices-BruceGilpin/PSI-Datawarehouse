@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [Cisco]
+    AUTHORIZATION [dbo];
+
