@@ -1,0 +1,43 @@
+﻿CREATE VIEW [Dimensions].[StudentTestAttributes_vw]
+	AS SELECT 
+		StudAttribDBID,
+		StudentKey,
+		TestCenterKey,
+		TestScheduleKey,
+		ExternalExamKey,
+		SchoolCode,
+		ClientCode,
+		ExamCode,
+		ExamPortionCode,
+		GraduationDate,
+		ApplicationType,
+		SchoolName,
+		AdminGroup,
+		TimeSched,
+		DateSched,
+		ExternalApplicantKey,
+		AspenApplicantKey,
+		ExamDescription,
+		AspenSchedID,
+		DeliveryMethod,
+		ExternalTestCenterKey,
+		FormKey,
+		ExternalSchoolKey,
+		BookingCode,
+		Client,
+		ADAMultiplier,
+		ADAEnable,
+		OrigExamPortionID,
+		NationStateCd,
+		ComboEnable,
+		HistoryEnable,
+		Licsense,
+		Degree,
+		NationStatePFA,
+		DeploymentEnable,
+		EndEligiblityDate,
+		ResponsibleEmp
+	from
+		[$(PSI_DW)].Dimensions.StudentTestAttributes (nolock)
+	where
+		CurrentFlag = 0

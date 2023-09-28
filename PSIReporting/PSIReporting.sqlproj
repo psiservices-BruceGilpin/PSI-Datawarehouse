@@ -66,6 +66,7 @@
     <Folder Include="Candidate\" />
     <Folder Include="dbo\" />
     <Folder Include="Scripts\" />
+    <Folder Include="Dimensions" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PSI_DW\PSI_DW.sqlproj">
@@ -163,6 +164,33 @@
     <Build Include="Candidate\Demographics_vw.sql" />
     <Build Include="Candidate\DemographicTypes_vw.sql" />
     <Build Include="Candidate\candidatesWithDemographics_vw.sql" />
+    <Build Include="Schemas\Dimensions.sql" />
+    <Build Include="Dimensions\AmpForms.sql" />
+    <Build Include="Dimensions\Areas.sql" />
+    <Build Include="Dimensions\BankCategories.sql" />
+    <Build Include="Dimensions\BankCategoryGroups.sql" />
+    <Build Include="Dimensions\Banks.sql" />
+    <Build Include="Dimensions\Clients.sql" />
+    <Build Include="Dimensions\Essays.sql" />
+    <Build Include="Dimensions\ExamPortions.sql" />
+    <Build Include="Dimensions\QuestionContnent.sql" />
+    <Build Include="Dimensions\PoolCodeGroups.sql" />
+    <Build Include="Dimensions\PoolCodes.sql" />
+    <Build Include="Dimensions\Questions.sql" />
+    <Build Include="Dimensions\StudentCodes.sql" />
+    <Build Include="Dimensions\StudentGroups.sql" />
+    <Build Include="Dimensions\StudentItems.sql" />
+    <Build Include="Dimensions\StudentLists.sql" />
+    <Build Include="Dimensions\StudentResponses.sql" />
+    <Build Include="Dimensions\Students.sql" />
+    <Build Include="Dimensions\StudentScores.sql" />
+    <Build Include="Dimensions\StudentTestAttributes.sql" />
+    <Build Include="Dimensions\TestLists.sql" />
+    <Build Include="Dimensions\TestPackages.sql" />
+    <Build Include="Dimensions\TestQuestions.sql" />
+    <Build Include="Dimensions\Tests.sql" />
+    <Build Include="Dimensions\TestSchedules.sql" />
+    <Build Include="Dimensions\TestSegments.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Dev_PSIReporting.publish.xml" />
