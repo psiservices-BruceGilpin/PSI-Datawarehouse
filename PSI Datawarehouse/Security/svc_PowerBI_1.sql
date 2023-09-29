@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [svc_PowerBI]
+    WITH PASSWORD = N'qkJn{poqcmorntsmuw>nc_yimsFT7_&#$!~<:oexYt{mc0>0', SID = 0x0E149769204A574EBA519D51A14E9940, DEFAULT_DATABASE = [PSI_DW], DEFAULT_LANGUAGE = [us_english], CHECK_POLICY = OFF;
+

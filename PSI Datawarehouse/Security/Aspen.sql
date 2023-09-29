@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [Aspen]
+    AUTHORIZATION [dbo];
+

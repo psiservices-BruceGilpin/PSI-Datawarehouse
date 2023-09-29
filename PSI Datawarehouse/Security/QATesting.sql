@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [QATesting]
+    AUTHORIZATION [dbo];
+
