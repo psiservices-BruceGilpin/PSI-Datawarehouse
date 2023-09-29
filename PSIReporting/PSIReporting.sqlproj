@@ -191,6 +191,8 @@
     <Build Include="Dimensions\Tests.sql" />
     <Build Include="Dimensions\TestSchedules.sql" />
     <Build Include="Dimensions\TestSegments.sql" />
+    <Build Include="Dimensions\ReapplicantTrue_vw.sql" />
+    <Build Include="Dimensions\RecertificationTrue_vw.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Dev_PSIReporting.publish.xml" />
