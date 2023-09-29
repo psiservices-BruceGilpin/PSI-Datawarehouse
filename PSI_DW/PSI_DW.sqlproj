@@ -89,6 +89,7 @@
     <Folder Include="Test\Synonyms\" />
     <Folder Include="Global" />
     <Folder Include="Candidate\StoredProcedures" />
+    <Folder Include="Dimensions\Synonyms" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\Account.sql" />
@@ -406,6 +407,7 @@
     <Build Include="Dimensions\StudentTestAttributes.sql" />
     <Build Include="Dimensions\StudentResponses.sql" />
     <Build Include="Dimensions\Essays.sql" />
+    <Build Include="Dimensions\Synonyms\DimensionsSynonyms.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Dev_PSI_DW.publish.xml" />
