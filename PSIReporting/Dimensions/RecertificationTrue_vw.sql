@@ -11,4 +11,4 @@
 			a.PoolCode = c.PoolCodeDBID and c.CurrentFlag = 0
 	where
 		b.PoolGroupTitle = 'Recertification' and
-		c.PoolTitle = 'Y' and 1=1
+		c.PoolTitle = 'Y' 
