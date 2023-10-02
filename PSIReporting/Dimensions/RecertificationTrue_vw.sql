@@ -1,7 +1,7 @@
 ﻿CREATE VIEW [Dimensions].[RecertificationTrue_vw]
 	AS SELECT 
 		a.StudentScoresKey,
-		c.PoolTitle as Reapplicant
+		c.PoolTitle as Recertification
 	from
 		[$(PSI_DW)].Dimensions.StudentCodes  (nolock) a		join
 		[$(PSI_DW)].Dimensions.PoolCodeGroups (nolock) b on
