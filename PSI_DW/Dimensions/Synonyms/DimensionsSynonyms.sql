@@ -51,3 +51,4 @@ go
 CREATE SYNONYM Dimensions.TestSegments_vw FOR [psi_reporting].Dimensions.TestSegments_vw
 go
 Create Synonym Dimensions.StudentItems_vw For [psi_reporting].Dimensions.StudentItems_vw
+go

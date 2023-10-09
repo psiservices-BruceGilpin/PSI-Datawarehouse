@@ -1,4 +1,4 @@
-﻿CREATE VIEW [Dimensions].[QuestionContnent_vw]
+﻿CREATE VIEW [Dimensions].[QuestionContent_vw]
 	AS SELECT 
 		QuestionContentDBID,
 		SourceQuestionContentId,

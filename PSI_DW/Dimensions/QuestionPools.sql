@@ -1,9 +1,9 @@
-﻿CREATE TABLE [Dimensions].[AmpForms](
+﻿CREATE TABLE [Dimensions].[QuestionPools](
 	[AmpFormsId] [int] IDENTITY(1,1) NOT NULL,
 	[AmpFormsDBID] [int] NOT NULL,
 	[CurrentFlag] [bit] NOT NULL,
 	[SourceSystemKey] [smallint] NOT NULL,
-	[SourceSystemID] [varchar](20) NOT NULL,
+	[SourceSystemID] bigint NOT NULL,
 	[CreateDate] [datetime] NOT NULL,
 	[FormPortionKey] [int] NOT NULL,
 	[FormName] [varchar](100) NOT NULL,

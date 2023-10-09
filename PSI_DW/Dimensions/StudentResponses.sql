@@ -16,3 +16,7 @@ GO
 
 CREATE INDEX [IX_StudentResponses_CurrentFlag] ON [Dimensions].[StudentResponses] ([CurrentFlag])
 Include (StudentResponseDBID)
+GO
+
+CREATE INDEX [IX_StudentResponses_StudentResponseDBID] ON [Dimensions].[StudentResponses] ([StudentResponseDBID])
+Include (NumericChoice, StringChoice, ResponseIndex, Points)

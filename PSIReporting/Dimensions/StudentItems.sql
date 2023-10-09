@@ -1,4 +1,4 @@
-﻿CREATE VIEW [dbo].[StudentItems_vw]
+﻿CREATE VIEW [dimensions].[StudentItems_vw]
 	AS SELECT 
 		StudentItemDBID,
 		SourceSystemID,
