@@ -476,5 +476,6 @@
     <Build Include="Candidate\Synonyms\CompositeTestPortionScores_vw.sql" />
     <Build Include="dbo\Synonyms\QuarterlyCalendar_vw.sql" />
     <Build Include="dbo\Sequences\LookupBusinessKey.sql" />
+    <Build Include="Dimensions\DimensionsSynonyms.sql" />
   </ItemGroup>
 </Project>
