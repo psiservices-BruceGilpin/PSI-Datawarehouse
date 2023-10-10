@@ -331,8 +331,6 @@
     <Build Include="Reporting\Views\vwTestSessionSections.sql" />
     <Build Include="Reporting\Views\vwTestsByAccountWeek.sql" />
     <Build Include="Bridge\Views\vwTestSectionDefinitions.sql" />
-    <Build Include="Dimensions\Views\vwRecertificationTrue.sql" />
-    <Build Include="Dimensions\Views\vwReapplicantTrue.sql" />
     <Build Include="Reporting\Views\vwCiscoPrecisionQueueSummary.sql" />
     <Build Include="Reporting\Views\vwCiscoCSREmailDetail.sql" />
     <Build Include="Reporting\Views\vwExamSteps.sql" />
