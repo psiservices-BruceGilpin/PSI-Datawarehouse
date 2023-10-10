@@ -5,7 +5,7 @@
     [SourceSystemKey]     SMALLINT      NOT NULL,
     [SourceSystemID]      VARCHAR (20)  NOT NULL,
     [CreateDate]          DATETIME      DEFAULT (getdate()) NOT NULL,
-    [FormPortionKey]      INT           NOT NULL,
+    [FormTestKey]         INT           NULL,
     [FormName]            VARCHAR (100) NOT NULL,
     [Rawcut]              INT           NULL,
     [ScaleCut]            INT           NULL,
@@ -15,6 +15,7 @@
     [EffectiveToDate]     DATETIME      NULL,
     [ProvisionalFromDate] DATETIME      NULL,
     [ProvisionalToDate]   DATETIME      NULL,
+    [CoreFormId]          Int           Null,
     [ScrambleOptions]     CHAR (1)      NULL,
     [ScrambleQuestions]   CHAR (1)      NULL,
     [Culture]             VARCHAR (50)  NULL,
@@ -41,5 +42,5 @@ CREATE NONCLUSTERED INDEX [IX_AmpForms_FormName]
 
 GO
 CREATE NONCLUSTERED INDEX [IX_AmpForms_PortionKey]
-    ON [Dimensions].[AmpForms]([FormPortionKey] ASC) WHERE ([CurrentFlag]=(0));
+    ON [Dimensions].[AmpForms]([FormTestKey] ASC) WHERE ([CurrentFlag]=(0));
 

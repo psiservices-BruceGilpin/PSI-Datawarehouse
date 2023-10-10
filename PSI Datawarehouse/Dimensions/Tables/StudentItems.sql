@@ -41,7 +41,3 @@ CREATE NONCLUSTERED INDEX [IX_StudentItems_TestQuestionKey]
 
 
 GO
-CREATE NONCLUSTERED INDEX [IXStudentItemsSourceSystemID]
-    ON [Dimensions].[StudentItems]([SourceSystemID] ASC)
-    INCLUDE([CurrentFlag], [CreateDate], [StudentItemDBID]);
-

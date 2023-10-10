@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="a8a3212e-0376-4277-a11e-a0f89ff25ab5" ChangeDateTime="10/10/2023 19:18:07">
+    <Property Name="ElementName" Value="[Dimensions].[AmpForms].[FormPortionKey]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[AmpForms]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="FormTestKey" />
+  </Operation>
+</Operations>
