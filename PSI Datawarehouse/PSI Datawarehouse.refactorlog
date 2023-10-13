@@ -7,4 +7,53 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="FormTestKey" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="14fb1d29-26cd-4297-a3b3-d018ca30c789" ChangeDateTime="10/13/2023 14:42:54">
+    <Property Name="ElementName" Value="[Dimensions].[SamplingGroups].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[SamplingGroups]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SamplingGroupId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9c4d8bf1-9a44-4304-b122-ba2b3ba4e215" ChangeDateTime="10/13/2023 15:11:39">
+    <Property Name="ElementName" Value="[Dimensions].[SamplingSpecifications].[ResultKey]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[SamplingSpecifications]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ResultID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="16b78ee8-d1e6-454e-8982-38d35cddbc14" ChangeDateTime="10/13/2023 15:17:58">
+    <Property Name="ElementName" Value="[Dimensions].[SamplingSpecifications].[AboceReliabilityTolerance]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[SamplingSpecifications]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AboveReliabilityTolerance" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d4872eb1-ea8f-4272-a787-3720c4de04b8" ChangeDateTime="10/13/2023 15:20:56">
+    <Property Name="ElementName" Value="[Dimensions].[SamplingSpecifications].[AboceCutScoreTolerance]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[SamplingSpecifications]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AboveCutScoreTolerance" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="59de4198-1f7a-41a0-b109-575aac13c9e8" ChangeDateTime="10/13/2023 15:29:29">
+    <Property Name="ElementName" Value="[Dimensions].[SampleGroupItems].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[SampleGroupItems]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SampleGroupItemId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="91691b8b-8578-46b6-9e04-608ac16b76bf" ChangeDateTime="10/13/2023 15:56:15">
+    <Property Name="ElementName" Value="[Dimensions].[SampleGroupItems].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[SampleGroupItems]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SampleGroupItemId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="22664b04-c8a7-4c71-bcac-731f5da09254" ChangeDateTime="10/13/2023 16:33:42">
+    <Property Name="ElementName" Value="[Dimensions].[SampleGroupItems].[Ptheat]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[SampleGroupItems]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PTheta" />
+  </Operation>
 </Operations>

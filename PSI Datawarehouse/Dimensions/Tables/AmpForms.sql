@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [Dimensions].[AmpForms] (
     [AmpFormsId]          INT           IDENTITY (1, 1) NOT NULL,
-    [AmpFormsDBID]        INT           NULL,
+    [AmpFormsDBID]        INT           NOT NULL,
     [CurrentFlag]         BIT           DEFAULT ((0)) NOT NULL,
     [SourceSystemKey]     SMALLINT      NOT NULL,
     [SourceSystemID]      VARCHAR (20)  NOT NULL,

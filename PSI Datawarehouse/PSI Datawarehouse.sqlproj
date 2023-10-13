@@ -475,6 +475,8 @@
     <Build Include="dbo\Synonyms\QuarterlyCalendar_vw.sql" />
     <Build Include="dbo\Sequences\LookupBusinessKey.sql" />
     <Build Include="Dimensions\DimensionsSynonyms.sql" />
+    <Build Include="Dimensions\Tables\SamplingGroups.sql" />
+    <Build Include="Dimensions\Tables\SampleGroupItems.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="PSI Datawarehouse.refactorlog" />
