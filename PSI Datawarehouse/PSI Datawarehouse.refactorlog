@@ -56,4 +56,32 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="PTheta" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="1f6abe83-73d9-4de6-bd2c-01e1324d3747" ChangeDateTime="10/13/2023 19:44:35">
+    <Property Name="ElementName" Value="[Dimensions].[SamplingSpecifications].[ResultID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[SamplingSpecifications]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ResultKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3ad9f468-bbaa-494b-9983-93ebc695b7ca" ChangeDateTime="10/16/2023 18:47:37">
+    <Property Name="ElementName" Value="[Dimensions].[SamplingSpecifications].[SamplingSpecId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[SamplingSpecifications]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PublicationPoolId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c293d3be-392c-4edc-8395-32ade533bb96" ChangeDateTime="10/16/2023 18:47:49">
+    <Property Name="ElementName" Value="[Dimensions].[PublicationPools].[Publi[PublicationPoolId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[PublicationPools]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PublicationPoolId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9dbf0fcf-8e09-477c-8db2-abf2492e806d" ChangeDateTime="10/16/2023 18:48:06">
+    <Property Name="ElementName" Value="[Dimensions].[PublicationPools].[PublicationPoolDBId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[PublicationPools]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PublicationPoolOirginalDBId" />
+  </Operation>
 </Operations>

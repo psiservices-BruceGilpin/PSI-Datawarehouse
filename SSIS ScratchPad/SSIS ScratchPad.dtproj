@@ -26,14 +26,14 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">RM0122BRGILT15</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAKu8AgB5DEEyooTr33saZDwAAAAACAAAAAAADZgAAwAAAABAAAADutCf2Z8Ce/SPHi5h09ECRAAAAAASAAACgAAAAEAAAAHqRmm0ZcADtx4OUmLStIaSIAAAAEwwvWHnXZhrU6r4elkehx2O6D0aXAA84909+P8d9wJka7BN1vaw6ynLSCHrxshyRFmTtks2Y6QaeXuj12qarFxUnd1NYsCkR9SUfBcdkTvIbv5k6NDNAEAYEBSLddCzZuFX1WZ6Ucm1/JIvx4WHb4avEb85eG2i1dfdwXPWMH+F6R8YWwhW8kRQAAADT3tpjtqCkL75jMkfWREsWBCyULQ==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAKu8AgB5DEEyooTr33saZDwAAAAACAAAAAAADZgAAwAAAABAAAACD/yLRkiRmls/oOZ8bOfkVAAAAAASAAACgAAAAEAAAAH2Y4xPa/luns5wr+8mLUsGIAAAAgYrBunp8XnIMHyWS9lMcKbuFp1LfpCehpNuvx8Nh+eU1IRbng2NGEKqqofcbjXAca6c4xwUzNCOpX/uLOInKrgBW3NhY+JC8Q54/1M1xmAqJnA6MzaaMev+eref9vq/8MCtLiJ5NCvA0uU9O8dk+Rux6tRqMBZAcxoSTPVYmhXnyHQB66ATqUxQAAABQb07IiJ6GZjSD3U0xMe6MP6PRNw==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
           <SSIS:Package SSIS:Name="DemographicCodes.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="LoadAttributesTable.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="DimensionsClients.dtsx" SSIS:EntryPoint="1" />
-          <SSIS:Package SSIS:Name="Banks.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="SamplingGroups.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers>
           <SSIS:ConnectionManager SSIS:Name="lcprodreportingdb.resources.psi.psi_db.bruce.gilpin.conmgr" />
@@ -2020,16 +2020,16 @@
                 </SSIS:Parameter>
               </SSIS:Parameters>
             </SSIS:PackageMetaData>
-            <SSIS:PackageMetaData SSIS:Name="Banks.dtsx">
+            <SSIS:PackageMetaData SSIS:Name="SamplingGroups.dtsx">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">{C334CAB3-C016-4785-AE09-E96E7ED9E1C2}</SSIS:Property>
                 <SSIS:Property SSIS:Name="Name">Package1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">3</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">10</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{78D7C6C2-0594-431D-BD57-3CCF5D1FB676}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{0AC07B00-E5F6-49D4-8E04-204D872E30B0}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -2358,7 +2358,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Data Source=ol-ok-sql2;Initial Catalog=LXRdata;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Intent=READONLY;Auto Translate=False;</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Data Source=ol-ok-sql2;Initial Catalog=LXRdata;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Intent=READONLY;Application Name=SSIS-Package1-{EF6864DC-0467-47A8-AFAE-E41AD636EA91}ol-ok-sql2.LXRdata;</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>

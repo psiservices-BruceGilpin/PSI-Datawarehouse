@@ -1,19 +1,18 @@
-﻿CREATE TABLE [Dimensions].[SamplingSpecifications] (
-    [SamplingSpecId]   INT           IDENTITY (1, 1) NOT NULL,
-    [SamplingSpecDBId] INT           NOT NULL,
+﻿CREATE TABLE [Dimensions].[PublicationPools] (
+    [PublicationPoolId]INT           IDENTITY (1, 1) NOT NULL,
+    [PublicationPoolDBId]    INT           NOT NULL,
     [CurrentFlag]      BIT           DEFAULT ((0)) NOT NULL,
     [CheckSum]         BIGINT        Not Null,
-    [SourceSystemKey]  SMALLINT      NOT NULL,
-    [SourceSystemID]   VARCHAR (20)  NOT NULL,
+    [SourceSystemID]   UNIQUEIDENTIFIER  NOT NULL,
     [CreateDate]       DATETIME      DEFAULT (getdate()) NOT NULL,
-    [ResultID]        UNIQUEIDENTIFIER           NOT NULL,
+    [ResultKey]        INT           NULL,
     [BankKey]          INT           NOT NULL,
     [Topic]            VARCHAR (128) NULL,
     [SpecDescription]  VARCHAR (512) NULL,
     [DateAdded] DATETIME NOT NULL, 
     [IsDeleted] BIT NOT NULL, 
     [LastUpdated] DATETIME NULL, 
-    [IsValid] BIT NOT NULL, 
+    [IsValid] BIT NULL, 
     [LastValidated] DATETIME NULL, 
     [IsPublished] BIT NOT NULL, 
     [BelowMeanTolerance] DECIMAL(9, 2) NULL, 
@@ -35,12 +34,12 @@
     [IsAta] BIT NOT NULL, 
     [NumberOfDesiredForms] TINYINT NOT NULL, 
     [ScaleCut] INT NULL, 
-    PRIMARY KEY CLUSTERED ([SamplingSpecId] ASC)
+    PRIMARY KEY CLUSTERED ([PublicationPoolId] ASC)
 );
 
 
 GO
-CREATE NONCLUSTERED INDEX [IX_SamplingSpecifications_CurrentFlag]
-    ON [Dimensions].[SamplingSpecifications]([CurrentFlag] ASC)
-    INCLUDE([SamplingSpecDBId]);
+CREATE NONCLUSTERED INDEX [IX_PublicationPool_CurrentFlag]
+    ON [Dimensions].[PublicationPools]([CurrentFlag] ASC)
+    INCLUDE([PublicationPoolDBId]);
 
