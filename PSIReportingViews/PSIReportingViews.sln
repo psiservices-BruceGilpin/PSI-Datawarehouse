@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "PSIReportingViews", "PSIReportingViews.sqlproj", "{330E4AAE-9724-40E3-8025-40E0B70BD083}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "PSI Datawarehouse", "..\PSI Datawarehouse\PSI Datawarehouse.sqlproj", "{052AAE7B-06CC-40DC-8928-6F949B2FEB89}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{330E4AAE-9724-40E3-8025-40E0B70BD083}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{330E4AAE-9724-40E3-8025-40E0B70BD083}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{330E4AAE-9724-40E3-8025-40E0B70BD083}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{330E4AAE-9724-40E3-8025-40E0B70BD083}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{330E4AAE-9724-40E3-8025-40E0B70BD083}.Release|Any CPU.Build.0 = Release|Any CPU
+		{330E4AAE-9724-40E3-8025-40E0B70BD083}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{052AAE7B-06CC-40DC-8928-6F949B2FEB89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{052AAE7B-06CC-40DC-8928-6F949B2FEB89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{052AAE7B-06CC-40DC-8928-6F949B2FEB89}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{052AAE7B-06CC-40DC-8928-6F949B2FEB89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{052AAE7B-06CC-40DC-8928-6F949B2FEB89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{052AAE7B-06CC-40DC-8928-6F949B2FEB89}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0EE9E826-692E-4A0A-827E-AC87472349B5}
+	EndGlobalSection
+EndGlobal

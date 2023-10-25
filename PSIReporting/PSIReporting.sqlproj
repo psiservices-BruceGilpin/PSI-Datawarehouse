@@ -83,7 +83,6 @@
     <Build Include="Candidate\Candidates_vw.sql" />
     <Build Include="Candidate\CandidateSchedule_vw.sql" />
     <Build Include="Candidate\CompositeTest_vw.sql" />
-    <Build Include="Candidate\CompositeTestPortionScores_vw.sql" />
     <Build Include="Candidate\TestAssignmentPortions_vw.sql" />
     <Build Include="Candidate\TestAssignments_vw.sql" />
     <Build Include="dbo\Countries.sql" />
@@ -194,7 +193,7 @@
   </ItemGroup>
   <ItemGroup>
     <SqlCmdVariable Include="PSI_DW">
-      <DefaultValue>PSI_DW</DefaultValue>
+      <DefaultValue>PSI Datawarehouse</DefaultValue>
       <Value>$(SqlCmdVar__1)</Value>
     </SqlCmdVariable>
   </ItemGroup>
