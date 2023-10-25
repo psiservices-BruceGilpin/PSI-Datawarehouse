@@ -9,6 +9,7 @@
     [StudentGrpTitle]  VARCHAR (50)     NOT NULL,
     [CheckSum]         BIGINT           NOT NULL,
     [LoadDate]         DATETIME         DEFAULT (getdate()) NOT NULL,
+    [GroupCreationDate] DATETIME NULL, 
     PRIMARY KEY CLUSTERED ([StudentGroupId] ASC)
 );
 

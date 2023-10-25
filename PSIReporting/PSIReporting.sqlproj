@@ -69,21 +69,6 @@
     <Folder Include="Dimensions" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PSI_DW\PSI_DW.sqlproj">
-      <Name>PSI_DW</Name>
-      <Project>{d7641b63-f433-40ca-9ffd-9d707cc7782c}</Project>
-      <Private>True</Private>
-      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
-      <DatabaseSqlCmdVariable>PSI_DW</DatabaseSqlCmdVariable>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <SqlCmdVariable Include="PSI_DW">
-      <DefaultValue>PSI_DW</DefaultValue>
-      <Value>$(SqlCmdVar__1)</Value>
-    </SqlCmdVariable>
-  </ItemGroup>
-  <ItemGroup>
     <Build Include="Schemas\Account.sql" />
     <Build Include="Schemas\Bridge.sql" />
     <Build Include="Schemas\Candidate.sql" />
@@ -197,5 +182,20 @@
   <ItemGroup>
     <None Include="Dev_PSIReporting.publish.xml" />
     <None Include="QA_PSIReporting.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PSI Datawarehouse\PSI Datawarehouse.sqlproj">
+      <Name>PSI Datawarehouse</Name>
+      <Project>{052aae7b-06cc-40dc-8928-6f949b2feb89}</Project>
+      <Private>True</Private>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+      <DatabaseSqlCmdVariable>PSI_DW</DatabaseSqlCmdVariable>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <SqlCmdVariable Include="PSI_DW">
+      <DefaultValue>PSI_DW</DefaultValue>
+      <Value>$(SqlCmdVar__1)</Value>
+    </SqlCmdVariable>
   </ItemGroup>
 </Project>

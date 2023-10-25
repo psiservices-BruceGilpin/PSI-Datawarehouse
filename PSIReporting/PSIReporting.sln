@@ -5,7 +5,7 @@ VisualStudioVersion = 17.6.33801.468
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "PSIReporting", "PSIReporting.sqlproj", "{5291DCFE-4BFE-4D5B-8935-BF5332621248}"
 EndProject
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "PSI_DW", "..\PSI_DW\PSI_DW.sqlproj", "{D7641B63-F433-40CA-9FFD-9D707CC7782C}"
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "PSI Datawarehouse", "..\PSI Datawarehouse\PSI Datawarehouse.sqlproj", "{052AAE7B-06CC-40DC-8928-6F949B2FEB89}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,12 +19,12 @@ Global
 		{5291DCFE-4BFE-4D5B-8935-BF5332621248}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5291DCFE-4BFE-4D5B-8935-BF5332621248}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5291DCFE-4BFE-4D5B-8935-BF5332621248}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{D7641B63-F433-40CA-9FFD-9D707CC7782C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D7641B63-F433-40CA-9FFD-9D707CC7782C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D7641B63-F433-40CA-9FFD-9D707CC7782C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{D7641B63-F433-40CA-9FFD-9D707CC7782C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D7641B63-F433-40CA-9FFD-9D707CC7782C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D7641B63-F433-40CA-9FFD-9D707CC7782C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{052AAE7B-06CC-40DC-8928-6F949B2FEB89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{052AAE7B-06CC-40DC-8928-6F949B2FEB89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{052AAE7B-06CC-40DC-8928-6F949B2FEB89}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{052AAE7B-06CC-40DC-8928-6F949B2FEB89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{052AAE7B-06CC-40DC-8928-6F949B2FEB89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{052AAE7B-06CC-40DC-8928-6F949B2FEB89}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

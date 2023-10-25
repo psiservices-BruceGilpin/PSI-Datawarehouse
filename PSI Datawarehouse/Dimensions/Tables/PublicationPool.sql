@@ -1,6 +1,7 @@
 ﻿CREATE TABLE [Dimensions].[PublicationPools] (
     [PublicationPoolId]INT           IDENTITY (1, 1) NOT NULL,
-    [PublicationPoolDBId]    INT           NOT NULL,
+    [PublicationPoolDBId]    INT            NULL,
+    [PublicationPoolItemDBID] Int          Null,
     [CurrentFlag]      BIT           DEFAULT ((0)) NOT NULL,
     [CheckSum]         BIGINT        Not Null,
     [SourceSystemID]   UNIQUEIDENTIFIER  NOT NULL,

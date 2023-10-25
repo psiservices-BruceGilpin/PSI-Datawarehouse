@@ -4,7 +4,8 @@
 		SourceGroupID,
 		StudentPoolKey,
 		PoolKey,
-		StudentGrpTitle
+		StudentGrpTitle,
+		GroupCreationDate
 
 	From
 		[$(PSI_DW)].Dimensions.StudentGroups (nolock)

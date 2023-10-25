@@ -84,4 +84,25 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="PublicationPoolOirginalDBId" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="90ee722a-7efb-4d40-956f-e9804b83cdaa" ChangeDateTime="10/18/2023 18:34:29">
+    <Property Name="ElementName" Value="[Dimensions].[PublicationPoolItems].[PublicationAreaSetKey]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[PublicationPoolItems]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PublicationPoolKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="619b633a-374d-433e-b18c-d774ae55d418" ChangeDateTime="10/24/2023 16:05:27">
+    <Property Name="ElementName" Value="[Dimensions].[PublicationPoolItems].[SampleGroupItemId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[PublicationPoolItems]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PublicationPoolItemId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="888df009-1c98-4543-a7dc-d86f214103a9" ChangeDateTime="10/24/2023 16:05:49">
+    <Property Name="ElementName" Value="[Dimensions].[PublicationPoolItems].[PublicationPoolItemKey]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[PublicationPoolItems]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PublicationPoolItemDBID" />
+  </Operation>
 </Operations>

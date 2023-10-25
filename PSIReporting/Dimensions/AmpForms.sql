@@ -2,7 +2,6 @@
 	AS 
 	SELECT 
 		AmpFormsDBID,
-		FormPortionKey,
 		FormName,
 		Rawcut,
 		ScaleCut,
