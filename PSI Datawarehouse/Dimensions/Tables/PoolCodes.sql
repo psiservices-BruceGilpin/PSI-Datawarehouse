@@ -3,7 +3,7 @@
     [SourceSystemKey]   SMALLINT         NOT NULL,
     [SourcePoolCodeKey] UNIQUEIDENTIFIER NOT NULL,
     [PoolCodeGroupKey]  BIGINT           NULL,
-    [PoolTitle]         VARCHAR (50)     NOT NULL,
+    [PoolTitle]         VARCHAR (200)     NOT NULL,
     [PoolDescription]   VARCHAR (2000)   NULL,
     [LoadDate]          DATETIME         DEFAULT (getdate()) NOT NULL,
     [PoolCodeDBID]      BIGINT           NOT NULL,
