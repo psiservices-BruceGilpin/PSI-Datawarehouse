@@ -112,6 +112,7 @@
     <Folder Include="Test\Synonyms\" />
     <Folder Include="Account\Synonyms\" />
     <Folder Include="dbo\Sequences\" />
+    <Folder Include="Dimensions\Stored Proceedures" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Candidate\Tables\TestAssignments.sql" />
@@ -477,6 +478,9 @@
     <Build Include="Dimensions\DimensionsSynonyms.sql" />
     <Build Include="Dimensions\Tables\PublicationPoolAreas.sql" />
     <Build Include="Dimensions\Tables\PublicationPooItems.sql" />
+    <Build Include="Dimensions\Stored Proceedures\uspBankCatGroups.sql" />
+    <Build Include="Dimensions\Stored Proceedures\uspBankCategories.sql" />
+    <Build Include="Dimensions\Stored Proceedures\uspExamLevelResults.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="PSI Datawarehouse.refactorlog" />

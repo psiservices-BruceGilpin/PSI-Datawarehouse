@@ -1,6 +1,6 @@
 ﻿CREATE VIEW [Dimensions].[StudentResponses_vw]
 	AS SELECT 
-	StudentResponseDBID
+	StudentResponseDBID,
 	StudentItemKey,
 	NumericChoice,
 	StringChoice,
