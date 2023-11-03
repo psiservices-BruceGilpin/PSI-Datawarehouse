@@ -481,6 +481,7 @@
     <Build Include="Dimensions\Stored Proceedures\uspBankCatGroups.sql" />
     <Build Include="Dimensions\Stored Proceedures\uspBankCategories.sql" />
     <Build Include="Dimensions\Stored Proceedures\uspExamLevelResults.sql" />
+    <Build Include="Dimensions\Stored Proceedures\uspExamCategorieGroupCount.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="PSI Datawarehouse.refactorlog" />

@@ -8,4 +8,5 @@
 	Points
 	from
 	[$(PSI_DW)].Dimensions.StudentResponses (nolock)
+	where CurrentFlag = 0
 
