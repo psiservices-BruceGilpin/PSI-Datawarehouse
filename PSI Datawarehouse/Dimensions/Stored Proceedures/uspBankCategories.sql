@@ -35,7 +35,7 @@ Dimensions.BankCategories_vw h on
 where a.ExamPortionCode in (' + @ExamPortionCode + ') and a.ClientCode = ' + @ClientCode + 
 ' and a.DateSched between ''' + cast(@fromdate as varchar(10)) + '''' + ' and ' + '''' + cast(@ToDate as varchar(10)) + '''' +
 ' group by a.Studentkey, d.TestKey,  h.BankCategoryTitle, h.BankCategoryDescription ' +
-' order by h.BankCategoryTitle '
+' order by a.Studentkey, d.Testkey, h.BankCategoryTitle '
 execute sp_executesql @sql
 --select @sql
 
