@@ -105,4 +105,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="PublicationPoolItemDBID" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="de379bf7-59aa-4c15-ae46-feb5bb243e89" ChangeDateTime="11/08/2023 21:16:56">
+    <Property Name="ElementName" Value="[Dimensions].[QuestionStatus].[Currentflage]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[QuestionStatus]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Currentflag" />
+  </Operation>
 </Operations>

@@ -3,7 +3,8 @@
 	SELECT 
 		AreaDBID,
 		AreaTitle,
-		AreaDescirption AreaDescription
+		AreaDescirption AreaDescription,
+		SourceAreaID
 	from 
 		[$(PSI_DW)].Dimensions.Areas (nolock)
 	where
