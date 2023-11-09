@@ -112,4 +112,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="Currentflag" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="a90525cf-f260-45be-9f4c-5b05fd4c62e4" ChangeDateTime="11/09/2023 20:04:15">
+    <Property Name="ElementName" Value="[Dimensions].[QuestionTypes].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[QuestionTypes]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="QuestionTypeId" />
+  </Operation>
 </Operations>
