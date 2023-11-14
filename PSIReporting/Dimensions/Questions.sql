@@ -6,6 +6,7 @@
 		QuestionDescription,
 		QuestionType,
 		QuestionStatus,
+		VersionNum,
 		QuestionChoices,
 		QuestionColumns,
 		CorrectChoice,

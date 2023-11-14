@@ -35,6 +35,7 @@
     [ScaledScore]          INT              NULL,
     [CheckSum]             BIGINT           NOT NULL,
     [LoadDate]             DATETIME         DEFAULT (getdate()) NOT NULL,
+    [AmpFormKey] INT NULL, 
     PRIMARY KEY CLUSTERED ([StudentScoreId] ASC)
 );
 
@@ -42,7 +43,7 @@
 GO
 CREATE NONCLUSTERED INDEX [IX_StudentScores_CurrentFlag]
     ON [Dimensions].[StudentScores]([CurrentFlag] ASC)
-    INCLUDE([StudentListKey], [TestListKey], [StartDate]);
+    INCLUDE([StudentListKey], [TestListKey], [StartDate], [TestScheduleKey]);
 
 
 GO

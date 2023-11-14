@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="18"
-  DTS:VersionGUID="{F5F62D39-CD6E-47C1-ACDD-AC27AA8CA2C6}">
+  DTS:VersionBuild="23"
+  DTS:VersionGUID="{B9731723-DC9D-4378-A09E-659DA3685D57}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -895,6 +895,1112 @@ banks</property>
               endId="Package\Banks\Data Conversion.Inputs[Data Conversion Input]"
               name="OLE DB Source Output"
               startId="Package\Banks\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Question Status"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{34CFA436-F18E-490C-9A23-3C8123AA63BD}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Question Status"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Question Status\Data Conversion"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Question Status\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Question Status\Data Conversion.Inputs[Data Conversion Input].Columns[QSTA-TITLE]"
+                      cachedDataType="wstr"
+                      cachedLength="16"
+                      cachedName="QSTA-TITLE"
+                      lineageId="Package\Question Status\OLE DB Source.Outputs[OLE DB Source Output].Columns[QSTA-TITLE]" />
+                    <inputColumn
+                      refId="Package\Question Status\Data Conversion.Inputs[Data Conversion Input].Columns[QSTA-DESC]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="QSTA-DESC"
+                      lineageId="Package\Question Status\OLE DB Source.Outputs[OLE DB Source Output].Columns[QSTA-DESC]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Question Status\Data Conversion.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\Question Status\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Question Status\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of QSTA-TITLE]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="16"
+                      lineageId="Package\Question Status\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of QSTA-TITLE]"
+                      name="Copy of QSTA-TITLE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Question Status\OLE DB Source.Outputs[OLE DB Source Output].Columns[QSTA-TITLE]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Question Status\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of QSTA-DESC]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Question Status\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of QSTA-DESC]"
+                      name="Copy of QSTA-DESC"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Question Status\OLE DB Source.Outputs[OLE DB Source Output].Columns[QSTA-DESC]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Question Status\Data Conversion.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\Question Status\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Question Status\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Question Status\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Question Status\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Question Status\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Question Status\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Question Status\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Question Status\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Question Status\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Question Status\Derived Column.Outputs[Derived Column Output].Columns[checksum]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Question Status\Derived Column.Outputs[Derived Column Output].Columns[checksum]"
+                      name="checksum"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">0</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">0</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Question Status\Derived Column.Outputs[Derived Column Output].Columns[dbid]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Question Status\Derived Column.Outputs[Derived Column Output].Columns[dbid]"
+                      name="dbid"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">0</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">0</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Question Status\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Question Status\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Question Status\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Question Status\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Question Status\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Question Status\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Question Status\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[Dimensions].[QuestionStatus]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Question Status\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[ol-dwqadb01.dc.onepsi.net.PSI_DW]"
+                  connectionManagerRefId="Package.ConnectionManagers[ol-dwqadb01.dc.onepsi.net.PSI_DW]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Question Status\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Question Status\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[checksum]"
+                      cachedDataType="i4"
+                      cachedName="checksum"
+                      externalMetadataColumnId="Package\Question Status\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Checksum]"
+                      lineageId="Package\Question Status\Derived Column.Outputs[Derived Column Output].Columns[checksum]" />
+                    <inputColumn
+                      refId="Package\Question Status\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[QSTA-ID]"
+                      cachedDataType="i4"
+                      cachedName="QSTA-ID"
+                      externalMetadataColumnId="Package\Question Status\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QuestionStatusId]"
+                      lineageId="Package\Question Status\OLE DB Source.Outputs[OLE DB Source Output].Columns[QSTA-ID]" />
+                    <inputColumn
+                      refId="Package\Question Status\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[dbid]"
+                      cachedDataType="i4"
+                      cachedName="dbid"
+                      externalMetadataColumnId="Package\Question Status\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QuestionStatusDBID]"
+                      lineageId="Package\Question Status\Derived Column.Outputs[Derived Column Output].Columns[dbid]" />
+                    <inputColumn
+                      refId="Package\Question Status\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of QSTA-TITLE]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="16"
+                      cachedName="Copy of QSTA-TITLE"
+                      externalMetadataColumnId="Package\Question Status\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StatusTitle]"
+                      lineageId="Package\Question Status\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of QSTA-TITLE]" />
+                    <inputColumn
+                      refId="Package\Question Status\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of QSTA-DESC]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Copy of QSTA-DESC"
+                      externalMetadataColumnId="Package\Question Status\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StatusDescription]"
+                      lineageId="Package\Question Status\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of QSTA-DESC]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Question Status\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QuestionStatusId]"
+                      dataType="i4"
+                      name="QuestionStatusId" />
+                    <externalMetadataColumn
+                      refId="Package\Question Status\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QuestionStatusDBID]"
+                      dataType="i4"
+                      name="QuestionStatusDBID" />
+                    <externalMetadataColumn
+                      refId="Package\Question Status\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Currentflag]"
+                      dataType="bool"
+                      name="Currentflag" />
+                    <externalMetadataColumn
+                      refId="Package\Question Status\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LoadDate]"
+                      dataType="dbTimeStamp"
+                      name="LoadDate" />
+                    <externalMetadataColumn
+                      refId="Package\Question Status\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StatusTitle]"
+                      codePage="1252"
+                      dataType="str"
+                      length="16"
+                      name="StatusTitle" />
+                    <externalMetadataColumn
+                      refId="Package\Question Status\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StatusDescription]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="StatusDescription" />
+                    <externalMetadataColumn
+                      refId="Package\Question Status\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Checksum]"
+                      dataType="i8"
+                      name="Checksum" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Question Status\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Question Status\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Question Status\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Question Status\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Question Status\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Question Status\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Question Status\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[QuestionStates]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Question Status\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[ol-ok-sql2.LXRdata]"
+                  connectionManagerRefId="Package.ConnectionManagers[ol-ok-sql2.LXRdata]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Question Status\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Question Status\OLE DB Source.Outputs[OLE DB Source Output].Columns[QSTA-ID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Question Status\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[QSTA-ID]"
+                      lineageId="Package\Question Status\OLE DB Source.Outputs[OLE DB Source Output].Columns[QSTA-ID]"
+                      name="QSTA-ID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Question Status\OLE DB Source.Outputs[OLE DB Source Output].Columns[QSTA-TITLE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Question Status\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[QSTA-TITLE]"
+                      length="16"
+                      lineageId="Package\Question Status\OLE DB Source.Outputs[OLE DB Source Output].Columns[QSTA-TITLE]"
+                      name="QSTA-TITLE"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Question Status\OLE DB Source.Outputs[OLE DB Source Output].Columns[QSTA-DESC]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Question Status\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[QSTA-DESC]"
+                      length="50"
+                      lineageId="Package\Question Status\OLE DB Source.Outputs[OLE DB Source Output].Columns[QSTA-DESC]"
+                      name="QSTA-DESC"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Question Status\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[QSTA-ID]"
+                      dataType="i4"
+                      name="QSTA-ID" />
+                    <externalMetadataColumn
+                      refId="Package\Question Status\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[QSTA-TITLE]"
+                      dataType="wstr"
+                      length="16"
+                      name="QSTA-TITLE" />
+                    <externalMetadataColumn
+                      refId="Package\Question Status\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[QSTA-DESC]"
+                      dataType="wstr"
+                      length="50"
+                      name="QSTA-DESC" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Question Status\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Question Status\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[QSTA-ID]"
+                      dataType="i4"
+                      lineageId="Package\Question Status\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[QSTA-ID]"
+                      name="QSTA-ID" />
+                    <outputColumn
+                      refId="Package\Question Status\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[QSTA-TITLE]"
+                      dataType="wstr"
+                      length="16"
+                      lineageId="Package\Question Status\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[QSTA-TITLE]"
+                      name="QSTA-TITLE" />
+                    <outputColumn
+                      refId="Package\Question Status\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[QSTA-DESC]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Question Status\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[QSTA-DESC]"
+                      name="QSTA-DESC" />
+                    <outputColumn
+                      refId="Package\Question Status\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Question Status\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Question Status\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Question Status\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Question Status.Paths[Data Conversion Output]"
+              endId="Package\Question Status\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Data Conversion Output"
+              startId="Package\Question Status\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Question Status.Paths[Derived Column Output]"
+              endId="Package\Question Status\Data Conversion.Inputs[Data Conversion Input]"
+              name="Derived Column Output"
+              startId="Package\Question Status\Derived Column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Question Status.Paths[OLE DB Source Output]"
+              endId="Package\Question Status\Derived Column.Inputs[Derived Column Input]"
+              name="OLE DB Source Output"
+              startId="Package\Question Status\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Question Types"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{C59E3042-918A-40AD-BC1B-CC85C51949FB}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Question Types"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Question Types\Data Conversion"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Question Types\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Question Types\Data Conversion.Inputs[Data Conversion Input].Columns[QTYP-TITLE]"
+                      cachedDataType="wstr"
+                      cachedLength="8"
+                      cachedName="QTYP-TITLE"
+                      lineageId="Package\Question Types\OLE DB Source.Outputs[OLE DB Source Output].Columns[QTYP-TITLE]" />
+                    <inputColumn
+                      refId="Package\Question Types\Data Conversion.Inputs[Data Conversion Input].Columns[QTYP-DESC]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="QTYP-DESC"
+                      lineageId="Package\Question Types\OLE DB Source.Outputs[OLE DB Source Output].Columns[QTYP-DESC]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Question Types\Data Conversion.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\Question Types\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Question Types\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of QTYP-TITLE]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="8"
+                      lineageId="Package\Question Types\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of QTYP-TITLE]"
+                      name="Copy of QTYP-TITLE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Question Types\OLE DB Source.Outputs[OLE DB Source Output].Columns[QTYP-TITLE]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Question Types\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of QTYP-DESC]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Question Types\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of QTYP-DESC]"
+                      name="Copy of QTYP-DESC"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Question Types\OLE DB Source.Outputs[OLE DB Source Output].Columns[QTYP-DESC]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Question Types\Data Conversion.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\Question Types\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Question Types\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Question Types\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Question Types\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Question Types\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Question Types\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Question Types\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Question Types\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Question Types\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Question Types\Derived Column.Outputs[Derived Column Output].Columns[dbid]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Question Types\Derived Column.Outputs[Derived Column Output].Columns[dbid]"
+                      name="dbid"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">0</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">0</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Question Types\Derived Column.Outputs[Derived Column Output].Columns[chksum]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Question Types\Derived Column.Outputs[Derived Column Output].Columns[chksum]"
+                      name="chksum"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">0</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">0</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Question Types\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Question Types\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Question Types\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Question Types\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Question Types\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Question Types\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Question Types\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[Dimensions].[QuestionTypes]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Question Types\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[ol-dwqadb01.dc.onepsi.net.PSI_DW]"
+                  connectionManagerRefId="Package.ConnectionManagers[ol-dwqadb01.dc.onepsi.net.PSI_DW]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Question Types\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Question Types\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[dbid]"
+                      cachedDataType="i4"
+                      cachedName="dbid"
+                      externalMetadataColumnId="Package\Question Types\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QuestionTypeDBID]"
+                      lineageId="Package\Question Types\Derived Column.Outputs[Derived Column Output].Columns[dbid]" />
+                    <inputColumn
+                      refId="Package\Question Types\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of QTYP-TITLE]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="8"
+                      cachedName="Copy of QTYP-TITLE"
+                      externalMetadataColumnId="Package\Question Types\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QuestionTypeTitle]"
+                      lineageId="Package\Question Types\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of QTYP-TITLE]" />
+                    <inputColumn
+                      refId="Package\Question Types\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of QTYP-DESC]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Copy of QTYP-DESC"
+                      externalMetadataColumnId="Package\Question Types\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QuestionTypeDesc]"
+                      lineageId="Package\Question Types\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of QTYP-DESC]" />
+                    <inputColumn
+                      refId="Package\Question Types\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[chksum]"
+                      cachedDataType="i4"
+                      cachedName="chksum"
+                      externalMetadataColumnId="Package\Question Types\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Checksum]"
+                      lineageId="Package\Question Types\Derived Column.Outputs[Derived Column Output].Columns[chksum]" />
+                    <inputColumn
+                      refId="Package\Question Types\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[QTYP-ID]"
+                      cachedDataType="i4"
+                      cachedName="QTYP-ID"
+                      externalMetadataColumnId="Package\Question Types\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QuestionTypeId]"
+                      lineageId="Package\Question Types\OLE DB Source.Outputs[OLE DB Source Output].Columns[QTYP-ID]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Question Types\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QuestionTypeId]"
+                      dataType="i4"
+                      name="QuestionTypeId" />
+                    <externalMetadataColumn
+                      refId="Package\Question Types\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QuestionTypeDBID]"
+                      dataType="i4"
+                      name="QuestionTypeDBID" />
+                    <externalMetadataColumn
+                      refId="Package\Question Types\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CurrentFlag]"
+                      dataType="bool"
+                      name="CurrentFlag" />
+                    <externalMetadataColumn
+                      refId="Package\Question Types\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QuestionTypeTitle]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="QuestionTypeTitle" />
+                    <externalMetadataColumn
+                      refId="Package\Question Types\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QuestionTypeDesc]"
+                      codePage="1252"
+                      dataType="str"
+                      length="60"
+                      name="QuestionTypeDesc" />
+                    <externalMetadataColumn
+                      refId="Package\Question Types\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Checksum]"
+                      dataType="i8"
+                      name="Checksum" />
+                    <externalMetadataColumn
+                      refId="Package\Question Types\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Createdate]"
+                      dataType="dbTimeStamp"
+                      name="Createdate" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Question Types\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Question Types\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Question Types\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Question Types\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Question Types\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Question Types\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Question Types\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[QuestionTypes]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Question Types\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[ol-ok-sql2.LXRdata]"
+                  connectionManagerRefId="Package.ConnectionManagers[ol-ok-sql2.LXRdata]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Question Types\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Question Types\OLE DB Source.Outputs[OLE DB Source Output].Columns[QTYP-ID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Question Types\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[QTYP-ID]"
+                      lineageId="Package\Question Types\OLE DB Source.Outputs[OLE DB Source Output].Columns[QTYP-ID]"
+                      name="QTYP-ID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Question Types\OLE DB Source.Outputs[OLE DB Source Output].Columns[QTYP-TITLE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Question Types\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[QTYP-TITLE]"
+                      length="8"
+                      lineageId="Package\Question Types\OLE DB Source.Outputs[OLE DB Source Output].Columns[QTYP-TITLE]"
+                      name="QTYP-TITLE"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Question Types\OLE DB Source.Outputs[OLE DB Source Output].Columns[QTYP-DESC]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Question Types\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[QTYP-DESC]"
+                      length="50"
+                      lineageId="Package\Question Types\OLE DB Source.Outputs[OLE DB Source Output].Columns[QTYP-DESC]"
+                      name="QTYP-DESC"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Question Types\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[QTYP-ID]"
+                      dataType="i4"
+                      name="QTYP-ID" />
+                    <externalMetadataColumn
+                      refId="Package\Question Types\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[QTYP-TITLE]"
+                      dataType="wstr"
+                      length="8"
+                      name="QTYP-TITLE" />
+                    <externalMetadataColumn
+                      refId="Package\Question Types\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[QTYP-DESC]"
+                      dataType="wstr"
+                      length="50"
+                      name="QTYP-DESC" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Question Types\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Question Types\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[QTYP-ID]"
+                      dataType="i4"
+                      lineageId="Package\Question Types\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[QTYP-ID]"
+                      name="QTYP-ID" />
+                    <outputColumn
+                      refId="Package\Question Types\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[QTYP-TITLE]"
+                      dataType="wstr"
+                      length="8"
+                      lineageId="Package\Question Types\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[QTYP-TITLE]"
+                      name="QTYP-TITLE" />
+                    <outputColumn
+                      refId="Package\Question Types\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[QTYP-DESC]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Question Types\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[QTYP-DESC]"
+                      name="QTYP-DESC" />
+                    <outputColumn
+                      refId="Package\Question Types\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Question Types\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Question Types\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Question Types\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Question Types.Paths[Data Conversion Output]"
+              endId="Package\Question Types\Derived Column.Inputs[Derived Column Input]"
+              name="Data Conversion Output"
+              startId="Package\Question Types\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Question Types.Paths[Derived Column Output]"
+              endId="Package\Question Types\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Derived Column Output"
+              startId="Package\Question Types\Derived Column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Question Types.Paths[OLE DB Source Output]"
+              endId="Package\Question Types\Data Conversion.Inputs[Data Conversion Input]"
+              name="OLE DB Source Output"
+              startId="Package\Question Types\OLE DB Source.Outputs[OLE DB Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -3647,7 +4753,7 @@ where
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
           Size="110,42"
           Id="Package\Banks"
@@ -3663,7 +4769,15 @@ where
         <NodeLayout
           Size="156,42"
           Id="Package\Student Groups"
-          TopLeft="465,289" />
+          TopLeft="740,168" />
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Question Status"
+          TopLeft="234,188" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\Question Types"
+          TopLeft="506,187" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -4083,15 +5197,19 @@ where
     design-time-name="Package\Student Groups">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="157,42"
-          Id="Package\Student Groups\OLE DB Source"
-          TopLeft="420,96" />
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="158,42"
           Id="Package\Student Groups\Derived Column"
           TopLeft="398,235" />
+        <NodeLayout
+          Size="186,42"
+          Id="Package\Student Groups\ADO NET Destination"
+          TopLeft="246,361" />
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Student Groups\OLE DB Source"
+          TopLeft="420,96" />
         <EdgeLayout
           Id="Package\Student Groups.Paths[OLE DB Source Output]"
           TopLeft="498.5,138">
@@ -4123,13 +5241,11 @@ where
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="186,42"
-          Id="Package\Student Groups\ADO NET Destination"
-          TopLeft="246,361" />
         <EdgeLayout
           Id="Package\Student Groups.Paths[Derived Column Output]"
           TopLeft="477,277">
@@ -4161,12 +5277,22 @@ where
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Student Groups\ADO NET Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Student Groups\OLE DB Source">
     <Properties>
@@ -4175,11 +5301,247 @@ where
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Question Status">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Question Status\OLE DB Source"
+          TopLeft="368,105" />
+        <NodeLayout
+          Size="158,42"
+          Id="Package\Question Status\Derived Column"
+          TopLeft="371,210" />
+        <EdgeLayout
+          Id="Package\Question Status.Paths[OLE DB Source Output]"
+          TopLeft="448.25,147">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,63"
+              Start="0,0"
+              End="0,55.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,55.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Question Status\OLE DB Destination"
+          TopLeft="367,439" />
+        <NodeLayout
+          Size="161,42"
+          Id="Package\Question Status\Data Conversion"
+          TopLeft="378,299" />
+        <EdgeLayout
+          Id="Package\Question Status.Paths[Derived Column Output]"
+          TopLeft="450,252">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="8.5,47"
+              Start="0,0"
+              End="8.5,39.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.5"
+                    Point2="0,23.5"
+                    Point3="4,23.5" />
+                  <mssgle:LineSegment
+                    End="4.5,23.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="4.5,23.5"
+                    Point2="8.5,23.5"
+                    Point3="8.5,27.5" />
+                  <mssgle:LineSegment
+                    End="8.5,39.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Question Status.Paths[Data Conversion Output]"
+          TopLeft="457,341">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,98"
+              Start="0,0"
+              End="0,90.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,90.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Student Groups\ADO NET Destination">
+    design-time-name="Package\Question Status\OLE DB Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Question Status\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Question Types">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Question Types\OLE DB Source"
+          TopLeft="599,71" />
+        <NodeLayout
+          Size="161,42"
+          Id="Package\Question Types\Data Conversion"
+          TopLeft="598,150" />
+        <EdgeLayout
+          Id="Package\Question Types.Paths[OLE DB Source Output]"
+          TopLeft="678,113">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,37"
+              Start="0,0"
+              End="0,29.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="158,42"
+          Id="Package\Question Types\Derived Column"
+          TopLeft="602,242" />
+        <EdgeLayout
+          Id="Package\Question Types.Paths[Data Conversion Output]"
+          TopLeft="679.75,192">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,50"
+              Start="0,0"
+              End="0,42.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,42.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Question Types\OLE DB Destination"
+          TopLeft="594,334" />
+        <EdgeLayout
+          Id="Package\Question Types.Paths[Derived Column Output]"
+          TopLeft="681.75,284">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,50"
+              Start="0,0"
+              End="0,42.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,42.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Question Types\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Question Types\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

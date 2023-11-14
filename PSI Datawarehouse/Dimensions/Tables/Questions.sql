@@ -58,6 +58,7 @@
     [InfTheta]            DECIMAL (6, 4)   NULL,
     [LoadDate]            DATETIME         DEFAULT (getdate()) NULL,
     [CheckSum]            BIGINT           NOT NULL,
+    [VersionNum]          SMALLInt         Null
     PRIMARY KEY CLUSTERED ([QuestionId] ASC)
 );
 

@@ -3,6 +3,7 @@
 	SELECT 
 		AmpFormsDBID,
 		FormName,
+		FormTestKey,
 		Rawcut,
 		ScaleCut,
 		TimeLimit,

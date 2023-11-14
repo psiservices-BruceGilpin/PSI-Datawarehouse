@@ -17,6 +17,7 @@
     [MadienName]      VARCHAR (25)     NULL,
     [CheckSum]        BIGINT           NOT NULL,
     [LoadDate]        DATETIME         DEFAULT (getdate()) NOT NULL,
+    [StudentType] TINYINT NULL, 
     PRIMARY KEY CLUSTERED ([StudentsId] ASC)
 );
 

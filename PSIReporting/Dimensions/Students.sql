@@ -4,6 +4,7 @@
 		SourceStudentID,
 		PoolKey,
 		StudentAltID,
+		StudentType,
 		FirstName,
 		LastName,
 		StudentEmail,
