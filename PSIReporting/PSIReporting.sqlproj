@@ -183,6 +183,8 @@
   <ItemGroup>
     <None Include="Dev_PSIReporting.publish.xml" />
     <None Include="QA_PSIReporting.publish.xml" />
+    <None Include="PSIReporting.publish.xml" />
+    <None Include="Azure_Reporting.publish.xml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PSI Datawarehouse\PSI Datawarehouse.sqlproj">
