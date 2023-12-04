@@ -351,23 +351,6 @@
     <Build Include="Bridge\Views\vwTestSessions_WithNotes.sql" />
     <Build Include="Bridge\Views\vwTestSessions_NoNotes.sql" />
     <Build Include="Security\Demographics_vw.sql" />
-    <Build Include="Security\test.sql" />
-    <Build Include="Security\TestLogin.sql" />
-    <Build Include="Security\PBUser.sql" />
-    <Build Include="Security\PBUser_1.sql" />
-    <Build Include="Security\PowerBI.sql" />
-    <Build Include="Security\PowerBI_1.sql" />
-    <Build Include="Security\Visio.sql" />
-    <Build Include="Security\Visio_1.sql" />
-    <Build Include="Security\Bruce.sql" />
-    <Build Include="Security\Bruce_1.sql" />
-    <Build Include="Security\CORP_bdresden.sql" />
-    <Build Include="Security\CORP_bdresden_1.sql" />
-    <Build Include="Security\svc_PowerBI.sql" />
-    <Build Include="Security\svc_PowerBI_1.sql" />
-    <Build Include="Security\CORP_Thomas.Holzhauer.sql" />
-    <Build Include="Security\CORP_Thomas_1.Holzhauer.sql" />
-    <Build Include="Security\RoleMemberships.sql" />
     <Build Include="dbo\Functions\udf_StripHTML.sql" />
     <Build Include="Test\Functions\pBIS_Corrected.sql" />
     <Build Include="Test\Functions\pBIS.sql" />
@@ -491,5 +474,6 @@
   <ItemGroup>
     <None Include="PSI Datawarehouse.publish.xml" />
     <None Include="Azure.publish.xml" />
+    <None Include="PSI Datawarehouse_1.publish.xml" />
   </ItemGroup>
 </Project>

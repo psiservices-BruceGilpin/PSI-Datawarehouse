@@ -1,3 +1,0 @@
-﻿CREATE LOGIN [PowerBI]
-    WITH PASSWORD = N'q|ik${p3oqcmrntsmuvwXncymsFT7_&#$!~<SXGWiOToext{', SID = 0x42726C731B8056408A7C3A7AD95515B8, DEFAULT_LANGUAGE = [us_english], CHECK_POLICY = OFF;
-

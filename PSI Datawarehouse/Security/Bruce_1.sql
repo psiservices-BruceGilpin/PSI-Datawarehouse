@@ -1,3 +1,0 @@
-﻿CREATE LOGIN [Bruce]
-    WITH PASSWORD = N'qkr{po~qcmUrnMGtsmuwnc~ymsFT7_&#$!~<2ioexdt^{mcc', SID = 0x79DD89879D5E494B848093E690870230, DEFAULT_LANGUAGE = [us_english], CHECK_POLICY = OFF;
-

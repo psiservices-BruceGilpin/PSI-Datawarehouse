@@ -1,2 +1,0 @@
-﻿CREATE USER [PBUser] FOR LOGIN [PBUser];
-

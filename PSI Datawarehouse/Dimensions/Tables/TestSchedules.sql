@@ -29,6 +29,7 @@
     [Culture]              VARCHAR (50)     NULL,
     [CheckSum]             BIGINT           NOT NULL,
     [LoadDate]             DATETIME         DEFAULT (getdate()) NOT NULL,
+    [StudentGroupKey] INT NULL, 
     PRIMARY KEY CLUSTERED ([TestScheduleId] ASC)
 );
 
@@ -49,3 +50,8 @@ CREATE NONCLUSTERED INDEX [IXTestSchedulesSourceTestScheduleID]
     ON [Dimensions].[TestSchedules]([SourceTestScheduleID] ASC)
     INCLUDE([TestScheduleDBId], [CurrentFlag], [LoadDate]);
 
+
+GO
+
+CREATE INDEX [IX_TestSchedules_ScheduleStart] ON [Dimensions].[TestSchedules] ([ScheduleStart])
+Include ([TestPackageKey], [StudentGroupKey])
