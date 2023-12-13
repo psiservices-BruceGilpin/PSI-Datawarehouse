@@ -179,6 +179,7 @@
     <Build Include="Dimensions\RecertificationTrue_vw.sql" />
     <Build Include="Dimensions\QuestionStatus_vw.sql" />
     <Build Include="Dimensions\QuestionTypes_vw.sql" />
+    <Build Include="Dimensions\Pools_vw.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Dev_PSIReporting.publish.xml" />

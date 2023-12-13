@@ -20,6 +20,7 @@
     [ScrambleQuestions]   CHAR (1)      NULL,
     [Culture]             VARCHAR (50)  NULL,
     [Rawcut2]             INT           NULL,
+    [CheckSum] BIGINT NULL, 
     PRIMARY KEY CLUSTERED ([AmpFormsId] ASC)
 );
 

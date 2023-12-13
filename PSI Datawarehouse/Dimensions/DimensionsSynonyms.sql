@@ -57,3 +57,5 @@ go
 Create Synonym Dimensions.QuestionTypes_vw For [psi_reporting].Dimensions.QuestionTypes_vw
 go
 Create Synonym Dimensions.Ampforms_vw for [psi_reporting].Dimensions.Ampforms_vw
+go
+Create Synonym [Dimensions].[Pools_vw] for [psi_reporting.[Dimensions].[Pools_vw]

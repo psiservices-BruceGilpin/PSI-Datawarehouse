@@ -3,6 +3,7 @@
 		TestScheduleDBID,
 		SourceTestScheduleID,
 		TestPackageKey,
+		StudentGroupKey,
 		TestScheduleTitle,
 		TestScheduleDesc,
 		WebTitle,

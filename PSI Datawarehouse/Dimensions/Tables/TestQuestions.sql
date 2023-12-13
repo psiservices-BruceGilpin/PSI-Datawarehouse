@@ -10,6 +10,7 @@
     [QuestionSequence]     INT              NULL,
     [CheckSum]             BIGINT           NOT NULL,
     [LoadDate]             DATETIME         DEFAULT (getdate()) NOT NULL,
+    [EffectiveDate] DATE NULL, 
     PRIMARY KEY CLUSTERED ([TestQuestionId] ASC)
 );
 

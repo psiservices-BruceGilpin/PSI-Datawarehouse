@@ -3,7 +3,8 @@
 		TestPackageDBID,
 		AreaKey,
 		PackageTitle,
-		PackageDescription
+		PackageDescription,
+		SourceSystemId
 
 	from
 		[$(PSI_DW)].Dimensions.TestPackages (nolock)
