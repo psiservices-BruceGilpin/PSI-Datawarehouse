@@ -3,7 +3,7 @@
     [SourceAccountSchoolKey] VARCHAR (20)  NOT NULL,
     [SourceSystemKey]        INT           NOT NULL,
     [AccountKey]             INT           NOT NULL,
-    [SchoolCode]             VARCHAR (10)  DEFAULT (' ') NOT NULL,
+    [SchoolCode]             VARCHAR (20)  DEFAULT (' ') NOT NULL,
     [SchoolName]             VARCHAR (100) NOT NULL,
     [Description]            VARCHAR (255) NULL,
     [City]                   VARCHAR (30)  NULL,
