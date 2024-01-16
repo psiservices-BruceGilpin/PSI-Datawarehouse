@@ -9,6 +9,7 @@
     [GlobalTestCenterID] VARCHAR(20) NULL, 
     [TestDate] DATE NOT NULL, 
     [ElapsedTime] INT NULL, 
+    [PassFail] Char(1) null,
     [FinalPoints] INT NULL, 
     [ExtraPoints] INT NULL, 
     [ScaledScore] INT NULL, 
@@ -34,3 +35,8 @@ CREATE INDEX [IX_StudentTestSummary_DWStudentKey] ON [Students].[StudentTestSumm
 GO
 
 CREATE INDEX [IX_StudentTestSummary_DWTestKey] ON [Students].[StudentTestSummary] ([DWTestKey])
+
+GO
+
+CREATE INDEX [IX_StudentTestSummary_StudentTest] ON [Students].[StudentTestSummary] ([DWStudentkey], [DWTestKey])
+include (TestDate)

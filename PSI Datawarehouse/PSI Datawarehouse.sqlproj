@@ -467,7 +467,6 @@
     <Build Include="Dimensions\Stored Proceedures\uspExamCategorieGroupCount.sql" />
     <Build Include="Dimensions\Tables\QuestionStatus.sql" />
     <Build Include="Dimensions\Tables\QuestionTypes.sql" />
-    <Build Include="Summary\StudentTestSummary.sql" />
     <Build Include="Dimensions\Tables\StudentTestQuestions.sql" />
     <Build Include="Summary\Tables\StudentAnswers.sql" />
     <Build Include="Summary\Stored Procedures\uspLoadStudentTestSummary.sql" />
