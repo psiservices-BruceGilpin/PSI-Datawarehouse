@@ -64,9 +64,9 @@
     <Folder Include="Account\" />
     <Folder Include="Account\Views\" />
     <Folder Include="Candidate\" />
-    <Folder Include="dbo\" />
     <Folder Include="Scripts\" />
     <Folder Include="Dimensions" />
+    <Folder Include="Account\dbo" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Schemas\Account.sql" />
@@ -85,8 +85,6 @@
     <Build Include="Candidate\CompositeTest_vw.sql" />
     <Build Include="Candidate\TestAssignmentPortions_vw.sql" />
     <Build Include="Candidate\TestAssignments_vw.sql" />
-    <Build Include="dbo\Countries.sql" />
-    <Build Include="dbo\QuarterlyCalendar_vw.sql" />
     <Build Include="LookupTables\ActiveStatus_vw.sql" />
     <Build Include="LookupTables\Calendar_vw.sql" />
     <Build Include="LookupTables\CandidateIDType_vw.sql" />
@@ -144,7 +142,6 @@
     <Build Include="Schemas\Reporting.sql" />
     <Build Include="Candidate\TestTopicScore_vw.sql" />
     <Build Include="Test\TopicArea_vw.sql" />
-    <Build Include="dbo\DimIsg.sql" />
     <Build Include="Candidate\Demographics_vw.sql" />
     <Build Include="Candidate\DemographicTypes_vw.sql" />
     <Build Include="Candidate\candidatesWithDemographics_vw.sql" />
@@ -180,6 +177,9 @@
     <Build Include="Dimensions\QuestionStatus_vw.sql" />
     <Build Include="Dimensions\QuestionTypes_vw.sql" />
     <Build Include="Dimensions\Pools_vw.sql" />
+    <Build Include="Account\dbo\Countries.sql" />
+    <Build Include="Account\dbo\DimIsg.sql" />
+    <Build Include="Account\dbo\QuarterlyCalendar_vw.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Dev_PSIReporting.publish.xml" />

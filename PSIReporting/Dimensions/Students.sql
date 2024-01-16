@@ -13,7 +13,7 @@
 		ADA,
 		Gender,
 		Birthdate,
-		MadienName
+		MadienName MaidenName
 
 	from
 	[$(PSI_DW)].Dimensions.Students (nolock)

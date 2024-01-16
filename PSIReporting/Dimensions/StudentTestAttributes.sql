@@ -31,7 +31,7 @@
 		NationStateCd,
 		ComboEnable,
 		HistoryEnable,
-		Licsense,
+		Licsense License,
 		Degree,
 		NationStatePFA,
 		DeploymentEnable,
