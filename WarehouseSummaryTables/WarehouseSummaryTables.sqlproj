@@ -79,13 +79,36 @@
       <DefaultValue>DW_SummaryTables</DefaultValue>
       <Value>$(SqlCmdVar__2)</Value>
     </SqlCmdVariable>
+    <SqlCmdVariable Include="PSIReporting">
+      <DefaultValue>PSIReporting</DefaultValue>
+      <Value>$(SqlCmdVar__6)</Value>
+    </SqlCmdVariable>
     <SqlCmdVariable Include="PSI_DW">
       <DefaultValue>PSI_DW</DefaultValue>
-      <Value>$(SqlCmdVar__3)</Value>
+      <Value>$(SqlCmdVar__5)</Value>
     </SqlCmdVariable>
     <SqlCmdVariable Include="PSI_Reporting">
       <DefaultValue>PSI_Reporting</DefaultValue>
       <Value>$(SqlCmdVar__4)</Value>
     </SqlCmdVariable>
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="WarehouseSummaryTables.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PSI Datawarehouse\PSI Datawarehouse.sqlproj">
+      <Name>PSI Datawarehouse</Name>
+      <Project>{052aae7b-06cc-40dc-8928-6f949b2feb89}</Project>
+      <Private>True</Private>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+      <DatabaseSqlCmdVariable>PSI_DW</DatabaseSqlCmdVariable>
+    </ProjectReference>
+    <ProjectReference Include="..\PSIReporting\PSIReporting.sqlproj">
+      <Name>PSIReporting</Name>
+      <Project>{5291dcfe-4bfe-4d5b-8935-bf5332621248}</Project>
+      <Private>True</Private>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+      <DatabaseSqlCmdVariable>PSIReporting</DatabaseSqlCmdVariable>
+    </ProjectReference>
   </ItemGroup>
 </Project>

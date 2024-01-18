@@ -2,29 +2,41 @@
 AS
 	Set Nocount On;
 	Create table #testdelta (
-		DWStudentkey int,
-		DWTestscorekey int,
-		DWPackagekey int,
-		DWTestKey int,
-		TestTitle varchar(100),
-		TestDate date,
-		ElapsedTime int,
-		FinalPoints int,
-		ScaledScore int,
-		ScorePoints int,
-		Attempt# smallint,
-		ComputedAttempts smallint,
-		ADATime int,
-		ExtraTime int,
-		ExtraTimeused int,
-		ExtraStart datetime,
-		ExtraEnd   datetime,
-		Proctored bit,
-		Retake int,
-		TestVersion int,
-		PFA Char(1),
-		LoadDateTime datetime,
-		SummaryStudentkey int
+		[DWTestScoreKey] [bigint] NOT NULL,
+		[DWTestKey] [bigint] NOT NULL,
+		[DWTestCenterKey] [bigint] NULL,
+		[DWPackageKey] [bigint] NOT NULL,
+		[DWStudentKey] [bigint] NOT NULL,
+		[StudentAltID] [varchar](128) NULL,
+		[FirstName] [varchar](30) NULL,
+		[LastName] [varchar](30) NULL,
+		[MaidenName] [varchar](25) NULL,
+		[Degree] [varchar](50) NULL,
+		[License] [varchar](40) NULL,
+		[TestTitle] [varchar](50) NOT NULL,
+		[ExamCode] [varchar](15) NULL,
+		[ExamPortionCode] [varchar](15) NULL,
+		[FormName] [varchar](100) NULL,
+		[DateSched] [date] NULL,
+		[GlobalTestCenterKey] [varchar](20) NULL,
+		[TestDate] [date] NOT NULL,
+		[ElapsedTime] [int] NULL,
+		[PassFail] [char](1) NULL,
+		[FinalPoints] [int] NULL,
+		[ExtraPoints] [int] NULL,
+		[ScaledScore] [int] NULL,
+		[ScorePoints] [int] NULL,
+		[Attempt#] [int] NULL,
+		[ComputedAttempt#] [int] NULL,
+		[ADATime] [int] NULL,
+		[ExtraTime] [int] NULL,
+		[ExtraTimeUsed] [int] NULL,
+		[ExtraStart] [datetime] NULL,
+		[ExtraEnd] [datetime] NULL,
+		[Proctored] [bit] NULL,
+		[Restarts] [int] NULL,
+		[TestVersion] [int] NULL,
+		[LoadDateTime] [datetime] NULL,
 		);
 
 	Begin Try
@@ -50,62 +62,68 @@ AS
 		ExtraStart ,
 		ExtraEnd   ,
 		Proctored ,
-		Retake ,
 		TestVersion ,
 		LoadDateTime ,
-		PFA,
+		PassFail,
 		SummaryStudentkey 
 
 		)
-		select distinct
-		 e.StudentDBID 
-		 , a.StudentScoreDBID
-		 , c.TestDbID
-		 , b.TestPackageKey
-		 , c.TestTitle
-		 , a.StartDate
-		 , a.HowLong
-		 , a.FinalPoints
-		 , a.ScaledScore
-		 , a.ScorePoints
-		 , a.Retake
-		 , a.AdaTime
-		 , a.ExtraTime
-		 , a.ExtraTimeUsed
-		 , a.ExtraStart
-		 , a.ExtraEnd
-		 , a.Proctored
-		 , a.Retake
-		 , c.TestVersnum
-		 , a.LoadDate
-		 , a.pfa
-		 , i.StudentTestSumaryDBId
+	select 
+	d.StudentScoreDBID
+	,g.TestDbID
+	,d.TestCenterKey
+	,e.TestPackageKey
+	,a.StudentDBID
+	,a.StudentAltID
+	,a.FirstName
+	,a.LastName
+	,a.MaidenName
+	,b.Degree
+	,b.License
+	,g.TestTitle
+	,b.ExamCode
+	,b.ExamPortionCode
+	,h.FormName
+	,e.ScheduleStart
+	,i.GlobalTestCenterKey
+	,isnull(d.StartDate, '1/1/2000')
+	,d.HowLong
+	,case 
+		when d.PFA = 'P' then d.pfa
+		when d.PFA = 'F' then d.pfa
+		when d.PFA = 'A' then d.pfa
+		when d.PFA = 'G' then d.pfa
+		else '  '
+	end PFA 
+    ,d.FinalPoints
+	,d.ScaledScore 
+	,d.ScorePoints
+	,d.Retake
+	,d.AdaTime
+	,d.ExtraTime
+	,d.ExtraTimeUsed
+	,d.ExtraStart
+	,d.ExtraEnd
+	,d.Proctored
+	,d.Restarts
+	,g.TestVersnum
 
-		from
-		 PSI_DW.Dimensions.StudentScores a 
-		join
-		PSI_Reporting.[dimensions].[Testlists_vw] b on
-			a.TestListKey = b.testlistdbid
-		join
-		PSI_Reporting.dimensions.Tests_vw c on
-			b.TestKey = c.TestDbID
-		join
-		psi_reporting.dimensions.Studentlists_vw d on
-			a.StudentListKey = d.StudentListDBID
-		join
-		psi_reporting.dimensions.Students_vw e on
-			d.StudentKey = e.StudentDBID 
-		join 
-		psi_reporting.Dimensions.StudentTestAttributes_vw f on
-			e.StudentDBID = f.StudentKey
-		join
-		psi_reporting.dimensions.TestSchedules_vw h on
-			a.TestScheduleKey = h.TestScheduleDBID and
-			 f.DateSched between cast(h.schedulestart as date) and cast(h.scheduleend as date) 
-		Left Join
-		Students.StudentTestSummary i on
-			a.StudentScoreDBID = i.DWTestScoreKey
-		where 
+from 
+  [$(PSIReporting)].dimensions.Students_vw a 
+  join [$(PSIReporting)].dimensions.StudentTestAttributes_vw b on a.studentdbid = b.studentkey 
+  join [$(PSIReporting)].dimensions.studentlists_vw c on a.studentdbid = c.studentkey 
+  join [$(PSIReporting)].dimensions.StudentScores_vw d on c.studentlistdbid = d.studentlistkey 
+  join [$(PSIReporting)].dimensions.TestSchedules_vw e on d.TestScheduleKey = e.TestScheduleDBID 
+  and b.datesched between cast(e.schedulestart as date) 
+  and cast(e.scheduleEnd as date) 
+  join [$(PSIReporting)].dimensions.testlists_vw f on d.testlistkey = f.testlistdbid 
+  join [$(PSIReporting)].Dimensions.Tests_vw g on f.testkey = g.testdbid 
+  left join [(PSIReporting)].Dimensions.AmpForms_vw h on g.TestDbID = h.FormTestKey
+  join [$(PSIReporting)].test.TestCenter_vw i on b.TestCenterKey = i.TestCenterDBID	
+  left join DW_SummaryTables.Students.StudentTestSummary j on d.StudentScoreDBID = j.
+	
+
+where 		
 			i.DWTestScoreKey is null and
 			a.CurrentFlag = 0 and
 			a.pfa is not null
@@ -163,7 +181,6 @@ AS
 			  ,[ExtraStart]
 			  ,[ExtraEnd]
 			  ,[Proctored]
-			  ,[retake]
 			  ,[TestVersion]
 			  ,[LoadDateTime]
 			  ,[PassFail] )
@@ -210,7 +227,6 @@ AS
 			  ,[ExtraStart]			= s.ExtraStart
 			  ,[ExtraEnd]			= s.ExtraEnd
 			  ,[Proctored]			= s.Proctored
-			  ,[retake]				= s.retake
 			  ,[TestVersion]		= s.TestVersion
 			  ,[LoadDateTime]		= s.LoadDateTime
 			  ,[PassFail]			= s.pfa	;

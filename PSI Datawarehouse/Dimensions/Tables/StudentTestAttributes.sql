@@ -60,3 +60,8 @@ CREATE NONCLUSTERED INDEX [IXStudentTestAttributesKeys]
     ON [Dimensions].[StudentTestAttributes]([TestScheduleKey] ASC, [ExamPortionCode] ASC, [FormKey] ASC)
     INCLUDE([CurrentFlag], [LoadDate]);
 
+
+GO
+
+CREATE INDEX [IX_StudentTestAttributes_FlagClient] ON [Dimensions].[StudentTestAttributes] ([CurrentFlag], [ClientCode])
+Include ([StudentKey])
