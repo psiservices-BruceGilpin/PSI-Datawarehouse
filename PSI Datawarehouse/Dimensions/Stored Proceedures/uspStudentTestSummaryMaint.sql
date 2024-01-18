@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [dbo].[uspStudentTestSummaryMaint]
+﻿CREATE PROCEDURE [Dimensions].[uspStudentTestSummaryMaint]
 AS
 	Set Nocount On;
 	Create table #testdelta (
@@ -42,31 +42,42 @@ AS
 	Begin Try
 		declare @maxloaddate datetime
 		select @maxloaddate = max(loaddatetime)
-		from Students.StudentTestSummary
+		from DW_SummaryTables.Students.StudentTestSummary
 		
 		Insert #testdelta (
-		DWStudentkey,
-		DWTestscorekey,
-		DWPackagekey,
-		DWTestKey,
-		TestTitle,
-		TestDate,
-		ElapsedTime,
-		FinalPoints,
-		ScaledScore,
-		ScorePoints,
-		Attempt#,
-		ADATime ,
-		ExtraTime ,
-		ExtraTimeused ,
-		ExtraStart ,
-		ExtraEnd   ,
-		Proctored ,
-		TestVersion ,
-		LoadDateTime ,
-		PassFail,
-		SummaryStudentkey 
-
+			[DWTestScoreKey],
+			[DWTestKey],
+			[DWTestCenterKey],
+			[DWPackageKey],
+			[DWStudentKey],
+			[StudentAltID],
+			[FirstName],
+			[LastName],
+			[MaidenName],
+			[Degree],
+			[License],
+			[TestTitle],
+			[ExamCode],
+			[ExamPortionCode],
+			[FormName],
+			[DateSched],
+			[TestDate],
+			[GlobalTestCenterKey],
+			[ElapsedTime],
+			[PassFail],
+			[FinalPoints],
+			[ScaledScore],
+			[ScorePoints],
+			[Attempt#],
+			[ADATime],
+			[ExtraTime],
+			[ExtraTimeUsed],
+			[ExtraStart],
+			[ExtraEnd],
+			[Proctored],
+			[Restarts],
+			[TestVersion],
+			[LoadDateTime]
 		)
 	select 
 	d.StudentScoreDBID
@@ -85,8 +96,8 @@ AS
 	,b.ExamPortionCode
 	,h.FormName
 	,e.ScheduleStart
+	,isnull(d.startdate,'1/1/2000')
 	,i.GlobalTestCenterKey
-	,isnull(d.StartDate, '1/1/2000')
 	,d.HowLong
 	,case 
 		when d.PFA = 'P' then d.pfa
@@ -107,27 +118,27 @@ AS
 	,d.Proctored
 	,d.Restarts
 	,g.TestVersnum
+	,d.Loaddate
 
 from 
-  [$(PSIReporting)].dimensions.Students_vw a 
-  join [$(PSIReporting)].dimensions.StudentTestAttributes_vw b on a.studentdbid = b.studentkey 
-  join [$(PSIReporting)].dimensions.studentlists_vw c on a.studentdbid = c.studentkey 
-  join [$(PSIReporting)].dimensions.StudentScores_vw d on c.studentlistdbid = d.studentlistkey 
-  join [$(PSIReporting)].dimensions.TestSchedules_vw e on d.TestScheduleKey = e.TestScheduleDBID 
+  dimensions.Students_vw a 
+  join dimensions.StudentTestAttributes_vw b on a.studentdbid = b.studentkey 
+  join dimensions.studentlists_vw c on a.studentdbid = c.studentkey 
+  join dimensions.StudentScores d on c.studentlistdbid = d.studentlistkey and d.CurrentFlag = 0
+  join dimensions.TestSchedules_vw e on d.TestScheduleKey = e.TestScheduleDBID 
   and b.datesched between cast(e.schedulestart as date) 
   and cast(e.scheduleEnd as date) 
-  join [$(PSIReporting)].dimensions.testlists_vw f on d.testlistkey = f.testlistdbid 
-  join [$(PSIReporting)].Dimensions.Tests_vw g on f.testkey = g.testdbid 
-  left join [(PSIReporting)].Dimensions.AmpForms_vw h on g.TestDbID = h.FormTestKey
-  join [$(PSIReporting)].test.TestCenter_vw i on b.TestCenterKey = i.TestCenterDBID	
-  left join DW_SummaryTables.Students.StudentTestSummary j on d.StudentScoreDBID = j.
+  join dimensions.testlists_vw f on d.testlistkey = f.testlistdbid 
+  join Dimensions.Tests_vw g on f.testkey = g.testdbid 
+  left join Dimensions.AmpForms_vw h on g.TestDbID = h.FormTestKey
+  join test.TestCenter_vw i on b.TestCenterKey = i.TestCenterDBID	
+  left join DW_SummaryTables.Students.StudentTestSummary j on d.StudentScoreDBID = j.DWTestScoreKey
 	
 
 where 		
-			i.DWTestScoreKey is null and
-			a.CurrentFlag = 0 and
-			a.pfa is not null
-		and i.DWStudentKey is null or a.loaddate > @Maxloaddate
+			j.DWTestScoreKey is null and
+			d.pfa is not null
+		and j.DWStudentKey is null or d.loaddate > @Maxloaddate
 	
 		create index idx1 on #TestDelta (dwStudentKey, DWTestKey, TestDate asc);
 			
@@ -136,76 +147,104 @@ where
 -- Populate the ComputedAttempts column
 	
 	declare cu1 cursor for
-			Select dwStudentKey, DWTestScoreKey, Testdate
+			Select  DWStudentKey, DWTestKey, TestDate
 			from #testdelta
-			where SummaryStudentkey is null
+
 		open cu1
-		fetch next from cu1 into @dwstudentkey, @dwTestKey, @dwtestdate
+		fetch next from cu1 into @dwStudentKey, @dwTestKey, @dwtestdate
 		while @@FETCH_STATUS = 0
 		begin
 			select @testcount = count(*) + 1
 			from
-				Students.StudentTestSummary
+				DW_SummaryTables.Students.StudentTestSummary
+			where
+				DwStudentKey = @dwStudentKey and
+				DwTestKey	 = @dwTestKey and
+				TestDate < @dwtestdate
+			update #testdelta
+				set ComputedAttempt# = isNull(@testcount,1)
 			where
 				DWStudentKey = @dwstudentkey and
-				DWTestKey = @dwTestkey
-			update #testdelta
-				set ComputedAttempts = @testcount
-			where
-				DWStudentkey = @dwstudentkey and
 				DWTestKey = @dwTestKey and
 				TestDate = @dwtestdate
 			fetch next from cu1 into @dwstudentkey, @dwTestKey, @dwtestdate
 		end
 
 
-	Merge  Students.StudentTestSummary t
+	Merge  DW_SummaryTables.Students.StudentTestSummary t
 	Using #testdelta s on
 		t.dwTestScoreKey = s.dwtestscorekey
 	when not matched then
 		insert ( 
-		      [DWStudentKey]
-			  ,[DWTestScoreKey]
-			  ,[DWTestKey]
-			  ,[DWPackageKey]
-			  ,[TestTitle]
-			  ,[TestDate]
-			  ,[ElapsedTime]
-			  ,[FinalPoints]
-			  ,[ScaledScore]
-			  ,[ScorePoints]
-			  ,[Attempt#]
-			  ,[ADATime]
-			  ,[ExtraTime]
-			  ,[ExtraTimeUsed]
-			  ,[ExtraStart]
-			  ,[ExtraEnd]
-			  ,[Proctored]
-			  ,[TestVersion]
-			  ,[LoadDateTime]
-			  ,[PassFail] )
+			[DWTestScoreKey],
+			[DWTestKey],
+			[DWTestCenterKey],
+			[DWPackageKey],
+			[DWStudentKey],
+			[StudentAltID],
+			[FirstName],
+			[LastName],
+			[MaidenName],
+			[Degree],
+			[License],
+			[TestTitle],
+			[ExamCode],
+			[ExamPortionCode],
+			[FormName],
+			[DateSched],
+			[TestDate],
+			[GlobalTestCenterKey],
+			[ElapsedTime],
+			[PassFail],
+			[FinalPoints],
+			[ScaledScore],
+			[ScorePoints],
+			[Attempt#],
+			[ComputedAttempt#],
+			[ADATime],
+			[ExtraTime],
+			[ExtraTimeUsed],
+			[ExtraStart],
+			[ExtraEnd],
+			[Proctored],
+			[Restarts],
+			[TestVersion],
+			[LoadDateTime] )
 		values (
-		      s.[DWStudentKey]
-			  ,s.[DWTestScoreKey]
-			  ,s.[DWTestKey]
-			  ,s.[DWPackageKey]
-			  ,s.[TestTitle]
-			  ,isnull(s.[TestDate], '1/1/2000')
-			  ,s.[ElapsedTime]
-			  ,s.[FinalPoints]
-			  ,s.[ScaledScore]
-			  ,s.[ScorePoints]
-			  ,s.[Attempt#]
-			  ,s.[ADATime]
-			  ,s.[ExtraTime]
-			  ,s.[ExtraTimeUsed]
-			  ,s.[ExtraStart]
-			  ,s.[ExtraEnd]
-			  ,s.[Proctored]
-			  ,s.[retake]
-			  ,s.[TestVersion]
-			  ,s.[LoadDateTime]
-			  ,s.[pfa]  )
+			s.[DWTestScoreKey],
+			s.[DWTestKey],
+			s.[DWTestCenterKey],
+			s.[DWPackageKey],
+			s.[DWStudentKey],
+			s.[StudentAltID],
+			s.[FirstName],
+			s.[LastName],
+			s.[MaidenName],
+			s.[Degree],
+			s.[License],
+			s.[TestTitle],
+			s.[ExamCode],
+			s.[ExamPortionCode],
+			s.[FormName],
+			s.[DateSched],
+			s.[TestDate],
+			s.[GlobalTestCenterKey],
+			s.[ElapsedTime],
+			s.[PassFail],
+			s.[FinalPoints],
+			s.[ScaledScore],
+			s.[ScorePoints],
+			s.[Attempt#],
+			s.[ComputedAttempt#],
+			s.[ADATime],
+			s.[ExtraTime],
+			s.[ExtraTimeUsed],
+			s.[ExtraStart],
+			s.[ExtraEnd],
+			s.[Proctored],
+			s.[Restarts],
+			s.[TestVersion],
+			s.[LoadDateTime]  )
 	
 	when matched then
 			update
@@ -214,8 +253,19 @@ where
 			  ,[DWTestScoreKey]		= s.DWTestScoreKey
 			  ,[DWTestKey]			= s.DWTestKey
 			  ,[DWPackageKey]		= s.dwpackagekey
+			  ,[StudentAltID]		= s.StudentAltID
+			  ,[FirstName]			= s.FirstName
+			  ,[LastName]			= s.LastName
+			  ,[MaidenName]			= s.MaidenName
+			  ,[Degree]				= s.Degree
+			  ,[License]			= s.License
 			  ,[TestTitle]			= s.testtitle
-			  ,[TestDate]			= isnull(s.TestDate, '1/1/2000')
+			  ,[ExamCode]			= s.ExamCode
+			  ,[ExamPortionCode]	= s.ExamPortionCode
+			  ,[FormName]			= s.Formname
+			  ,[DateSched]			= s.DateSched
+			  ,[TestDate]			= s.TestDate
+			  ,[GlobalTestCenterKey] = s.GlobalTestCenterKey
 			  ,[ElapsedTime]		= s.ElapsedTime
 			  ,[FinalPoints]		= s.FinalPoints
 			  ,[ScaledScore]		= s.ScaledScore
@@ -229,7 +279,7 @@ where
 			  ,[Proctored]			= s.Proctored
 			  ,[TestVersion]		= s.TestVersion
 			  ,[LoadDateTime]		= s.LoadDateTime
-			  ,[PassFail]			= s.pfa	;
+			  ,[PassFail]			= s.PassFail	;
 	
 		Select @@ROWCOUNT 'Rows Affected'
 	End Try
