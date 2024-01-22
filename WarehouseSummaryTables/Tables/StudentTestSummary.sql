@@ -13,8 +13,6 @@
     [Degree]  varchar(50),
     [License] varchar(40),
     [TestTitle] VARCHAR(50) NOT NULL, 
-    [ExamCode] Varchar(15),
-    [ExamPortionCode] Varchar(15),
     [FormName] Varchar(100),
     [DateSched] Date,
     [GlobalTestCenterKey] VARCHAR(20) NULL, 
@@ -35,7 +33,9 @@
     [Proctored] BIT NULL, 
     [Restarts] INT NULL, 
     [TestVersion] INT NULL, 
-    [LoadDateTime] DATETIME NULL 
+    [LoadDateTime] DATETIME NULL, 
+    [Recertification] CHAR NULL, 
+    [Reapplicant] CHAR NULL 
 )
 
 GO
