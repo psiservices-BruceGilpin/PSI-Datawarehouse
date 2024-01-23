@@ -471,6 +471,7 @@
     <Build Include="Summary\Tables\StudentAnswers.sql" />
     <Build Include="Summary\Stored Procedures\uspLoadStudentTestSummary.sql" />
     <Build Include="Dimensions\Stored Proceedures\uspStudentTestSummaryMaint.sql" />
+    <Build Include="Dimensions\Stored Proceedures\LoadBankCategorySummary.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="PSI Datawarehouse.refactorlog" />

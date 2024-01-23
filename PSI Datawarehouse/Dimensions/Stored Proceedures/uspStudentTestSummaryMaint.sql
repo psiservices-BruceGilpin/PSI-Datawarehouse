@@ -23,7 +23,7 @@ AS
 	FormTestkey, FormName, FormAdminType
 	from 
 	dimensions.Ampforms_vw 
-	where FormAdminType = 's7' ) a
+	where FormAdminType = 'S7' ) a
 	union
 	(
 	select
@@ -76,6 +76,8 @@ AS
 		[Restarts] [int] NULL,
 		[TestVersion] [int] NULL,
 		[LoadDateTime] [datetime] NULL,
+		[Recertification] char(1),
+		[Reapplicant] char(1)
 		);
 
 	Begin Try
@@ -155,6 +157,8 @@ AS
 	,g.TestVersnum
 	,d.Loaddate
 
+		
+
 from 
   dimensions.Students_vw a 
   join dimensions.StudentTestAttributes_vw b on a.studentdbid = b.studentkey 
@@ -168,6 +172,7 @@ from
   left join #Forms h on g.TestDbID = h.FormTestKey
   join test.TestCenter_vw i on b.TestCenterKey = i.TestCenterDBID	
   left join DW_SummaryTables.Students.StudentTestSummary j on d.StudentScoreDBID = j.DWTestScoreKey
+
 	
 
 where 		
@@ -178,6 +183,40 @@ where
 		create index idx1 on #TestDelta (dwStudentKey, DWTestKey, TestDate asc);
 			
 		declare @dwstudentkey int, @dwTestKey int, @dwtestdate date, @testcount int
+
+	update #testdelta
+	set Reapplicant = 'Y'
+	from
+		   #testdelta a 
+		   join
+		   Dimensions.studentCodes_vw b on a.dwtestscorekey = b.StudentScoresKey
+		   join
+		   dimensions.PoolCodes_vw d on
+			b.PoolCode = d.PoolCodeDBID and
+			d.pooltitle = 'Y'
+		   Join 
+		   Dimensions.PoolCodeGroups_vw c on 
+			b.PoolCodeGroupKey = c.PoolCodeGroupDBID 
+     Where c.PoolGroupTitle = 'Reapplicant';
+
+
+	update #testdelta
+	set Recertification = 'Y'
+	from
+		   #testdelta a 
+		   join
+		   Dimensions.studentCodes_vw b on a.dwtestscorekey = b.StudentScoresKey
+		   join
+		   dimensions.PoolCodes_vw d on
+			b.PoolCode = d.PoolCodeDBID and
+			d.pooltitle = 'Y'
+		   Join 
+		   Dimensions.PoolCodeGroups_vw c on 
+			b.PoolCodeGroupKey = c.PoolCodeGroupDBID 
+     Where c.PoolGroupTitle = 'Recertification';
+
+
+
 		
 
 
@@ -216,6 +255,9 @@ where
 			[Proctored],
 			[Restarts],
 			[TestVersion],
+			[LoadDateTime],
+			[Recertification],
+			[Reapplicant],
 			[LoadDateTime] )
 		values (
 			s.[DWTestScoreKey],
@@ -248,7 +290,10 @@ where
 			s.[Proctored],
 			s.[Restarts],
 			s.[TestVersion],
-			s.[LoadDateTime]  )
+			s.[LoadDateTime],
+			s.[Recertification],
+			s.[Reapplicant],
+			getdate() )
 	
 	when matched then
 			update
@@ -281,7 +326,10 @@ where
 			  ,[Proctored]			= s.Proctored
 			  ,[TestVersion]		= s.TestVersion
 			  ,[LoadDateTime]		= s.LoadDateTime
-			  ,[PassFail]			= s.PassFail	;
+			  ,[PassFail]			= s.PassFail
+			  ,[Recertification]	= s.Recertification
+			  ,[Reapplicant]		= s.Reapplicant
+			  ,[LoadDateTime]		= getdate();
 	
 		Select @@ROWCOUNT 'Rows Affected'
 

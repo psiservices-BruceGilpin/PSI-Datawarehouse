@@ -14,4 +14,18 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="Recertification" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="f68de84c-a525-4db3-a638-dc96e6bb7d92" ChangeDateTime="01/23/2024 15:19:21">
+    <Property Name="ElementName" Value="[Students].[StudentBankCategorySummary].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Students].[StudentBankCategorySummary]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="BankCatSummId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="73e9e5b1-2c24-436f-b84b-7c34fb386d89" ChangeDateTime="01/23/2024 19:00:05">
+    <Property Name="ElementName" Value="[Students].[TestBankCategorySummary].[LoadDate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Students].[TestBankCategorySummary]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LoadDateTime" />
+  </Operation>
 </Operations>
