@@ -67,7 +67,7 @@
     <Build Include="Tables\StudentTestSummary.sql" />
     <Build Include="Security\Schema1.sql" />
     <Build Include="Security\AtlasLC.sql" />
-    <Build Include="Tables\TestBankCategorySummary.sql" />
+    <Build Include="Tables\BankGroupSummary.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Dev.publish.xml" />

@@ -22,10 +22,31 @@
     <Property Name="NewName" Value="BankCatSummId" />
   </Operation>
   <Operation Name="Rename Refactor" Key="73e9e5b1-2c24-436f-b84b-7c34fb386d89" ChangeDateTime="01/23/2024 19:00:05">
-    <Property Name="ElementName" Value="[Students].[TestBankCategorySummary].[LoadDate]" />
+    <Property Name="ElementName" Value="[Students].[TestBankCategories].[LoadDate]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
-    <Property Name="ParentElementName" Value="[Students].[TestBankCategorySummary]" />
+    <Property Name="ParentElementName" Value="[Students].[TestBankCategories]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="LoadDateTime" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="285b2ff5-034d-49ae-a79b-ae33644031b5" ChangeDateTime="01/24/2024 16:05:17">
+    <Property Name="ElementName" Value="[Students].[BankGroupSummary].[BankCatSummId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Students].[BankGroupSummary]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="BankGroupSummId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="86e0b505-1367-4e75-bea0-58de16bdcae9" ChangeDateTime="01/24/2024 16:05:25">
+    <Property Name="ElementName" Value="[Students].[BankGroupSummary].[BankCatGroupTitle]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Students].[BankGroupSummary]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="BankGroupTitle" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a2719636-c1af-45b2-af8f-02dce62e9c76" ChangeDateTime="01/24/2024 16:05:35">
+    <Property Name="ElementName" Value="[Students].[BankGroupSummary].[BankCatGroupDesc]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Students].[BankGroupSummary]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="BankGroupDesc" />
   </Operation>
 </Operations>

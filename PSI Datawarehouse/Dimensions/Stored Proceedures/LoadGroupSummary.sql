@@ -1,16 +1,16 @@
-﻿CREATE PROCEDURE [Dimensions].[uspLoadBankCategorySummary]
+﻿CREATE PROCEDURE [Dimensions].[uspLoadBankGroupSummary]
 
 AS
 	Begin Try
 	 
 	 Declare @maxdate datetime
 	 select @maxdate = max(loaddatetime)
-	 from dw_summarytables.students.TestBankCategorySummary
+	 from dw_summarytables.students.BankGroupSummary
 
 
 
-	 Create table #delta (StudentSummaryID bigint, BankCatGroupTitle varchar(50), BankCatGroupDesc varchar(600), pretest bit, testcount int, loaddatetime datetime )
-	 Insert into #delta (StudentSummaryID, BankCatGroupTitle,BankCatGroupDesc, pretest,  loaddatetime, testcount )
+	 Create table #delta (StudentSummaryID bigint, BankGroupTitle varchar(50), BankGroupDesc varchar(600), pretest bit, testcount int, loaddatetime datetime )
+	 Insert into #delta (StudentSummaryID, BankGroupTitle,BankGroupDesc, pretest,  loaddatetime, testcount )
 	 Select a.StudentTestSumaryDBID, 
 				   e.BankCatGroupTitle,
 				   e.BankCatGroupDesc,
@@ -32,30 +32,30 @@ AS
 				Dimensions.BankCategoryGroups_vw e on
 					d.BankCategoryGroupKey = e.BankCategoryGroupDBID
 				left join
-				DW_Summarytables.Students.TestBankCategorySummary f on
+				DW_Summarytables.Students.BankGroupSummary f on
 					a.StudentTestSumaryDBID = f.StudentTestSummarykey
 	where f.StudentTestSummaryKey is null or a.loaddatetime > @maxdate
 	group by a.studenttestSumaryDBID, e.BankCatGroupTitle, e.BankCatGroupDesc, e.Pretest, a.loaddatetime
 
 
-		update DW_SummaryTables.Students.TestBankCategorySummary
+		update DW_SummaryTables.[Students].[BankGroupSummary]
 			set testcount		= a.testcount,
 				loaddatetime	= a.loaddatetime
 		from #delta a 
 		join
-		DW_SummaryTables.Students.TestBankCategorySummary b on
+		DW_SummaryTables.Students.BankGroupSummary b on
 			a.StudentSummaryID = b.studenttestsummaryKey and
-			a.BankCatGroupTitle = b.bankcatgrouptitle
+			a.BankGroupTitle = b.bankgrouptitle
 			
 
-		insert DW_Summarytables.Students.TestBankCategorySummary (StudentTestSummarykey, BankCatGroupTitle, BankCatGroupDesc, PreTest, Testcount, loaddatetime)
-		select a.StudentSummaryID, a.BankCatGroupTitle, a.BankCatGroupDesc, a.PreTest, a.Testcount, a.loaddatetime
+		insert DW_Summarytables.[Students].[BankGroupSummary] (StudentTestSummarykey, BankGroupTitle, BankGroupDesc, PreTest, Testcount, loaddatetime)
+		select a.StudentSummaryID, a.BankGroupTitle, a.BankGroupDesc, a.PreTest, a.Testcount, a.loaddatetime
 		from 
 		#delta a 
 		left join
-		DW_Summarytables.Students.TestBankCategorySummary b on
+		DW_Summarytables.[Students].[BankGroupSummary] b on
 			a.StudentSummaryID =  b.StudentTestSummarykey and
-			a.BankCatGroupTitle = b.bankcatgrouptitle
+			a.BankGroupTitle = b.bankgrouptitle
 		where b.StudentTestSummarykey is null
 
 

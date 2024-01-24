@@ -255,7 +255,6 @@ where
 			[Proctored],
 			[Restarts],
 			[TestVersion],
-			[LoadDateTime],
 			[Recertification],
 			[Reapplicant],
 			[LoadDateTime] )
@@ -290,7 +289,6 @@ where
 			s.[Proctored],
 			s.[Restarts],
 			s.[TestVersion],
-			s.[LoadDateTime],
 			s.[Recertification],
 			s.[Reapplicant],
 			getdate() )
@@ -325,7 +323,6 @@ where
 			  ,[ExtraEnd]			= s.ExtraEnd
 			  ,[Proctored]			= s.Proctored
 			  ,[TestVersion]		= s.TestVersion
-			  ,[LoadDateTime]		= s.LoadDateTime
 			  ,[PassFail]			= s.PassFail
 			  ,[Recertification]	= s.Recertification
 			  ,[Reapplicant]		= s.Reapplicant
