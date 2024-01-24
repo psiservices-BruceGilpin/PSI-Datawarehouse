@@ -68,6 +68,7 @@
     <Build Include="Security\Schema1.sql" />
     <Build Include="Security\AtlasLC.sql" />
     <Build Include="Tables\BankGroupSummary.sql" />
+    <Build Include="Tables\BankCategorySummary.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Dev.publish.xml" />

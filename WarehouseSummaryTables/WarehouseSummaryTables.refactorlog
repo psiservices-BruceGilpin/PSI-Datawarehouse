@@ -49,4 +49,25 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="BankGroupDesc" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="05e1849e-b776-40ec-a256-ab37043d12b1" ChangeDateTime="01/24/2024 17:17:03">
+    <Property Name="ElementName" Value="[Students].[BankCategorySummary].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Students].[BankCategorySummary]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="BankCatId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6489fafe-1ed0-467b-b27c-eb5749155000" ChangeDateTime="01/24/2024 17:18:48">
+    <Property Name="ElementName" Value="[Students].[BankCategorySummary].[BankCategoryTitle]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Students].[BankCategorySummary]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="StudentTestSummaryKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8170bb38-15df-4751-aaa0-d3a5677aad6e" ChangeDateTime="01/24/2024 19:29:00">
+    <Property Name="ElementName" Value="[Students].[BankCategorySummary].[BankCategoriesKey]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Students].[BankCategorySummary]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="BankCategorykey" />
+  </Operation>
 </Operations>
