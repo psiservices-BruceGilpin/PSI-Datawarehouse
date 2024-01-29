@@ -29,28 +29,7 @@
 
 
 GO
-CREATE NONCLUSTERED INDEX [IX_Tests_TestBankKey]
-    ON [Dimensions].[Tests]([TestBankKey] ASC) WHERE ([Currentflag]=(0));
 
 
-GO
-CREATE NONCLUSTERED INDEX [IX_Tests_TestDBId]
-    ON [Dimensions].[Tests]([TestDBId] ASC) WHERE ([CurrentFlag]=(0));
-
-
-GO
-CREATE NONCLUSTERED INDEX [IX_Tests_TestResultKey]
-    ON [Dimensions].[Tests]([TestResultKey] ASC) WHERE ([Currentflag]=(0));
-
-
-GO
-CREATE NONCLUSTERED INDEX [IX_Tests_TestTitle]
-    ON [Dimensions].[Tests]([TestTitle] ASC)
-    INCLUDE([TestDBId]) WHERE ([Currentflag]=(0));
-
-
-GO
-CREATE NONCLUSTERED INDEX [IXTestsSourceTestID]
-    ON [Dimensions].[Tests]([SourceTestID] ASC)
-    INCLUDE([TestDBId], [CurrentFlag], [LoadDate]);
-
+CREATE INDEX [IX_Tests_CurrentFlag] ON [Dimensions].[Tests] ([CurrentFlag])
+Include (TestDBID, TestTitle, AreaKey)

@@ -69,6 +69,8 @@
     <Build Include="Security\AtlasLC.sql" />
     <Build Include="Tables\BankGroupSummary.sql" />
     <Build Include="Tables\BankCategorySummary.sql" />
+    <Build Include="SummaryTestNames.sql" />
+    <Build Include="DailyTestSummary.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Dev.publish.xml" />

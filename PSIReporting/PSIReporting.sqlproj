@@ -180,6 +180,7 @@
     <Build Include="Account\dbo\Countries.sql" />
     <Build Include="Account\dbo\DimIsg.sql" />
     <Build Include="Account\dbo\QuarterlyCalendar_vw.sql" />
+    <Build Include="Summary\TestPassRates_vw_1.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Dev_PSIReporting.publish.xml" />

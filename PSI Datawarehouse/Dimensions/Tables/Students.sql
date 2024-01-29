@@ -28,28 +28,14 @@ CREATE NONCLUSTERED INDEX [IX_Students_Name]
 
 
 GO
-CREATE NONCLUSTERED INDEX [IX_Students_PoolKey]
-    ON [Dimensions].[Students]([PoolKey] ASC) WHERE ([Currentflag]=(0));
-
-
-GO
-CREATE NONCLUSTERED INDEX [IX_Students_StudentAltID]
-    ON [Dimensions].[Students]([StudentAltID] ASC) WHERE ([Currentflag]=(0));
-
-
-GO
 CREATE NONCLUSTERED INDEX [IX_Students_StudentDBID]
-    ON [Dimensions].[Students]([StudentDBID] ASC) WHERE ([Currentflag]=(0));
+    ON [Dimensions].[Students] ([StudentDBID])  Where (Currentflag = 0);
 
 
 GO
 CREATE NONCLUSTERED INDEX [IX_Students_CurrentFlag]
-    ON [Dimensions].[Students]([CurrentFlag] ASC)
-    INCLUDE([StudentDBID]);
+    ON [Dimensions].[Students]([CurrentFlag], [PoolKey])
+    INCLUDE([StudentDBID] );
 
 
 GO
-CREATE NONCLUSTERED INDEX [IXStudentsSourceStudentID]
-    ON [Dimensions].[Students]([SourceStudentID] ASC)
-    INCLUDE([StudentDBID], [CurrentFlag], [LoadDate]);
-

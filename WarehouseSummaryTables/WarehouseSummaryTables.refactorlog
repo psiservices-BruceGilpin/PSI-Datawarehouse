@@ -70,4 +70,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="BankCategorykey" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="02c1b379-6b1d-4216-8bfc-909ed4d117ef" ChangeDateTime="01/26/2024 21:00:11">
+    <Property Name="ElementName" Value="[Tests].[DailyTestSummary].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Tests].[DailyTestSummary]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DailyTestSummaryId" />
+  </Operation>
 </Operations>
