@@ -84,7 +84,7 @@
       <Value>$(SqlCmdVar__2)</Value>
     </SqlCmdVariable>
     <SqlCmdVariable Include="PSIReporting">
-      <DefaultValue>PSIReporting</DefaultValue>
+      <DefaultValue>PSI_Reporting</DefaultValue>
       <Value>$(SqlCmdVar__6)</Value>
     </SqlCmdVariable>
     <SqlCmdVariable Include="PSI_DW">
