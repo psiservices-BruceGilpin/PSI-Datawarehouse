@@ -4,7 +4,6 @@
     [SourceTestID]    UNIQUEIDENTIFIER NOT NULL,
     [TestDBId]        BIGINT           NOT NULL,
     [CurrentFlag]     BIT              DEFAULT ((0)) NOT NULL,
-    [PublicationPoolItemDBID] Int      Null,
     [TestTitle]       VARCHAR (50)     NOT NULL,
     [TestDesc]        VARCHAR (2000)   NULL,
     [TestStatus]      TINYINT          NOT NULL,

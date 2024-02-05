@@ -1,0 +1,12 @@
+﻿--CREATE VIEW [Tests].[TestKeys_vw]
+--	AS SELECT 
+--		a.ClientCode,
+--		b.Testdbid,
+--		b.Testdate
+--	From 
+--		[$(PSI_DW)].Dimensions.Clients a 
+--		join
+--		[$(PSI_DW)].Dimensions.Pools b on
+--			a.PoolKey = b.PoolDbID
+--		join
+--		[$(PSI_DW)].
