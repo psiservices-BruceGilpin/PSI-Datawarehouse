@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [Tests].[DailyTestSummary]
 (
 	[DailyTestSummaryId] BIGINT NOT NULL Identity(1,1) PRIMARY KEY, 
-    [ClientCode] VARCHAR(16) NOT NULL, 
+    [ClientCode] VARCHAR(16) NULL, 
     [TestTitle] VARCHAR(2000) NOT NULL, 
     [TestDate] DATE NOT NULL, 
     [PassingScore] Int,

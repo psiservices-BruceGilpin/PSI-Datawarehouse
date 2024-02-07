@@ -474,6 +474,7 @@
     <Build Include="Dimensions\Stored Proceedures\LoadGroupSummary.sql" />
     <Build Include="Dimensions\Stored Proceedures\uspLoadCategorySummary.sql" />
     <Build Include="Dimensions\Stored Proceedures\uspDailyTestSummaryMaint.sql" />
+    <Build Include="Dimensions\Stored Proceedures\uspSummaryTestNamesMaint.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="PSI Datawarehouse.refactorlog" />

@@ -72,6 +72,7 @@
     <Build Include="Tables\DailyTestSummary.sql" />
     <Build Include="Tables\SummaryTestNames.sql" />
     <Build Include="Views\TestKeys_vw.sql" />
+    <Build Include="Security\DailyTestSummarySeq.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Dev.publish.xml" />
