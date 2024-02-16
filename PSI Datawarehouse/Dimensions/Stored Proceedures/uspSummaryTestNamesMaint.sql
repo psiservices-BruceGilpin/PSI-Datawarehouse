@@ -74,7 +74,9 @@ AS
 		  join dimensions.StudentTestAttributes_vw c on b.StudentKey = c.StudentKey 
 		  join Dimensions.TestLists_vw d on a.TestListKey = d.TestListDbId 
 		  join #testnames e on  
-		  d.TestKey = e.dimensionstestkey insert into Dw_SummaryTables.tests.SummaryTestNames (
+		  d.TestKey = e.dimensionstestkey 
+		  
+		  insert into Dw_SummaryTables.tests.SummaryTestNames (
 			CrossRefKey, Dimensionstestkey, SummaryTestName, 
 			accountcode, Loaddate
 		  ) 

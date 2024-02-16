@@ -32,7 +32,8 @@
     [YTDFirstTimePassRate] DECIMAL(7, 2) NULL, 
     [YTDMeanRawScore] DECIMAL(7, 2) NULL, 
     [YTDStdDev] DECIMAL(6, 3) NULL, 
-    [YTDReliabilityEst] DECIMAL(7, 3) NULL
+    [YTDReliabilityEst] DECIMAL(7, 3) NULL, 
+    [MaintenanceDate] DATETIME NOT NULL DEFAULT getdate()
 )
 
 GO

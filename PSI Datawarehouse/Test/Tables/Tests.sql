@@ -6,6 +6,7 @@
     [TestDescription]  VARCHAR (255) NULL,
     [CategoryKey]      INT           NOT NULL,
     [AccountKey]       INT           NOT NULL,
+    [PublicationPoolKey] bigint      NULL,
     [IVRTestName]      VARCHAR (200) NULL,
     [MarketSegment]    VARCHAR (6)   NULL,
     [ClientCode]       VARCHAR (50)  NULL,

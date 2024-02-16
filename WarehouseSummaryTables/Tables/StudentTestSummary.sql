@@ -1,17 +1,15 @@
 ﻿CREATE TABLE [Students].[StudentTestSummary]
 (
 	[StudentTestSumaryDBId] INT NOT NULL Identity(1,1) PRIMARY KEY, 
+    [ClientCode] Varchar(12) Null,
     [DWTestScoreKey] BIGINT NOT NULL, 
     [DWTestKey] BIGINT NOT NULL, 
-    [DWTestCenterKey] Bigint,
     [DWPackageKey] BIGINT NOT NULL, 
     [DWStudentKey] BigInt Not null,
     [StudentAltID] Varchar(128),
     [FirstName] Varchar(30),
     [LastName] varchar(30),
     [MaidenName] varchar(25),
-    [Degree]  varchar(50),
-    [License] varchar(40),
     [TestTitle] VARCHAR(50) NOT NULL, 
     [FormName] Varchar(100),
     [DateSched] Date,
@@ -35,7 +33,8 @@
     [TestVersion] INT NULL, 
     [LoadDateTime] DATETIME NULL, 
     [Recertification] CHAR NULL, 
-    [Reapplicant] CHAR NULL 
+    [Reapplicant] CHAR NULL, 
+    [Checksum] BIGINT NOT NULL 
 )
 
 GO
@@ -54,4 +53,4 @@ include (TestDate)
 GO
 
 CREATE INDEX [IX_StudentTestSummary_TestDate] ON [Students].[StudentTestSummary] ([TestDate])
-Include (DWTestScoreKey)
+Include ([DWTestScoreKey],[DWTestKey],[PassFail],[FinalPoints],[ComputedAttempt#])

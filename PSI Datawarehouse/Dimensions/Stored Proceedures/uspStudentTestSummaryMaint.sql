@@ -45,19 +45,16 @@ AS
 	Create table #testdelta (
 		[DWTestScoreKey] [bigint] NOT NULL,
 		[DWTestKey] [bigint] NOT NULL,
-		[DWTestCenterKey] [bigint] NULL,
+		[ClientCode] Varchar(12) Null,
 		[DWPackageKey] [bigint] NOT NULL,
 		[DWStudentKey] [bigint] NOT NULL,
 		[StudentAltID] [varchar](128) NULL,
 		[FirstName] [varchar](30) NULL,
 		[LastName] [varchar](30) NULL,
 		[MaidenName] [varchar](25) NULL,
-		[Degree] [varchar](50) NULL,
-		[License] [varchar](40) NULL,
 		[TestTitle] [varchar](50) NOT NULL,
 		[FormName] [varchar](100) NULL,
 		[DateSched] [date] NULL,
-		[GlobalTestCenterKey] [varchar](20) NULL,
 		[TestDate] [date] NOT NULL,
 		[ElapsedTime] [int] NULL,
 		[PassFail] [char](1) NULL,
@@ -77,7 +74,8 @@ AS
 		[TestVersion] [int] NULL,
 		[LoadDateTime] [datetime] NULL,
 		[Recertification] char(1),
-		[Reapplicant] char(1)
+		[Reapplicant] char(1),
+		[CheckSum] Bigint
 		);
 
 	Begin Try
@@ -88,20 +86,17 @@ AS
 		Insert #testdelta (
 			[DWTestScoreKey],
 			[DWTestKey],
-			[DWTestCenterKey],
+			[ClientCode],
 			[DWPackageKey],
 			[DWStudentKey],
 			[StudentAltID],
 			[FirstName],
 			[LastName],
 			[MaidenName],
-			[Degree],
-			[License],
 			[TestTitle],
 			[FormName],
 			[DateSched],
 			[TestDate],
-			[GlobalTestCenterKey],
 			[ElapsedTime],
 			[PassFail],
 			[FinalPoints],
@@ -116,25 +111,23 @@ AS
 			[Proctored],
 			[Restarts],
 			[TestVersion],
-			[LoadDateTime]
+			[LoadDateTime],
+			[CheckSum]
 		)
 	select distinct
 	d.StudentScoreDBID
 	,g.TestDbID
-	,d.TestCenterKey
+	,b.clientcode
 	,e.TestPackageKey
 	,a.StudentDBID
 	,a.StudentAltID
 	,a.FirstName
 	,a.LastName
 	,a.MaidenName
-	,b.Degree
-	,b.License
 	,g.TestTitle
 	,h.FormName
 	,e.ScheduleStart
 	,isnull(d.startdate,'1/1/2000')
-	,i.GlobalTestCenterKey
 	,d.HowLong
 	,case 
 		when d.PFA = 'P' then d.pfa
@@ -156,21 +149,16 @@ AS
 	,d.Restarts
 	,g.TestVersnum
 	,d.Loaddate
-
-		
+	,checksum(testdbid, b.clientcode, e.testpackagekey,a.studentdbid, a.studentaltid,a.firstname, a.lastname,isnull(a.maidenname,' '),g.testtitle,h.formname,e.schedulestart,d.startdate,d.howlong,d.finalpoints,isnull(d.scaledscore,0),d.scorepoints,d.retake, d.AdaTime,d.extratime)
 
 from 
   dimensions.Students_vw a 
-  join dimensions.StudentTestAttributes_vw b on a.studentdbid = b.studentkey 
   join dimensions.studentlists_vw c on a.studentdbid = c.studentkey 
   join dimensions.StudentScores d on c.studentlistdbid = d.studentlistkey and d.CurrentFlag = 0
   join dimensions.TestSchedules_vw e on d.TestScheduleKey = e.TestScheduleDBID 
-  and b.datesched between cast(e.schedulestart as date) 
-  and cast(e.scheduleEnd as date) 
   join dimensions.testlists_vw f on d.testlistkey = f.testlistdbid 
   join Dimensions.Tests_vw g on f.testkey = g.testdbid 
   left join #Forms h on g.TestDbID = h.FormTestKey
-  join test.TestCenter_vw i on b.TestCenterKey = i.TestCenterDBID	
   left join DW_SummaryTables.Students.StudentTestSummary j on d.StudentScoreDBID = j.DWTestScoreKey
 
 	
@@ -293,7 +281,7 @@ where
 			s.[Reapplicant],
 			getdate() )
 	
-	when matched then
+	when matched and s.[checksum] != t.[checksum] then
 			update
 			set
 			   [DWStudentKey]		= s.DWStudentKey
@@ -326,7 +314,8 @@ where
 			  ,[PassFail]			= s.PassFail
 			  ,[Recertification]	= s.Recertification
 			  ,[Reapplicant]		= s.Reapplicant
-			  ,[LoadDateTime]		= getdate();
+			  ,[LoadDateTime]		= getdate()
+			  ,[Checksum]			= s.[Checksum];
 	
 		Select @@ROWCOUNT 'Rows Affected'
 
