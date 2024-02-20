@@ -153,6 +153,7 @@ AS
 
 from 
   dimensions.Students_vw a 
+  join Dimensions.StudentTestAttributes b on a.studentdbid = b.StudentKey
   join dimensions.studentlists_vw c on a.studentdbid = c.studentkey 
   join dimensions.StudentScores d on c.studentlistdbid = d.studentlistkey and d.CurrentFlag = 0
   join dimensions.TestSchedules_vw e on d.TestScheduleKey = e.TestScheduleDBID 
@@ -215,20 +216,16 @@ where
 		insert ( 
 			[DWTestScoreKey],
 			[DWTestKey],
-			[DWTestCenterKey],
 			[DWPackageKey],
 			[DWStudentKey],
 			[StudentAltID],
 			[FirstName],
 			[LastName],
 			[MaidenName],
-			[Degree],
-			[License],
 			[TestTitle],
 			[FormName],
 			[DateSched],
 			[TestDate],
-			[GlobalTestCenterKey],
 			[ElapsedTime],
 			[PassFail],
 			[FinalPoints],
@@ -245,24 +242,21 @@ where
 			[TestVersion],
 			[Recertification],
 			[Reapplicant],
-			[LoadDateTime] )
+			[LoadDateTime],
+			[Checksum])
 		values (
 			s.[DWTestScoreKey],
 			s.[DWTestKey],
-			s.[DWTestCenterKey],
 			s.[DWPackageKey],
 			s.[DWStudentKey],
 			s.[StudentAltID],
 			s.[FirstName],
 			s.[LastName],
 			s.[MaidenName],
-			s.[Degree],
-			s.[License],
 			s.[TestTitle],
 			s.[FormName],
 			s.[DateSched],
 			s.[TestDate],
-			s.[GlobalTestCenterKey],
 			s.[ElapsedTime],
 			s.[PassFail],
 			s.[FinalPoints],
@@ -279,7 +273,8 @@ where
 			s.[TestVersion],
 			s.[Recertification],
 			s.[Reapplicant],
-			getdate() )
+			getdate(),
+			s.checksum)
 	
 	when matched and s.[checksum] != t.[checksum] then
 			update
@@ -292,13 +287,10 @@ where
 			  ,[FirstName]			= s.FirstName
 			  ,[LastName]			= s.LastName
 			  ,[MaidenName]			= s.MaidenName
-			  ,[Degree]				= s.Degree
-			  ,[License]			= s.License
 			  ,[TestTitle]			= s.testtitle
 			  ,[FormName]			= s.Formname
 			  ,[DateSched]			= s.DateSched
 			  ,[TestDate]			= s.TestDate
-			  ,[GlobalTestCenterKey] = s.GlobalTestCenterKey
 			  ,[ElapsedTime]		= s.ElapsedTime
 			  ,[FinalPoints]		= s.FinalPoints
 			  ,[ScaledScore]		= s.ScaledScore

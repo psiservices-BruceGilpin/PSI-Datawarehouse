@@ -38,3 +38,8 @@ CREATE NONCLUSTERED INDEX [IXTestSegmentsSourceTestSegmentID]
     ON [Dimensions].[TestSegments]([SourceTestSegmentID] ASC)
     INCLUDE([TestSegmentDBID], [CurrentFlag], [LoadDate]);
 
+
+GO
+
+CREATE INDEX [IX_TestSegments_currentflag] ON [Dimensions].[TestSegments] ([CurrentFlag])
+include ([TestKey], [SegmentCount])

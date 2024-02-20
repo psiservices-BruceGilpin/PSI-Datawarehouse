@@ -10,3 +10,8 @@
     [CreateDate] DATETIME NOT NULL DEFAULT getdate()
 
 )
+
+GO
+
+CREATE INDEX [IX_SummaryTestNames_CrossRefKey] ON [Tests].[SummaryTestNames] ([CrossRefKey])
+Include([DimensionsTestKey])
