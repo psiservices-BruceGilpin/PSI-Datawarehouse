@@ -60,6 +60,8 @@
     <Folder Include="Security" />
     <Folder Include="Tables" />
     <Folder Include="Scripts" />
+    <Folder Include="TDLR" />
+    <Folder Include="CAI" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\Tests.sql" />
@@ -73,6 +75,14 @@
     <Build Include="Tables\SummaryTestNames.sql" />
     <Build Include="Views\TestKeys_vw.sql" />
     <Build Include="Security\DailyTestSummarySeq.sql" />
+    <Build Include="Views\SummaryTestNames_vw.sql" />
+    <Build Include="Procedures and Functions\DailySummaryInsert.sql" />
+    <Build Include="Security\Tdlr.sql" />
+    <Build Include="Security\Schema1_1.sql" />
+    <Build Include="Security\cai.sql" />
+    <Build Include="CAI\DailyStudentTestSummary.sql" />
+    <Build Include="Tables\DailyItemSummary.sql" />
+    <Build Include="Tables\TestScoreSummary.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Dev.publish.xml" />
@@ -90,7 +100,7 @@
     </SqlCmdVariable>
     <SqlCmdVariable Include="PSI_DW">
       <DefaultValue>PSI_DW</DefaultValue>
-      <Value>$(SqlCmdVar__5)</Value>
+      <Value>$(SqlCmdVar__7)</Value>
     </SqlCmdVariable>
     <SqlCmdVariable Include="PSI_Reporting">
       <DefaultValue>PSI_Reporting</DefaultValue>
@@ -101,19 +111,19 @@
     <RefactorLog Include="WarehouseSummaryTables.refactorlog" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PSI Datawarehouse\PSI Datawarehouse.sqlproj">
-      <Name>PSI Datawarehouse</Name>
-      <Project>{052aae7b-06cc-40dc-8928-6f949b2feb89}</Project>
-      <Private>True</Private>
-      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
-      <DatabaseSqlCmdVariable>PSI_DW</DatabaseSqlCmdVariable>
-    </ProjectReference>
     <ProjectReference Include="..\PSIReporting\PSIReporting.sqlproj">
       <Name>PSIReporting</Name>
       <Project>{5291dcfe-4bfe-4d5b-8935-bf5332621248}</Project>
       <Private>True</Private>
       <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
       <DatabaseSqlCmdVariable>PSIReporting</DatabaseSqlCmdVariable>
+    </ProjectReference>
+    <ProjectReference Include="..\PSI Datawarehouse\PSI Datawarehouse.sqlproj">
+      <Name>PSI Datawarehouse</Name>
+      <Project>{052aae7b-06cc-40dc-8928-6f949b2feb89}</Project>
+      <Private>True</Private>
+      <SuppressMissingDependenciesErrors>True</SuppressMissingDependenciesErrors>
+      <DatabaseSqlCmdVariable>PSI_DW</DatabaseSqlCmdVariable>
     </ProjectReference>
   </ItemGroup>
 </Project>

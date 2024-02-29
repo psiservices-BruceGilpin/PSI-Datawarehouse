@@ -32,8 +32,8 @@ CREATE NONCLUSTERED INDEX [IX_AmpForms_AmpFormsDBID]
 
 GO
 CREATE NONCLUSTERED INDEX [IX_AmpForms_CurrentFlag]
-    ON [Dimensions].[AmpForms]([CurrentFlag] ASC)
-    INCLUDE([AmpFormsDBID]);
+    ON [Dimensions].[AmpForms]([CurrentFlag] ASC,[FormAdminType])
+    INCLUDE([AmpFormsDBID],[FormTestkey], [FormName]);
 
 
 GO

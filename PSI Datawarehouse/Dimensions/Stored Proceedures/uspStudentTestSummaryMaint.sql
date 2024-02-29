@@ -156,7 +156,7 @@ from
   join Dimensions.StudentTestAttributes b on a.studentdbid = b.StudentKey
   join dimensions.studentlists_vw c on a.studentdbid = c.studentkey 
   join dimensions.StudentScores d on c.studentlistdbid = d.studentlistkey and d.CurrentFlag = 0
-  join dimensions.TestSchedules_vw e on d.TestScheduleKey = e.TestScheduleDBID 
+  join dimensions.TestSchedules_vw e on d.TestScheduleKey = e.TestScheduleDBID and b.TestScheduleKey = e.testscheduledbid
   join dimensions.testlists_vw f on d.testlistkey = f.testlistdbid 
   join Dimensions.Tests_vw g on f.testkey = g.testdbid 
   left join #Forms h on g.TestDbID = h.FormTestKey
@@ -274,14 +274,15 @@ where
 			s.[Recertification],
 			s.[Reapplicant],
 			getdate(),
-			s.checksum)
+			s.checksum
+	)
 	
 	when matched and s.[checksum] != t.[checksum] then
 			update
 			set
 			   [DWStudentKey]		= s.DWStudentKey
 			  ,[DWTestScoreKey]		= s.DWTestScoreKey
-			  ,[DWTestKey]			= s.DWTestKey
+			  ,[DWTestKey]			= s.DWTestKey 
 			  ,[DWPackageKey]		= s.dwpackagekey
 			  ,[StudentAltID]		= s.StudentAltID
 			  ,[FirstName]			= s.FirstName
@@ -307,7 +308,8 @@ where
 			  ,[Recertification]	= s.Recertification
 			  ,[Reapplicant]		= s.Reapplicant
 			  ,[LoadDateTime]		= getdate()
-			  ,[Checksum]			= s.[Checksum];
+	--		  ,[Checksum]			= s.[Checksum]
+	;
 	
 		Select @@ROWCOUNT 'Rows Affected'
 

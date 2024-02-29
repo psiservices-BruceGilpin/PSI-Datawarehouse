@@ -161,4 +161,137 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="TestDefinitionId" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="ac759738-867d-44aa-8076-f416a01dc575" ChangeDateTime="02/21/2024 20:25:21">
+    <Property Name="ElementName" Value="[Tests].[DailyTestSummary].[PassingScore]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Tests].[DailyTestSummary]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ScaleCut" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e207138c-8da3-406f-9b59-9dbc631365bf" ChangeDateTime="02/23/2024 20:40:40">
+    <Property Name="ElementName" Value="[TDLR].[DailyStudentTestSummary].[TestTitle]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[TDLR].[DailyStudentTestSummary]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SummaryTestTitle" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8be7cd66-9da8-48e4-a4ef-2a2c8c5150d3" ChangeDateTime="02/27/2024 17:22:22">
+    <Property Name="ElementName" Value="[TDLR].[DailyTestSummary].[DailyCandidateN]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[TDLR].[DailyTestSummary]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DailyN" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="551d1189-427a-426c-8e00-921c03441f5d" ChangeDateTime="02/27/2024 17:22:25">
+    <Property Name="ElementName" Value="[TDLR].[DailyTestSummary].[DailyCandidatePass]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[TDLR].[DailyTestSummary]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DailyPass" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3c86157b-58da-4efc-9ef9-b7673f8392eb" ChangeDateTime="02/27/2024 17:22:28">
+    <Property Name="ElementName" Value="[TDLR].[DailyTestSummary].[DailyCandidateOther]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[TDLR].[DailyTestSummary]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DailyOther" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="bdfa918d-db83-4c12-ae5d-001c1114e57e" ChangeDateTime="02/27/2024 17:22:42">
+    <Property Name="ElementName" Value="[TDLR].[DailyTestSummary].[DailyCandidatePassRate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[TDLR].[DailyTestSummary]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DailyPassRate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="0d5c589b-27d3-4d47-8b11-21c6c8599cd0" ChangeDateTime="02/27/2024 17:34:55">
+    <Property Name="ElementName" Value="[Tests].[DailyTestSummary].[DailyCandidateN]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Tests].[DailyTestSummary]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DailyN" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4e45db3a-ac41-455e-8312-2a6b65dc37ec" ChangeDateTime="02/27/2024 17:34:58">
+    <Property Name="ElementName" Value="[Tests].[DailyTestSummary].[DailyCandidatePass]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Tests].[DailyTestSummary]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DailyPass" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="2481e2c3-dff5-4cc7-97f5-964192c07e7f" ChangeDateTime="02/27/2024 17:35:02">
+    <Property Name="ElementName" Value="[Tests].[DailyTestSummary].[DailyCandidateOther]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Tests].[DailyTestSummary]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DailyOther" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d820e4e8-86ac-483a-8ffa-22037a3cc58f" ChangeDateTime="02/27/2024 17:35:06">
+    <Property Name="ElementName" Value="[Tests].[DailyTestSummary].[DailyCandidatePassRate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Tests].[DailyTestSummary]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DailyPassRate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7eeb024a-1f50-4c28-b61d-b7eae6afcc4c" ChangeDateTime="02/27/2024 17:35:10">
+    <Property Name="ElementName" Value="[Tests].[DailyTestSummary].[DailyFirstTimeN]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Tests].[DailyTestSummary]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DailyN" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="85f86e51-d5c9-4e1f-a60e-878931dbeaeb" ChangeDateTime="02/27/2024 17:35:13">
+    <Property Name="ElementName" Value="[Tests].[DailyTestSummary].[DailyFirstTimePass]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Tests].[DailyTestSummary]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DailyPass" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d561c805-c16c-4d82-8ddc-cd83a2cdc943" ChangeDateTime="02/27/2024 17:35:26">
+    <Property Name="ElementName" Value="[Tests].[DailyTestSummary].[DailyFirstTimePassRate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Tests].[DailyTestSummary]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DailyPassRate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="cffa6d9a-c126-4ec4-a2f6-8d10bc87c5d7" ChangeDateTime="02/27/2024 20:04:32">
+    <Property Name="ElementName" Value="[Tests].[DailyTestSummary].[TotalCandidateN]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Tests].[DailyTestSummary]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TotalN" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7d2fe4da-ef8f-45db-85ee-7ed531aaaa97" ChangeDateTime="02/27/2024 20:04:35">
+    <Property Name="ElementName" Value="[Tests].[DailyTestSummary].[TotalCandidatePass]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Tests].[DailyTestSummary]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TotalPass" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="986d60bd-7f0c-400d-9249-7b2968661607" ChangeDateTime="02/27/2024 20:04:43">
+    <Property Name="ElementName" Value="[Tests].[DailyTestSummary].[TotalCandidateOther]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Tests].[DailyTestSummary]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TotalOther" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="0aa808e5-df88-427b-8647-7983f2741c84" ChangeDateTime="02/27/2024 21:17:32">
+    <Property Name="ElementName" Value="[tests].[DailyItemSummary].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[tests].[DailyItemSummary]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ItemSummaryId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="aed195d8-4caf-4970-9565-e860b457baac" ChangeDateTime="02/28/2024 19:45:13">
+    <Property Name="ElementName" Value="[Tests].[TestScoreSummary].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Tests].[TestScoreSummary]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TestScoreSummaryId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="1e1ed973-763c-4848-acf2-61a97b53dcd9" ChangeDateTime="02/29/2024 14:53:11">
+    <Property Name="ElementName" Value="[Tests].[TestScoreSummary].[CrossRefKey]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Tests].[TestScoreSummary]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TestTitle" />
+  </Operation>
 </Operations>

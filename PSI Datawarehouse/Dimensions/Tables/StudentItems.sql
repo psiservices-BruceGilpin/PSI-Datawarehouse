@@ -22,7 +22,8 @@
 
 GO
 CREATE NONCLUSTERED INDEX [IX_StudentItems_CurrentFlag]
-    ON [Dimensions].[StudentItems]([CurrentFlag] ASC);
+    ON [Dimensions].[StudentItems]([CurrentFlag] ASC)
+    Include (Studentscorekey, TestQuestionkey)
 
 
 GO

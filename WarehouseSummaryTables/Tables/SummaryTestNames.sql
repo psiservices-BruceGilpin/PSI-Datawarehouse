@@ -7,7 +7,10 @@
     [DimensionsAcctKey] int null,
     [AccountCode] Varchar(12),
     [Loaddate] DATETIME NOT NULL, 
-    [CreateDate] DATETIME NOT NULL DEFAULT getdate()
+    [CreateDate] DATETIME NOT NULL DEFAULT getdate(), 
+    [Scalecut] INT NULL, 
+    [RawCut] INT NULL, 
+    [ItemCount] INT NULL
 
 )
 

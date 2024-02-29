@@ -4,7 +4,7 @@ AS
 	Begin Try
 		create table #testnames(namekey int not null identity(10000,1), dimensionstestkey bigint, 
 								testname varchar(2000), crossrefkey bigint, loaddate date, 
-								AccountCode varchar(12) )
+								AccountCode varchar(12), ScaleCut int, RawCut int, formlength int )
 
 /*
 	There are three ways of formating the consolidated test name.
@@ -93,12 +93,23 @@ AS
 		where 
 		  b.SummaryTestName is null 
 
+		update #testnames
+		 set scalecut = b.scalecut,
+			 rawcut = b.rawcut,
+			 formlength = c.segmentcount
+		from
+			#testnames a join
+			psi_dw.Dimensions.ampforms_vw b on
+				a.dimensionsTestKey = b.formtestkey join
+			psi_dimensions.testsegments_vw c on
+				a.dimensionstestkey = c.testkey
+
 -- No updates allowed a different test title and/or description means a new record
 
 		insert into Dw_SummaryTables.tests.SummaryTestNames 
-			(CrossRefKey, Dimensionstestkey, SummaryTestName, accountcode, Loaddate)
+			(CrossRefKey, Dimensionstestkey, SummaryTestName, accountcode, Loaddate, ScaleCut, RawCut, ItemCount)
 		select
-		a.crossrefkey, a.dimensionstestkey, a.testname, a.AccountCode, a.loaddate
+		a.crossrefkey, a.dimensionstestkey, a.testname, a.AccountCode, a.loaddate, a.ScaleCut, a.RawCut, a.formlength
 		from
 		#testnames a 
 		left join 
