@@ -243,7 +243,8 @@ begin try
 		YTDFirstTimePassRate,
 		YTDMeanRawScore,
 		YTDStdDev,
-		YTDReliabilityEst )
+		YTDReliabilityEst,
+		CrossRefKey)
 	select distinct
 		a.AccountCode,
 		a.SummaryTestName,
@@ -253,12 +254,13 @@ begin try
 		a.itemcount,
 		b.dailyn, b.dailyother, b.DailyPass, b.DailyPassRate, b.DailyFirstTimeN, b.DailyFirstTimePass, b.DailyFirstTimePassRate, b.DailyMeanRawScore, b.DailySTD, b.DailyVariance, 
 		b.TotalN, b.totalother, b.TotalPass, b.TotalPassRate, b.TotalFirstTimeN, b.TotalFirstTimePass, b.TotalFirstTimeRate, b.TotalMeanRawScore, b.TotalStdDev, b.TotalVariance, b.TotalAllScores, b.TotalSQRAllScores,
-		b.YTDN,	  b.ytdother,   b.ytdpass,   b.YtdPassRate,   b.YtdFirstTimeN,   b.YTDFirstTimePass,   b.YTDFirstTimeRate,   b.YTDMeanRawScore,   b.YTDSTD,      b.YTDVariance
+		b.YTDN,	  b.ytdother,   b.ytdpass,   b.YtdPassRate,   b.YtdFirstTimeN,   b.YTDFirstTimePass,   b.YTDFirstTimeRate,   b.YTDMeanRawScore,   b.YTDSTD,      b.YTDVariance, b.CrossRefKey
 	from
 		(select distinct SummaryTestName, Crossrefkey, AccountCode, Scalecut, max(RawCut) RawCut, ItemCount from Tests.SummaryTestNames
 				group by SummaryTestName, Crossrefkey, AccountCode, Scalecut, ItemCount) a  join
 		#results b on
 			a.CrossRefKey = b.crossrefkey
+	where a.AccountCode is not null
 	
 end try
 	Begin catch

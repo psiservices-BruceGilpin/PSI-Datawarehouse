@@ -83,6 +83,7 @@
     <Build Include="CAI\DailyStudentTestSummary.sql" />
     <Build Include="Tables\DailyItemSummary.sql" />
     <Build Include="Tables\TestScoreSummary.sql" />
+    <Build Include="Tables\KeyCrossReference.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Dev.publish.xml" />

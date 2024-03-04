@@ -294,4 +294,39 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="TestTitle" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="10ee8040-a209-423e-9b11-347136195703" ChangeDateTime="03/04/2024 15:06:53">
+    <Property Name="ElementName" Value="[dbo].[KeyCrossReference].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[KeyCrossReference]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CrossReferenceId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="cbd264fe-c60a-49ad-9c0b-2b19c907bf5d" ChangeDateTime="03/04/2024 16:56:27">
+    <Property Name="ElementName" Value="[dbo].[KeyCrossReference].[StudentListKey]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[KeyCrossReference]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="StudentScoreKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6b896600-ff9f-4110-bdda-9b0c5ac02c13" ChangeDateTime="03/04/2024 16:56:31">
+    <Property Name="ElementName" Value="[dbo].[KeyCrossReference].[TestScheduleKey]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[KeyCrossReference]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Startdate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6eb610c0-2c09-4fa0-ba39-098b911473d5" ChangeDateTime="03/04/2024 16:57:02">
+    <Property Name="ElementName" Value="[dbo].[KeyCrossReference].[LoadDate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[KeyCrossReference]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SummaryTestName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a1ff1852-804f-479e-82c4-12efb71f56e8" ChangeDateTime="03/04/2024 17:16:20">
+    <Property Name="ElementName" Value="[dbo].[KeyCrossReference].[Startdate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[KeyCrossReference]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Testdate" />
+  </Operation>
 </Operations>

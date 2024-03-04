@@ -35,23 +35,7 @@
 
 
 GO
-CREATE NONCLUSTERED INDEX [IX_TestSchedules_TestScheduldDBOD]
-    ON [Dimensions].[TestSchedules]([TestScheduleDBId] ASC) WHERE ([CurrentFlag]=(0));
 
 
-GO
-CREATE NONCLUSTERED INDEX [IX_TestSchedules_TestScheduleTitle]
-    ON [Dimensions].[TestSchedules]([TestScheduleTitle] ASC)
-    INCLUDE([TestScheduleDBId]) WHERE ([Currentflag]=(0));
-
-
-GO
-CREATE NONCLUSTERED INDEX [IXTestSchedulesSourceTestScheduleID]
-    ON [Dimensions].[TestSchedules]([SourceTestScheduleID] ASC)
-    INCLUDE([TestScheduleDBId], [CurrentFlag], [LoadDate]);
-
-
-GO
-
-CREATE INDEX [IX_TestSchedules_ScheduleStart] ON [Dimensions].[TestSchedules] ([ScheduleStart])
-Include ([TestPackageKey], [StudentGroupKey])
+CREATE INDEX [IX_TestSchedules_CCurrentFlag] ON [Dimensions].[TestSchedules] ([CurrentFlag])
+Include ([TestScheduleDBID],[StudentGroupKey])

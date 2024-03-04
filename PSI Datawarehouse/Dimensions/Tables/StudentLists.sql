@@ -34,7 +34,7 @@ CREATE NONCLUSTERED INDEX [IX_StudentLists_StudentListDBID]
 GO
 CREATE NONCLUSTERED INDEX [IX_StudentLists_CurrentFlag]
     ON [Dimensions].[StudentLists]([CurrentFlag] ASC)
-    INCLUDE([StudentListDBID], [StudentKey]);
+    INCLUDE([StudentListDBID], [StudentKey], [StudentGroupKey]);
 
 
 GO

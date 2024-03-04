@@ -16,9 +16,12 @@
 GO
 CREATE NONCLUSTERED INDEX [IX_StudentResponses_CurrentFlag]
     ON [Dimensions].[StudentResponses]([CurrentFlag] ASC)
-    INCLUDE([StudentItemKey], [NumericChoice], [StringChoice]);
+    INCLUDE([StudentResponsedbid]);
 
 
 GO
 
 
+
+
+CREATE INDEX [IX_StudentResponses_ResponseID] ON [Dimensions].[StudentResponses] ([StudentResponsedbid],[CurrentFlag])

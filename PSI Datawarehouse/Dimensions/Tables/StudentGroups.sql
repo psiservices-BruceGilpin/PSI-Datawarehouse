@@ -16,7 +16,8 @@
 
 GO
 CREATE NONCLUSTERED INDEX [IX_StudentGroups_StudentGroupDBID]
-    ON [Dimensions].[StudentGroups]([StudentGroupDBID] ASC) WHERE ([Currentflag]=(0));
+    ON [Dimensions].[StudentGroups]([StudentGroupDBID] ASC)
+    include ([StudentGrpTitle])
 
 
 GO
@@ -31,12 +32,3 @@ CREATE NONCLUSTERED INDEX [IX_StudentGroups_PoolKey]
 
 
 GO
-CREATE NONCLUSTERED INDEX [IX_StudentGroups_StudentGrpTitle]
-    ON [Dimensions].[StudentGroups]([StudentGrpTitle] ASC) WHERE ([CurrentFlag]=(0));
-
-
-GO
-CREATE NONCLUSTERED INDEX [IXStudentGroupsSourceGroupID]
-    ON [Dimensions].[StudentGroups]([SourceGroupID] ASC)
-    INCLUDE([StudentGroupDBID], [CurrentFlag], [LoadDate]);
-

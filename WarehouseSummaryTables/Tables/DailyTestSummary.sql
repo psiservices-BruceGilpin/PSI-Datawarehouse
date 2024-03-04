@@ -46,7 +46,8 @@
     [YTDReliabilityEst] DECIMAL(8, 3) NULL, 
     [YTDStdErrMean] Decimal(9,3),
     [YTDDecisionConsistancy] Decimal(9,3),
-    [MaintenanceDate] DATETIME NOT NULL DEFAULT getdate()
+    [MaintenanceDate] DATETIME NOT NULL DEFAULT getdate(),
+    [CrossRefKey] int
 )
 
 GO

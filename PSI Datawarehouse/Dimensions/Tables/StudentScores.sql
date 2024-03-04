@@ -42,8 +42,8 @@
 
 GO
 CREATE NONCLUSTERED INDEX [IX_StudentScores_CurrentFlag]
-    ON [Dimensions].[StudentScores]([CurrentFlag] ASC)
-    INCLUDE([StudentListKey], [TestListKey], [StartDate], [TestScheduleKey]);
+    ON [Dimensions].[StudentScores]([CurrentFlag] ASC, [startdate])
+    INCLUDE([StudentListKey], [TestListKey], [TestScheduleKey]);
 
 
 GO

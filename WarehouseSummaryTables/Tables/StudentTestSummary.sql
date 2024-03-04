@@ -6,6 +6,7 @@
     [DWTestKey] BIGINT NOT NULL, 
     [DWPackageKey] BIGINT NOT NULL, 
     [DWStudentKey] BigInt Not null,
+    [PoolKey] bigint,
     [StudentAltID] Varchar(128),
     [FirstName] Varchar(30),
     [LastName] varchar(30),

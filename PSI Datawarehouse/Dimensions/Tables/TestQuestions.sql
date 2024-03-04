@@ -33,5 +33,5 @@ CREATE NONCLUSTERED INDEX [IXTestQuestionsSourceTestQuestionID]
 
 GO
 
-CREATE INDEX [IX_TestQuestions_CurrentFlag] ON [Dimensions].[TestQuestions] ([CurrentFlag])
-Include ([TestQuestionDBID],[TestSegmentsKey],[QuestionKey],[QuestionSequence])
+CREATE INDEX [IX_TestQuestions_CurrentFlag] ON [Dimensions].[TestQuestions] ([CurrentFlag], [TestSegmentsKey])
+Include ([TestQuestionDBID],[QuestionKey],[QuestionSequence])
