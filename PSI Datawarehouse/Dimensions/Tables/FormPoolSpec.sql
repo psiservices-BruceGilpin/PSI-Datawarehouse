@@ -1,15 +1,13 @@
-﻿CREATE TABLE [Dimensions].[PublicationPools] (
-    [PublicationPoolId]INT           IDENTITY (1, 1) NOT NULL,
-    [PublicationPoolDBId]    INT            NULL,
-    [PublicationPoolItemDBID] Int          Null,
+﻿CREATE TABLE [Dimensions].[FormPoolSpecs] (
+    [FormPoolSpecId]INT           IDENTITY (1, 1) NOT NULL,
+    [FormPoolSpecDBId]    INT            NULL,
     [CurrentFlag]      BIT           DEFAULT ((0)) NOT NULL,
     [CheckSum]         BIGINT        Not Null,
     [SourceSystemID]   UNIQUEIDENTIFIER  NOT NULL,
     [CreateDate]       DATETIME      DEFAULT (getdate()) NOT NULL,
-    [ResultKey]        INT           NULL,
     [BankKey]          INT           NOT NULL,
     [Topic]            VARCHAR (128) NULL,
-    [SpecDescription]  VARCHAR (512) NULL,
+    [PoolDescription]  VARCHAR (512) NULL,
     [DateAdded] DATETIME NOT NULL, 
     [IsDeleted] BIT NOT NULL, 
     [LastUpdated] DATETIME NULL, 
@@ -31,16 +29,16 @@
     [UseItemResponseTheory] BIT NOT NULL, 
     [BelowCSEMTolerance] DECIMAL(9, 3) NULL, 
     [TargetCSEMTolerance] DECIMAL(9, 3) NULL, 
-    [AboceCSEMTolerance] DECIMAL(9, 3) NULL, 
+    [AboveCSEMTolerance] DECIMAL(9, 3) NULL, 
     [IsAta] BIT NOT NULL, 
     [NumberOfDesiredForms] TINYINT NOT NULL, 
     [ScaleCut] INT NULL, 
-    PRIMARY KEY CLUSTERED ([PublicationPoolId] ASC)
+    PRIMARY KEY CLUSTERED ([FormPoolSpecId] ASC)
 );
 
 
 GO
 CREATE NONCLUSTERED INDEX [IX_PublicationPool_CurrentFlag]
-    ON [Dimensions].[PublicationPools]([CurrentFlag] ASC)
-    INCLUDE([PublicationPoolDBId]);
+    ON [Dimensions].[FormPoolSpecs]([CurrentFlag] ASC)
+    INCLUDE([FormPoolSpecDBId]);
 

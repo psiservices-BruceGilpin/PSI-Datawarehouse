@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [dbo].[uspSummaryTestNamesMaint]
+﻿CREATE PROCEDURE [dimensions].[uspSummaryTestNamesMaint]
 
 AS
 	Begin Try
@@ -23,7 +23,7 @@ AS
 		  TestDBId, 
 		  LoadDate 
 		FROM 
-		  [PSI_DW].[Dimensions].[Tests] 
+		  PSI_DW.[Dimensions].[Tests] 
 		where 
 		  testdesc like '% LOFT %' 
 		  and CurrentFlag = 0 
@@ -33,7 +33,7 @@ AS
 		  TestDbID, 
 		  loaddate 
 		from 
-		  dimensions.tests 
+		  PSI_DW.dimensions.tests 
 		where 
 		  testdesc not like '% LOFT %' 
 		  and CHARINDEX(testtitle, testdesc) > 0 
@@ -44,7 +44,7 @@ AS
 		  TestDbID, 
 		  LoadDate 
 		from 
-		  dimensions.tests 
+		  PSI_DW.dimensions.tests 
 		where 
 		  testdesc not like '% LOFT %' 
 		  and CHARINDEX(testtitle, testdesc) = 0 
@@ -69,10 +69,10 @@ AS
 		set 
 		  AccountCode = c.ClientCode 
 		from 
-		  Dimensions.StudentScores_vw a 
-		  join Dimensions.StudentLists_vw b on a.StudentListKey = b.StudentListDBID 
-		  join dimensions.StudentTestAttributes_vw c on b.StudentKey = c.StudentKey 
-		  join Dimensions.TestLists_vw d on a.TestListKey = d.TestListDbId 
+		  [PSI_DW].Dimensions.StudentScores_vw a 
+		  join [PSI_DW].Dimensions.StudentLists_vw b on a.StudentListKey = b.StudentListDBID 
+		  join [PSI_DW].dimensions.StudentTestAttributes_vw c on b.StudentKey = c.StudentKey 
+		  join [PSI_DW].Dimensions.TestLists_vw d on a.TestListKey = d.TestListDbId 
 		  join #testnames e on  
 		  d.TestKey = e.dimensionstestkey 
 		  
@@ -101,7 +101,7 @@ AS
 			#testnames a join
 			psi_dw.Dimensions.ampforms_vw b on
 				a.dimensionsTestKey = b.formtestkey join
-			psi_dimensions.testsegments_vw c on
+			psi_dw.Dimensions.testsegments_vw c on
 				a.dimensionstestkey = c.testkey
 
 -- No updates allowed a different test title and/or description means a new record
@@ -122,7 +122,7 @@ AS
 
 	End Try
 	Begin catch
-		Insert Logging.SQLErrors (
+		Insert [PSI_DW].Logging.SQLErrors (
 			ErrorLIne,
 			ErrorMessage,
 			ErrorNumber,

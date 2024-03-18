@@ -83,7 +83,11 @@
     <Build Include="CAI\DailyStudentTestSummary.sql" />
     <Build Include="Tables\DailyItemSummary.sql" />
     <Build Include="Tables\TestScoreSummary.sql" />
-    <Build Include="Tables\KeyCrossReference.sql" />
+    <Build Include="KeyCrossReference.sql" />
+    <Build Include="Procedures and Functions\uspKeyCrossReferenceMaint.sql" />
+    <Build Include="Procedures and Functions\uspStudentTestSummaryMaint.sql" />
+    <Build Include="Procedures and Functions\uspSummaryTestNamesMaint.sql" />
+    <Build Include="Procedures and Functions\uspDailyTestSummaryMaint.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Dev.publish.xml" />

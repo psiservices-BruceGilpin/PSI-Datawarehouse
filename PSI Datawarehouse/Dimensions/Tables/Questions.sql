@@ -79,3 +79,8 @@ CREATE NONCLUSTERED INDEX [IXQuestionsSourceQuestionID]
     ON [Dimensions].[Questions]([SourceQuestionID] ASC)
     INCLUDE([QuestionDBID], [CurrentFlag], [LoadDate]);
 
+
+GO
+
+CREATE INDEX [IX_Questions_CurrentFlag] ON [Dimensions].[Questions] ([CurrentFlag])
+Include ([SourceQuestionID],[QuestionDBID],[QuestionStatus],[Admins],[VersionNum])

@@ -59,3 +59,11 @@ go
 Create Synonym Dimensions.Ampforms_vw for [psi_reporting].Dimensions.Ampforms_vw
 go
 Create Synonym [Dimensions].[Pools_vw] for [psi_reporting].[Dimensions].[Pools_vw]
+go
+Create Synonym [Dimensions].[LoftPoolSpecs_vw] for [psi_reporting].[Dimensions].[LoftPoolSpecs_vw]
+go
+Create Synonym [Dimensions].[LoftPools_vw] for [psi_reporting].[Dimensions].[LoftPools_vw]
+go
+Create Synonym [Dimensions].[LoftPoolItems_vw] for [psi_reporting].[Dimensions].[LoftPoolItems_vw]
+go
+Create Synonym [dbo].[KeyCrossReference_vw] for [psi_reporting].dbo.[KeyCrossReference_vw]

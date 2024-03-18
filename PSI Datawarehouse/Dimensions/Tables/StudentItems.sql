@@ -22,8 +22,9 @@
 
 GO
 CREATE NONCLUSTERED INDEX [IX_StudentItems_CurrentFlag]
-    ON [Dimensions].[StudentItems]([CurrentFlag] ASC, [TestQuestionKey])
-    Include (Studentscorekey)
+    ON [Dimensions].[StudentItems]([CurrentFlag] ASC,[TestQuestionKey])
+   INCLUDE ([SourceSystemID],[StudentItemDBID],[StudentScoreKey],[Points],[Correct],[QuestionTime],[ElapsedTime],[MaxPoints],[QuestionSequence],[FinalPoints],[ExtraPoints])
+
 
 
 GO
@@ -37,3 +38,7 @@ CREATE NONCLUSTERED INDEX [IX_StudentItems_StudentScoreKey]
 
 
 GO
+
+
+CREATE INDEX [IX_StudentItems_CurrentFlagCorrect] ON [Dimensions].[StudentItems] ([CurrentFlag], [Correct])
+INCLUDE ([StudentItemDBID],[StudentScoreKey],[TestQuestionKey])

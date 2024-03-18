@@ -329,4 +329,25 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="Testdate" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="1011420c-39b5-476c-8839-b5d6e03834ed" ChangeDateTime="03/05/2024 14:56:45">
+    <Property Name="ElementName" Value="[Students].[StudentTestSummary].[CorrectPercent]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Students].[StudentTestSummary]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CorrectPercentage" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b2b1f673-f6b0-4b27-90f9-465ba19c59ac" ChangeDateTime="03/12/2024 18:11:49">
+    <Property Name="ElementName" Value="[tests].[DailyItemSummary].[TotalTestScore]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[tests].[DailyItemSummary]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DailyFirstTimeN" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="36959307-8e21-4f49-a93d-31e63a8817a6" ChangeDateTime="03/15/2024 16:16:06">
+    <Property Name="ElementName" Value="[dbo].[DailyPoolSummary].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DailyPoolSummary]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PoolSummaryId" />
+  </Operation>
 </Operations>

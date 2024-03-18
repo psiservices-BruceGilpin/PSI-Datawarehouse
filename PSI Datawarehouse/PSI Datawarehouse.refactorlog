@@ -175,4 +175,95 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="StudentTestQuestionsDBId" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="8448e02e-d929-4f74-91f0-b72aabf989b5" ChangeDateTime="03/05/2024 18:54:09">
+    <Property Name="ElementName" Value="[Dimensions].[SamplingSpecifications].[PublicationPoolId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[SamplingSpecifications]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SamplingSpecId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9ecf4b41-508a-44a5-b66c-b7b42a39ab55" ChangeDateTime="03/05/2024 18:54:23">
+    <Property Name="ElementName" Value="[Dimensions].[SamplingSpecifications].[PublicationPoolDBId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[SamplingSpecifications]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SamplingSpecDBId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f944164d-fd9f-406a-9a3b-5f0ae0bd7daa" ChangeDateTime="03/05/2024 20:39:36">
+    <Property Name="ElementName" Value="[Dimensions].[LoftPools].[PublicationPoolAreaId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[LoftPools]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LoftPoolID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="bc4e6200-0d83-458a-8d53-36e96b9f6f8a" ChangeDateTime="03/05/2024 20:39:50">
+    <Property Name="ElementName" Value="[Dimensions].[LoftPools].[PublicationPoolAreaDBID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[LoftPools]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LoftPoolDBID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="2d3a9a82-3195-4ca2-91d9-23a23dd9312d" ChangeDateTime="03/05/2024 20:40:07">
+    <Property Name="ElementName" Value="[Dimensions].[LoftPools].[AreaName]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[LoftPools]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PoolName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="862892a5-4074-46e2-a1e0-e4f6e14a41d9" ChangeDateTime="03/05/2024 21:35:47">
+    <Property Name="ElementName" Value="[Dimensions].[LoftPools].[PublicationPoolKey]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[LoftPools]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LoftPoolSpecKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f809e882-fa90-4951-b297-b3d60a617ee3" ChangeDateTime="03/06/2024 14:51:42">
+    <Property Name="ElementName" Value="[Dimensions].[LoftPoolItems].[ActiveFlag]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[LoftPoolItems]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DeletedFlag" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a483f87d-7cd8-4c9d-ad0c-d8dc596d91fc" ChangeDateTime="03/06/2024 20:41:15">
+    <Property Name="ElementName" Value="[Dimensions].[LoftPoolSpecs].[AboceCSEMTolerance]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[LoftPoolSpecs]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AboveCSEMTolerance" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="711b0261-2b37-4530-bc9c-e18306911737" ChangeDateTime="03/15/2024 17:45:53">
+    <Property Name="ElementName" Value="[Dimensions].[TestPoolItems].[LoftPoolItemId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[TestPoolItems]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TestPoolItemId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f670a726-7c12-4779-bca9-878ef58e5009" ChangeDateTime="03/15/2024 17:46:00">
+    <Property Name="ElementName" Value="[Dimensions].[TestPoolItems].[LoftPoolItemDBID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[TestPoolItems]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TestPoolItemDBID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6885dda4-326d-467e-ae20-dcf23c892ba6" ChangeDateTime="03/18/2024 15:52:02">
+    <Property Name="ElementName" Value="[Dimensions].[FormPoolItems].[TestPoolItemId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[FormPoolItems]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="FormPoolItemId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="720c3070-3090-4453-8da0-d64ea9a94d29" ChangeDateTime="03/18/2024 15:52:12">
+    <Property Name="ElementName" Value="[Dimensions].[FormPoolItems].[TestPoolItemDBID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[FormPoolItems]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="FormPoolItemDBID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f0372a74-76c4-4760-8c02-4afbb4f1089b" ChangeDateTime="03/18/2024 15:52:19">
+    <Property Name="ElementName" Value="[Dimensions].[FormPoolItems].[LoftPoolKey]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[FormPoolItems]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="FormPoolKey" />
+  </Operation>
 </Operations>

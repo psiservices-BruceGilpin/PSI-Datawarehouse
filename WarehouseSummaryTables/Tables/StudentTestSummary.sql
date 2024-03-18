@@ -35,7 +35,8 @@
     [LoadDateTime] DATETIME NULL, 
     [Recertification] CHAR NULL, 
     [Reapplicant] CHAR NULL, 
-    [Checksum] BIGINT NOT NULL 
+    [Checksum] BIGINT NOT NULL, 
+    [CorrectPercentage] DECIMAL(6, 2) NULL 
 )
 
 GO

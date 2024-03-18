@@ -22,21 +22,21 @@ AS
 	select
 	FormTestkey, FormName, FormAdminType
 	from 
-	dimensions.Ampforms_vw 
+	[PSI_DW].dimensions.Ampforms_vw 
 	where FormAdminType = 'S7' ) a
 	union
 	(
 	select
 	FormTestkey, Formname, FormAdminType
 	from 
-	dimensions.Ampforms_vw 
+	[PSI_DW].dimensions.Ampforms_vw 
 	where FormAdminType = 'P7' ) 
 	union
 	(
 	select
 	FormTestkey, Formname, FormAdminType
 	from 
-	dimensions.Ampforms_vw 
+	[PSI_DW].dimensions.Ampforms_vw 
 	where FormAdminType = 'C7' ) 
 	) a
 	) a
@@ -75,6 +75,7 @@ AS
 		[LoadDateTime] [datetime] NULL,
 		[Recertification] char(1),
 		[Reapplicant] char(1),
+		[CorrectPercentage] Decimal(6,2),
 		[CheckSum] Bigint
 		);
 
@@ -152,13 +153,13 @@ AS
 	,checksum(testdbid, b.clientcode, e.testpackagekey,a.studentdbid, a.studentaltid,a.firstname, a.lastname,isnull(a.maidenname,' '),g.testtitle,h.formname,e.schedulestart,d.startdate,d.howlong,d.finalpoints,isnull(d.scaledscore,0),d.scorepoints,d.retake, d.AdaTime,d.extratime)
 
 from 
-  dimensions.Students_vw a 
-  join Dimensions.StudentTestAttributes b on a.studentdbid = b.StudentKey
-  join dimensions.studentlists_vw c on a.studentdbid = c.studentkey 
-  join dimensions.StudentScores d on c.studentlistdbid = d.studentlistkey and d.CurrentFlag = 0
-  join dimensions.TestSchedules_vw e on d.TestScheduleKey = e.TestScheduleDBID and b.TestScheduleKey = e.testscheduledbid
-  join dimensions.testlists_vw f on d.testlistkey = f.testlistdbid 
-  join Dimensions.Tests_vw g on f.testkey = g.testdbid 
+  [PSI_DW].dimensions.Students_vw a 
+  join [PSI_DW].Dimensions.StudentTestAttributes b on a.studentdbid = b.StudentKey
+  join [PSI_DW].dimensions.studentlists_vw c on a.studentdbid = c.studentkey 
+  join [PSI_DW].dimensions.StudentScores d on c.studentlistdbid = d.studentlistkey and d.CurrentFlag = 0
+  join [PSI_DW].dimensions.TestSchedules_vw e on d.TestScheduleKey = e.TestScheduleDBID and b.TestScheduleKey = e.testscheduledbid
+  join [PSI_DW].dimensions.testlists_vw f on d.testlistkey = f.testlistdbid 
+  join [PSI_DW].Dimensions.Tests_vw g on f.testkey = g.testdbid 
   left join #Forms h on g.TestDbID = h.FormTestKey
   left join DW_SummaryTables.Students.StudentTestSummary j on d.StudentScoreDBID = j.DWTestScoreKey
 
@@ -178,13 +179,13 @@ where
 	from
 		   #testdelta a 
 		   join
-		   Dimensions.studentCodes_vw b on a.dwtestscorekey = b.StudentScoresKey
+		   PSI_DW.Dimensions.studentCodes_vw b on a.dwtestscorekey = b.StudentScoresKey
 		   join
-		   dimensions.PoolCodes_vw d on
+		   PSI_DW.dimensions.PoolCodes_vw d on
 			b.PoolCode = d.PoolCodeDBID and
 			d.pooltitle = 'Y'
 		   Join 
-		   Dimensions.PoolCodeGroups_vw c on 
+		   PSI_DW.Dimensions.PoolCodeGroups_vw c on 
 			b.PoolCodeGroupKey = c.PoolCodeGroupDBID 
      Where c.PoolGroupTitle = 'Reapplicant';
 
@@ -194,15 +195,27 @@ where
 	from
 		   #testdelta a 
 		   join
-		   Dimensions.studentCodes_vw b on a.dwtestscorekey = b.StudentScoresKey
+		   PSI_DW.Dimensions.studentCodes_vw b on a.dwtestscorekey = b.StudentScoresKey
 		   join
-		   dimensions.PoolCodes_vw d on
+		   PSI_DW.Dimensions.PoolCodes_vw d on
 			b.PoolCode = d.PoolCodeDBID and
 			d.pooltitle = 'Y'
 		   Join 
-		   Dimensions.PoolCodeGroups_vw c on 
+		   [PSI_DW].Dimensions.PoolCodeGroups_vw c on 
 			b.PoolCodeGroupKey = c.PoolCodeGroupDBID 
      Where c.PoolGroupTitle = 'Recertification';
+
+	 update #testdelta
+	set CorrectPercentage = 
+		case 
+		when 
+			b.totalpoints != 0 then (a.FinalPoints + isnull(a.ExtraPoints,0)) * 1.0 / b.totalpoints 
+		else 0
+		end	
+	from
+	#testdelta a join
+	psi_dw.dimensions.tests_vw b on
+		a.dwTestkey = b.testdbid
 
 
 
@@ -243,7 +256,8 @@ where
 			[Recertification],
 			[Reapplicant],
 			[LoadDateTime],
-			[Checksum])
+			[Checksum],
+			[CorrectPercentage])
 		values (
 			s.[DWTestScoreKey],
 			s.[DWTestKey],
@@ -274,7 +288,8 @@ where
 			s.[Recertification],
 			s.[Reapplicant],
 			getdate(),
-			s.checksum
+			s.checksum,
+			s.CorrectPercentage
 	)
 	
 	when matched and s.[checksum] != t.[checksum] then
@@ -308,7 +323,9 @@ where
 			  ,[Recertification]	= s.Recertification
 			  ,[Reapplicant]		= s.Reapplicant
 			  ,[LoadDateTime]		= getdate()
-	--		  ,[Checksum]			= s.[Checksum]
+			  ,[Checksum]			= s.[Checksum]
+			  ,[CorrectPercentage]	= s.CorrectPercentage
+
 	;
 	
 		Select @@ROWCOUNT 'Rows Affected'

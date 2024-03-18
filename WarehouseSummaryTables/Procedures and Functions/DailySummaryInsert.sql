@@ -95,9 +95,10 @@ AS
 
 begin try
 
-		declare @start date = '1/1/2022', @end date = getdate()
+		declare @start date = cast(dateadd(year, -1, getdate()) as date), @end date = getdate()
 
-		truncate table tests.DailyTestSummary
+		delete from tests.DailyTestSummary
+		where TestDate >= @start
 
 
 		Insert into #Daily (CrossRefKey, AsOfDate,DailyN, DailyPass, DailyFirstTime, DailyFirstimePass, DailyOther, DailyAvg, DailyVar, DailySTD)

@@ -68,6 +68,7 @@
     <Folder Include="Scripts\" />
     <Folder Include="Dimensions" />
     <Folder Include="Account\dbo" />
+    <Folder Include="DBO" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Schemas\Account.sql" />
@@ -182,6 +183,10 @@
     <Build Include="Account\dbo\DimIsg.sql" />
     <Build Include="Account\dbo\QuarterlyCalendar_vw.sql" />
     <Build Include="Summary\TestPassRates_vw_1.sql" />
+    <Build Include="Dimensions\FormPoolSpecs_vw.sql" />
+    <Build Include="Dimensions\FormPools_vw.sql" />
+    <Build Include="Dimensions\FormPoolItems_vw.sql" />
+    <Build Include="DBO\KeyCrossReference_vw.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Dev_PSIReporting.publish.xml" />
