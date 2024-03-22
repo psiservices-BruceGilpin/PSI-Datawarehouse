@@ -178,8 +178,8 @@ begin try
 
 		  Select
 			a.CrossRefKey ,		a.asofdate ,	a.[DailyN],		a.[DailyPass], a.[DailyFirstTime],	a.[DailyOther],		a.[DailyFirstimePass],	a.[DailyAvg],	a.[DailyVar],	a.[DailySTD],
-												b.YTDN,			b.YTDPass,		b.YTDFirstTime,		b.YTDOther,			b.YTDFirstimePass,		b.YTDAvg,		b.YTDVar,		b.YTDStd,
-												c.TotalN,		c.TotalPass,	c.TotalFirstTime,	c.TotalOther,		c.TotalFirstimePass,	c.TotalAvg,		c.TotalVar,		c.TotalStd, c.TotalAllScores, c.TotalSQRAllScores
+												b.YTDN,			b.YTDPass,		b.YTDOther,		b.YTDFirstTime,	 b.YTDFirstimePass,		b.YTDAvg,		b.YTDVar,		b.YTDStd,
+												c.TotalN,		c.TotalPass,	c.TotalOther,	c.TotalFirstTime,	c.TotalFirstimePass,	c.TotalAvg,		c.TotalVar,		c.TotalStd, c.TotalAllScores, c.TotalSQRAllScores
 		  from
 			#daily a
 			join

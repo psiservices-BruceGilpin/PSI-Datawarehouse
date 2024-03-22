@@ -80,18 +80,18 @@
     <Build Include="Security\Tdlr.sql" />
     <Build Include="Security\Schema1_1.sql" />
     <Build Include="Security\cai.sql" />
-    <Build Include="CAI\DailyStudentTestSummary.sql" />
     <Build Include="Tables\DailyItemSummary.sql" />
     <Build Include="Tables\TestScoreSummary.sql" />
     <Build Include="KeyCrossReference.sql" />
     <Build Include="Procedures and Functions\uspKeyCrossReferenceMaint.sql" />
     <Build Include="Procedures and Functions\uspStudentTestSummaryMaint.sql" />
     <Build Include="Procedures and Functions\uspSummaryTestNamesMaint.sql" />
-    <Build Include="Procedures and Functions\uspDailyTestSummaryMaint.sql" />
+    <Build Include="Security\FormPools.sql" />
+    <Build Include="Tables\DailyFormPoolSummary.sql" />
+    <Build Include="Procedures and Functions\DailyFormPoolSummaryUpdate.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Dev.publish.xml" />
-    <None Include="Scripts\Synonyms.sql" />
     <None Include="QA.publish.xml" />
   </ItemGroup>
   <ItemGroup>

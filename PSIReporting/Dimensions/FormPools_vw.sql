@@ -1,4 +1,4 @@
-﻿CREATE VIEW [Dimensions].[LoftPools_vw]
+﻿CREATE VIEW [Dimensions].[FormPools_vw]
 	AS 
 
 SELECT [FormPoolDBID]

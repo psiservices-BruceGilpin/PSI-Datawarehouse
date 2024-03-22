@@ -60,10 +60,10 @@ Create Synonym Dimensions.Ampforms_vw for [psi_reporting].Dimensions.Ampforms_vw
 go
 Create Synonym [Dimensions].[Pools_vw] for [psi_reporting].[Dimensions].[Pools_vw]
 go
-Create Synonym [Dimensions].[LoftPoolSpecs_vw] for [psi_reporting].[Dimensions].[LoftPoolSpecs_vw]
+Create Synonym [Dimensions].[FormPoolSpecs_vw] for [psi_reporting].[Dimensions].[FormPoolSpecs_vw]
 go
-Create Synonym [Dimensions].[LoftPools_vw] for [psi_reporting].[Dimensions].[LoftPools_vw]
+Create Synonym [Dimensions].[FormPools_vw] for [psi_reporting].[Dimensions].[FormPools_vw]
 go
-Create Synonym [Dimensions].[LoftPoolItems_vw] for [psi_reporting].[Dimensions].[LoftPoolItems_vw]
+Create Synonym [Dimensions].[FormPoolItems_vw] for [psi_reporting].[Dimensions].[FormPoolItems_vw]
 go
 Create Synonym [dbo].[KeyCrossReference_vw] for [psi_reporting].dbo.[KeyCrossReference_vw]

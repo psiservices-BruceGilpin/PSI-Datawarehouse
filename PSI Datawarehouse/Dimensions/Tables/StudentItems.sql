@@ -42,3 +42,7 @@ GO
 
 CREATE INDEX [IX_StudentItems_CurrentFlagCorrect] ON [Dimensions].[StudentItems] ([CurrentFlag], [Correct])
 INCLUDE ([StudentItemDBID],[StudentScoreKey],[TestQuestionKey])
+GO
+
+CREATE INDEX [IX_StudentItems_TestQuestionKey] ON [Dimensions].[StudentItems] ([TestQuestionKey])
+Include ([StudentScoreKey])

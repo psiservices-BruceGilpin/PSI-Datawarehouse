@@ -350,4 +350,25 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="PoolSummaryId" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="b219af29-6502-4a21-aaa7-1427db5e6c28" ChangeDateTime="03/18/2024 19:33:05">
+    <Property Name="ElementName" Value="[Tests].[DailyFormPoolSummary].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Tests].[DailyFormPoolSummary]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DailyFormPoolSummaryId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3daca4f5-80d9-4d6f-a4f0-1e095de7f4bc" ChangeDateTime="03/20/2024 14:02:34">
+    <Property Name="ElementName" Value="[FormPools].[DailyFormPoolSummary].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[FormPools].[DailyFormPoolSummary]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="FormPoolSummaryId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3430330c-d9a3-4039-9ebc-3fbe253dd417" ChangeDateTime="03/20/2024 19:18:03">
+    <Property Name="ElementName" Value="[FormPools].[DailyFormPoolSummary].[IX_DailyFormPoolSummary_Column]" />
+    <Property Name="ElementType" Value="SqlIndex" />
+    <Property Name="ParentElementName" Value="[FormPools].[DailyFormPoolSummary]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[IX_DailyFormPoolSummary_FormPoolKey]" />
+  </Operation>
 </Operations>
