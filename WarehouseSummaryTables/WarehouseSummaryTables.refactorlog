@@ -371,4 +371,39 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="[IX_DailyFormPoolSummary_FormPoolKey]" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="575cada7-f8a9-4e51-8fbd-38dd6308f398" ChangeDateTime="03/26/2024 15:51:59">
+    <Property Name="ElementName" Value="[tests].[DailyItemSummary].[DailyN]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[tests].[DailyItemSummary]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TotalN" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="436a1983-277c-4a6c-a4f0-2afb4f769edd" ChangeDateTime="03/26/2024 15:52:08">
+    <Property Name="ElementName" Value="[tests].[DailyItemSummary].[DailyCorrect]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[tests].[DailyItemSummary]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TotalCorrect" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="478b260c-73bd-4d3b-a5e0-5b5fdbc3d5db" ChangeDateTime="03/26/2024 15:52:16">
+    <Property Name="ElementName" Value="[tests].[DailyItemSummary].[DailyFirstTimeN]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[tests].[DailyItemSummary]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TotalFirstTimeN" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="35c4f037-0436-447e-abd8-cbae551d3df4" ChangeDateTime="03/26/2024 15:52:27">
+    <Property Name="ElementName" Value="[tests].[DailyItemSummary].[DailyFirstTimeCorrect]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[tests].[DailyItemSummary]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TotalFirstTimeCorrect" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="fec8d51e-734e-413f-911e-54fbaa80bc31" ChangeDateTime="03/26/2024 16:23:20">
+    <Property Name="ElementName" Value="[tests].[DailyItemSummary].[DailyCorrectScore]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[tests].[DailyItemSummary]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TotalCorrectScore" />
+  </Operation>
 </Operations>

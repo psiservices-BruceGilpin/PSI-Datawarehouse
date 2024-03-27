@@ -39,3 +39,7 @@ GO
 
 CREATE INDEX [IX_TestSchedules_CCurrentFlag] ON [Dimensions].[TestSchedules] ([CurrentFlag])
 Include ([TestScheduleDBID],[StudentGroupKey])
+
+GO
+
+CREATE INDEX [IX_TestSchedules_SourceTestScheduleID] ON [Dimensions].[TestSchedules] ([SourceTestScheduleID])

@@ -39,3 +39,6 @@ CREATE NONCLUSTERED INDEX [IX_Students_CurrentFlag]
 
 
 GO
+
+
+CREATE INDEX [IX_Students_SourceStudentID] ON [Dimensions].[Students] ([SourceStudentID])

@@ -34,7 +34,7 @@ CREATE NONCLUSTERED INDEX [IX_StudentItems_StudentItemDBID]
 
 GO
 CREATE NONCLUSTERED INDEX [IX_StudentItems_StudentScoreKey]
-    ON [Dimensions].[StudentItems]([StudentScoreKey] ASC) WHERE ([CurrentFlag]=(0));
+    ON [Dimensions].[StudentItems]([StudentScoreKey] ASC, [testquestionkey]) WHERE ([CurrentFlag]=(0));
 
 
 GO
@@ -46,3 +46,7 @@ GO
 
 CREATE INDEX [IX_StudentItems_TestQuestionKey] ON [Dimensions].[StudentItems] ([TestQuestionKey])
 Include ([StudentScoreKey])
+
+GO
+
+CREATE INDEX [IX_StudentItems_SourceID] ON [Dimensions].[StudentItems] ([SourceSystemID])
