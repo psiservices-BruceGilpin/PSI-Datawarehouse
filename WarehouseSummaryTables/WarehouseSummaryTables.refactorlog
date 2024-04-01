@@ -406,4 +406,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="TotalCorrectScore" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="4c39dccb-7201-410f-98b9-154906d151de" ChangeDateTime="03/29/2024 20:45:57">
+    <Property Name="ElementName" Value="[Tests].[DailyTestSummary].[ytdScoreTotal]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Tests].[DailyTestSummary]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="YTDScoreTotal" />
+  </Operation>
 </Operations>
