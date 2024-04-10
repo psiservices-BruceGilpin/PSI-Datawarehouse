@@ -103,14 +103,13 @@ begin try
 		where TestDate >= @start
 
 
-		Insert into #Daily (CrossRefKey, AsOfDate,DailyN, DailyPass, DailyFirstTime, DailyFirstimePass, DailyScoreTotal, DailyOther, DailyAvg, DailyVar, DailySTD)
+		Insert into #Daily (CrossRefKey, AsOfDate,DailyN, DailyPass, DailyFirstTime, DailyFirstimePass, DailyScoreTotal, DailyAvg, DailyVar, DailySTD)
 		 select
 			b.CrossRefKey,
 			a.testdate,
 			count(*) DailyCandidateN,
 			sum(case when a.passfail = 'P' then 1 else 0 end) DailyCandidatePass,
 			sum(case when a.computedattempt# = 1 then 1 else 0 end) DailyfirstTime,
-			sum(case when a.Passfail != 'P' then 1 else 0 end) DailyCandidateother,
 			sum(case when a.passfail= 'P' and a.computedattempt# = 1 then 1 else 0 end) FirstimePass,
 			sum(a.finalpoints) DailyScoreTotal,
 			avg(a.finalpoints) DailyAvg,

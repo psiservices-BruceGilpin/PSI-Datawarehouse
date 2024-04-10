@@ -89,6 +89,9 @@
     <Build Include="Security\FormPools.sql" />
     <Build Include="Tables\DailyFormPoolSummary.sql" />
     <Build Include="Procedures and Functions\DailyFormPoolSummaryUpdate.sql" />
+    <Build Include="TestQuestionUsageCnt.sql" />
+    <Build Include="Procedures and Functions\uspDailyTestQuestionUsageMaint.sql" />
+    <Build Include="Procedures and Functions\uspQuestionStatsAnalysis.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Dev.publish.xml" />
