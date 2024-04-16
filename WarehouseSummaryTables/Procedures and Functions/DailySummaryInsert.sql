@@ -124,7 +124,7 @@ begin try
 			group by
 			b.CrossRefKey, a.TestDate
 
-		  Insert into #ytd (CrossRefKey, asofDate, YTDN, YTDPass, YTDFirstTime, YTDOther, ytdFirstimePass, ytdScoreTotal, YTDAvg, YTDVar, YTDStd)
+		  Insert into #ytd (CrossRefKey, asofDate, YTDN, YTDPass, YTDFirstTime,  ytdFirstimePass, ytdScoreTotal, YTDAvg, YTDVar, YTDStd)
 		  
 			select
 			b.CrossRefKey,
@@ -132,7 +132,6 @@ begin try
 				count(*) YTDCandidateN,
 				sum(case when a.passfail = 'P' then 1 else 0 end) YTDCandidatePass,
 				sum(case when a.computedattempt# = 1 then 1 else 0 end) YTDfirstTime,
-				sum(case when a.Passfail != 'P' then 1 else 0 end) YTDCandidateother,
 				sum(case when a.passfail= 'P' and a.computedattempt# = 1 then 1 else 0 end) YTDFirstimePass,
 				sum(a.finalpoints) YTDSCoreTotal,
 				avg(a.finalpoints) YTDAvg,
@@ -149,7 +148,7 @@ begin try
 				b.CrossRefKey, c.asofdate
 			order by b.CrossRefKey, c.asofdate
 		  
-			insert into #total (CrossRefKey, asofdate, TotalN, TotalPass, TotalFirstTime, TotalOther, TotalFirstimePass,
+			insert into #total (CrossRefKey, asofdate, TotalN, TotalPass, TotalFirstTime,  TotalFirstimePass,
 								TotalAvg, TotalVar, TotalStd, TotalAllScores, TotalSQRAllScores)
 		  
 			select
@@ -158,7 +157,6 @@ begin try
 				count(*) TotalCandidateN,
 				sum(case when a.passfail = 'P' then 1 else 0 end) TotalCandidatePass,
 				sum(case when a.computedattempt# = 1 then 1 else 0 end) TotalfirstTime,
-				sum(case when a.Passfail != 'P' then 1 else 0 end) TotalCandidateother,
 				sum(case when a.passfail= 'P' and a.computedattempt# = 1 then 1 else 0 end) TotalFirstimePass,
 				avg(a.FinalPoints) Totalavg,
 				var(a.FinalPoints) TotalVariance,
@@ -175,14 +173,14 @@ begin try
 			group by
 				b.CrossRefKey, c.asofdate  
 		  insert into #results
-		  (CrossRefKey, AsOfDate,			DailyN,			DailyPass,		DailyFirstTimeN, DailyDailyScoreTotal,	DailyFirstTimePass, DailyMeanRawScore, DailyVariance, DailySTd,
+		  (CrossRefKey, AsOfDate,			DailyN,			DailyPass,		DailyFirstTimeN, DailyScoreTotal,	DailyFirstTimePass, DailyMeanRawScore, DailyVariance, DailySTd,
 											YTDN,			Ytdpass,		YTDScoreTotal,		 YtdFirstTimeN,	YTDFirstTimePass,	YTDMeanRawScore,   YTDVariance,   YTDStd,
-											TotalN,			 TotalPass,		TotalAllScores,	TotalFirstTimeN,	TotalFirstTimePass, TotalMeanRawScore, TotalVariance, TotalStdDev, TotalAllScores, TotalSQRAllScores )
+											TotalN,			 TotalPass,		TotalAllScores,	TotalFirstTimeN,	TotalFirstTimePass, TotalMeanRawScore, TotalVariance, TotalStdDev,  TotalSQRAllScores )
 
 		  Select
 			a.CrossRefKey ,		a.asofdate ,	a.[DailyN],		a.[DailyPass], a.[DailyFirstTime],	a.[DailyScoreTotal],		a.[DailyFirstimePass],	a.[DailyAvg],	a.[DailyVar],	a.[DailySTD],
 												b.YTDN,			b.YTDPass,		b.ytdScoreTotal,		b.YTDFirstTime,	 b.YTDFirstimePass,		b.YTDAvg,		b.YTDVar,		b.YTDStd,
-												c.TotalN,		c.TotalPass,	c.TotalAllScores,	c.TotalFirstTime,	c.TotalFirstimePass,	c.TotalAvg,		c.TotalVar,		c.TotalStd, c.TotalAllScores, c.TotalSQRAllScores
+												c.TotalN,		c.TotalPass,	c.TotalAllScores,	c.TotalFirstTime,	c.TotalFirstimePass,	c.TotalAvg,		c.TotalVar,		c.TotalStd, c.TotalSQRAllScores
 		  from
 			#daily a
 			join
