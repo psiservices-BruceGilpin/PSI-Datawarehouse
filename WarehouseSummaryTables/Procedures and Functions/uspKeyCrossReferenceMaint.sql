@@ -3,31 +3,37 @@
 AS
 	Begin Try
 		truncate table KeyCrossReference
-		Insert into KeyCrossReference ( Studentkey, StudentScoreKey, testdate, TestPackageKey, 
-										PackageTitle, SummaryTestName, DimensionsTestKey )
+		Insert into KeyCrossReference ( Studentkey, StudentScoreKey, testdate,  
+										 SummaryTestName, DimensionsTestKey )
 
-		SELECT   a.StudentKey, b.StudentScoreDBID, b.StartDate, d.TestPackageDBID, 
-				 d.PackageTitle,  g.summarytestname, g.DimensionsTestKey
+		SELECT   a.StudentDBID, d.StudentScoreDBID, d.StartDate,  
+				   i.summarytestname, i.DimensionsTestKey
   
 		  FROM 
-			psi_dw.dimensions.StudentLists_vw a 
+			[$(PSIReporting)].Dimensions.Students_vw a 
 			join
-			psi_dw.dimensions.StudentScores_vw b on
-				a.StudentListDBID = b.StudentListKey
+			[$(PSIReporting)].Dimensions.StudentTestAttributes_vw b on
+				a.StudentDBID = b.StudentKey
 			join
-				psi_dw.dimensions.TestSchedules_vw c on
-					b.TestScheduleKey = c.TestScheduleDBID and
-					cast(b.StartDate as date) = cast(c.schedulestart as date)
+			[$(PSIReporting)].Dimensions.StudentLists_vw c on
+				a.StudentDBID = c.StudentKey
 			join
-				psi_dw.dimensions.TestPackages_vw d on
-					c.TestPackageKey = d.TestPackageDBID 
+			[$(PSIReporting)].Dimensions.StudentScores_vw d on
+				c.StudentListDBID = d.StudentListKey
+			--join
+			--[$(PSIReporting)].dimensions.TestSchedules_vw e on
+			--	d.TestScheduleKey = e.TestScheduleDBID and b.TestScheduleKey = e.TestScheduleDBID
 			join
-				psi_dw.dimensions.testlists_vw f on
-					d.testpackagedbid = f.TestPackageKey 
+			[$(PSIReporting)].Dimensions.TestLists_vw f on
+				d.TestListKey = f.TestListDbId
 			join
-				DW_SummaryTables.Tests.SummaryTestNames g on
-					f.TestKey = g.DimensionsTestKey
-		where b.StartDate >= '1/1/2022' and b.PFA in ('P','F') 
+			[$(PSIReporting)].Dimensions.Tests_vw g on
+				f.TestKey = g.TestDbID
+			join dw_summarytables.tests.SummaryTestNames  i on
+					g.TestDbID = i.dimensionstestkey 
+
+
+		where d.StartDate >= '1/1/2022'
 	End Try
 	Begin catch
 		Insert [PSI_DW].Logging.SQLErrors (

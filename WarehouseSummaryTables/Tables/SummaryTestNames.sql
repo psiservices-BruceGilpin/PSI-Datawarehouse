@@ -18,3 +18,8 @@ GO
 
 CREATE INDEX [IX_SummaryTestNames_CrossRefKey] ON [Tests].[SummaryTestNames] ([CrossRefKey])
 Include([DimensionsTestKey])
+
+GO
+
+CREATE INDEX [IX_SummaryTestNames_DimensionsTestKey] ON [Tests].[SummaryTestNames] ([DimensionsTestKey])
+Include ([SummaryTestName])

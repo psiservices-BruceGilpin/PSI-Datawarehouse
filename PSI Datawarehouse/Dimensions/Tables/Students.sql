@@ -35,7 +35,7 @@ CREATE NONCLUSTERED INDEX [IX_Students_StudentDBID]
 GO
 CREATE NONCLUSTERED INDEX [IX_Students_CurrentFlag]
     ON [Dimensions].[Students]([CurrentFlag], [PoolKey])
-    INCLUDE([StudentDBID] );
+    INCLUDE([StudentDBID],[FirstName],[LastName] );
 
 
 GO

@@ -49,6 +49,16 @@ AS
 		  testdesc not like '% LOFT %' 
 		  and CHARINDEX(testtitle, testdesc) = 0 
 		  and CurrentFlag = 0 
+		union
+			select distinct 
+			testtitle,
+			testdbid,
+			loaddate
+		from
+			PSI_Dw.dimensions.tests
+		where 
+			currentflag = 0 and
+			testdesc is null
 		Update 
 		  #testnames
 		set 

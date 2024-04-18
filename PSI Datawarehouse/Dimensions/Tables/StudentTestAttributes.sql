@@ -52,7 +52,7 @@ CREATE NONCLUSTERED INDEX [IX_StudentTestAttributes_StudentKey]
 GO
 CREATE NONCLUSTERED INDEX [IX_StudentTestAttributes_CurrentFlag]
     ON [Dimensions].[StudentTestAttributes]([CurrentFlag] ASC)
-    INCLUDE([StudentKey], [DateSched]);
+    INCLUDE([StudentKey], [DateSched],[TestCenterKey]);
 
 
 GO

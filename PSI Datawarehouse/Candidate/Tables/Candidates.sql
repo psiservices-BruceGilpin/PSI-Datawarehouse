@@ -61,6 +61,6 @@ CREATE NONCLUSTERED INDEX [IX_Candidates_CandidateDBID]
 
 GO
 CREATE NONCLUSTERED INDEX [IX_Candidates_CurrentFlag]
-    ON [Candidate].[Candidates]([CurrentFlag] ASC)
-    INCLUDE([SchoolKey], [CandidateDBId], [SourceSystemKey], [SourceCandidateKey], [TestKey], [CandidateTypeKey]);
+    ON [Candidate].[Candidates]([CurrentFlag] ASC,[RegistrationDate],[ExpirationDate])
+    INCLUDE([FirstName],[LastName],[TestKey],[SchoolKey],[CandidateTypeKey],[Candidatedbid],[CandidateAltKey]);
 

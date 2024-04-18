@@ -25,7 +25,8 @@ CREATE VIEW [Candidate].[Candidates_vw]
 	else d.SchoolName
 	end SchoolName,
 	c.TestName,
-	b.SourceSystemName
+	b.SourceSystemName,
+	a.DimensionsStudentID
 	FROM [$(PSI_DW)].Candidate.Candidates a with (nolock) join
 	[$(PSI_DW)]..SourceSystems b with (nolock) on
 		a.SourceSystemKey = b.SourceSystemId  and

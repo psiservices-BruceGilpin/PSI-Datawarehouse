@@ -20,9 +20,7 @@
     [PartitionValue]        INT             NOT NULL,
     [ResponseChoiceKey]     BIGINT          NULL,
     [Comments]              VARCHAR (1500)  NULL,
-    CONSTRAINT [PK_CandidateResponse] PRIMARY KEY CLUSTERED ([PartitionValue] ASC, [CandidateResponseId] ASC) ON [CandidateResponse] ([PartitionValue]),
-    CONSTRAINT [FK_Responses_ToItemBank] FOREIGN KEY ([ItemBankKey]) REFERENCES [Test].[ItemBank] ([ItemBankId]),
-    CONSTRAINT [FK_Responses_ToTestAssignmentPortions] FOREIGN KEY ([TestAssignPortionKey]) REFERENCES [Candidate].[TestAssignmentPortions] ([TestAssgnPortionId])
+    CONSTRAINT [PK_CandidateResponse] PRIMARY KEY CLUSTERED ([PartitionValue] ASC, [CandidateResponseId] ASC) ON [CandidateResponse] ([PartitionValue])
 ) ON [CandidateResponse] ([PartitionValue]);
 
 
