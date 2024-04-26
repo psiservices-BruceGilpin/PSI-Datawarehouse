@@ -4,10 +4,10 @@ AS
 	Begin Try
 		truncate table KeyCrossReference
 		Insert into KeyCrossReference ( Studentkey, StudentScoreKey, testdate,  
-										 SummaryTestName, DimensionsTestKey )
+										 SummaryTestName, DimensionsTestKey, PackageKey )
 
 		SELECT   a.StudentDBID, d.StudentScoreDBID, d.StartDate,  
-				   i.summarytestname, i.DimensionsTestKey
+				   i.summarytestname, i.DimensionsTestKey, e.TestPackageKey
   
 		  FROM 
 			[$(PSIReporting)].Dimensions.Students_vw a 
@@ -20,9 +20,9 @@ AS
 			join
 			[$(PSIReporting)].Dimensions.StudentScores_vw d on
 				c.StudentListDBID = d.StudentListKey
-			--join
-			--[$(PSIReporting)].dimensions.TestSchedules_vw e on
-			--	d.TestScheduleKey = e.TestScheduleDBID and b.TestScheduleKey = e.TestScheduleDBID
+			join
+			[$(PSIReporting)].dimensions.TestSchedules_vw e on
+				d.TestScheduleKey = e.TestScheduleDBID and b.TestScheduleKey = e.TestScheduleDBID
 			join
 			[$(PSIReporting)].Dimensions.TestLists_vw f on
 				d.TestListKey = f.TestListDbId

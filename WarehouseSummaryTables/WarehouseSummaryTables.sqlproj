@@ -82,7 +82,6 @@
     <Build Include="Security\cai.sql" />
     <Build Include="Tables\DailyItemSummary.sql" />
     <Build Include="Tables\TestScoreSummary.sql" />
-    <Build Include="KeyCrossReference.sql" />
     <Build Include="Procedures and Functions\uspKeyCrossReferenceMaint.sql" />
     <Build Include="Procedures and Functions\uspStudentTestSummaryMaint.sql" />
     <Build Include="Procedures and Functions\uspSummaryTestNamesMaint.sql" />
@@ -92,6 +91,7 @@
     <Build Include="TestQuestionUsageCnt.sql" />
     <Build Include="Procedures and Functions\uspDailyTestQuestionUsageMaint.sql" />
     <Build Include="Procedures and Functions\uspQuestionStatsAnalysis.sql" />
+    <Build Include="Tables\KeyCrossReference.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Dev.publish.xml" />

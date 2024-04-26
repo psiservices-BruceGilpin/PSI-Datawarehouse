@@ -24,10 +24,10 @@ AS
 								, [DailyFirstTimePass]		INT NULL 
 								, [DailyScoreTotal]			INT Null
 								, [DailyFirstTimePassRate]	DECIMAL(5,2) NULL
-								, [DailyMeanRawScore]		Decimal(8,3)
-								, [DailyVariance]			Decimal(8,3)
-								, [DailySTD]				Decimal(8,3)
-								, [DailyStDErrMean]			Decimal(8,3)
+								, [DailyMeanRawScore]		Decimal(10,3)
+								, [DailyVariance]			Decimal(10,3)
+								, [DailySTD]				Decimal(10,3)
+								, [DailyStDErrMean]			Decimal(10,3)
 								, [YTDN]					int
 								, [YtdFirstTimeN]			int
 								, [YTDFirstTimePass]		int
@@ -35,10 +35,10 @@ AS
 								, [YTDScoreTotal]			int
 								, [YTDTotalScore]			int
 								, [YtdPassRate]				decimal(5,2)
-								, [YTDMeanRawScore]			Decimal(8,3)
-								, [YTDVariance]				Decimal(8,3)
-								, [YTDSTD]					Decimal(8,3)
-								, [YTDStdErrmean]			decimal(8,3)
+								, [YTDMeanRawScore]			Decimal(10,3)
+								, [YTDVariance]				Decimal(10,3)
+								, [YTDSTD]					Decimal(10,3)
+								, [YTDStdErrmean]			decimal(10,3)
 								, [YTDFirstTimeRate]		decimal(5,2)
 								, [TotalN]					int
 								, [TotalPass]				int
@@ -48,10 +48,10 @@ AS
 								, [TotalPassRate]			decimal(5,2)
 								, [TotalOtherPass]			int
 								, [TotalFirstTimeRate]		decimal(5,2)
-								, [TotalMeanRawScore]		decimal(8,3)
-								, [TotalStdDev]				decimal(8,3)
-								, [TotalStdErrMean]			decimal(8,3)
-								, [TotalVariance]			decimal(8,3) 
+								, [TotalMeanRawScore]		decimal(10,3)
+								, [TotalStdDev]				decimal(10,3)
+								, [TotalStdErrMean]			decimal(10,3)
+								, [TotalVariance]			decimal(10,3) 
 								, [TotalAllScores]			int
 								, [TotalSQRAllScores]		int
 								)
@@ -62,9 +62,9 @@ AS
 								DailyFirstTime				int,
 								DailyFirstimePass			int,
 								DailyScoreTotal				int,
-								Dailyavg						decimal(8,3),
-								DailyVar						decimal(8,3),
-								DailySTD						decimal(8,3)
+								Dailyavg						decimal(10,3),
+								DailyVar						decimal(10,3),
+								DailySTD						decimal(10,3)
 
 							)
 		create table #ytd (		Crossrefkey					int,
@@ -74,9 +74,9 @@ AS
 								ytdFirstTime				int,
 								ytdFirstimePass				int,
 								ytdScoreTotal				int,
-								ytdavg						decimal(8,3),
-								ytdVar						decimal(8,3),
-								ytdSTD						decimal(8,3)
+								ytdavg						decimal(10,3),
+								ytdVar						decimal(10,3),
+								ytdSTD						decimal(10,3)
 
 							)
 	create table #Total (		Crossrefkey					int,
@@ -85,9 +85,9 @@ AS
 								TotalPass					int,
 								TotalFirstTime				int,
 								TotalFirstimePass			int,
-								Totalavg					decimal(8,3),
-								TotalVar					decimal(8,3),
-								TotalSTD					decimal(8,3),
+								Totalavg					decimal(10,3),
+								TotalVar					decimal(10,3),
+								TotalSTD					decimal(10,3),
 								TotalAllScores				int,
 								TotalSQRAllScores			int
 
