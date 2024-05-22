@@ -266,4 +266,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="FormPoolKey" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="5124ef6a-88b6-4aeb-a6b4-2daf702d47a7" ChangeDateTime="05/22/2024 14:45:34">
+    <Property Name="ElementName" Value="[dimensions].[Atlas7Accounts].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dimensions].[Atlas7Accounts]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Atlas7AccountId" />
+  </Operation>
 </Operations>

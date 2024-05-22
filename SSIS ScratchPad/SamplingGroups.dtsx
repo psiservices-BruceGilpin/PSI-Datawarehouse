@@ -11,11 +11,45 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="57"
-  DTS:VersionGUID="{FAA5A8E7-6BDA-4352-B3D9-D562F5B8809C}">
+  DTS:VersionBuild="58"
+  DTS:VersionGUID="{E7A00C84-E8BF-4DDA-92F9-EF8B4BA0218F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[dev-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{885FE33C-B35D-491A-BD2A-F4A6F19A4545}"
+      DTS:ObjectName="dev-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=dev-dwdb01.a0f90e80fb41.database.windows.net;User ID=bruce.gilpin;Initial Catalog=PSI_DW;Provider=SQLNCLI11.1;Persist Security Info=True;Application Name=SSIS-Package1-{885FE33C-B35D-491A-BD2A-F4A6F19A4545}dev-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAKyPgwWpVqEqaUaQxTr1FuQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACyxE7IQWuk9+7QXvqJPtsmAAAAAASAAACgAAAAEAAAAIIeKq9nGx2P+sXfTsZz4X0wAAAA+ZZubJSKq1ihLQz0RU8KU33Om+a6mjZvSpkbGZ2DCX6z+ajhpor3L0We++bDXTYIFAAAAHZi9HarguUNTR1T/ye6Ad6nM7mP</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[dev-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{9F869DD0-FE30-4D36-9F7F-6AE56DF2EDC3}"
+      DTS:ObjectName="dev-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=dev-dwdb01.a0f90e80fb41.database.windows.net;User ID=bruce.gilpin;Initial Catalog=PSI_DW;Provider=MSOLEDBSQL19.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAKyPgwWpVqEqaUaQxTr1FuQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACgX3SDd+UxYQ7ue+v/OvkKAAAAAASAAACgAAAAEAAAAAyhaEmKUV6tcxQCbejYJmowAAAA9HsbvV+ZMmKfAbwv87SMCXFMGUagjpEG2E3sPIaZgUStdIqf6Zcx7feh3UzJ0Du1FAAAALxkn9XMMtRpW+AL3qTgA07ljyxB</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[ol-dwdevdb01.dc.onepsi.net.dw_summarytables]"
       DTS:CreationName="OLEDB"
@@ -26,16 +60,6 @@
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
           DTS:ConnectionString="Data Source=ol-dwdevdb01.dc.onepsi.net;Initial Catalog=dw_summarytables;Provider=MSOLEDBSQL19.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[ol-dwdevdb01.dc.onepsi.net.PSI_DW]"
-      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-      DTS:DTSID="{A21A6A71-7E31-48D0-BCF5-8599D9E2A272}"
-      DTS:ObjectName="ol-dwdevdb01.dc.onepsi.net.PSI_DW">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=ol-dwdevdb01.dc.onepsi.net;Initial Catalog=PSI_DW;Integrated Security=True;Application Name=SSIS-Package1-{A21A6A71-7E31-48D0-BCF5-8599D9E2A272}ol-dwdevdb01.dc.onepsi.net.PSI_DW;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -87,6 +111,18 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ol-ok-sql2.atlas7]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{62B10777-902A-4862-BA76-F1ED985EDAFB}"
+      DTS:ObjectName="ol-ok-sql2.atlas7">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=ol-ok-sql2;Initial Catalog=atlas7;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;Application Intent=READOnly;Application Name=SSIS-Package1-{62B10777-902A-4862-BA76-F1ED985EDAFB}ol-ok-sql2.atlas7;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[ol-ok-sql2.LXRdata]"
       DTS:CreationName="OLEDB"
       DTS:DTSID="{EF6864DC-0467-47A8-AFAE-E41AD636EA91}"
@@ -111,13 +147,646 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA8EYWBB6rAUiH63nNypqp2AAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAa/fU1gV39UZFpbWfGx/UuAAAAAASAAACgAAAAEAAAAAJ7f4AATMKDBn4hI3BlEv4wAAAAVNRj04PdoFvjPO/Gf7tdcbm99S/XvdQBTdV7qa9SvDGZ7adoaDBhZz2QZV5I4iTnFAAAADyLbL+6MV8wX87e3VXN7F3w/TE9</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAKyPgwWpVqEqaUaQxTr1FuQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAD1kGR+ESk2VyqvKJJt7xEGAAAAAASAAACgAAAAEAAAADY7rM3ZMb1E6uCWDPvEC1QwAAAAhB35mHqMHvOLfqsMriJvd9TYy0fMAxUSWeIlDFnH1QyrSbK/l4zjQbCOsRILZfs/FAAAAKiv2kDicydeIe+AGpoQHgbJc1qT</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Atlas7 Clients"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{A9A683F1-11D8-4B4D-895E-C346838C521F}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Atlas7 Clients"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Atlas7 Clients\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Atlas7Clients]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Atlas7 Clients\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[dev-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[dev-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Atlas7 Clients\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ClientId]"
+                      cachedDataType="i4"
+                      cachedName="ClientId"
+                      externalMetadataColumnId="Package\Atlas7 Clients\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ClientId]"
+                      lineageId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].Columns[ClientId]" />
+                    <inputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Code]"
+                      cachedDataType="wstr"
+                      cachedLength="16"
+                      cachedName="Code"
+                      externalMetadataColumnId="Package\Atlas7 Clients\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Code]"
+                      lineageId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].Columns[Code]" />
+                    <inputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Description]"
+                      cachedDataType="wstr"
+                      cachedLength="256"
+                      cachedName="Description"
+                      externalMetadataColumnId="Package\Atlas7 Clients\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Description]"
+                      lineageId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].Columns[Description]" />
+                    <inputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[POOL-GUID]"
+                      cachedDataType="guid"
+                      cachedName="POOL-GUID"
+                      externalMetadataColumnId="Package\Atlas7 Clients\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[POOL-GUID]"
+                      lineageId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].Columns[POOL-GUID]" />
+                    <inputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[AtlasAccountCode]"
+                      cachedDataType="wstr"
+                      cachedLength="32"
+                      cachedName="AtlasAccountCode"
+                      externalMetadataColumnId="Package\Atlas7 Clients\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AtlasAccountCode]"
+                      lineageId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].Columns[AtlasAccountCode]" />
+                    <inputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[AtlasAccount_ID]"
+                      cachedDataType="i4"
+                      cachedName="AtlasAccount_ID"
+                      externalMetadataColumnId="Package\Atlas7 Clients\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AtlasAccount_ID]"
+                      lineageId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].Columns[AtlasAccount_ID]" />
+                    <inputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[AREA-GUID]"
+                      cachedDataType="guid"
+                      cachedName="AREA-GUID"
+                      externalMetadataColumnId="Package\Atlas7 Clients\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AREA-GUID]"
+                      lineageId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].Columns[AREA-GUID]" />
+                    <inputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[AppSystem]"
+                      cachedDataType="wstr"
+                      cachedLength="32"
+                      cachedName="AppSystem"
+                      externalMetadataColumnId="Package\Atlas7 Clients\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AppSystem]"
+                      lineageId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].Columns[AppSystem]" />
+                    <inputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ExamDriver]"
+                      cachedDataType="wstr"
+                      cachedLength="32"
+                      cachedName="ExamDriver"
+                      externalMetadataColumnId="Package\Atlas7 Clients\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ExamDriver]"
+                      lineageId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].Columns[ExamDriver]" />
+                    <inputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ExamDriverBeginDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="ExamDriverBeginDate"
+                      externalMetadataColumnId="Package\Atlas7 Clients\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ExamDriverBeginDate]"
+                      lineageId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].Columns[ExamDriverBeginDate]" />
+                    <inputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[AreaDisplayResult]"
+                      cachedDataType="i4"
+                      cachedName="AreaDisplayResult"
+                      externalMetadataColumnId="Package\Atlas7 Clients\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AreaDisplayResult]"
+                      lineageId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].Columns[AreaDisplayResult]" />
+                    <inputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[AreaScoreBase]"
+                      cachedDataType="i4"
+                      cachedName="AreaScoreBase"
+                      externalMetadataColumnId="Package\Atlas7 Clients\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AreaScoreBase]"
+                      lineageId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].Columns[AreaScoreBase]" />
+                    <inputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ShowTutorial]"
+                      cachedDataType="i4"
+                      cachedName="ShowTutorial"
+                      externalMetadataColumnId="Package\Atlas7 Clients\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShowTutorial]"
+                      lineageId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].Columns[ShowTutorial]" />
+                    <inputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[IncludePracticeScreenHelpImage]"
+                      cachedDataType="bool"
+                      cachedName="IncludePracticeScreenHelpImage"
+                      externalMetadataColumnId="Package\Atlas7 Clients\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IncludePracticeScreenHelpImage]"
+                      lineageId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].Columns[IncludePracticeScreenHelpImage]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Atlas7 Clients\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ClientId]"
+                      dataType="i4"
+                      name="ClientId" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas7 Clients\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Code]"
+                      dataType="wstr"
+                      length="16"
+                      name="Code" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas7 Clients\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Description]"
+                      dataType="wstr"
+                      length="256"
+                      name="Description" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas7 Clients\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[POOL-GUID]"
+                      dataType="guid"
+                      name="POOL-GUID" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas7 Clients\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AtlasAccountCode]"
+                      dataType="wstr"
+                      length="32"
+                      name="AtlasAccountCode" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas7 Clients\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AtlasAccount_ID]"
+                      dataType="i4"
+                      name="AtlasAccount_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas7 Clients\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AREA-GUID]"
+                      dataType="guid"
+                      name="AREA-GUID" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas7 Clients\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AppSystem]"
+                      dataType="wstr"
+                      length="32"
+                      name="AppSystem" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas7 Clients\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ExamDriver]"
+                      dataType="wstr"
+                      length="32"
+                      name="ExamDriver" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas7 Clients\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ExamDriverBeginDate]"
+                      dataType="dbTimeStamp"
+                      name="ExamDriverBeginDate" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas7 Clients\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AreaDisplayResult]"
+                      dataType="i4"
+                      name="AreaDisplayResult" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas7 Clients\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AreaScoreBase]"
+                      dataType="i4"
+                      name="AreaScoreBase" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas7 Clients\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShowTutorial]"
+                      dataType="i4"
+                      name="ShowTutorial" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas7 Clients\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IncludePracticeScreenHelpImage]"
+                      dataType="bool"
+                      name="IncludePracticeScreenHelpImage" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Atlas7 Clients\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Atlas7 Clients\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Atlas7 Clients\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Atlas7 Clients\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Atlas7 Clients\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Clients]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Atlas7 Clients\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[ol-ok-sql2.atlas7]"
+                  connectionManagerRefId="Package.ConnectionManagers[ol-ok-sql2.atlas7]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].Columns[ClientId]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ClientId]"
+                      lineageId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].Columns[ClientId]"
+                      name="ClientId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].Columns[Code]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Code]"
+                      length="16"
+                      lineageId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].Columns[Code]"
+                      name="Code"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].Columns[Description]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Description]"
+                      length="256"
+                      lineageId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].Columns[Description]"
+                      name="Description"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].Columns[POOL-GUID]"
+                      dataType="guid"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[POOL-GUID]"
+                      lineageId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].Columns[POOL-GUID]"
+                      name="POOL-GUID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].Columns[AtlasAccountCode]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AtlasAccountCode]"
+                      length="32"
+                      lineageId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].Columns[AtlasAccountCode]"
+                      name="AtlasAccountCode"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].Columns[AtlasAccount_ID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AtlasAccount_ID]"
+                      lineageId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].Columns[AtlasAccount_ID]"
+                      name="AtlasAccount_ID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].Columns[AREA-GUID]"
+                      dataType="guid"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AREA-GUID]"
+                      lineageId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].Columns[AREA-GUID]"
+                      name="AREA-GUID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].Columns[AppSystem]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AppSystem]"
+                      length="32"
+                      lineageId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].Columns[AppSystem]"
+                      name="AppSystem"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].Columns[ExamDriver]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ExamDriver]"
+                      length="32"
+                      lineageId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].Columns[ExamDriver]"
+                      name="ExamDriver"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].Columns[ExamDriverBeginDate]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ExamDriverBeginDate]"
+                      lineageId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].Columns[ExamDriverBeginDate]"
+                      name="ExamDriverBeginDate"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].Columns[AreaDisplayResult]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AreaDisplayResult]"
+                      lineageId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].Columns[AreaDisplayResult]"
+                      name="AreaDisplayResult"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].Columns[AreaScoreBase]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AreaScoreBase]"
+                      lineageId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].Columns[AreaScoreBase]"
+                      name="AreaScoreBase"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].Columns[ShowTutorial]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ShowTutorial]"
+                      lineageId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].Columns[ShowTutorial]"
+                      name="ShowTutorial"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].Columns[IncludePracticeScreenHelpImage]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IncludePracticeScreenHelpImage]"
+                      lineageId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].Columns[IncludePracticeScreenHelpImage]"
+                      name="IncludePracticeScreenHelpImage"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ClientId]"
+                      dataType="i4"
+                      name="ClientId" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Code]"
+                      dataType="wstr"
+                      length="16"
+                      name="Code" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Description]"
+                      dataType="wstr"
+                      length="256"
+                      name="Description" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[POOL-GUID]"
+                      dataType="guid"
+                      name="POOL-GUID" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AtlasAccountCode]"
+                      dataType="wstr"
+                      length="32"
+                      name="AtlasAccountCode" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AtlasAccount_ID]"
+                      dataType="i4"
+                      name="AtlasAccount_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AREA-GUID]"
+                      dataType="guid"
+                      name="AREA-GUID" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AppSystem]"
+                      dataType="wstr"
+                      length="32"
+                      name="AppSystem" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ExamDriver]"
+                      dataType="wstr"
+                      length="32"
+                      name="ExamDriver" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ExamDriverBeginDate]"
+                      dataType="dbTimeStamp"
+                      name="ExamDriverBeginDate" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AreaDisplayResult]"
+                      dataType="i4"
+                      name="AreaDisplayResult" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AreaScoreBase]"
+                      dataType="i4"
+                      name="AreaScoreBase" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ShowTutorial]"
+                      dataType="i4"
+                      name="ShowTutorial" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IncludePracticeScreenHelpImage]"
+                      dataType="bool"
+                      name="IncludePracticeScreenHelpImage" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ClientId]"
+                      dataType="i4"
+                      lineageId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ClientId]"
+                      name="ClientId" />
+                    <outputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Code]"
+                      dataType="wstr"
+                      length="16"
+                      lineageId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Code]"
+                      name="Code" />
+                    <outputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Description]"
+                      dataType="wstr"
+                      length="256"
+                      lineageId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Description]"
+                      name="Description" />
+                    <outputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[POOL-GUID]"
+                      dataType="guid"
+                      lineageId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[POOL-GUID]"
+                      name="POOL-GUID" />
+                    <outputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AtlasAccountCode]"
+                      dataType="wstr"
+                      length="32"
+                      lineageId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AtlasAccountCode]"
+                      name="AtlasAccountCode" />
+                    <outputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AtlasAccount_ID]"
+                      dataType="i4"
+                      lineageId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AtlasAccount_ID]"
+                      name="AtlasAccount_ID" />
+                    <outputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AREA-GUID]"
+                      dataType="guid"
+                      lineageId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AREA-GUID]"
+                      name="AREA-GUID" />
+                    <outputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AppSystem]"
+                      dataType="wstr"
+                      length="32"
+                      lineageId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AppSystem]"
+                      name="AppSystem" />
+                    <outputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ExamDriver]"
+                      dataType="wstr"
+                      length="32"
+                      lineageId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ExamDriver]"
+                      name="ExamDriver" />
+                    <outputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ExamDriverBeginDate]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ExamDriverBeginDate]"
+                      name="ExamDriverBeginDate" />
+                    <outputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AreaDisplayResult]"
+                      dataType="i4"
+                      lineageId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AreaDisplayResult]"
+                      name="AreaDisplayResult" />
+                    <outputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AreaScoreBase]"
+                      dataType="i4"
+                      lineageId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AreaScoreBase]"
+                      name="AreaScoreBase" />
+                    <outputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ShowTutorial]"
+                      dataType="i4"
+                      lineageId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ShowTutorial]"
+                      name="ShowTutorial" />
+                    <outputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IncludePracticeScreenHelpImage]"
+                      dataType="bool"
+                      lineageId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IncludePracticeScreenHelpImage]"
+                      name="IncludePracticeScreenHelpImage" />
+                    <outputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Atlas7 Clients.Paths[OLE DB Source Output]"
+              endId="Package\Atlas7 Clients\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\Atlas7 Clients\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\Banks"
       DTS:CreationName="Microsoft.Pipeline"
@@ -5641,8 +6310,8 @@ where [refTable].[SourceSystemID] = ?</property>
               <connections>
                 <connection
                   refId="Package\Student Groups\ADO NET Destination.Connections[IDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[ol-dwdevdb01.dc.onepsi.net.PSI_DW]"
-                  connectionManagerRefId="Package.ConnectionManagers[ol-dwdevdb01.dc.onepsi.net.PSI_DW]"
+                  connectionManagerID="{A21A6A71-7E31-48D0-BCF5-8599D9E2A272}:invalid"
+                  connectionManagerRefId="{A21A6A71-7E31-48D0-BCF5-8599D9E2A272}:invalid"
                   description="Managed connection manager"
                   name="IDbConnection" />
               </connections>
@@ -5946,7 +6615,7 @@ where
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
           Size="110,42"
           Id="Package\Banks"
@@ -5979,6 +6648,10 @@ where
           Size="156,42"
           Id="Package\Student Groups"
           TopLeft="69,254" />
+        <NodeLayout
+          Size="146,42"
+          Id="Package\Atlas7 Clients"
+          TopLeft="734,252" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -6256,14 +6929,6 @@ where
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Loft Items\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Loft Items\Lookup 1">
     <Properties>
       <Property>
@@ -6281,6 +6946,14 @@ where
         <Value
           type="q4:string">1</Value>
       </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Loft Items\OLE DB Source">
+    <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
       </Property>
@@ -6405,6 +7078,19 @@ where
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
+    design-time-name="Package\Loft Pool Specs\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\Loft Pool Specs\OLE DB Destination">
     <Properties>
       <Property>
@@ -6437,19 +7123,6 @@ where
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Loft Pool Specs\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -6993,6 +7666,70 @@ where
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Atlas7 Clients">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Atlas7 Clients\OLE DB Source"
+          TopLeft="346,40" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Atlas7 Clients\OLE DB Destination"
+          TopLeft="343,164" />
+        <EdgeLayout
+          Id="Package\Atlas7 Clients.Paths[OLE DB Source Output]"
+          TopLeft="428,82">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,82"
+              Start="0,0"
+              End="0,74.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,74.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Atlas7 Clients\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Atlas7 Clients\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
