@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="58"
-  DTS:VersionGUID="{E7A00C84-E8BF-4DDA-92F9-EF8B4BA0218F}">
+  DTS:VersionBuild="69"
+  DTS:VersionGUID="{ECCC5520-C39D-4BEF-9AF1-5A5C5108DD47}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAKyPgwWpVqEqaUaQxTr1FuQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACyxE7IQWuk9+7QXvqJPtsmAAAAAASAAACgAAAAEAAAAIIeKq9nGx2P+sXfTsZz4X0wAAAA+ZZubJSKq1ihLQz0RU8KU33Om+a6mjZvSpkbGZ2DCX6z+ajhpor3L0We++bDXTYIFAAAAHZi9HarguUNTR1T/ye6Ad6nM7mP</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAKyPgwWpVqEqaUaQxTr1FuQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAB/u9HpxcsiM+qUk7riIiZqAAAAAASAAACgAAAAEAAAAJCpNXTKgv/Jrf2EKHe4Ym8wAAAAi1Hh/HaqYp5mFo4zLuwPu9ZixsAKDFSLIUqxf6PHq0gd8zwZzL7LeVEzMoYhXHQGFAAAAHtfssgX8vhy394fSyBToi3VaWoF</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,7 +46,22 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAKyPgwWpVqEqaUaQxTr1FuQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACgX3SDd+UxYQ7ue+v/OvkKAAAAAASAAACgAAAAEAAAAAyhaEmKUV6tcxQCbejYJmowAAAA9HsbvV+ZMmKfAbwv87SMCXFMGUagjpEG2E3sPIaZgUStdIqf6Zcx7feh3UzJ0Du1FAAAALxkn9XMMtRpW+AL3qTgA07ljyxB</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAKyPgwWpVqEqaUaQxTr1FuQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAD9qsM0p5k2gWMU+sDUzo95AAAAAASAAACgAAAAEAAAAMtootj/qUuH7nb4gbQi19wwAAAAkI4Jsol3NgFJ/5+fSaiGg1KtfCXuvz9Soa2sTyQwv4I6bFfD/Y4NnisPVQ66UmhoFAAAAHrVZ7eQ1xVYtpx+VHRLxmTQqtwj</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[dev-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin1]"
+      DTS:CreationName="ADO.NET:SQL"
+      DTS:DTSID="{A60735BD-6CB9-4110-9161-7627679DE49D}"
+      DTS:ObjectName="dev-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=dev-dwdb01.a0f90e80fb41.database.windows.net;User ID=bruce.gilpin;Initial Catalog=PSI_DW;Application Name=SSIS-Package1-{A60735BD-6CB9-4110-9161-7627679DE49D}dev-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin1;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAKyPgwWpVqEqaUaQxTr1FuQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACwJQmXR8M6u9dxPmS2QwI/AAAAAASAAACgAAAAEAAAAAfD5uu9YBB32Cjx4nI9hs8wAAAA5KfGaVgw8ZMk+A11OkW+Fq/9G/CRQY1wb7RqW2BEwlDF7+Zv8VmVvmpVeEEZS+D2FAAAAOA/w5NN/52x+W00CFn2nO6Laa4e</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -147,7 +162,22 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAKyPgwWpVqEqaUaQxTr1FuQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAD1kGR+ESk2VyqvKJJt7xEGAAAAAASAAACgAAAAEAAAADY7rM3ZMb1E6uCWDPvEC1QwAAAAhB35mHqMHvOLfqsMriJvd9TYy0fMAxUSWeIlDFnH1QyrSbK/l4zjQbCOsRILZfs/FAAAAKiv2kDicydeIe+AGpoQHgbJc1qT</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAKyPgwWpVqEqaUaQxTr1FuQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAYCOXctwmj/aGJ7ZBksqKeAAAAAASAAACgAAAAEAAAAB8AEhLfSIkwcQEb6t8uJtgwAAAAeV2CuCfbk+GYWTEamEQKcNd5oSZSsRNyifJHkfy70suW61ptCqTY7nU9aXtxXcAHFAAAALDaAOth9y0s0rWHsjbYg/5MaTX8</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[uat-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin1]"
+      DTS:CreationName="ADO.NET:SQL"
+      DTS:DTSID="{E5F16C73-7844-4E4C-9D03-2E72F13621FA}"
+      DTS:ObjectName="uat-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=uat-dwdb01.a0f90e80fb41.database.windows.net;User ID=bruce.gilpin;Initial Catalog=PSI_DW;Persist Security Info=True;Application Name=SSIS-Package1-{E5F16C73-7844-4E4C-9D03-2E72F13621FA}uat-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin1;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAKyPgwWpVqEqaUaQxTr1FuQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABlaJ0i/A/mC4MoJGzr1CbJAAAAAASAAACgAAAAEAAAAA66FVnXgA+zuCbSTHCl39wwAAAAb37vTZkegoNR1dZN8gB9sU8ye4//UQLBEWFktEjfVyBOef3GQNX/EvMAoKKQNXQkFAAAAJW0TyJlSCgEeIE7U4C2S6LM12x4</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -6260,6 +6290,1015 @@ where [refTable].[SourceSystemID] = ?</property>
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
+      DTS:refId="Package\ScoreReportData Update"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{97C91A33-AE5B-4BC0-978D-C791402693B3}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="ScoreReportData Update"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\ScoreReportData Update\Data Conversion"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\ScoreReportData Update\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ScoreReportData Update\Data Conversion.Inputs[Data Conversion Input].Columns[srpt-col4]"
+                      cachedDataType="wstr"
+                      cachedLength="32"
+                      cachedName="srpt-col4"
+                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col4]" />
+                    <inputColumn
+                      refId="Package\ScoreReportData Update\Data Conversion.Inputs[Data Conversion Input].Columns[srpt-col33]"
+                      cachedDataType="wstr"
+                      cachedLength="54"
+                      cachedName="srpt-col33"
+                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col33]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ScoreReportData Update\Data Conversion.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\ScoreReportData Update\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ScoreReportData Update\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of srpt-col4]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="32"
+                      lineageId="Package\ScoreReportData Update\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of srpt-col4]"
+                      name="Copy of srpt-col4"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col4]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ScoreReportData Update\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of srpt-col33]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\ScoreReportData Update\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of srpt-col33]"
+                      name="Copy of srpt-col33"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col33]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ScoreReportData Update\Data Conversion.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\ScoreReportData Update\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ScoreReportData Update\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ScoreReportData Update\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ScoreReportData Update\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ScoreReportData Update\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ScoreReportData Update\Lookup"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from [Dimensions].[TestSchedules]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from (select * from [Dimensions].[TestSchedules]) [refTable]
+where [refTable].[SourceTestScheduleID] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="TestScheduleId" dataType="DT_I8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SourceSystemKey" dataType="DT_I2" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SourceTestScheduleID" dataType="DT_GUID" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="TestScheduleDBId" dataType="DT_I8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CurrentFlag" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="TestPackageKey" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="TestScheduleTitle" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="TestScheduleDesc" dataType="DT_STR" length="2000" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="WebTitle" dataType="DT_STR" length="200" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="ScheduleStart" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ScheduleEnd" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CreatedDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Preview" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ToStudent" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ToInstructor" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ToNotify" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CaptureImage" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CaptureBiometric" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DisplayImage" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LoginTimeLimit" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Logoff" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="AltLogoff" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ToAdditonal" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Class" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Locked" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Status" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="RedirectToExit" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Culture" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="CheckSum" dataType="DT_I8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LoadDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="StudentGroupKey" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[Srpt-tsch]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ScoreReportData Update\Lookup.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[uat-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin]"
+                  connectionManagerRefId="Package.ConnectionManagers[uat-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\ScoreReportData Update\Lookup.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ScoreReportData Update\Lookup.Inputs[Lookup Input].Columns[Srpt-tsch]"
+                      cachedDataType="guid"
+                      cachedName="Srpt-tsch"
+                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[Srpt-tsch]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">SourceTestScheduleID</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ScoreReportData Update\Lookup.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\ScoreReportData Update\Lookup.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ScoreReportData Update\Lookup.Outputs[Lookup Match Output].Columns[TestScheduleId]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\ScoreReportData Update\Lookup.Outputs[Lookup Match Output].Columns[TestScheduleId]"
+                      name="TestScheduleId"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">TestScheduleId</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ScoreReportData Update\Lookup.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\ScoreReportData Update\Lookup.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ScoreReportData Update\Lookup.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\ScoreReportData Update\Lookup.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ScoreReportData Update\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ScoreReportData Update\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ScoreReportData Update\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ScoreReportData Update\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ScoreReportData Update\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">Select
+[Srpt-tsch],
+[srpt-col4],
+[srpt-col19],
+[srpt-col33]
+from
+ScoreReportData
+where
+[srpt-col33] is not null</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ScoreReportData Update\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[ol-ok-sql2.LXRdata]"
+                  connectionManagerRefId="Package.ConnectionManagers[ol-ok-sql2.LXRdata]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[Srpt-tsch]"
+                      dataType="guid"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Srpt-tsch]"
+                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[Srpt-tsch]"
+                      name="Srpt-tsch"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col4]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[srpt-col4]"
+                      length="32"
+                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col4]"
+                      name="srpt-col4"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col19]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[srpt-col19]"
+                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col19]"
+                      name="srpt-col19"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col33]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[srpt-col33]"
+                      length="54"
+                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col33]"
+                      name="srpt-col33"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Srpt-tsch]"
+                      dataType="guid"
+                      name="Srpt-tsch" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[srpt-col4]"
+                      dataType="wstr"
+                      length="32"
+                      name="srpt-col4" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[srpt-col19]"
+                      dataType="i4"
+                      name="srpt-col19" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[srpt-col33]"
+                      dataType="wstr"
+                      length="54"
+                      name="srpt-col33" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Srpt-tsch]"
+                      dataType="guid"
+                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Srpt-tsch]"
+                      name="Srpt-tsch" />
+                    <outputColumn
+                      refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[srpt-col4]"
+                      dataType="wstr"
+                      length="32"
+                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[srpt-col4]"
+                      name="srpt-col4" />
+                    <outputColumn
+                      refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[srpt-col19]"
+                      dataType="i4"
+                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[srpt-col19]"
+                      name="srpt-col19" />
+                    <outputColumn
+                      refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[srpt-col33]"
+                      dataType="wstr"
+                      length="54"
+                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[srpt-col33]"
+                      name="srpt-col33" />
+                    <outputColumn
+                      refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete)"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Upsert Destination (Insert, Update, Delete); ZappySys LLC (c) All Rights Reserved; SSIS PowerPack; http://www.zappysys.com/support"
+              description="Upsert destination can be used for bulk insert / update / delete (i.e. Merge) based on matching source and target records in MS SQL Server, PostgreSql, Amazon Redshift database."
+              name="Upsert Destination (Insert, Update, Delete)"
+              usesDispositions="true"
+              version="5">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="LoggingMode determines how much information is logged during Package Execution. Set Logging mode to Debugging for maximum log."
+                  expressionType="Notify"
+                  name="LoggingMode"
+                  typeConverter="ZappySys.PowerPack.Common.LoggingMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="When you enable this property it will prefix timestamp before Log messages."
+                  expressionType="Notify"
+                  name="PrefixTimestamp">false</property>
+                <property
+                  dataType="System.Null"
+                  expressionType="Notify"
+                  name="SelfRef"
+                  typeConverter="NOTBROWSABLE" />
+                <property
+                  dataType="System.Boolean"
+                  description="Enable / Disable Response Output. Checking this option can remove unwanted warnings about unused Columns and many times speedup performance so if output is not needed set this option to True so its removed."
+                  name="DoNotCreateOutputs">false</property>
+                <property
+                  dataType="System.String"
+                  description="Target table name where you like insert, update or delete records"
+                  expressionType="Notify"
+                  name="TableName"
+                  typeConverter="ZappySys.PowerPack.Converters.TableEditor,ZappySys.PowerPack140.UI,Version=1.0.0.0,Culture=neutral,PublicKeyToken=1903265a93eae502">[Dimensions].[StudentTestAttributes]</property>
+                <property
+                  dataType="System.Int32"
+                  description="Commit batch size (0=Commit once all source rows are consumed). You can Change Batch Size to commit in smaller chunks too if error handling needed."
+                  expressionType="Notify"
+                  name="BatchSize">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Action you like to perform (e.g. Upsert, Insert, Update, Delete or Sync)"
+                  expressionType="Notify"
+                  name="Action"
+                  typeConverter="ZappySys.Common.Data.MergeMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="INSERT source rows to target if they don't exist in target table (Only for Sync or Upsert Action)"
+                  expressionType="Notify"
+                  name="EnableInsert">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="UPDATE source rows to target if they exist in target table (Only for Sync or Upsert Action)"
+                  expressionType="Notify"
+                  name="EnableUpdate">true</property>
+                <property
+                  dataType="System.Boolean"
+                  description="DELETE target rows if missing in source (Only for Sync or Upsert Action)"
+                  expressionType="Notify"
+                  name="EnableDelete">false</property>
+                <property
+                  dataType="System.String"
+                  description="User defined Temp table to hold source result before final merge. This table is truncated before each data load. Unlike auto temp table, custom temp table is not dropped after process is finished."
+                  expressionType="Notify"
+                  name="CustomTempTableName"></property>
+                <property
+                  dataType="System.String"
+                  description="SQL command you like to execute after source data is loaded into temp table. For example you can use this option to issue Custom SQL to delete duplicate rows from Staging Table right before final merge. This command is executed before issuing final merge on target table. Along with variable placeholders, you can also use special placeholders [%target_table%], [%temp_table%] and [%target_keys%]"
+                  expressionType="Notify"
+                  name="TempPostExecuteCommand"></property>
+                <property
+                  dataType="System.String"
+                  description="SQL command you like to execute before starting load in target table (e.g. DROP INDEX on target). Along with variable placeholders, you can also use special placeholders [%target_table%], [%temp_table%] and [%target_keys%]"
+                  expressionType="Notify"
+                  name="PreExecuteCommand"></property>
+                <property
+                  dataType="System.String"
+                  description="SQL command you like to execute at the end once target table is update (e.g. REBUILD or CREATE INDEX on target table). Along with variable placeholders, you can also use special placeholders [%target_table%], [%temp_table%] and [%target_keys%]"
+                  expressionType="Notify"
+                  name="PostExecuteCommand"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies what to do if you encounter duplicate records in source data. You can use first row in the group or keep last row or throw error."
+                  expressionType="Notify"
+                  name="DuplicateRemovalMode"
+                  typeConverter="ZappySys.Common.Data.DuplicateRemovalMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies field name based on Duplicate record is sorted. You can enter one or more columns based on you like sorting (e.g. col1 asc, col2 desc, upper(col3) desc). If you do not specify anything then default sort is based on Key field(s). By default UI will warn you if you enter custom value. If you do not wish to be prompted on the UI for custom expression then you can enter /*NO-PROMPT*/ anywhere in the value (e.g. LastUpdated DESC /*NO-PROMPT*/)"
+                  expressionType="Notify"
+                  name="DuplicateOrderBy">&lt;Key&gt;</property>
+                <property
+                  dataType="System.Int32"
+                  description="Defines how to check for modified row for Update Action. Default is check by Key match (Update all rows which exists on target by matching Keys from source and target)."
+                  expressionType="Notify"
+                  name="RowCompareMode"
+                  typeConverter="ZappySys.Common.Data.RowCompareMode">1</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Enables writing row create date/time to the selected target column if row is inserted."
+                  expressionType="Notify"
+                  name="EnableCreatedOn">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Enables writing row update date/time to the selected target column if row is updated."
+                  expressionType="Notify"
+                  name="EnableLastUpdatedOn">true</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates target table column name which you like to set for row create action date/time. After row insert this column will be updated automatically with the current server date/time (only if you set column name here). If you map this column from source input then it takes precedence."
+                  expressionType="Notify"
+                  name="ColumnForCreatedOn"></property>
+                <property
+                  dataType="System.String"
+                  description="Indicates target table column name which you like to set for row update action date/time. After row update this column will be updated automatically with the current date/time (only if you set column name here). If you map this column from source input then it takes precedence."
+                  expressionType="Notify"
+                  name="ColumnForLastUpdatedOn">LoadDate</property>
+                <property
+                  dataType="System.String"
+                  description="Custom hints for merge if supported by database engine. E.g. in SQL Server you can issue WITH (TABLOCK) hint if you dont want to lock target table during merge operation allowing other processes to access it while merge is performed. Leaving this value blank will use system default hints (i.e. WITH (HOLDLOCK) for MS SQL and blank for other engines). If you do not wish to use any hints then enter {none}"
+                  expressionType="Notify"
+                  name="CustomTableHints"></property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">ZappySys.UpsertDestination</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Connections[DB-CONNECTION]"
+                  connectionManagerID="Package.ConnectionManagers[uat-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin1]"
+                  connectionManagerRefId="Package.ConnectionManagers[uat-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin1]"
+                  description="Select Runtime Connection Type (allowed ADO.NET:SQL, ZS-POSTGRESQL, ZS-AWS-REDSHIFT)"
+                  name="DB-CONNECTION" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput]"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="UpsertDestinationInput"
+                  truncationRowDisposition="FailComponent">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].Columns[TestScheduleKey]"
+                      cachedDataType="i8"
+                      cachedName="TestScheduleId"
+                      externalMetadataColumnId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[TestScheduleKey]"
+                      lineageId="Package\ScoreReportData Update\Lookup.Outputs[Lookup Match Output].Columns[TestScheduleId]"
+                      name="TestScheduleKey" />
+                    <inputColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].Columns[ExamPortionCode]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="32"
+                      cachedName="Copy of srpt-col4"
+                      externalMetadataColumnId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[ExamPortionCode]"
+                      lineageId="Package\ScoreReportData Update\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of srpt-col4]"
+                      name="ExamPortionCode" />
+                    <inputColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].Columns[AspenSchedID]"
+                      cachedDataType="i4"
+                      cachedName="srpt-col19"
+                      externalMetadataColumnId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[AspenSchedID]"
+                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col19]"
+                      name="AspenSchedID" />
+                    <inputColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].Columns[SeatCode]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Copy of srpt-col33"
+                      externalMetadataColumnId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[SeatCode]"
+                      lineageId="Package\ScoreReportData Update\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of srpt-col33]"
+                      name="SeatCode" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[StudAttribId]"
+                      dataType="i8"
+                      name="StudAttribId">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Primary Key Column for this table"
+                          expressionType="Notify"
+                          name="IsKey">true</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Identity column (auto-number) for this table"
+                          expressionType="Notify"
+                          name="IsIdentity">true</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[StudAttribDBID]"
+                      dataType="i8"
+                      name="StudAttribDBID" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[CurrentFlag]"
+                      dataType="bool"
+                      name="CurrentFlag" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[LoadDate]"
+                      dataType="dbTimeStamp"
+                      name="LoadDate" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[CheckSum]"
+                      dataType="i8"
+                      name="CheckSum" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[StudentKey]"
+                      dataType="i8"
+                      name="StudentKey" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[TestCenterKey]"
+                      dataType="i4"
+                      name="TestCenterKey" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[TestScheduleKey]"
+                      dataType="i4"
+                      name="TestScheduleKey">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Primary Key Column for this table"
+                          expressionType="Notify"
+                          name="IsKey">true</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[ExternalExamKey]"
+                      dataType="i4"
+                      name="ExternalExamKey" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[SchoolCode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="40"
+                      name="SchoolCode" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[ClientCode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="12"
+                      name="ClientCode" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[ExamCode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="15"
+                      name="ExamCode" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[ExamPortionCode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="15"
+                      name="ExamPortionCode">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Primary Key Column for this table"
+                          expressionType="Notify"
+                          name="IsKey">true</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[GraduationDate]"
+                      dataType="dbTimeStamp"
+                      name="GraduationDate" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[ApplicationType]"
+                      codePage="1252"
+                      dataType="str"
+                      length="6"
+                      name="ApplicationType" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[SchoolName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="SchoolName" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[AdminGroup]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="AdminGroup" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[TimeSched]"
+                      codePage="1252"
+                      dataType="str"
+                      length="8"
+                      name="TimeSched" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[DateSched]"
+                      dataType="dbTimeStamp"
+                      name="DateSched" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[ExternalApplicantKey]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      name="ExternalApplicantKey" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[AspenApplicantKey]"
+                      codePage="1252"
+                      dataType="str"
+                      length="12"
+                      name="AspenApplicantKey" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[ExamDescription]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      name="ExamDescription" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[AspenSchedID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="12"
+                      name="AspenSchedID">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Primary Key Column for this table"
+                          expressionType="Notify"
+                          name="IsKey">true</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[DeliveryMethod]"
+                      codePage="1252"
+                      dataType="str"
+                      length="8"
+                      name="DeliveryMethod" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[ExternalTestCenterKey]"
+                      codePage="1252"
+                      dataType="str"
+                      length="15"
+                      name="ExternalTestCenterKey" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[FormKey]"
+                      dataType="i4"
+                      name="FormKey" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[ExternalSchoolKey]"
+                      dataType="wstr"
+                      length="10"
+                      name="ExternalSchoolKey" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[BookingCode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="BookingCode" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[Client]"
+                      codePage="1252"
+                      dataType="str"
+                      length="120"
+                      name="Client" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[ADAMultiplier]"
+                      dataType="numeric"
+                      name="ADAMultiplier"
+                      precision="10"
+                      scale="4" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[ADAEnable]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="ADAEnable" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[OrigExamPortionID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      name="OrigExamPortionID" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[NationStateCd]"
+                      dataType="wstr"
+                      length="10"
+                      name="NationStateCd" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[ComboEnable]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="ComboEnable" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[HistoryEnable]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="HistoryEnable" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[Licsense]"
+                      codePage="1252"
+                      dataType="str"
+                      length="40"
+                      name="Licsense" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[Degree]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Degree" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[NationStatePFA]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="NationStatePFA" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[DeploymentEnable]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="DeploymentEnable" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[EndEligiblityDate]"
+                      dataType="dbTimeStamp"
+                      name="EndEligiblityDate" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[ResponsibleEmp]"
+                      codePage="1252"
+                      dataType="str"
+                      length="30"
+                      name="ResponsibleEmp" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[SeatCode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="54"
+                      name="SeatCode" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[UpsertDestination Error Output]"
+                  isErrorOut="true"
+                  name="UpsertDestination Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[UpsertDestination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[UpsertDestination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[UpsertDestination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[UpsertDestination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                    <outputColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[UpsertDestination Error Output].Columns[ErrorColumnName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      lineageId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[UpsertDestination Error Output].Columns[ErrorColumnName]"
+                      name="ErrorColumnName" />
+                    <outputColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[UpsertDestination Error Output].Columns[ErrorMessage]"
+                      dataType="wstr"
+                      length="4000"
+                      lineageId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[UpsertDestination Error Output].Columns[ErrorMessage]"
+                      name="ErrorMessage" />
+                    <outputColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[UpsertDestination Error Output].Columns[TestScheduleKey]"
+                      dataType="i4"
+                      lineageId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[UpsertDestination Error Output].Columns[TestScheduleKey]"
+                      name="TestScheduleKey" />
+                    <outputColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[UpsertDestination Error Output].Columns[ExamPortionCode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="15"
+                      lineageId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[UpsertDestination Error Output].Columns[ExamPortionCode]"
+                      name="ExamPortionCode" />
+                    <outputColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[UpsertDestination Error Output].Columns[AspenSchedID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="12"
+                      lineageId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[UpsertDestination Error Output].Columns[AspenSchedID]"
+                      name="AspenSchedID" />
+                    <outputColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[UpsertDestination Error Output].Columns[SeatCode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="54"
+                      lineageId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[UpsertDestination Error Output].Columns[SeatCode]"
+                      name="SeatCode" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[Updated Records Output]"
+                  name="Updated Records Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[Updated Records Output].Columns[TestScheduleKey]"
+                      dataType="i4"
+                      lineageId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[Updated Records Output].Columns[TestScheduleKey]"
+                      name="TestScheduleKey" />
+                    <outputColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[Updated Records Output].Columns[ExamPortionCode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="15"
+                      lineageId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[Updated Records Output].Columns[ExamPortionCode]"
+                      name="ExamPortionCode" />
+                    <outputColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[Updated Records Output].Columns[AspenSchedID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="12"
+                      lineageId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[Updated Records Output].Columns[AspenSchedID]"
+                      name="AspenSchedID" />
+                    <outputColumn
+                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[Updated Records Output].Columns[SeatCode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="54"
+                      lineageId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[Updated Records Output].Columns[SeatCode]"
+                      name="SeatCode" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\ScoreReportData Update.Paths[Data Conversion Output]"
+              endId="Package\ScoreReportData Update\Lookup.Inputs[Lookup Input]"
+              name="Data Conversion Output"
+              startId="Package\ScoreReportData Update\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\ScoreReportData Update.Paths[Lookup Match Output]"
+              endId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput]"
+              name="Lookup Match Output"
+              startId="Package\ScoreReportData Update\Lookup.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\ScoreReportData Update.Paths[OLE DB Source Output]"
+              endId="Package\ScoreReportData Update\Data Conversion.Inputs[Data Conversion Input]"
+              name="OLE DB Source Output"
+              startId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
       DTS:refId="Package\Student Groups"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
@@ -6617,6 +7656,10 @@ where
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
+          Size="146,42"
+          Id="Package\Atlas7 Clients"
+          TopLeft="734,252" />
+        <NodeLayout
           Size="110,42"
           Id="Package\Banks"
           TopLeft="221,84" />
@@ -6645,16 +7688,82 @@ where
           Id="Package\Sampling Items"
           TopLeft="1228,117" />
         <NodeLayout
+          Size="202,42"
+          Id="Package\ScoreReportData Update"
+          TopLeft="570,171" />
+        <NodeLayout
           Size="156,42"
           Id="Package\Student Groups"
           TopLeft="69,254" />
-        <NodeLayout
-          Size="146,42"
-          Id="Package\Atlas7 Clients"
-          TopLeft="734,252" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
+  <TaskHost
+    design-time-name="Package\Atlas7 Clients">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Atlas7 Clients\OLE DB Source"
+          TopLeft="346,40" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Atlas7 Clients\OLE DB Destination"
+          TopLeft="343,164" />
+        <EdgeLayout
+          Id="Package\Atlas7 Clients.Paths[OLE DB Source Output]"
+          TopLeft="428,82">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,82"
+              Start="0,0"
+              End="0,74.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,74.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Atlas7 Clients\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Atlas7 Clients\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Banks">
     <LayoutInfo>
@@ -6778,25 +7887,25 @@ where
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="124,42"
+          Id="Package\Loft Items\Lookup 1"
+          TopLeft="389,532" />
+        <NodeLayout
           Size="115,42"
           Id="Package\Loft Items\Lookup"
           TopLeft="393,431" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Loft Items\OLE DB Destination"
+          TopLeft="362.5,790.5" />
         <NodeLayout
           Size="157,42"
           Id="Package\Loft Items\OLE DB Source"
           TopLeft="365,328" />
         <NodeLayout
-          Size="124,42"
-          Id="Package\Loft Items\Lookup 1"
-          TopLeft="389,532" />
-        <NodeLayout
           Size="161,42"
           Id="Package\Loft Items\Data Conversion"
           TopLeft="373,624" />
-        <NodeLayout
-          Size="177,42"
-          Id="Package\Loft Items\OLE DB Destination"
-          TopLeft="362.5,790.5" />
         <EdgeLayout
           Id="Package\Loft Items.Paths[OLE DB Source Output]"
           TopLeft="447,370">
@@ -6816,7 +7925,9 @@ where
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6886,7 +7997,9 @@ where
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -6985,6 +8098,30 @@ where
           Id="Package\Loft Pool Specs\Data Conversion"
           TopLeft="533,166" />
         <EdgeLayout
+          Id="Package\Loft Pool Specs.Paths[Lookup Match Output]"
+          TopLeft="615.5,381">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,81"
+              Start="0,0"
+              End="0,73.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,73.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,30.9453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Loft Pool Specs.Paths[Derived Column Output]"
           TopLeft="614.25,299">
           <EdgeLayout.Curve>
@@ -7003,7 +8140,9 @@ where
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7025,7 +8164,9 @@ where
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7047,30 +8188,8 @@ where
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Loft Pool Specs.Paths[Lookup Match Output]"
-          TopLeft="615.5,381">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,81"
-              Start="0,0"
-              End="0,73.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,73.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,30.9453125,96.3827734375,11.609375"
+              BoundingBox="0,0,0,0"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -7170,7 +8289,9 @@ where
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7228,7 +8349,9 @@ where
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7250,7 +8373,9 @@ where
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -7562,6 +8687,130 @@ where
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
+    design-time-name="Package\ScoreReportData Update">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="157,42"
+          Id="Package\ScoreReportData Update\OLE DB Source"
+          TopLeft="355,53" />
+        <NodeLayout
+          Size="287,42"
+          Id="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete)"
+          TopLeft="320,479" />
+        <NodeLayout
+          Size="161,42"
+          Id="Package\ScoreReportData Update\Data Conversion"
+          TopLeft="364,142" />
+        <EdgeLayout
+          Id="Package\ScoreReportData Update.Paths[OLE DB Source Output]"
+          TopLeft="433.5,95">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="11,47"
+              Start="0,0"
+              End="11,39.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.5"
+                    Point2="0,23.5"
+                    Point3="4,23.5" />
+                  <mssgle:LineSegment
+                    End="7,23.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="7,23.5"
+                    Point2="11,23.5"
+                    Point3="11,27.5" />
+                  <mssgle:LineSegment
+                    End="11,39.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="115,42"
+          Id="Package\ScoreReportData Update\Lookup"
+          TopLeft="388,213" />
+        <EdgeLayout
+          Id="Package\ScoreReportData Update.Paths[Data Conversion Output]"
+          TopLeft="445,184">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,29"
+              Start="0,0"
+              End="0,21.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ScoreReportData Update.Paths[Lookup Match Output]"
+          TopLeft="445.5,255">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="18,224"
+              Start="0,0"
+              End="18,216.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,108" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,108"
+                    Point2="0,112"
+                    Point3="4,112" />
+                  <mssgle:LineSegment
+                    End="14,112" />
+                  <mssgle:CubicBezierSegment
+                    Point1="14,112"
+                    Point2="18,112"
+                    Point3="18,116" />
+                  <mssgle:LineSegment
+                    End="18,216.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-39.19138671875,117,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\ScoreReportData Update\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
     design-time-name="Package\Student Groups">
     <LayoutInfo>
       <GraphLayout
@@ -7669,67 +8918,26 @@ where
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Atlas7 Clients">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="157,42"
-          Id="Package\Atlas7 Clients\OLE DB Source"
-          TopLeft="346,40" />
-        <NodeLayout
-          Size="177,42"
-          Id="Package\Atlas7 Clients\OLE DB Destination"
-          TopLeft="343,164" />
-        <EdgeLayout
-          Id="Package\Atlas7 Clients.Paths[OLE DB Source Output]"
-          TopLeft="428,82">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,82"
-              Start="0,0"
-              End="0,74.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,74.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Atlas7 Clients\OLE DB Source">
+    design-time-name="Package\ScoreReportData Update\Lookup">
     <Properties>
       <Property>
-        <Name>DataSourceViewID</Name>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[Dimensions].[TestSchedules]</Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q2:string">Table</Value>
+          type="q4:int">0</Value>
       </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Atlas7 Clients\OLE DB Destination">
-    <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

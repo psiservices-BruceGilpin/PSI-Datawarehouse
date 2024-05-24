@@ -36,7 +36,8 @@
 		NationStatePFA,
 		DeploymentEnable,
 		EndEligiblityDate,
-		ResponsibleEmp
+		ResponsibleEmp,
+		SeatCode
 	from
 		[$(PSI_DW)].Dimensions.StudentTestAttributes (nolock)
 	where

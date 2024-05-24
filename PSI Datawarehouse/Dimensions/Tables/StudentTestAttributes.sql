@@ -40,6 +40,7 @@
     [DeploymentEnable]      VARCHAR (10)    NULL,
     [EndEligiblityDate]     DATE            NULL,
     [ResponsibleEmp]        VARCHAR (30)    NULL,
+    [SeatCode] VARCHAR(54) NULL, 
     PRIMARY KEY CLUSTERED ([StudAttribId] ASC)
 );
 
