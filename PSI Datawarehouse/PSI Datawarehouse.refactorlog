@@ -273,4 +273,46 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="Atlas7AccountId" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="2f8d285b-4658-44be-8e47-1e1bff0b1bbb" ChangeDateTime="06/06/2024 14:24:30">
+    <Property Name="ElementName" Value="[AtlasCloud].[Actor].[ActorDBID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[AtlasCloud].[Actor]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SourceActorID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="69af0521-46a7-46dc-9c4e-7a001daf4363" ChangeDateTime="06/06/2024 14:24:52">
+    <Property Name="ElementName" Value="[AtlasCloud].[Actor].[DWCreateDate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[AtlasCloud].[Actor]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SourceCreatedDate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c84e70ec-56c5-4fa2-bb74-ef8d3c25370f" ChangeDateTime="06/06/2024 15:24:56">
+    <Property Name="ElementName" Value="[AtlasCloud].[Candidate].[SystemName]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[AtlasCloud].[Candidate]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CloudSystemName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="823a845c-4958-4832-901e-15fe5a81d7ab" ChangeDateTime="06/06/2024 15:27:14">
+    <Property Name="ElementName" Value="[AtlasCloud].[Candidate].[SourceCreatedDate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[AtlasCloud].[Candidate]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LoadDate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="aee14ca7-e99a-4daa-9a2b-b019cc83327f" ChangeDateTime="06/06/2024 18:48:23">
+    <Property Name="ElementName" Value="[AtlasCloud].[Results].[S]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[AtlasCloud].[Results]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="duration" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="cb04696a-fddc-47ab-a4ca-9c3c9f3fe323" ChangeDateTime="06/07/2024 15:49:59">
+    <Property Name="ElementName" Value="[AtlasCloud].[ItemBanks].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[AtlasCloud].[ItemBanks]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ItemBankId" />
+  </Operation>
 </Operations>

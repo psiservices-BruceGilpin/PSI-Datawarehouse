@@ -36,6 +36,7 @@
     [CheckSum]             BIGINT           NOT NULL,
     [LoadDate]             DATETIME         DEFAULT (getdate()) NOT NULL,
     [AmpFormKey] INT NULL, 
+    [Email] VARCHAR(200) NULL, 
     PRIMARY KEY CLUSTERED ([StudentScoreId] ASC)
 );
 

@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="69"
-  DTS:VersionGUID="{ECCC5520-C39D-4BEF-9AF1-5A5C5108DD47}">
+  DTS:VersionBuild="101"
+  DTS:VersionGUID="{6C3DCD0E-B1B1-4C9C-A969-112D172FF4C7}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAKyPgwWpVqEqaUaQxTr1FuQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAB/u9HpxcsiM+qUk7riIiZqAAAAAASAAACgAAAAEAAAAJCpNXTKgv/Jrf2EKHe4Ym8wAAAAi1Hh/HaqYp5mFo4zLuwPu9ZixsAKDFSLIUqxf6PHq0gd8zwZzL7LeVEzMoYhXHQGFAAAAHtfssgX8vhy394fSyBToi3VaWoF</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAKyPgwWpVqEqaUaQxTr1FuQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAB8BH2xU30uZ6EDuq6mvI4eAAAAAASAAACgAAAAEAAAAC7yLn+AAP72DPKSu6csA8AwAAAAhorKYdiqr6pl02B1rYUyS/d3263g1Y3VRMObqDuJoYf0vys6EPGGJthn5KERMx7AFAAAAGIR3dChtZUyPfTVFJHEQI/4grg8</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,7 +46,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAKyPgwWpVqEqaUaQxTr1FuQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAD9qsM0p5k2gWMU+sDUzo95AAAAAASAAACgAAAAEAAAAMtootj/qUuH7nb4gbQi19wwAAAAkI4Jsol3NgFJ/5+fSaiGg1KtfCXuvz9Soa2sTyQwv4I6bFfD/Y4NnisPVQ66UmhoFAAAAHrVZ7eQ1xVYtpx+VHRLxmTQqtwj</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAKyPgwWpVqEqaUaQxTr1FuQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADdXA0f+T67appG5XGtTkwRAAAAAASAAACgAAAAEAAAAAID/B97c4SQFVZYKKsWm+gwAAAAEt5YE1beAN+oO8qGVBivAAa2as+ASy88hM9N35y2RXD8c5EidoHb6Lxj7Q7VVdbuFAAAAAZwWrCwNDXl5Vap9jvCGhcM44OY</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -61,7 +61,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAKyPgwWpVqEqaUaQxTr1FuQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACwJQmXR8M6u9dxPmS2QwI/AAAAAASAAACgAAAAEAAAAAfD5uu9YBB32Cjx4nI9hs8wAAAA5KfGaVgw8ZMk+A11OkW+Fq/9G/CRQY1wb7RqW2BEwlDF7+Zv8VmVvmpVeEEZS+D2FAAAAOA/w5NN/52x+W00CFn2nO6Laa4e</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAKyPgwWpVqEqaUaQxTr1FuQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAA1YYRixPnzcBm1JOHzD+4iAAAAAASAAACgAAAAEAAAAEcAc2q7VyH+uzv5lNUUWuYwAAAAaHM2NC5HrEy9kIZtYQnQHT9Kg1fiC9IEkBHTnVj/k0g/RqRSfFt5Bk9BvsC+7I/FFAAAAPUFXAOzIbMsdr33SnsimvK/dyZT</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -150,6 +150,18 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ol-ok-sql2.lxrdata1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{F0D752AB-6F9D-41F5-9E8A-F2018507FC1E}"
+      DTS:ObjectName="ol-ok-sql2.lxrdata1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=ol-ok-sql2;Initial Catalog=lxrdata;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package1-{F0D752AB-6F9D-41F5-9E8A-F2018507FC1E}ol-ok-sql2.lxrdata1;Application Intent=READONLY;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[uat-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin]"
       DTS:CreationName="OLEDB"
       DTS:DTSID="{89A662DA-4E6A-4297-89E1-9A2781959809}"
@@ -162,7 +174,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAKyPgwWpVqEqaUaQxTr1FuQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAYCOXctwmj/aGJ7ZBksqKeAAAAAASAAACgAAAAEAAAAB8AEhLfSIkwcQEb6t8uJtgwAAAAeV2CuCfbk+GYWTEamEQKcNd5oSZSsRNyifJHkfy70suW61ptCqTY7nU9aXtxXcAHFAAAALDaAOth9y0s0rWHsjbYg/5MaTX8</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAKyPgwWpVqEqaUaQxTr1FuQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADzm4I9iXvJlCtDFwKJxXOwAAAAAASAAACgAAAAEAAAAELEFjqhFoBSyRVsaHAP/HEwAAAAmz5Pn7lqShglnFVr1tjL925f5D3kzuFRWRD/h2c9hm98XV6ShyAHI1P+pFLFzjA2FAAAAHlD7clXBVD85+loce9CnD8ukEGH</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -177,12 +189,43 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAKyPgwWpVqEqaUaQxTr1FuQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABlaJ0i/A/mC4MoJGzr1CbJAAAAAASAAACgAAAAEAAAAA66FVnXgA+zuCbSTHCl39wwAAAAb37vTZkegoNR1dZN8gB9sU8ye4//UQLBEWFktEjfVyBOef3GQNX/EvMAoKKQNXQkFAAAAJW0TyJlSCgEeIE7U4C2S6LM12x4</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAKyPgwWpVqEqaUaQxTr1FuQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACJk3Yp1+DBvq28YeidN1srAAAAAASAAACgAAAAEAAAABJFXa1nS3xCnpRcgz9iqR0wAAAA9L+Pq1jWKr55jmwB61IrH3xghhFu9CiGnZrjlIF7afDulbQ/grRYLYBVJ3f9aIshFAAAAFHdU52APeEVzUTxzFleo667md1i</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
-  <DTS:Variables />
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{CB154B0B-5264-43AB-BC78-21296C6A8CBF}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Email">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{A92BACD7-202D-49B1-B793-A9F0C0DD4057}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="FirstName">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{14C92418-DDBA-462A-9D86-D0C808E9EB16}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="LastName">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
   <DTS:Executables>
     <DTS:Executable
       DTS:refId="Package\Atlas7 Clients"
@@ -6316,17 +6359,17 @@ where [refTable].[SourceSystemID] = ?</property>
                   name="Data Conversion Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\ScoreReportData Update\Data Conversion.Inputs[Data Conversion Input].Columns[srpt-col4]"
-                      cachedDataType="wstr"
-                      cachedLength="32"
-                      cachedName="srpt-col4"
-                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col4]" />
-                    <inputColumn
                       refId="Package\ScoreReportData Update\Data Conversion.Inputs[Data Conversion Input].Columns[srpt-col33]"
                       cachedDataType="wstr"
                       cachedLength="54"
                       cachedName="srpt-col33"
                       lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col33]" />
+                    <inputColumn
+                      refId="Package\ScoreReportData Update\Data Conversion.Inputs[Data Conversion Input].Columns[srpt-col6]"
+                      cachedDataType="wstr"
+                      cachedLength="48"
+                      cachedName="srpt-col6"
+                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col6]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -6338,28 +6381,6 @@ where [refTable].[SourceSystemID] = ?</property>
                   name="Data Conversion Output"
                   synchronousInputId="Package\ScoreReportData Update\Data Conversion.Inputs[Data Conversion Input]">
                   <outputColumns>
-                    <outputColumn
-                      refId="Package\ScoreReportData Update\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of srpt-col4]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      length="32"
-                      lineageId="Package\ScoreReportData Update\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of srpt-col4]"
-                      name="Copy of srpt-col4"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col4]}</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                      </properties>
-                    </outputColumn>
                     <outputColumn
                       refId="Package\ScoreReportData Update\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of srpt-col33]"
                       codePage="1252"
@@ -6376,6 +6397,28 @@ where [refTable].[SourceSystemID] = ?</property>
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
                           name="SourceInputColumnLineageID">#{Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col33]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ScoreReportData Update\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of srpt-col6]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="48"
+                      lineageId="Package\ScoreReportData Update\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of srpt-col6]"
+                      name="Copy of srpt-col6"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col6]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -6410,155 +6453,174 @@ where [refTable].[SourceSystemID] = ?</property>
               </outputs>
             </component>
             <component
-              refId="Package\ScoreReportData Update\Lookup"
-              componentClassID="Microsoft.Lookup"
-              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
-              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
-              name="Lookup"
+              refId="Package\ScoreReportData Update\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
               usesDispositions="true"
-              version="6">
+              version="4">
               <properties>
                 <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
                   dataType="System.String"
-                  description="Specifies the SQL statement that generates the lookup table."
-                  expressionType="Notify"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[LXRDataExtract]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from [Dimensions].[TestSchedules]</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
-                  expressionType="Notify"
-                  name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from (select * from [Dimensions].[TestSchedules]) [refTable]
-where [refTable].[SourceTestScheduleID] = ?</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the type of connection used to access the reference dataset."
-                  name="ConnectionType"
-                  typeConverter="LookupConnectionType">0</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the cache type of the lookup table."
-                  name="CacheType"
-                  typeConverter="CacheType">0</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
-                  name="NoMatchBehavior"
-                  typeConverter="LookupNoMatchBehavior">1</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
-                  name="NoMatchCachePercentage">0</property>
-                <property
-                  dataType="System.Int32"
-                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
-                  name="MaxMemoryUsage">25</property>
-                <property
-                  dataType="System.Int64"
-                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
-                  name="MaxMemoryUsage64">25</property>
-                <property
-                  dataType="System.String"
-                  description="Indicates whether to reference metadata in an XML format."
-                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="TestScheduleId" dataType="DT_I8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SourceSystemKey" dataType="DT_I2" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SourceTestScheduleID" dataType="DT_GUID" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="TestScheduleDBId" dataType="DT_I8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CurrentFlag" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="TestPackageKey" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="TestScheduleTitle" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="TestScheduleDesc" dataType="DT_STR" length="2000" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="WebTitle" dataType="DT_STR" length="200" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="ScheduleStart" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ScheduleEnd" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CreatedDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Preview" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ToStudent" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ToInstructor" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ToNotify" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CaptureImage" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CaptureBiometric" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DisplayImage" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LoginTimeLimit" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Logoff" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="AltLogoff" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ToAdditonal" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Class" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Locked" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Status" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="RedirectToExit" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Culture" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="CheckSum" dataType="DT_I8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LoadDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="StudentGroupKey" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
-                <property
-                  containsID="true"
-                  dataType="System.String"
-                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[Srpt-tsch]};</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
                   name="DefaultCodePage">1252</property>
                 <property
                   dataType="System.Boolean"
-                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
-                  name="TreatDuplicateKeysAsError">false</property>
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\ScoreReportData Update\Lookup.Connections[OleDbConnection]"
+                  refId="Package\ScoreReportData Update\OLE DB Destination.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[uat-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin]"
                   connectionManagerRefId="Package.ConnectionManagers[uat-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin]"
-                  description="Connection manager used to access lookup data."
+                  description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
               <inputs>
                 <input
-                  refId="Package\ScoreReportData Update\Lookup.Inputs[Lookup Input]"
-                  name="Lookup Input">
+                  refId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\ScoreReportData Update\Lookup.Inputs[Lookup Input].Columns[Srpt-tsch]"
+                      refId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Srpt-tsch]"
                       cachedDataType="guid"
                       cachedName="Srpt-tsch"
-                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[Srpt-tsch]">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          description="Specifies the column in the reference table that a column joins."
-                          name="JoinToReferenceColumn">SourceTestScheduleID</property>
-                        <property
-                          dataType="System.Null"
-                          description="Specifies the column in the reference table from which a column is copied."
-                          name="CopyFromReferenceColumn" />
-                      </properties>
-                    </inputColumn>
+                      externalMetadataColumnId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Srpt-tsch]"
+                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[Srpt-tsch]" />
+                    <inputColumn
+                      refId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[srpt-col33]"
+                      cachedDataType="wstr"
+                      cachedLength="54"
+                      cachedName="srpt-col33"
+                      externalMetadataColumnId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[srpt-col33]"
+                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col33]" />
+                    <inputColumn
+                      refId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of srpt-col33]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Copy of srpt-col33"
+                      externalMetadataColumnId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Copy of srpt-col33]"
+                      lineageId="Package\ScoreReportData Update\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of srpt-col33]" />
+                    <inputColumn
+                      refId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[srpt-col15]"
+                      cachedDataType="dbDate"
+                      cachedName="srpt-col15"
+                      externalMetadataColumnId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[srpt-col15]"
+                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col15]" />
+                    <inputColumn
+                      refId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of srpt-col6]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="48"
+                      cachedName="Copy of srpt-col6"
+                      externalMetadataColumnId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Copy of srpt-col6]"
+                      lineageId="Package\ScoreReportData Update\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of srpt-col6]" />
+                    <inputColumn
+                      refId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[srpt-col6]"
+                      cachedDataType="wstr"
+                      cachedLength="48"
+                      cachedName="srpt-col6"
+                      externalMetadataColumnId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[srpt-col6]"
+                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col6]" />
                   </inputColumns>
-                  <externalMetadataColumns />
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Srpt-tsch]"
+                      dataType="guid"
+                      name="Srpt-tsch" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[srpt-col33]"
+                      dataType="wstr"
+                      length="54"
+                      name="srpt-col33" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Copy of srpt-col33]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Copy of srpt-col33" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[srpt-col15]"
+                      dataType="wstr"
+                      length="10"
+                      name="srpt-col15" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[srpt-col6]"
+                      dataType="wstr"
+                      length="48"
+                      name="srpt-col6" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Copy of srpt-col6]"
+                      codePage="1252"
+                      dataType="str"
+                      length="48"
+                      name="Copy of srpt-col6" />
+                  </externalMetadataColumns>
                 </input>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\ScoreReportData Update\Lookup.Outputs[Lookup Match Output]"
-                  errorOrTruncationOperation="Lookup"
-                  exclusionGroup="1"
-                  name="Lookup Match Output"
-                  synchronousInputId="Package\ScoreReportData Update\Lookup.Inputs[Lookup Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\ScoreReportData Update\Lookup.Outputs[Lookup Match Output].Columns[TestScheduleId]"
-                      dataType="i8"
-                      errorOrTruncationOperation="Copy Column"
-                      lineageId="Package\ScoreReportData Update\Lookup.Outputs[Lookup Match Output].Columns[TestScheduleId]"
-                      name="TestScheduleId"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          description="Specifies the column in the reference table from which a column is copied."
-                          name="CopyFromReferenceColumn">TestScheduleId</property>
-                      </properties>
-                    </outputColumn>
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\ScoreReportData Update\Lookup.Outputs[Lookup No Match Output]"
-                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
-                  exclusionGroup="1"
-                  name="Lookup No Match Output"
-                  synchronousInputId="Package\ScoreReportData Update\Lookup.Inputs[Lookup Input]">
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\ScoreReportData Update\Lookup.Outputs[Lookup Error Output]"
+                  refId="Package\ScoreReportData Update\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
-                  name="Lookup Error Output"
-                  synchronousInputId="Package\ScoreReportData Update\Lookup.Inputs[Lookup Input]">
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\ScoreReportData Update\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      refId="Package\ScoreReportData Update\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\ScoreReportData Update\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      lineageId="Package\ScoreReportData Update\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\ScoreReportData Update\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      refId="Package\ScoreReportData Update\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\ScoreReportData Update\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\ScoreReportData Update\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -6593,13 +6655,16 @@ where [refTable].[SourceTestScheduleID] = ?</property>
                   name="SqlCommand"
                   UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">Select
 [Srpt-tsch],
-[srpt-col4],
-[srpt-col19],
-[srpt-col33]
+[srpt-col6],
+
+[srpt-col33],
+[srpt-col15]
 from
 ScoreReportData
 where
-[srpt-col33] is not null</property>
+[srpt-col33] is not null and
+[srpt-col15] &gt;= '2024-03-15'
+order by [srpt-col15]</property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -6625,8 +6690,8 @@ where
               <connections>
                 <connection
                   refId="Package\ScoreReportData Update\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[ol-ok-sql2.LXRdata]"
-                  connectionManagerRefId="Package.ConnectionManagers[ol-ok-sql2.LXRdata]"
+                  connectionManagerID="Package.ConnectionManagers[ol-ok-sql2.lxrdata1]"
+                  connectionManagerRefId="Package.ConnectionManagers[ol-ok-sql2.lxrdata1]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -6645,25 +6710,6 @@ where
                       name="Srpt-tsch"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col4]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[srpt-col4]"
-                      length="32"
-                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col4]"
-                      name="srpt-col4"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col19]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[srpt-col19]"
-                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col19]"
-                      name="srpt-col19"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
                       refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col33]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
@@ -6673,6 +6719,25 @@ where
                       lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col33]"
                       name="srpt-col33"
                       truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col15]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[srpt-col15]"
+                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col15]"
+                      name="srpt-col15"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col6]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[srpt-col6]"
+                      length="48"
+                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col6]"
+                      name="srpt-col6"
+                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -6681,19 +6746,19 @@ where
                       dataType="guid"
                       name="Srpt-tsch" />
                     <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[srpt-col4]"
-                      dataType="wstr"
-                      length="32"
-                      name="srpt-col4" />
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[srpt-col19]"
-                      dataType="i4"
-                      name="srpt-col19" />
-                    <externalMetadataColumn
                       refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[srpt-col33]"
                       dataType="wstr"
                       length="54"
                       name="srpt-col33" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[srpt-col15]"
+                      dataType="dbDate"
+                      name="srpt-col15" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[srpt-col6]"
+                      dataType="wstr"
+                      length="48"
+                      name="srpt-col6" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -6707,22 +6772,22 @@ where
                       lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Srpt-tsch]"
                       name="Srpt-tsch" />
                     <outputColumn
-                      refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[srpt-col4]"
+                      refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[srpt-col6]"
                       dataType="wstr"
-                      length="32"
-                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[srpt-col4]"
-                      name="srpt-col4" />
-                    <outputColumn
-                      refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[srpt-col19]"
-                      dataType="i4"
-                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[srpt-col19]"
-                      name="srpt-col19" />
+                      length="48"
+                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[srpt-col6]"
+                      name="srpt-col6" />
                     <outputColumn
                       refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[srpt-col33]"
                       dataType="wstr"
                       length="54"
                       lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[srpt-col33]"
                       name="srpt-col33" />
+                    <outputColumn
+                      refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[srpt-col15]"
+                      dataType="dbDate"
+                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[srpt-col15]"
+                      name="srpt-col15" />
                     <outputColumn
                       refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
@@ -6740,555 +6805,13 @@ where
                 </output>
               </outputs>
             </component>
-            <component
-              refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete)"
-              componentClassID="Microsoft.ManagedComponentHost"
-              contactInfo="Upsert Destination (Insert, Update, Delete); ZappySys LLC (c) All Rights Reserved; SSIS PowerPack; http://www.zappysys.com/support"
-              description="Upsert destination can be used for bulk insert / update / delete (i.e. Merge) based on matching source and target records in MS SQL Server, PostgreSql, Amazon Redshift database."
-              name="Upsert Destination (Insert, Update, Delete)"
-              usesDispositions="true"
-              version="5">
-              <properties>
-                <property
-                  dataType="System.Int32"
-                  description="LoggingMode determines how much information is logged during Package Execution. Set Logging mode to Debugging for maximum log."
-                  expressionType="Notify"
-                  name="LoggingMode"
-                  typeConverter="ZappySys.PowerPack.Common.LoggingMode">0</property>
-                <property
-                  dataType="System.Boolean"
-                  description="When you enable this property it will prefix timestamp before Log messages."
-                  expressionType="Notify"
-                  name="PrefixTimestamp">false</property>
-                <property
-                  dataType="System.Null"
-                  expressionType="Notify"
-                  name="SelfRef"
-                  typeConverter="NOTBROWSABLE" />
-                <property
-                  dataType="System.Boolean"
-                  description="Enable / Disable Response Output. Checking this option can remove unwanted warnings about unused Columns and many times speedup performance so if output is not needed set this option to True so its removed."
-                  name="DoNotCreateOutputs">false</property>
-                <property
-                  dataType="System.String"
-                  description="Target table name where you like insert, update or delete records"
-                  expressionType="Notify"
-                  name="TableName"
-                  typeConverter="ZappySys.PowerPack.Converters.TableEditor,ZappySys.PowerPack140.UI,Version=1.0.0.0,Culture=neutral,PublicKeyToken=1903265a93eae502">[Dimensions].[StudentTestAttributes]</property>
-                <property
-                  dataType="System.Int32"
-                  description="Commit batch size (0=Commit once all source rows are consumed). You can Change Batch Size to commit in smaller chunks too if error handling needed."
-                  expressionType="Notify"
-                  name="BatchSize">0</property>
-                <property
-                  dataType="System.Int32"
-                  description="Action you like to perform (e.g. Upsert, Insert, Update, Delete or Sync)"
-                  expressionType="Notify"
-                  name="Action"
-                  typeConverter="ZappySys.Common.Data.MergeMode">0</property>
-                <property
-                  dataType="System.Boolean"
-                  description="INSERT source rows to target if they don't exist in target table (Only for Sync or Upsert Action)"
-                  expressionType="Notify"
-                  name="EnableInsert">false</property>
-                <property
-                  dataType="System.Boolean"
-                  description="UPDATE source rows to target if they exist in target table (Only for Sync or Upsert Action)"
-                  expressionType="Notify"
-                  name="EnableUpdate">true</property>
-                <property
-                  dataType="System.Boolean"
-                  description="DELETE target rows if missing in source (Only for Sync or Upsert Action)"
-                  expressionType="Notify"
-                  name="EnableDelete">false</property>
-                <property
-                  dataType="System.String"
-                  description="User defined Temp table to hold source result before final merge. This table is truncated before each data load. Unlike auto temp table, custom temp table is not dropped after process is finished."
-                  expressionType="Notify"
-                  name="CustomTempTableName"></property>
-                <property
-                  dataType="System.String"
-                  description="SQL command you like to execute after source data is loaded into temp table. For example you can use this option to issue Custom SQL to delete duplicate rows from Staging Table right before final merge. This command is executed before issuing final merge on target table. Along with variable placeholders, you can also use special placeholders [%target_table%], [%temp_table%] and [%target_keys%]"
-                  expressionType="Notify"
-                  name="TempPostExecuteCommand"></property>
-                <property
-                  dataType="System.String"
-                  description="SQL command you like to execute before starting load in target table (e.g. DROP INDEX on target). Along with variable placeholders, you can also use special placeholders [%target_table%], [%temp_table%] and [%target_keys%]"
-                  expressionType="Notify"
-                  name="PreExecuteCommand"></property>
-                <property
-                  dataType="System.String"
-                  description="SQL command you like to execute at the end once target table is update (e.g. REBUILD or CREATE INDEX on target table). Along with variable placeholders, you can also use special placeholders [%target_table%], [%temp_table%] and [%target_keys%]"
-                  expressionType="Notify"
-                  name="PostExecuteCommand"></property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies what to do if you encounter duplicate records in source data. You can use first row in the group or keep last row or throw error."
-                  expressionType="Notify"
-                  name="DuplicateRemovalMode"
-                  typeConverter="ZappySys.Common.Data.DuplicateRemovalMode">0</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies field name based on Duplicate record is sorted. You can enter one or more columns based on you like sorting (e.g. col1 asc, col2 desc, upper(col3) desc). If you do not specify anything then default sort is based on Key field(s). By default UI will warn you if you enter custom value. If you do not wish to be prompted on the UI for custom expression then you can enter /*NO-PROMPT*/ anywhere in the value (e.g. LastUpdated DESC /*NO-PROMPT*/)"
-                  expressionType="Notify"
-                  name="DuplicateOrderBy">&lt;Key&gt;</property>
-                <property
-                  dataType="System.Int32"
-                  description="Defines how to check for modified row for Update Action. Default is check by Key match (Update all rows which exists on target by matching Keys from source and target)."
-                  expressionType="Notify"
-                  name="RowCompareMode"
-                  typeConverter="ZappySys.Common.Data.RowCompareMode">1</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Enables writing row create date/time to the selected target column if row is inserted."
-                  expressionType="Notify"
-                  name="EnableCreatedOn">false</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Enables writing row update date/time to the selected target column if row is updated."
-                  expressionType="Notify"
-                  name="EnableLastUpdatedOn">true</property>
-                <property
-                  dataType="System.String"
-                  description="Indicates target table column name which you like to set for row create action date/time. After row insert this column will be updated automatically with the current server date/time (only if you set column name here). If you map this column from source input then it takes precedence."
-                  expressionType="Notify"
-                  name="ColumnForCreatedOn"></property>
-                <property
-                  dataType="System.String"
-                  description="Indicates target table column name which you like to set for row update action date/time. After row update this column will be updated automatically with the current date/time (only if you set column name here). If you map this column from source input then it takes precedence."
-                  expressionType="Notify"
-                  name="ColumnForLastUpdatedOn">LoadDate</property>
-                <property
-                  dataType="System.String"
-                  description="Custom hints for merge if supported by database engine. E.g. in SQL Server you can issue WITH (TABLOCK) hint if you dont want to lock target table during merge operation allowing other processes to access it while merge is performed. Leaving this value blank will use system default hints (i.e. WITH (HOLDLOCK) for MS SQL and blank for other engines). If you do not wish to use any hints then enter {none}"
-                  expressionType="Notify"
-                  name="CustomTableHints"></property>
-                <property
-                  dataType="System.String"
-                  name="UserComponentTypeName">ZappySys.UpsertDestination</property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Connections[DB-CONNECTION]"
-                  connectionManagerID="Package.ConnectionManagers[uat-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin1]"
-                  connectionManagerRefId="Package.ConnectionManagers[uat-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin1]"
-                  description="Select Runtime Connection Type (allowed ADO.NET:SQL, ZS-POSTGRESQL, ZS-AWS-REDSHIFT)"
-                  name="DB-CONNECTION" />
-              </connections>
-              <inputs>
-                <input
-                  refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput]"
-                  errorRowDisposition="FailComponent"
-                  hasSideEffects="true"
-                  name="UpsertDestinationInput"
-                  truncationRowDisposition="FailComponent">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].Columns[TestScheduleKey]"
-                      cachedDataType="i8"
-                      cachedName="TestScheduleId"
-                      externalMetadataColumnId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[TestScheduleKey]"
-                      lineageId="Package\ScoreReportData Update\Lookup.Outputs[Lookup Match Output].Columns[TestScheduleId]"
-                      name="TestScheduleKey" />
-                    <inputColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].Columns[ExamPortionCode]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="32"
-                      cachedName="Copy of srpt-col4"
-                      externalMetadataColumnId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[ExamPortionCode]"
-                      lineageId="Package\ScoreReportData Update\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of srpt-col4]"
-                      name="ExamPortionCode" />
-                    <inputColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].Columns[AspenSchedID]"
-                      cachedDataType="i4"
-                      cachedName="srpt-col19"
-                      externalMetadataColumnId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[AspenSchedID]"
-                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col19]"
-                      name="AspenSchedID" />
-                    <inputColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].Columns[SeatCode]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Copy of srpt-col33"
-                      externalMetadataColumnId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[SeatCode]"
-                      lineageId="Package\ScoreReportData Update\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of srpt-col33]"
-                      name="SeatCode" />
-                  </inputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[StudAttribId]"
-                      dataType="i8"
-                      name="StudAttribId">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Primary Key Column for this table"
-                          expressionType="Notify"
-                          name="IsKey">true</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Identity column (auto-number) for this table"
-                          expressionType="Notify"
-                          name="IsIdentity">true</property>
-                      </properties>
-                    </externalMetadataColumn>
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[StudAttribDBID]"
-                      dataType="i8"
-                      name="StudAttribDBID" />
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[CurrentFlag]"
-                      dataType="bool"
-                      name="CurrentFlag" />
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[LoadDate]"
-                      dataType="dbTimeStamp"
-                      name="LoadDate" />
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[CheckSum]"
-                      dataType="i8"
-                      name="CheckSum" />
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[StudentKey]"
-                      dataType="i8"
-                      name="StudentKey" />
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[TestCenterKey]"
-                      dataType="i4"
-                      name="TestCenterKey" />
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[TestScheduleKey]"
-                      dataType="i4"
-                      name="TestScheduleKey">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Primary Key Column for this table"
-                          expressionType="Notify"
-                          name="IsKey">true</property>
-                      </properties>
-                    </externalMetadataColumn>
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[ExternalExamKey]"
-                      dataType="i4"
-                      name="ExternalExamKey" />
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[SchoolCode]"
-                      codePage="1252"
-                      dataType="str"
-                      length="40"
-                      name="SchoolCode" />
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[ClientCode]"
-                      codePage="1252"
-                      dataType="str"
-                      length="12"
-                      name="ClientCode" />
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[ExamCode]"
-                      codePage="1252"
-                      dataType="str"
-                      length="15"
-                      name="ExamCode" />
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[ExamPortionCode]"
-                      codePage="1252"
-                      dataType="str"
-                      length="15"
-                      name="ExamPortionCode">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Primary Key Column for this table"
-                          expressionType="Notify"
-                          name="IsKey">true</property>
-                      </properties>
-                    </externalMetadataColumn>
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[GraduationDate]"
-                      dataType="dbTimeStamp"
-                      name="GraduationDate" />
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[ApplicationType]"
-                      codePage="1252"
-                      dataType="str"
-                      length="6"
-                      name="ApplicationType" />
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[SchoolName]"
-                      codePage="1252"
-                      dataType="str"
-                      length="100"
-                      name="SchoolName" />
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[AdminGroup]"
-                      codePage="1252"
-                      dataType="str"
-                      length="10"
-                      name="AdminGroup" />
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[TimeSched]"
-                      codePage="1252"
-                      dataType="str"
-                      length="8"
-                      name="TimeSched" />
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[DateSched]"
-                      dataType="dbTimeStamp"
-                      name="DateSched" />
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[ExternalApplicantKey]"
-                      codePage="1252"
-                      dataType="str"
-                      length="25"
-                      name="ExternalApplicantKey" />
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[AspenApplicantKey]"
-                      codePage="1252"
-                      dataType="str"
-                      length="12"
-                      name="AspenApplicantKey" />
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[ExamDescription]"
-                      codePage="1252"
-                      dataType="str"
-                      length="200"
-                      name="ExamDescription" />
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[AspenSchedID]"
-                      codePage="1252"
-                      dataType="str"
-                      length="12"
-                      name="AspenSchedID">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Primary Key Column for this table"
-                          expressionType="Notify"
-                          name="IsKey">true</property>
-                      </properties>
-                    </externalMetadataColumn>
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[DeliveryMethod]"
-                      codePage="1252"
-                      dataType="str"
-                      length="8"
-                      name="DeliveryMethod" />
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[ExternalTestCenterKey]"
-                      codePage="1252"
-                      dataType="str"
-                      length="15"
-                      name="ExternalTestCenterKey" />
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[FormKey]"
-                      dataType="i4"
-                      name="FormKey" />
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[ExternalSchoolKey]"
-                      dataType="wstr"
-                      length="10"
-                      name="ExternalSchoolKey" />
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[BookingCode]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="BookingCode" />
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[Client]"
-                      codePage="1252"
-                      dataType="str"
-                      length="120"
-                      name="Client" />
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[ADAMultiplier]"
-                      dataType="numeric"
-                      name="ADAMultiplier"
-                      precision="10"
-                      scale="4" />
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[ADAEnable]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1"
-                      name="ADAEnable" />
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[OrigExamPortionID]"
-                      codePage="1252"
-                      dataType="str"
-                      length="20"
-                      name="OrigExamPortionID" />
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[NationStateCd]"
-                      dataType="wstr"
-                      length="10"
-                      name="NationStateCd" />
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[ComboEnable]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1"
-                      name="ComboEnable" />
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[HistoryEnable]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1"
-                      name="HistoryEnable" />
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[Licsense]"
-                      codePage="1252"
-                      dataType="str"
-                      length="40"
-                      name="Licsense" />
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[Degree]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="Degree" />
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[NationStatePFA]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1"
-                      name="NationStatePFA" />
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[DeploymentEnable]"
-                      codePage="1252"
-                      dataType="str"
-                      length="10"
-                      name="DeploymentEnable" />
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[EndEligiblityDate]"
-                      dataType="dbTimeStamp"
-                      name="EndEligiblityDate" />
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[ResponsibleEmp]"
-                      codePage="1252"
-                      dataType="str"
-                      length="30"
-                      name="ResponsibleEmp" />
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput].ExternalColumns[SeatCode]"
-                      codePage="1252"
-                      dataType="str"
-                      length="54"
-                      name="SeatCode" />
-                  </externalMetadataColumns>
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[UpsertDestination Error Output]"
-                  isErrorOut="true"
-                  name="UpsertDestination Error Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[UpsertDestination Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[UpsertDestination Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[UpsertDestination Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[UpsertDestination Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                    <outputColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[UpsertDestination Error Output].Columns[ErrorColumnName]"
-                      codePage="1252"
-                      dataType="str"
-                      length="128"
-                      lineageId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[UpsertDestination Error Output].Columns[ErrorColumnName]"
-                      name="ErrorColumnName" />
-                    <outputColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[UpsertDestination Error Output].Columns[ErrorMessage]"
-                      dataType="wstr"
-                      length="4000"
-                      lineageId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[UpsertDestination Error Output].Columns[ErrorMessage]"
-                      name="ErrorMessage" />
-                    <outputColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[UpsertDestination Error Output].Columns[TestScheduleKey]"
-                      dataType="i4"
-                      lineageId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[UpsertDestination Error Output].Columns[TestScheduleKey]"
-                      name="TestScheduleKey" />
-                    <outputColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[UpsertDestination Error Output].Columns[ExamPortionCode]"
-                      codePage="1252"
-                      dataType="str"
-                      length="15"
-                      lineageId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[UpsertDestination Error Output].Columns[ExamPortionCode]"
-                      name="ExamPortionCode" />
-                    <outputColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[UpsertDestination Error Output].Columns[AspenSchedID]"
-                      codePage="1252"
-                      dataType="str"
-                      length="12"
-                      lineageId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[UpsertDestination Error Output].Columns[AspenSchedID]"
-                      name="AspenSchedID" />
-                    <outputColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[UpsertDestination Error Output].Columns[SeatCode]"
-                      codePage="1252"
-                      dataType="str"
-                      length="54"
-                      lineageId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[UpsertDestination Error Output].Columns[SeatCode]"
-                      name="SeatCode" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[Updated Records Output]"
-                  name="Updated Records Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[Updated Records Output].Columns[TestScheduleKey]"
-                      dataType="i4"
-                      lineageId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[Updated Records Output].Columns[TestScheduleKey]"
-                      name="TestScheduleKey" />
-                    <outputColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[Updated Records Output].Columns[ExamPortionCode]"
-                      codePage="1252"
-                      dataType="str"
-                      length="15"
-                      lineageId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[Updated Records Output].Columns[ExamPortionCode]"
-                      name="ExamPortionCode" />
-                    <outputColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[Updated Records Output].Columns[AspenSchedID]"
-                      codePage="1252"
-                      dataType="str"
-                      length="12"
-                      lineageId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[Updated Records Output].Columns[AspenSchedID]"
-                      name="AspenSchedID" />
-                    <outputColumn
-                      refId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[Updated Records Output].Columns[SeatCode]"
-                      codePage="1252"
-                      dataType="str"
-                      length="54"
-                      lineageId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Outputs[Updated Records Output].Columns[SeatCode]"
-                      name="SeatCode" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
           </components>
           <paths>
             <path
               refId="Package\ScoreReportData Update.Paths[Data Conversion Output]"
-              endId="Package\ScoreReportData Update\Lookup.Inputs[Lookup Input]"
+              endId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input]"
               name="Data Conversion Output"
               startId="Package\ScoreReportData Update\Data Conversion.Outputs[Data Conversion Output]" />
-            <path
-              refId="Package\ScoreReportData Update.Paths[Lookup Match Output]"
-              endId="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete).Inputs[UpsertDestinationInput]"
-              name="Lookup Match Output"
-              startId="Package\ScoreReportData Update\Lookup.Outputs[Lookup Match Output]" />
             <path
               refId="Package\ScoreReportData Update.Paths[OLE DB Source Output]"
               endId="Package\ScoreReportData Update\Data Conversion.Inputs[Data Conversion Input]"
@@ -7642,6 +7165,1454 @@ where
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\StudentScores"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{4C183554-F634-45A5-8482-7072D3B36A09}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="StudentScores"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\StudentScores\Data Conversion"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\StudentScores\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\StudentScores\Data Conversion.Inputs[Data Conversion Input].Columns[sscr-name]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="sscr-name"
+                      lineageId="Package\StudentScores\OLE DB Source.Outputs[OLE DB Source Output].Columns[sscr-name]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\StudentScores\Data Conversion.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\StudentScores\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\StudentScores\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of sscr-name]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="255"
+                      lineageId="Package\StudentScores\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of sscr-name]"
+                      name="Copy of sscr-name"
+                      truncationRowDisposition="IgnoreFailure">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\StudentScores\OLE DB Source.Outputs[OLE DB Source Output].Columns[sscr-name]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\StudentScores\Data Conversion.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\StudentScores\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\StudentScores\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\StudentScores\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\StudentScores\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\StudentScores\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\StudentScores\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[StudentIDs]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\StudentScores\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[dev-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[dev-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\StudentScores\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\StudentScores\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[sscr-Guid]"
+                      cachedDataType="guid"
+                      cachedName="sscr-Guid"
+                      externalMetadataColumnId="Package\StudentScores\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[sscr-Guid]"
+                      lineageId="Package\StudentScores\OLE DB Source.Outputs[OLE DB Source Output].Columns[sscr-Guid]" />
+                    <inputColumn
+                      refId="Package\StudentScores\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Email]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Email"
+                      externalMetadataColumnId="Package\StudentScores\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Email]"
+                      lineageId="Package\StudentScores\Script Component.Outputs[Output 0].Columns[Email]" />
+                    <inputColumn
+                      refId="Package\StudentScores\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LastName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="LastName"
+                      externalMetadataColumnId="Package\StudentScores\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LastName]"
+                      lineageId="Package\StudentScores\Script Component.Outputs[Output 0].Columns[LastName]" />
+                    <inputColumn
+                      refId="Package\StudentScores\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FirstName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="FirstName"
+                      externalMetadataColumnId="Package\StudentScores\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FirstName]"
+                      lineageId="Package\StudentScores\Script Component.Outputs[Output 0].Columns[FirstName]" />
+                    <inputColumn
+                      refId="Package\StudentScores\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of sscr-name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Copy of sscr-name"
+                      externalMetadataColumnId="Package\StudentScores\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[sscr-name]"
+                      lineageId="Package\StudentScores\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of sscr-name]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\StudentScores\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[sscr-Guid]"
+                      dataType="guid"
+                      name="sscr-Guid" />
+                    <externalMetadataColumn
+                      refId="Package\StudentScores\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[sscr-name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="sscr-name" />
+                    <externalMetadataColumn
+                      refId="Package\StudentScores\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Email]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      name="Email" />
+                    <externalMetadataColumn
+                      refId="Package\StudentScores\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LastName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="LastName" />
+                    <externalMetadataColumn
+                      refId="Package\StudentScores\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FirstName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="FirstName" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\StudentScores\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\StudentScores\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\StudentScores\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\StudentScores\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\StudentScores\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\StudentScores\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\StudentScores\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">Select
+[sscr-Guid],
+[sscr-name]
+from
+Studentscores</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\StudentScores\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[ol-ok-sql2.LXRdata]"
+                  connectionManagerRefId="Package.ConnectionManagers[ol-ok-sql2.LXRdata]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\StudentScores\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\StudentScores\OLE DB Source.Outputs[OLE DB Source Output].Columns[sscr-Guid]"
+                      dataType="guid"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\StudentScores\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[sscr-Guid]"
+                      lineageId="Package\StudentScores\OLE DB Source.Outputs[OLE DB Source Output].Columns[sscr-Guid]"
+                      name="sscr-Guid"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\StudentScores\OLE DB Source.Outputs[OLE DB Source Output].Columns[sscr-name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\StudentScores\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[sscr-name]"
+                      length="255"
+                      lineageId="Package\StudentScores\OLE DB Source.Outputs[OLE DB Source Output].Columns[sscr-name]"
+                      name="sscr-name"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\StudentScores\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[sscr-Guid]"
+                      dataType="guid"
+                      name="sscr-Guid" />
+                    <externalMetadataColumn
+                      refId="Package\StudentScores\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[sscr-name]"
+                      dataType="wstr"
+                      length="255"
+                      name="sscr-name" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\StudentScores\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\StudentScores\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[sscr-Guid]"
+                      dataType="guid"
+                      lineageId="Package\StudentScores\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[sscr-Guid]"
+                      name="sscr-Guid" />
+                    <outputColumn
+                      refId="Package\StudentScores\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[sscr-name]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\StudentScores\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[sscr-name]"
+                      name="sscr-name" />
+                    <outputColumn
+                      refId="Package\StudentScores\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\StudentScores\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\StudentScores\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\StudentScores\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\StudentScores\Script Component"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum.;Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;11"
+              description="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum."
+              name="Script Component"
+              version="11">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Stores the source code of the component"
+                  isArray="true"
+                  name="SourceCode"
+                  state="cdata">
+                  <arrayElements
+                    arrayElementCount="30">
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Settings.settings]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Resources.resx]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+</root>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[main.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[#region Help:  Introduction to the Script Component
+/* The Script Component allows you to perform virtually any operation that can be accomplished in
+ * a .Net application within the context of an Integration Services data flow.
+ *
+ * Expand the other regions which have "Help" prefixes for examples of specific ways to use
+ * Integration Services features within this script component. */
+#endregion
+
+#region Namespaces
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+#endregion
+
+/// <summary>
+/// This is the class to which to add your code.  Do not change the name, attributes, or parent
+/// of this class.
+/// </summary>
+[Microsoft.SqlServer.Dts.Pipeline.SSISScriptComponentEntryPointAttribute]
+public class ScriptMain : UserComponent
+{
+    #region Help:  Using Integration Services variables and parameters
+    /* To use a variable in this script, first ensure that the variable has been added to
+     * either the list contained in the ReadOnlyVariables property or the list contained in
+     * the ReadWriteVariables property of this script component, according to whether or not your
+     * code needs to write into the variable.  To do so, save this script, close this instance of
+     * Visual Studio, and update the ReadOnlyVariables and ReadWriteVariables properties in the
+     * Script Transformation Editor window.
+     * To use a parameter in this script, follow the same steps. Parameters are always read-only.
+     *
+     * Example of reading from a variable or parameter:
+     *  DateTime startTime = Variables.MyStartTime;
+     *
+     * Example of writing to a variable:
+     *  Variables.myStringVariable = "new value";
+     */
+    #endregion
+
+    #region Help:  Using Integration Services Connnection Managers
+    /* Some types of connection managers can be used in this script component.  See the help topic
+     * "Working with Connection Managers Programatically" for details.
+     *
+     * To use a connection manager in this script, first ensure that the connection manager has
+     * been added to either the list of connection managers on the Connection Managers page of the
+     * script component editor.  To add the connection manager, save this script, close this instance of
+     * Visual Studio, and add the Connection Manager to the list.
+     *
+     * If the component needs to hold a connection open while processing rows, override the
+     * AcquireConnections and ReleaseConnections methods.
+     * 
+     * Example of using an ADO.Net connection manager to acquire a SqlConnection:
+     *  object rawConnection = Connections.SalesDB.AcquireConnection(transaction);
+     *  SqlConnection salesDBConn = (SqlConnection)rawConnection;
+     *
+     * Example of using a File connection manager to acquire a file path:
+     *  object rawConnection = Connections.Prices_zip.AcquireConnection(transaction);
+     *  string filePath = (string)rawConnection;
+     *
+     * Example of releasing a connection manager:
+     *  Connections.SalesDB.ReleaseConnection(rawConnection);
+     */
+    #endregion
+
+    #region Help:  Firing Integration Services Events
+    /* This script component can fire events.
+     *
+     * Example of firing an error event:
+     *  ComponentMetaData.FireError(10, "Process Values", "Bad value", "", 0, out cancel);
+     *
+     * Example of firing an information event:
+     *  ComponentMetaData.FireInformation(10, "Process Values", "Processing has started", "", 0, fireAgain);
+     *
+     * Example of firing a warning event:
+     *  ComponentMetaData.FireWarning(10, "Process Values", "No rows were received", "", 0);
+     */
+    #endregion
+
+    /// <summary>
+    /// This method is called once, before rows begin to be processed in the data flow.
+    ///
+    /// You can remove this method if you don't need to do anything here.
+    /// </summary>
+    String SSCRName;
+    public override void PreExecute()
+    {
+        base.PreExecute();
+        /*
+         * Add your code here
+         */
+    }
+
+    /// <summary>
+    /// This method is called after all the rows have passed through this component.
+    ///
+    /// You can delete this method if you don't need to do anything here.
+    /// </summary>
+    public override void PostExecute()
+    {
+        base.PostExecute();
+        if (SSCRName.Contains("@"))
+        {
+            Variables.Email = SSCRName.ToString();
+        }
+        else
+        {
+            string[] nameparts = SSCRName.ToString().Split(' ');
+
+            Variables.FirstName = nameparts[0].ToString();
+            if (nameparts.Length == 3)
+            {
+                String firstpart = Variables.FirstName.ToString();
+                Variables.FirstName = Variables.FirstName.ToString() + " " + nameparts[1].ToString();
+                Variables.LastName = nameparts[2].ToString();
+            }
+            else
+            {
+                Variables.LastName = nameparts[1].ToString();
+            }
+        }
+    }
+
+    /// <summary>
+    /// This method is called once for every row that passes through the component from Input0.
+    ///
+    /// Example of reading a value from a column in the the row:
+    ///  string zipCode = Row.ZipCode
+    ///
+    /// Example of writing a value to a column in the row:
+    ///  Row.ZipCode = zipCode
+    /// </summary>
+    /// <param name="Row">The row that is currently passing through the component</param>
+    public override void Input0_ProcessInputRow(Input0Buffer Row)
+    {
+
+        SSCRName = Row.Copyofsscrname;
+     
+        
+
+    } 
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[BufferWrapper.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services buffer wrappers
+*  This module defines classes for accessing data flow buffers
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+
+public class Input0Buffer: ScriptBuffer
+
+{
+    public Input0Buffer(PipelineBuffer Buffer, int[] BufferColumnIndexes, OutputNameMap OutputMap)
+        : base(Buffer, BufferColumnIndexes, OutputMap)
+    {
+    }
+
+    public String Copyofsscrname
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[0]);
+        }
+    }
+    public bool Copyofsscrname_IsNull
+    {
+        get
+        {
+            return IsNull(0);
+        }
+    }
+
+    public String Email
+    {
+        set
+        {
+            this[1] = value;
+        }
+    }
+    public bool Email_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(1);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String LastName
+    {
+        set
+        {
+            this[2] = value;
+        }
+    }
+    public bool LastName_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(2);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String FirstName
+    {
+        set
+        {
+            this[3] = value;
+        }
+    }
+    public bool FirstName_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(3);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    new public bool NextRow()
+    {
+        return base.NextRow();
+    }
+
+    new public bool EndOfRowset()
+    {
+        return base.EndOfRowset();
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\AssemblyInfo.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("SC_2a99905d546e40cda2cd163c6ae8e5b5")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("SC_2a99905d546e40cda2cd163c6ae8e5b5")]
+[assembly: AssemblyCopyright("Copyright @  2024")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.0.0")]
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[ComponentWrapper.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services component wrapper
+*  This module defines the base class for your component
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+
+public class UserComponent: ScriptComponent
+{
+    public Connections Connections;
+    public Variables Variables;
+    public UserComponent()
+    {
+        Connections = new Connections(this);
+        Variables = new Variables(this);
+    }
+
+    public override void ProcessInput(int InputID, string InputName, PipelineBuffer Buffer, OutputNameMap OutputMap)
+    {
+
+        if (InputName.Equals(@"Input 0", StringComparison.Ordinal))
+        {
+            Input0_ProcessInput(new Input0Buffer(Buffer, GetColumnIndexes(InputID), OutputMap));
+        }
+
+    }
+
+    public virtual void Input0_ProcessInput(Input0Buffer Buffer)
+    {
+        while (Buffer.NextRow())
+        {
+            Input0_ProcessInputRow(Buffer);
+        }
+    }
+
+    public virtual void Input0_ProcessInputRow(Input0Buffer Row)
+    {
+    }
+
+}
+
+public class Connections
+{
+    ScriptComponent ParentComponent;
+
+    public Connections(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+}
+
+public class Variables
+{
+    ScriptComponent ParentComponent;
+
+    public Variables(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+    public String Email
+    {
+        get
+        {
+            return (String)(ParentComponent.ReadWriteVariables["Email"].GetValueWithContext(ScriptComponent.EvaluatorContext));
+        }
+        set
+        {
+            ParentComponent.ReadWriteVariables["Email"].Value = value;
+        }
+    }
+
+    public String FirstName
+    {
+        get
+        {
+            return (String)(ParentComponent.ReadWriteVariables["FirstName"].GetValueWithContext(ScriptComponent.EvaluatorContext));
+        }
+        set
+        {
+            ParentComponent.ReadWriteVariables["FirstName"].Value = value;
+        }
+    }
+
+    public String LastName
+    {
+        get
+        {
+            return (String)(ParentComponent.ReadWriteVariables["LastName"].GetValueWithContext(ScriptComponent.EvaluatorContext));
+        }
+        set
+        {
+            ParentComponent.ReadWriteVariables["LastName"].Value = value;
+        }
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Project]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF16LE]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
+  <msb:PropertyGroup>
+    <msb:CodeName>SC_2a99905d546e40cda2cd163c6ae8e5b5</msb:CodeName>
+    <msb:Language>msBuild</msb:Language>
+    <msb:DisplayName>SC_2a99905d546e40cda2cd163c6ae8e5b5</msb:DisplayName>
+    <msb:ProjectId>{BDB66545-3022-42D8-AC1F-E3945FBA9B7B}</msb:ProjectId>
+  </msb:PropertyGroup>
+  <msb:ItemGroup>
+    <msb:Project Include="SC_2a99905d546e40cda2cd163c6ae8e5b5.csproj" />
+    <msb:File Include="Properties\Settings.Designer.cs" />
+    <msb:File Include="main.cs" />
+    <msb:File Include="BufferWrapper.cs" />
+    <msb:File Include="ComponentWrapper.cs" />
+    <msb:File Include="Properties\Settings.settings" />
+    <msb:File Include="Properties\AssemblyInfo.cs" />
+    <msb:File Include="Properties\Resources.resx" />
+    <msb:File Include="Properties\Resources.Designer.cs" />
+  </msb:ItemGroup>
+</c:Project>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Settings.Designer.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_2a99905d546e40cda2cd163c6ae8e5b5.Properties.Settings.get_Default():SC_2a99905d546e40cda2cd163c6ae8e5b5.Properties.Sett" +
+    "ings")]
+
+namespace SC_2a99905d546e40cda2cd163c6ae8e5b5.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[SC_2a99905d546e40cda2cd163c6ae8e5b5.csproj]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{659352ab-bb1b-4615-ba9f-0a44132b9462}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SC_2a99905d546e40cda2cd163c6ae8e5b5</RootNamespace>
+    <AssemblyName>SC_2a99905d546e40cda2cd163c6ae8e5b5</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
+    <TargetFrameworkProfile></TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.SqlServer.TxScript, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSRuntimeWrap, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSPipelineWrap, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.PipelineHost, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Compile Include="main.cs" />
+    <Compile Include="BufferWrapper.cs" />
+    <Compile Include="ComponentWrapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <!-- Include the build rules for a C# project.-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- This section defines VSTA properties that describe the host-changable project properties. -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
+        <ProjectProperties HostName="ScriptComponent" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" DebugInfoExeName="" DebugInfoCommandLine="" DebugInfoWorkingDir="" IconImageList="" />
+        <Host Name="ScriptComponent" GeneratedNamespace="SC_2a99905d546e40cda2cd163c6ae8e5b5" IconIndex="0"></Host>
+        <ProjectClient>
+          <HostIdentifier>SSIS_SC140</HostIdentifier>
+        </ProjectClient>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Resources.Designer.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_2a99905d546e40cda2cd163c6ae8e5b5.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
+    "rceManager")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_2a99905d546e40cda2cd163c6ae8e5b5.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
+    "fo")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_2a99905d546e40cda2cd163c6ae8e5b5.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
+    "):Void")]
+
+namespace SC_2a99905d546e40cda2cd163c6ae8e5b5.Properties {
+    
+    
+    /// <summary>
+    ///   A strongly-typed resource class, for looking up localized strings, etc.
+    /// </summary>
+    // This class was auto-generated by the StronglyTypedResourceBuilder
+    // class via a tool like ResGen or Visual Studio.
+    // To add or remove a member, edit your .ResX file then rerun ResGen
+    // with the /str option, or rebuild your VS project.
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    internal class Resources {
+        
+        private static global::System.Resources.ResourceManager resourceMan;
+        
+        private static global::System.Globalization.CultureInfo resourceCulture;
+        
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
+        internal Resources() {
+        }
+        
+        /// <summary>
+        ///   Returns the cached ResourceManager instance used by this class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if ((resourceMan == null)) {
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SC_2a99905d546e40cda2cd163c6ae8e5b5.Properties.Resources", typeof(Resources).Assembly);
+                    resourceMan = temp;
+                }
+                return resourceMan;
+            }
+        }
+        
+        /// <summary>
+        ///   Overrides the current thread's CurrentUICulture property for all
+        ///   resource lookups using this strongly typed resource class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
+                return resourceCulture;
+            }
+            set {
+                resourceCulture = value;
+            }
+        }
+    }
+}
+]]></arrayElement>
+                  </arrayElements>
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Stores the binary representation of the component"
+                  isArray="true"
+                  name="BinaryCode"
+                  state="cdata">
+                  <arrayElements
+                    arrayElementCount="2">
+                    <arrayElement
+                      dataType="System.String"><![CDATA[SC_2a99905d546e40cda2cd163c6ae8e5b5.dll]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAAR5V2YAAAAAAAAAAOAAIiALATAAABgAAAAIAAAAAAAA8jYA
+AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAKA2AABPAAAAAEAAAEgEAAAAAAAAAAAAAAAAAAAA
+AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAA+BYAAAAgAAAAGAAAAAIA
+AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAEgEAAAAQAAAAAYAAAAaAAAAAAAAAAAAAAAAAABAAABA
+LnJlbG9jAAAMAAAAAGAAAAACAAAAIAAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAADU
+NgAAAAAAAEgAAAACAAUAgCMAAGgSAAABAAAAAAAAAOg1AAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4CKBAAAAoqEzAFAMoAAAABAAARAigRAAAKAnsBAAAEcgEA
+AHBvEgAACiwXAnsDAAAEAnsBAAAEbxMAAApvFwAABioCewEAAARvEwAACheNGwAAASUWHyCdbxQA
+AAoKAnsDAAAEBhaabxMAAApvGQAABgaOaRkzUgJ7AwAABG8YAAAGbxMAAAomAnsDAAAEAnsDAAAE
+bxgAAAZvEwAACnIFAABwBheabxMAAAooFQAACm8ZAAAGAnsDAAAEBhiabxMAAApvGwAABioCewMA
+AAQGF5pvEwAACm8bAAAGKjYCA28GAAAGfQEAAAQqHgIoEAAABioqAgMEBSgWAAAKKlICexcAAAoC
+exgAAAoWlG8ZAAAKKiICFigaAAAKKiYCFwMoGwAACipaAywIAhcoHAAACipyCQAAcHMdAAAKeiYC
+GAMoGwAACipaAywIAhgoHAAACipyCQAAcHMdAAAKeiYCGQMoGwAACipaAywIAhkoHAAACipyCQAA
+cHMdAAAKeh4CKB4AAAoqHgIoHwAACip+AiggAAAKAgJzFAAABn0CAAAEAgJzFQAABn0DAAAEKpIE
+cqYAAHAabyEAAAosFQIFAgMoIgAACg4EcwUAAAZvEgAABipKKwcCA28TAAAGA28OAAAGLfEqBio6
+AigjAAAKAgN9BAAABCo6AigjAAAKAgN9BQAABCqWAnsFAAAEbyQAAApytgAAcG8lAAAKKCYAAApv
+JwAACnQaAAABKnICewUAAARvJAAACnK2AABwbyUAAAoDbygAAAoqlgJ7BQAABG8kAAAKcsIAAHBv
+JQAACigmAAAKbycAAAp0GgAAASpyAnsFAAAEbyQAAApywgAAcG8lAAAKA28oAAAKKpYCewUAAARv
+JAAACnLWAABwbyUAAAooJgAACm8nAAAKdBoAAAEqcgJ7BQAABG8kAAAKctYAAHBvJQAACgNvKAAA
+CioeAigjAAAKKq5+BgAABC0ecugAAHDQBwAAAigpAAAKbyoAAApzKwAACoAGAAAEfgYAAAQqGn4H
+AAAEKh4CgAcAAAQqGn4IAAAEKh4CKCwAAAoqLnMhAAAGgAgAAAQqAEJTSkIBAAEAAAAAAAwAAAB2
+NC4wLjMwMzE5AAAAAAUAbAAAAPgGAAAjfgAAZAcAALwHAAAjU3RyaW5ncwAAAAAgDwAAXAEAACNV
+UwB8EAAAEAAAACNHVUlEAAAAjBAAANwBAAAjQmxvYgAAAAAAAAACAAABVxWiAQkBAAAA+gEzABYA
+AAEAAAAkAAAACAAAAAgAAAAiAAAAFgAAACwAAAAQAAAAAQAAAAQAAAAOAAAAEgAAAAEAAAAFAAAA
+AQAAAAAAnwMBAAAAAAAGAG8CiwUGAAMDiwUGALsBeAUPAP8FAAAGAOgBfQQGAFICfQQGADMCfQQG
+AOoCfQQGAI8CfQQGAKgCfQQGAP8BfQQGABoCSAMKAMMCCAEKACIFCAEOABMFCAEKAMYECAEKAOgG
+CAEGAKUGNQQGAJ4BeAUGADMFqwUGALoEaAQSAG4BdQMSAM8BdQMSAFYBUwQGAIMBiwUGAG4DNQQG
+AAEFNQQGAI8ENQQGAKkENQQWABEAQwUWAAEAQwVHAF4HAAAWACIAQwUGACkBNQQGAIgANQQGALEH
+fQQAAAAAXgAAAAAAAQABAAEAEABIBAAAEAABAAEAAQAQAAYFAAA5AAIABQABABAAygYAAEUAAgAQ
+AAEAEACSBgAASQAEABQAAQAQAEoGAABJAAUAFQAAABAAsgUOBkkABgAcAAABEAB5Bg4GYQAIACAA
+AQCsALAABgCSBrMABgBKBrcAAQDYBrsAAQDYBrsAEQA8BL8AEQBGAcMAEQB4AMcAUCAAAAAAxgAh
+AwYAAQBYIAAAAADGACwDBgABAC4hAAAAAMYAjgfLAAEAPCEAAAAAhhhrBQYAAgBEIQAAAACGGGsF
+NwACAE8hAAAAAIYI9QAlAAUAZCEAAAAAhgjwA1kABQBtIQAAAACGCJUDEAAFAHchAAAAAIYICgTR
+AAYAjiEAAAAAhgjCABAABwCYIQAAAACGCMcD0QAIAK8hAAAAAIYI3QAQAAkAuSEAAAAAhgjbA9EA
+CgDQIQAAAACGAKUHWQALANghAAAAAIYArAZZAAsA4CEAAAAAhhhrBQYACwAAIgAAAADGAD0H1gAL
+ACUiAAAAAMYBNgfLAA8AOCIAAAAAxgGOB8sAEAA6IgAAAACGGGsF4AARAEkiAAAAAIYYawXgABIA
+WCIAAAAAhgiLAyUAEwB+IgAAAACGCJUDEAATAJsiAAAAAIYIzwAlABQAwSIAAAAAhgjdABAAFADe
+IgAAAACGCLUAJQAVAAQjAAAAAIYIwgAQABUAISMAAAAAgxhrBQYAFgApIwAAAACTCC8F5gAWAFUj
+AAAAAJMILgHrABYAXCMAAAAAkwg6AfAAFgBkIwAAAACWCL4G9gAXAGsjAAAAAIYYawUGABcAcyMA
+AAAAkRhxBfsAFwAAAAEAqQcAAAEAKAUAAAIAVAYAAAMA1AQAAAEAQgMAAAEAQgMAAAEAQgMAAAEA
+QgMAAAEAQgMAAAEAQgMAAAEAZwAAAAIA6wAAAAMAKAUAAAQA1AQAAAEAKAUAAAEAqQcAAAEA7gYA
+AAEA7gYAAAEAQgMAAAEAQgMAAAEAQgMAAAEAQgMJAGsFAQARAGsFBgAZAGsFCgApAGsFEAAxAGsF
+EAA5AGsFEABBAGsFEABJAGsFEABRAGsFEABZAGsFEABhAGsFEABpAGsFBgCZAGsFBgC5AGsFFQDJ
+AGsFBgCJACEDBgCJACwDBgDRAIkGIACRAGIDJQDRALgGKQDRAJ4GMABxAGsFNwBxACgFQQBxAFQG
+RQB5AGsDSQBxABQETgBxACwEUwBxABsEAQDhAGsFEABxAKUHWQBxAKwGWQCJAGsFBgDRAIIGXQCJ
+AGgGZACRAGsFBgCJAD0GagDxACMEbwCJAHkHdQD5AEoHewD5ADgDggARAZoAhwARAa0HkAChAGsF
+lgDBAGsFBgAuAAsAFgEuABMAHwEuABsAPgEuACMARwEuACsAcAEuADMAcAEuADsAcAEuAEMARwEu
+AEsAdgEuAFMAcAEuAFsAjQFDAGMA1wHjAGsA1wEBAXsA1wGJAXMAPgGpAXMAPgEbAAMAAQAGAAkA
+BwAMAAgADgAAAPkA/wAAAPQDAwEAAJkD/wAAAA4EAwEAAMYA/wAAAMsDAwEAAOEA/wAAAN8DAwEA
+AJkD/wAAAOEA/wAAAMYA/wAAADMFBwEAAE4BDAEAAMIGEQECAAYAAwACAAcABQABAAgABwABAAkA
+CQABAAoACwABAAsADQABAAwADwABAA0AEQACABYAEwABABcAEwACABgAFQABABkAFQACABoAFwAB
+ABsAFwACAB0AGQACAB4AGwABAB8AGwACACAAHQAEgAAAAQAAAAAAAAAAAAAAAAA6AAAABAAAAAAA
+AAAAAAAAngBvAAAAAAAOAAAAAAAAAAAAAACnAPgGAAAAAA4AAAAAAAAAAAAAAKcAFQcAAAAABAAA
+AAAAAAAAAAAAngA1BAAAAAAOAAAAAAAAAAAAAACnAN4EAAAAAAAAAAABAAAAvAUAAAAAAElEVFNW
+YXJpYWJsZTEwMABJRFRTVmFyaWFibGVzMTAwAElEVFNFdmFsdWF0b3JDb250ZXh0MTAwAFNDXzJh
+OTk5MDVkNTQ2ZTQwY2RhMmNkMTYzYzZhZThlNWI1ADxNb2R1bGU+AElucHV0SUQAbXNjb3JsaWIA
+ZGVmYXVsdEluc3RhbmNlAFJ1bnRpbWVUeXBlSGFuZGxlAEdldFR5cGVGcm9tSGFuZGxlAFNTQ1JO
+YW1lAGdldF9MYXN0TmFtZQBzZXRfTGFzdE5hbWUAZ2V0X0ZpcnN0TmFtZQBzZXRfRmlyc3ROYW1l
+AElucHV0TmFtZQBnZXRfQ29weW9mc3Njcm5hbWUATWljcm9zb2Z0LlNxbFNlcnZlci5EdHMuUGlw
+ZWxpbmUAVHlwZQBnZXRfQ3VsdHVyZQBzZXRfQ3VsdHVyZQByZXNvdXJjZUN1bHR1cmUAQXBwbGlj
+YXRpb25TZXR0aW5nc0Jhc2UARWRpdG9yQnJvd3NhYmxlU3RhdGUAQ29tcGlsZXJHZW5lcmF0ZWRB
+dHRyaWJ1dGUARGVidWdnZXJOb25Vc2VyQ29kZUF0dHJpYnV0ZQBEZWJ1Z2dhYmxlQXR0cmlidXRl
+AEVkaXRvckJyb3dzYWJsZUF0dHJpYnV0ZQBBc3NlbWJseVRpdGxlQXR0cmlidXRlAEFzc2VtYmx5
+VHJhZGVtYXJrQXR0cmlidXRlAFRhcmdldEZyYW1ld29ya0F0dHJpYnV0ZQBBc3NlbWJseUNvbmZp
+Z3VyYXRpb25BdHRyaWJ1dGUAQXNzZW1ibHlEZXNjcmlwdGlvbkF0dHJpYnV0ZQBDb21waWxhdGlv
+blJlbGF4YXRpb25zQXR0cmlidXRlAEFzc2VtYmx5UHJvZHVjdEF0dHJpYnV0ZQBBc3NlbWJseUNv
+cHlyaWdodEF0dHJpYnV0ZQBTU0lTU2NyaXB0Q29tcG9uZW50RW50cnlQb2ludEF0dHJpYnV0ZQBB
+c3NlbWJseUNvbXBhbnlBdHRyaWJ1dGUAUnVudGltZUNvbXBhdGliaWxpdHlBdHRyaWJ1dGUAUHJl
+RXhlY3V0ZQBQb3N0RXhlY3V0ZQBzZXRfVmFsdWUAdmFsdWUAU3lzdGVtLlJ1bnRpbWUuVmVyc2lv
+bmluZwBUb1N0cmluZwBHZXRTdHJpbmcAU3lzdGVtLkNvbXBvbmVudE1vZGVsAGdldF9FbWFpbABz
+ZXRfRW1haWwAU0NfMmE5OTkwNWQ1NDZlNDBjZGEyY2QxNjNjNmFlOGU1YjUuZGxsAHNldF9MYXN0
+TmFtZV9Jc051bGwAc2V0X0ZpcnN0TmFtZV9Jc051bGwAZ2V0X0NvcHlvZnNzY3JuYW1lX0lzTnVs
+bABzZXRfRW1haWxfSXNOdWxsAFNldE51bGwAZ2V0X0l0ZW0Ac2V0X0l0ZW0AU3lzdGVtAHJlc291
+cmNlTWFuAFNjcmlwdE1haW4AU3lzdGVtLkNvbmZpZ3VyYXRpb24AU3lzdGVtLkdsb2JhbGl6YXRp
+b24AU3lzdGVtLlJlZmxlY3Rpb24ASW52YWxpZE9wZXJhdGlvbkV4Y2VwdGlvbgBTdHJpbmdDb21w
+YXJpc29uAEN1bHR1cmVJbmZvAE91dHB1dE5hbWVNYXAAT3V0cHV0TWFwAE1pY3Jvc29mdC5TcWxT
+ZXJ2ZXIuRFRTUnVudGltZVdyYXAAQ2hhcgBJbnB1dDBCdWZmZXIAUGlwZWxpbmVCdWZmZXIAU2Ny
+aXB0QnVmZmVyAGdldF9SZXNvdXJjZU1hbmFnZXIATWljcm9zb2Z0LlNxbFNlcnZlci5EdHMuUnVu
+dGltZS5XcmFwcGVyAC5jdG9yAC5jY3RvcgBTeXN0ZW0uRGlhZ25vc3RpY3MAU3lzdGVtLlJ1bnRp
+bWUuQ29tcGlsZXJTZXJ2aWNlcwBTeXN0ZW0uUmVzb3VyY2VzAFNDXzJhOTk5MDVkNTQ2ZTQwY2Rh
+MmNkMTYzYzZhZThlNWI1LlByb3BlcnRpZXMuUmVzb3VyY2VzLnJlc291cmNlcwBEZWJ1Z2dpbmdN
+b2RlcwBTQ18yYTk5OTA1ZDU0NmU0MGNkYTJjZDE2M2M2YWU4ZTViNS5Qcm9wZXJ0aWVzAGdldF9S
+ZWFkV3JpdGVWYXJpYWJsZXMAQnVmZmVyQ29sdW1uSW5kZXhlcwBHZXRDb2x1bW5JbmRleGVzAFNl
+dHRpbmdzAEVxdWFscwBDb250YWlucwBDb25uZWN0aW9ucwBDb25jYXQAT2JqZWN0AEVuZE9mUm93
+c2V0AFNwbGl0AGdldF9EZWZhdWx0AFVzZXJDb21wb25lbnQAUGFyZW50Q29tcG9uZW50AFNjcmlw
+dENvbXBvbmVudABNaWNyb3NvZnQuU3FsU2VydmVyLlR4U2NyaXB0AE1pY3Jvc29mdC5TcWxTZXJ2
+ZXIuUGlwZWxpbmVIb3N0AElucHV0MF9Qcm9jZXNzSW5wdXQAR2V0VmFsdWVXaXRoQ29udGV4dABT
+Y3JpcHRDb21wb25lbnRFdmFsQ29udGV4dABnZXRfRXZhbHVhdG9yQ29udGV4dABJbnB1dDBfUHJv
+Y2Vzc0lucHV0Um93AE5leHRSb3cAZ2V0X0Fzc2VtYmx5AAAAAANAAAADIAAAgJtJAHMATgB1AGwA
+bAAgAHAAcgBvAHAAZQByAHQAeQAgAGMAYQBuAG4AbwB0ACAAYgBlACAAcwBlAHQAIAB0AG8AIABG
+AGEAbABzAGUALgAgAEEAcwBzAGkAZwBuACAAYQAgAHYAYQBsAHUAZQAgAHQAbwAgAHQAaABlACAA
+YwBvAGwAdQBtAG4AIABpAG4AcwB0AGUAYQBkAC4AAA9JAG4AcAB1AHQAIAAwAAALRQBtAGEAaQBs
+AAATRgBpAHIAcwB0AE4AYQBtAGUAABFMAGEAcwB0AE4AYQBtAGUAAHFTAEMAXwAyAGEAOQA5ADkA
+MAA1AGQANQA0ADYAZQA0ADAAYwBkAGEAMgBjAGQAMQA2ADMAYwA2AGEAZQA4AGUANQBiADUALgBQ
+AHIAbwBwAGUAcgB0AGkAZQBzAC4AUgBlAHMAbwB1AHIAYwBlAHMAAAAAh3e7NIpB3UKBYipDoJ2t
+qAAEIAEBCAMgAAEFIAEBEREEIAEBDgUgAQERWQQHAR0OBCABAg4DIAAOBiABHQ4dAwYAAw4ODg4J
+IAMBEj0dCBJBAwYSPQMGHQgEIAEOCAQgAQIIBSACAQgcAyAAAgYgAgIOEXUFIAEdCAgEIAASeQUg
+ARJ9HAUAABKAgQYgARwSgIUEIAEBHAgAARKAiRGAjQUgABKAkQcgAgEOEoCRCLd6XFYZNOCJCImE
+Xc2AgMyRAgYOAwYSFAMGEhgDBhJFAwYSUQMGElUDBhIgBSABARIMBCABAQIJIAQBCA4SPRJBBSAB
+ARJFBAAAElEEAAASVQUAAQESVQQAABIgAwAAAQMoAA4DKAACBAgAElEECAASVQQIABIgCAEACAAA
+AAAAHgEAAQBUAhZXcmFwTm9uRXhjZXB0aW9uVGhyb3dzAQgBAAIAAAAAACgBACNTQ18yYTk5OTA1
+ZDU0NmU0MGNkYTJjZDE2M2M2YWU4ZTViNQAABQEAAAAAFgEAEUNvcHlyaWdodCBAICAyMDI0AABJ
+AQAaLk5FVEZyYW1ld29yayxWZXJzaW9uPXY0LjUBAFQOFEZyYW1ld29ya0Rpc3BsYXlOYW1lEi5O
+RVQgRnJhbWV3b3JrIDQuNQQBAAAAtAAAAM7K774BAAAAkQAAAGxTeXN0ZW0uUmVzb3VyY2VzLlJl
+c291cmNlUmVhZGVyLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWws
+IFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkjU3lzdGVtLlJlc291cmNlcy5SdW50aW1l
+UmVzb3VyY2VTZXQCAAAAAAAAAAAAAABQQURQQURQtAAAAMg2AAAAAAAAAAAAAOI2AAAAIAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAADUNgAAAAAAAAAAAAAAAF9Db3JEbGxNYWluAG1zY29yZWUuZGxsAAAA
+AAD/JQAgABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAEAEAAAABgAAIAAAAAAAAAAAAAAAAAAAAEAAQAAADAAAIAAAAAAAAAAAAAAAAAAAAEAAAAAAEgA
+AABYQAAA7AMAAAAAAAAAAAAA7AM0AAAAVgBTAF8AVgBFAFIAUwBJAE8ATgBfAEkATgBGAE8AAAAA
+AL0E7/4AAAEAAAABAAAAAAAAAAEAAAAAAD8AAAAAAAAABAAAAAIAAAAAAAAAAAAAAAAAAABEAAAA
+AQBWAGEAcgBGAGkAbABlAEkAbgBmAG8AAAAAACQABAAAAFQAcgBhAG4AcwBsAGEAdABpAG8AbgAA
+AAAAAACwBEwDAAABAFMAdAByAGkAbgBnAEYAaQBsAGUASQBuAGYAbwAAACgDAAABADAAMAAwADAA
+MAA0AGIAMAAAABoAAQABAEMAbwBtAG0AZQBuAHQAcwAAAAAAAAAiAAEAAQBDAG8AbQBwAGEAbgB5
+AE4AYQBtAGUAAAAAAAAAAABwACQAAQBGAGkAbABlAEQAZQBzAGMAcgBpAHAAdABpAG8AbgAAAAAA
+UwBDAF8AMgBhADkAOQA5ADAANQBkADUANAA2AGUANAAwAGMAZABhADIAYwBkADEANgAzAGMANgBh
+AGUAOABlADUAYgA1AAAAMAAIAAEARgBpAGwAZQBWAGUAcgBzAGkAbwBuAAAAAAAxAC4AMAAuADAA
+LgAwAAAAcAAoAAEASQBuAHQAZQByAG4AYQBsAE4AYQBtAGUAAABTAEMAXwAyAGEAOQA5ADkAMAA1
+AGQANQA0ADYAZQA0ADAAYwBkAGEAMgBjAGQAMQA2ADMAYwA2AGEAZQA4AGUANQBiADUALgBkAGwA
+bAAAAEgAEgABAEwAZQBnAGEAbABDAG8AcAB5AHIAaQBnAGgAdAAAAEMAbwBwAHkAcgBpAGcAaAB0
+ACAAQAAgACAAMgAwADIANAAAACoAAQABAEwAZQBnAGEAbABUAHIAYQBkAGUAbQBhAHIAawBzAAAA
+AAAAAAAAeAAoAAEATwByAGkAZwBpAG4AYQBsAEYAaQBsAGUAbgBhAG0AZQAAAFMAQwBfADIAYQA5
+ADkAOQAwADUAZAA1ADQANgBlADQAMABjAGQAYQAyAGMAZAAxADYAMwBjADYAYQBlADgAZQA1AGIA
+NQAuAGQAbABsAAAAaAAkAAEAUAByAG8AZAB1AGMAdABOAGEAbQBlAAAAAABTAEMAXwAyAGEAOQA5
+ADkAMAA1AGQANQA0ADYAZQA0ADAAYwBkAGEAMgBjAGQAMQA2ADMAYwA2AGEAZQA4AGUANQBiADUA
+AAA0AAgAAQBQAHIAbwBkAHUAYwB0AFYAZQByAHMAaQBvAG4AAAAxAC4AMAAuADAALgAwAAAAOAAI
+AAEAQQBzAHMAZQBtAGIAbAB5ACAAVgBlAHIAcwBpAG8AbgAAADEALgAwAC4AMAAuADAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAADAAAAPQ2AAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
+                  </arrayElements>
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the Microsoft Visual Studio Tools for Applications project. Project names must be unique within a package."
+                  name="VSTAProjectName"
+                  typeConverter="NOTBROWSABLE">SC_2a99905d546e40cda2cd163c6ae8e5b5</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the programming language used by the script."
+                  name="ScriptLanguage"
+                  typeConverter="Microsoft.SqlServer.VSTAHosting.ScriptingLanguages">CSharp</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a comma-separated list of read-only variables."
+                  name="ReadOnlyVariables"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIVariablePickerDlg"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a comma-separated list of read/write variables."
+                  name="ReadWriteVariables"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIWriteableVariablePickerDlg">User::Email,User::FirstName,User::LastName</property>
+                <property
+                  dataType="System.String"
+                  description="List of breakpoints present on the script."
+                  isArray="true"
+                  name="BreakpointCollection"
+                  typeConverter="NOTBROWSABLE">
+                  <arrayElements
+                    arrayElementCount="0" />
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Checksum to match component metedata against compiled codes."
+                  name="MetadataChecksum140"
+                  typeConverter="NOTBROWSABLE">3F</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ScriptComponentHost</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\StudentScores\Script Component.Inputs[Input 0]"
+                  hasSideEffects="true"
+                  name="Input 0">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\StudentScores\Script Component.Inputs[Input 0].Columns[Copy of sscr-name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Copy of sscr-name"
+                      lineageId="Package\StudentScores\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of sscr-name]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\StudentScores\Script Component.Outputs[Output 0]"
+                  name="Output 0"
+                  synchronousInputId="Package\StudentScores\Script Component.Inputs[Input 0]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\StudentScores\Script Component.Outputs[Output 0].Columns[Email]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\StudentScores\Script Component.Outputs[Output 0].Columns[Email]"
+                      name="Email" />
+                    <outputColumn
+                      refId="Package\StudentScores\Script Component.Outputs[Output 0].Columns[LastName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\StudentScores\Script Component.Outputs[Output 0].Columns[LastName]"
+                      name="LastName" />
+                    <outputColumn
+                      refId="Package\StudentScores\Script Component.Outputs[Output 0].Columns[FirstName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\StudentScores\Script Component.Outputs[Output 0].Columns[FirstName]"
+                      name="FirstName" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\StudentScores.Paths[Data Conversion Output]"
+              endId="Package\StudentScores\Script Component.Inputs[Input 0]"
+              name="Data Conversion Output"
+              startId="Package\StudentScores\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\StudentScores.Paths[OLE DB Source Output]"
+              endId="Package\StudentScores\Data Conversion.Inputs[Data Conversion Input]"
+              name="OLE DB Source Output"
+              startId="Package\StudentScores\OLE DB Source.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\StudentScores.Paths[Output 0]"
+              endId="Package\StudentScores\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Output 0"
+              startId="Package\StudentScores\Script Component.Outputs[Output 0]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
   </DTS:Executables>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -7695,6 +8666,10 @@ where
           Size="156,42"
           Id="Package\Student Groups"
           TopLeft="69,254" />
+        <NodeLayout
+          Size="151,42"
+          Id="Package\StudentScores"
+          TopLeft="392,167" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -8690,15 +9665,15 @@ where
     design-time-name="Package\ScoreReportData Update">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="157,42"
           Id="Package\ScoreReportData Update\OLE DB Source"
           TopLeft="355,53" />
         <NodeLayout
-          Size="287,42"
-          Id="Package\ScoreReportData Update\Upsert Destination (Insert, Update, Delete)"
-          TopLeft="320,479" />
+          Size="177,42"
+          Id="Package\ScoreReportData Update\OLE DB Destination"
+          TopLeft="357,254" />
         <NodeLayout
           Size="161,42"
           Id="Package\ScoreReportData Update\Data Conversion"
@@ -8737,66 +9712,26 @@ where
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="115,42"
-          Id="Package\ScoreReportData Update\Lookup"
-          TopLeft="388,213" />
         <EdgeLayout
           Id="Package\ScoreReportData Update.Paths[Data Conversion Output]"
           TopLeft="445,184">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,29"
+              EndConnector="0,70"
               Start="0,0"
-              End="0,21.5">
+              End="0,62.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,21.5" />
+                    End="0,62.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ScoreReportData Update.Paths[Lookup Match Output]"
-          TopLeft="445.5,255">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="18,224"
-              Start="0,0"
-              End="18,216.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,108" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,108"
-                    Point2="0,112"
-                    Point3="4,112" />
-                  <mssgle:LineSegment
-                    End="14,112" />
-                  <mssgle:CubicBezierSegment
-                    Point1="14,112"
-                    Point2="18,112"
-                    Point3="18,116" />
-                  <mssgle:LineSegment
-                    End="18,216.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-39.19138671875,117,96.3827734375,11.609375"
-              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -8807,6 +9742,19 @@ where
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\ScoreReportData Update\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -8918,26 +9866,116 @@ where
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\StudentScores">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="157,42"
+          Id="Package\StudentScores\OLE DB Source"
+          TopLeft="338,68" />
+        <NodeLayout
+          Size="161,42"
+          Id="Package\StudentScores\Data Conversion"
+          TopLeft="340,153" />
+        <EdgeLayout
+          Id="Package\StudentScores.Paths[OLE DB Source Output]"
+          TopLeft="418.5,110">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,43"
+              Start="0,0"
+              End="0,35.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="167,42"
+          Id="Package\StudentScores\Script Component"
+          TopLeft="332,246" />
+        <EdgeLayout
+          Id="Package\StudentScores.Paths[Data Conversion Output]"
+          TopLeft="418,195">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,51"
+              Start="0,0"
+              End="0,43.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,43.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="177,42"
+          Id="Package\StudentScores\OLE DB Destination"
+          TopLeft="329,351" />
+        <EdgeLayout
+          Id="Package\StudentScores.Paths[Output 0]"
+          TopLeft="416.5,288">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,63"
+              Start="0,0"
+              End="0,55.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,55.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-8,19.75,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\ScoreReportData Update\Lookup">
+    design-time-name="Package\StudentScores\OLE DB Source">
     <Properties>
       <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
+        <Name>DataSourceViewID</Name>
       </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\StudentScores\OLE DB Destination">
+    <Properties>
       <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[Dimensions].[TestSchedules]</Value>
+        <Name>DataSourceViewID</Name>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
