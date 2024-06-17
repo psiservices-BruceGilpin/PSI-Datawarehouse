@@ -15,5 +15,4 @@
 
 	From
 	[$(PSI_DW)].Dimensions.StudentItems (nolock)
-	Where
-		CurrentFlag = 0
+	

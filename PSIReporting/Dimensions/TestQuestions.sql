@@ -9,5 +9,4 @@
 
 	from
 		[$(PSI_DW)].Dimensions.TestQuestions (nolock)
-	where
-		CurrentFlag = 0
+	

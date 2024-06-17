@@ -1,6 +1,6 @@
-﻿CREATE TABLE [dbo].[Candidates]
+﻿CREATE TABLE [AtlasCloud].[Schools]
 (
-	[CandidatesId] INT NOT NULL Identity(1,1) PRIMARY KEY,
+	[SchoolId] INT NOT NULL Identity(1,1) PRIMARY KEY,
     [FirstName]    varchar(100),
     [LastName]      varchar(100),
     [Street]        varchar(250),
@@ -10,7 +10,7 @@
     [Email]         varchar(100),
     [LanguageKey]   smallint,
 	[SourceSystemKey] SMALLINT NOT NULL, 
-    [CandidateDBID] INT NULL, 
+    [SchoolDBID] INT NULL, 
     [Currentflag] BIT NOT NULL DEFAULT 0, 
     [CheckSum] BIGINT NOT NULL, 
     [ActorID]   Bigint Not Null,

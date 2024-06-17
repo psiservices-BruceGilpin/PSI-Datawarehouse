@@ -111,6 +111,7 @@
     <Folder Include="dbo\Sequences\" />
     <Folder Include="Dimensions\Stored Proceedures" />
     <Folder Include="AtlasCloud" />
+    <Folder Include="PhoneLogs" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Candidate\Tables\TestAssignments.sql" />
@@ -443,10 +444,17 @@
     <Build Include="AtlasCloud\ItemBanks.sql" />
     <Build Include="AtlasCloud\VirtualServers.sql" />
     <Build Include="AtlasCloud\Groups.sql" />
-    <Build Include="AtlasCloud\Candidates.sql" />
+    <Build Include="AtlasCloud\Sclools.sql" />
     <Build Include="AtlasCloud\Account.sql" />
     <Build Include="AtlasCloud\Tests.sql" />
     <Build Include="AtlasCloud\SchoolCodes.sql" />
+    <Build Include="Security\NICE.sql" />
+    <Build Include="PhoneLogs\Contact.sql" />
+    <Build Include="PhoneLogs\Campaign.sql" />
+    <Build Include="PhoneLogs\Caller.sql" />
+    <Build Include="PhoneLogs\DimSkill.sql" />
+    <Build Include="PhoneLogs\DimEndReason.sql" />
+    <Build Include="PhoneLogs\ContiactCampaigns.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="PSI Datawarehouse.refactorlog" />

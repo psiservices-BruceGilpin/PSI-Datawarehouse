@@ -315,4 +315,53 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="ItemBankId" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="a6d55783-0d34-4a7d-bb59-7142b7b791cd" ChangeDateTime="06/12/2024 19:17:12">
+    <Property Name="ElementName" Value="[NICE].[Contacts].[PontofConta]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[NICE].[Contacts]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PointofContactKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="aa818bf9-51f2-4648-a916-27b343132cab" ChangeDateTime="06/13/2024 16:16:30">
+    <Property Name="ElementName" Value="[NICE].[Contacts].[IsOUtBound]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[NICE].[Contacts]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="IsOutBound" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d53fc25c-1420-4069-922c-ffc66a61e8e8" ChangeDateTime="06/13/2024 19:13:46">
+    <Property Name="ElementName" Value="[NICE].[Contacts].[PointOfContactName]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[NICE].[Contacts]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PointOfContactKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8a6e910f-f686-44fa-a1dd-0343bae59c0d" ChangeDateTime="06/14/2024 15:45:01">
+    <Property Name="ElementName" Value="[Nice].[Caller].[CallerId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Nice].[Caller]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ContactID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="2ba14b6f-aa05-4119-98c0-b8a898996dbb" ChangeDateTime="06/14/2024 19:43:44">
+    <Property Name="ElementName" Value="[Nice].[Campaign].[SourceCampaignId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Nice].[Campaign]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CampaignDirection" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8925ef46-831e-4da5-ae14-dce2e0731632" ChangeDateTime="06/14/2024 19:53:10">
+    <Property Name="ElementName" Value="[Nice].[Campaign].[Currentflag]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Nice].[Campaign]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CampaignTier" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="2bf5df44-c61c-4f22-8819-a5d6f2bf9868" ChangeDateTime="06/14/2024 19:53:29">
+    <Property Name="ElementName" Value="[Nice].[Campaign].[Createdate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Nice].[Campaign]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CampaignRole" />
+  </Operation>
 </Operations>
