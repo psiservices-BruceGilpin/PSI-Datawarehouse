@@ -9,3 +9,8 @@
     [LoadDate] DATETIME NOT NULL DEFAULT getdate(), 
     [PackageKey] INT NULL 
 )
+
+GO
+
+CREATE INDEX [IX_KeyCrossReference_DimensionsTesttKey] ON [dbo].[KeyCrossReference] ([DimensionsTestKey])
+Include ([StudentKey])

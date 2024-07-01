@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="101"
-  DTS:VersionGUID="{6C3DCD0E-B1B1-4C9C-A969-112D172FF4C7}">
+  DTS:VersionBuild="103"
+  DTS:VersionGUID="{B645F0A2-B1A2-40DF-BB51-7A4CECD8C6B3}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAKyPgwWpVqEqaUaQxTr1FuQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAB8BH2xU30uZ6EDuq6mvI4eAAAAAASAAACgAAAAEAAAAC7yLn+AAP72DPKSu6csA8AwAAAAhorKYdiqr6pl02B1rYUyS/d3263g1Y3VRMObqDuJoYf0vys6EPGGJthn5KERMx7AFAAAAGIR3dChtZUyPfTVFJHEQI/4grg8</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAKyPgwWpVqEqaUaQxTr1FuQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAT7SF8Mc5bwRFSl3kgK1bbAAAAAASAAACgAAAAEAAAAHqmHfPzu4k8c7F7q1DhepUwAAAAmuckqQBfTm1dxET5GfYGh2kojq2HhELtap9lfFjKwVvUm87zc74cyE4ALNV3gUAHFAAAAFBmDr/FrZHOvgfJE6oY9OpiuaJP</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,7 +46,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAKyPgwWpVqEqaUaQxTr1FuQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADdXA0f+T67appG5XGtTkwRAAAAAASAAACgAAAAEAAAAAID/B97c4SQFVZYKKsWm+gwAAAAEt5YE1beAN+oO8qGVBivAAa2as+ASy88hM9N35y2RXD8c5EidoHb6Lxj7Q7VVdbuFAAAAAZwWrCwNDXl5Vap9jvCGhcM44OY</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAKyPgwWpVqEqaUaQxTr1FuQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADJwvGq53cdjHR/ojx/oEmxAAAAAASAAACgAAAAEAAAAJXl4okwOYlZ62oN5IoqwswwAAAAZzo+VimRCduGjhaoWAW3fA8zkiUwY2c/fONE6ODK7PnE4LHGoFeR9ucAb7UVj9VAFAAAAHddYR/aUncOmPhpi1Iu2WHubnV/</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -61,7 +61,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAKyPgwWpVqEqaUaQxTr1FuQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAA1YYRixPnzcBm1JOHzD+4iAAAAAASAAACgAAAAEAAAAEcAc2q7VyH+uzv5lNUUWuYwAAAAaHM2NC5HrEy9kIZtYQnQHT9Kg1fiC9IEkBHTnVj/k0g/RqRSfFt5Bk9BvsC+7I/FFAAAAPUFXAOzIbMsdr33SnsimvK/dyZT</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAKyPgwWpVqEqaUaQxTr1FuQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAC/Otk3GRraIlf/AtYZI5izAAAAAASAAACgAAAAEAAAAFmCNRNN03bdG3dROqOXZ9gwAAAA9kPNTHWFSUgUp4EE22q25RNsgzU5Osw2wTTPe4D6QQcS3VskHAOAMjiP2sI/fpbCFAAAALWKtZhGVOUtam1bAiC4j2mobu85</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -174,7 +174,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAKyPgwWpVqEqaUaQxTr1FuQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADzm4I9iXvJlCtDFwKJxXOwAAAAAASAAACgAAAAEAAAAELEFjqhFoBSyRVsaHAP/HEwAAAAmz5Pn7lqShglnFVr1tjL925f5D3kzuFRWRD/h2c9hm98XV6ShyAHI1P+pFLFzjA2FAAAAHlD7clXBVD85+loce9CnD8ukEGH</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAKyPgwWpVqEqaUaQxTr1FuQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADr3qJsnTITxG8Z7C8ZOhpzAAAAAASAAACgAAAAEAAAALjzK9HJvmbthIgLH5mXwKUwAAAAc/tqjfA8Xmdw9g4zexu52YYj7YRq3uPEEygoaLI286uMeu+LbkH3IcWTI0Yxr3dNFAAAACA85XckWwqFqTQ/W8hUlqPa5A+x</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -189,7 +189,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAKyPgwWpVqEqaUaQxTr1FuQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACJk3Yp1+DBvq28YeidN1srAAAAAASAAACgAAAAEAAAABJFXa1nS3xCnpRcgz9iqR0wAAAA9L+Pq1jWKr55jmwB61IrH3xghhFu9CiGnZrjlIF7afDulbQ/grRYLYBVJ3f9aIshFAAAAFHdU52APeEVzUTxzFleo667md1i</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAKyPgwWpVqEqaUaQxTr1FuQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADZsv0Xj15+MST4FFYaLrbuAAAAAASAAACgAAAAEAAAAOc1k+JaQCFolElgCZtpinIwAAAAdJf8Uby5WKsNXJEQuRzWWxAjso2FqkmFH9n8BbzH7E6c5QGngSd0buSnMk9z29i+FAAAALIpu2qIj/XJLe2FjhXncKzqfx0h</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -6359,17 +6359,11 @@ where [refTable].[SourceSystemID] = ?</property>
                   name="Data Conversion Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\ScoreReportData Update\Data Conversion.Inputs[Data Conversion Input].Columns[srpt-col33]"
+                      refId="Package\ScoreReportData Update\Data Conversion.Inputs[Data Conversion Input].Columns[srpt-col4]"
                       cachedDataType="wstr"
-                      cachedLength="54"
-                      cachedName="srpt-col33"
-                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col33]" />
-                    <inputColumn
-                      refId="Package\ScoreReportData Update\Data Conversion.Inputs[Data Conversion Input].Columns[srpt-col6]"
-                      cachedDataType="wstr"
-                      cachedLength="48"
-                      cachedName="srpt-col6"
-                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col6]" />
+                      cachedLength="32"
+                      cachedName="srpt-col4"
+                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col4]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -6382,43 +6376,21 @@ where [refTable].[SourceSystemID] = ?</property>
                   synchronousInputId="Package\ScoreReportData Update\Data Conversion.Inputs[Data Conversion Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\ScoreReportData Update\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of srpt-col33]"
+                      refId="Package\ScoreReportData Update\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of srpt-col4]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      length="50"
-                      lineageId="Package\ScoreReportData Update\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of srpt-col33]"
-                      name="Copy of srpt-col33"
+                      length="32"
+                      lineageId="Package\ScoreReportData Update\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of srpt-col4]"
+                      name="Copy of srpt-col4"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col33]}</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\ScoreReportData Update\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of srpt-col6]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      length="48"
-                      lineageId="Package\ScoreReportData Update\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of srpt-col6]"
-                      name="Copy of srpt-col6"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col6]}</property>
+                          name="SourceInputColumnLineageID">#{Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col4]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -6511,8 +6483,8 @@ where [refTable].[SourceSystemID] = ?</property>
               <connections>
                 <connection
                   refId="Package\ScoreReportData Update\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[uat-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin]"
-                  connectionManagerRefId="Package.ConnectionManagers[uat-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin]"
+                  connectionManagerID="Package.ConnectionManagers[dev-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin]"
+                  connectionManagerRefId="Package.ConnectionManagers[dev-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -6531,41 +6503,33 @@ where [refTable].[SourceSystemID] = ?</property>
                       externalMetadataColumnId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Srpt-tsch]"
                       lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[Srpt-tsch]" />
                     <inputColumn
-                      refId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[srpt-col33]"
-                      cachedDataType="wstr"
-                      cachedLength="54"
-                      cachedName="srpt-col33"
-                      externalMetadataColumnId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[srpt-col33]"
-                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col33]" />
-                    <inputColumn
-                      refId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of srpt-col33]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Copy of srpt-col33"
-                      externalMetadataColumnId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Copy of srpt-col33]"
-                      lineageId="Package\ScoreReportData Update\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of srpt-col33]" />
+                      refId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[srpt-col19]"
+                      cachedDataType="i4"
+                      cachedName="srpt-col19"
+                      externalMetadataColumnId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[srpt-col19]"
+                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col19]" />
                     <inputColumn
                       refId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[srpt-col15]"
-                      cachedDataType="dbDate"
+                      cachedDataType="wstr"
+                      cachedLength="18"
                       cachedName="srpt-col15"
                       externalMetadataColumnId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[srpt-col15]"
                       lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col15]" />
                     <inputColumn
-                      refId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of srpt-col6]"
+                      refId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[srpt-col4]"
+                      cachedDataType="wstr"
+                      cachedLength="32"
+                      cachedName="srpt-col4"
+                      externalMetadataColumnId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[srpt-col4]"
+                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col4]" />
+                    <inputColumn
+                      refId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of srpt-col4]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="48"
-                      cachedName="Copy of srpt-col6"
-                      externalMetadataColumnId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Copy of srpt-col6]"
-                      lineageId="Package\ScoreReportData Update\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of srpt-col6]" />
-                    <inputColumn
-                      refId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[srpt-col6]"
-                      cachedDataType="wstr"
-                      cachedLength="48"
-                      cachedName="srpt-col6"
-                      externalMetadataColumnId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[srpt-col6]"
-                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col6]" />
+                      cachedLength="32"
+                      cachedName="Copy of srpt-col4"
+                      externalMetadataColumnId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Copy of srpt-col4]"
+                      lineageId="Package\ScoreReportData Update\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of srpt-col4]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -6574,32 +6538,25 @@ where [refTable].[SourceSystemID] = ?</property>
                       dataType="guid"
                       name="Srpt-tsch" />
                     <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[srpt-col33]"
+                      refId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[srpt-col4]"
                       dataType="wstr"
-                      length="54"
-                      name="srpt-col33" />
+                      length="32"
+                      name="srpt-col4" />
                     <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Copy of srpt-col33]"
+                      refId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Copy of srpt-col4]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
-                      name="Copy of srpt-col33" />
+                      length="32"
+                      name="Copy of srpt-col4" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[srpt-col19]"
+                      dataType="i4"
+                      name="srpt-col19" />
                     <externalMetadataColumn
                       refId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[srpt-col15]"
                       dataType="wstr"
-                      length="10"
+                      length="18"
                       name="srpt-col15" />
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[srpt-col6]"
-                      dataType="wstr"
-                      length="48"
-                      name="srpt-col6" />
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Copy of srpt-col6]"
-                      codePage="1252"
-                      dataType="str"
-                      length="48"
-                      name="Copy of srpt-col6" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -6655,16 +6612,18 @@ where [refTable].[SourceSystemID] = ?</property>
                   name="SqlCommand"
                   UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">Select
 [Srpt-tsch],
-[srpt-col6],
-
-[srpt-col33],
+[srpt-col4],
+[srpt-col19],
+[srpt-col30]
 [srpt-col15]
+
 from
 ScoreReportData
-where
-[srpt-col33] is not null and
-[srpt-col15] &gt;= '2024-03-15'
-order by [srpt-col15]</property>
+order by
+[srpt-col15],
+[Srpt-tsch],
+[srpt-col4],
+[srpt-col19]</property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -6710,33 +6669,33 @@ order by [srpt-col15]</property>
                       name="Srpt-tsch"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col33]"
+                      refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col4]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[srpt-col33]"
-                      length="54"
-                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col33]"
-                      name="srpt-col33"
+                      externalMetadataColumnId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[srpt-col4]"
+                      length="32"
+                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col4]"
+                      name="srpt-col4"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col19]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[srpt-col19]"
+                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col19]"
+                      name="srpt-col19"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col15]"
-                      dataType="dbDate"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[srpt-col15]"
-                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col15]"
-                      name="srpt-col15"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col6]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[srpt-col6]"
-                      length="48"
-                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col6]"
-                      name="srpt-col6"
+                      externalMetadataColumnId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[srpt-col15]"
+                      length="18"
+                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].Columns[srpt-col15]"
+                      name="srpt-col15"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
@@ -6746,19 +6705,19 @@ order by [srpt-col15]</property>
                       dataType="guid"
                       name="Srpt-tsch" />
                     <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[srpt-col33]"
+                      refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[srpt-col4]"
                       dataType="wstr"
-                      length="54"
-                      name="srpt-col33" />
+                      length="32"
+                      name="srpt-col4" />
+                    <externalMetadataColumn
+                      refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[srpt-col19]"
+                      dataType="i4"
+                      name="srpt-col19" />
                     <externalMetadataColumn
                       refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[srpt-col15]"
-                      dataType="dbDate"
-                      name="srpt-col15" />
-                    <externalMetadataColumn
-                      refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[srpt-col6]"
                       dataType="wstr"
-                      length="48"
-                      name="srpt-col6" />
+                      length="18"
+                      name="srpt-col15" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -6772,20 +6731,20 @@ order by [srpt-col15]</property>
                       lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Srpt-tsch]"
                       name="Srpt-tsch" />
                     <outputColumn
-                      refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[srpt-col6]"
+                      refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[srpt-col4]"
                       dataType="wstr"
-                      length="48"
-                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[srpt-col6]"
-                      name="srpt-col6" />
+                      length="32"
+                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[srpt-col4]"
+                      name="srpt-col4" />
                     <outputColumn
-                      refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[srpt-col33]"
-                      dataType="wstr"
-                      length="54"
-                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[srpt-col33]"
-                      name="srpt-col33" />
+                      refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[srpt-col19]"
+                      dataType="i4"
+                      lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[srpt-col19]"
+                      name="srpt-col19" />
                     <outputColumn
                       refId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[srpt-col15]"
-                      dataType="dbDate"
+                      dataType="wstr"
+                      length="18"
                       lineageId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[srpt-col15]"
                       name="srpt-col15" />
                     <outputColumn
@@ -9872,6 +9831,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="167,42"
+          Id="Package\StudentScores\Script Component"
+          TopLeft="332,246" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\StudentScores\OLE DB Destination"
+          TopLeft="329,351" />
+        <NodeLayout
           Size="157,42"
           Id="Package\StudentScores\OLE DB Source"
           TopLeft="338,68" />
@@ -9879,32 +9846,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
           Size="161,42"
           Id="Package\StudentScores\Data Conversion"
           TopLeft="340,153" />
-        <EdgeLayout
-          Id="Package\StudentScores.Paths[OLE DB Source Output]"
-          TopLeft="418.5,110">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,43"
-              Start="0,0"
-              End="0,35.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,35.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="167,42"
-          Id="Package\StudentScores\Script Component"
-          TopLeft="332,246" />
         <EdgeLayout
           Id="Package\StudentScores.Paths[Data Conversion Output]"
           TopLeft="418,195">
@@ -9927,10 +9868,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="177,42"
-          Id="Package\StudentScores\OLE DB Destination"
-          TopLeft="329,351" />
         <EdgeLayout
           Id="Package\StudentScores.Paths[Output 0]"
           TopLeft="416.5,288">
@@ -9955,17 +9892,31 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\StudentScores.Paths[OLE DB Source Output]"
+          TopLeft="418.5,110">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,43"
+              Start="0,0"
+              End="0,35.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\StudentScores\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\StudentScores\OLE DB Destination">
     <Properties>
@@ -9976,6 +9927,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\StudentScores\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

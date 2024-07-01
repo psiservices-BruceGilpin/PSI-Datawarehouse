@@ -3,7 +3,6 @@
     [SourceSystemKey]      SMALLINT         NOT NULL,
     [SourceTestQuestionID] UNIQUEIDENTIFIER NOT NULL,
     [TestQuestionDBID]     BIGINT           NOT NULL,
-    [CurrentFlag]          BIT              NOT NULL,
     [TestSegmentsKey]      BIGINT           NOT NULL,
     [QuestionKey]          BIGINT           NOT NULL,
     [Section]              INT              NULL,
@@ -17,21 +16,21 @@
 
 GO
 CREATE NONCLUSTERED INDEX [IX_TestQuestions_QuestionKey]
-    ON [Dimensions].[TestQuestions]([QuestionKey] ASC, [TestSegmentsKey] ASC) WHERE ([CurrentFlag]=(0));
+    ON [Dimensions].[TestQuestions]([QuestionKey] ASC, [TestSegmentsKey] ASC) ;
 
 
 GO
 CREATE NONCLUSTERED INDEX [IX_TestQuestions_TestQuestionDBID]
-    ON [Dimensions].[TestQuestions]([TestQuestionDBID] ASC) WHERE ([Currentflag]=(0));
+    ON [Dimensions].[TestQuestions]([TestQuestionDBID] ASC) ;
 
 
 GO
 CREATE NONCLUSTERED INDEX [IXTestQuestionsSourceTestQuestionID]
     ON [Dimensions].[TestQuestions]([SourceTestQuestionID] ASC)
-    INCLUDE([TestQuestionDBID], [CurrentFlag], [LoadDate]);
+    INCLUDE([TestQuestionDBID],  [LoadDate]);
 
 
 GO
 
-CREATE INDEX [IX_TestQuestions_CurrentFlag] ON [Dimensions].[TestQuestions] ([CurrentFlag], [TestSegmentsKey])
+CREATE INDEX [IX_TestQuestions_CurrentFlag] ON [Dimensions].[TestQuestions] ([TestSegmentsKey])
 Include ([TestQuestionDBID],[QuestionKey],[QuestionSequence])
