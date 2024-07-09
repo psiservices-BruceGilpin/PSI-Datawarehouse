@@ -42,3 +42,7 @@ GO
 
 
 CREATE INDEX [IX_Students_SourceStudentID] ON [Dimensions].[Students] ([SourceStudentID])
+
+GO
+
+CREATE INDEX [IX_Students_StudentAltID] ON [Dimensions].[Students] ([StudentAltID])

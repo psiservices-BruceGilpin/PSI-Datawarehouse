@@ -5,7 +5,7 @@ CREATE VIEW [Candidate].[CandidateSchedule_vw]
 	SELECT a.[CandidateTestScheduleId]
       ,[SourceTestScheduleKey]
       ,c.SourceSystemName
-      ,[CandidateKey]
+      ,a.[CandidateKey]
       ,[TestCenterScheduleKey]
       ,[ScheduleDate]
       ,[CountryKey]

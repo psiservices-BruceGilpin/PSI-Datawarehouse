@@ -364,4 +364,25 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="CampaignRole" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="ab0cfb13-f996-4242-a923-986cfea3de4b" ChangeDateTime="07/03/2024 20:16:17">
+    <Property Name="ElementName" Value="[Dimensions].[StudentResponses].[StudentResponseId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[StudentResponses]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="StudentResponseDBID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="fec5771d-9c04-4b0b-9321-8bae512e1b3b" ChangeDateTime="07/05/2024 13:58:08">
+    <Property Name="ElementName" Value="[Dimensions].[TestQuestions].[TestQuestionId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[TestQuestions]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TestQuestionDBId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d02078b8-12cc-46c1-a7a4-d2ec3f65e37f" ChangeDateTime="07/08/2024 16:26:32">
+    <Property Name="ElementName" Value="[Dimensions].[TestQuestions].[TestQuestionDBId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[TestQuestions]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TestQuestionDBID" />
+  </Operation>
 </Operations>
