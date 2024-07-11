@@ -56,3 +56,8 @@ GO
 
 CREATE INDEX [IX_StudentTestSummary_TestDate] ON [Students].[StudentTestSummary] ([TestDate])
 Include ([DWTestScoreKey],[DWTestKey],[PassFail],[FinalPoints],[ComputedAttempt#])
+
+GO
+
+CREATE INDEX [IX_StudentTestSummary_TestTitle] ON [Students].[StudentTestSummary] ([TestTitle])
+Include ([DWTestKey],[DWStudentKey])

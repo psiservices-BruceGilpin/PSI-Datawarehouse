@@ -7,7 +7,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{5291dcfe-4bfe-4d5b-8935-bf5332621248}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -187,6 +187,7 @@
     <Build Include="Dimensions\FormPools_vw.sql" />
     <Build Include="Dimensions\FormPoolItems_vw.sql" />
     <Build Include="DBO\KeyCrossReference_vw.sql" />
+    <Build Include="Dimensions\StudentTestAnswers_VW.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Dev_PSIReporting.publish.xml" />
@@ -205,7 +206,7 @@
   </ItemGroup>
   <ItemGroup>
     <SqlCmdVariable Include="PSI_DW">
-      <DefaultValue>PSI Datawarehouse</DefaultValue>
+      <DefaultValue>PSI_DW</DefaultValue>
       <Value>$(SqlCmdVar__1)</Value>
     </SqlCmdVariable>
   </ItemGroup>

@@ -15,3 +15,8 @@ GO
 
 CREATE INDEX [IX_StudentResponses_StudentItemKey] ON [Dimensions].[StudentResponses] ([StudentItemKey])
 Include ([Points])
+
+GO
+
+CREATE INDEX [IX_StudentResponses_Points] ON [Dimensions].[StudentResponses] ([Points])
+Include (StudentItemKey)

@@ -67,3 +67,5 @@ go
 Create Synonym [Dimensions].[FormPoolItems_vw] for [psi_reporting].[Dimensions].[FormPoolItems_vw]
 go
 Create Synonym [dbo].[KeyCrossReference_vw] for [psi_reporting].dbo.[KeyCrossReference_vw]
+go
+Create Synonym [Dimensions].StudentTestAnswers_vw for [psi_reporting].dbo.[StudentTestAnswers_vw]
