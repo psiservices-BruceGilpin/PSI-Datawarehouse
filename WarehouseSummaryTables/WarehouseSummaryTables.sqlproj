@@ -7,7 +7,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{a34539fb-4b1f-4c5c-b3f9-16317eb76bd3}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath />
     <RootNamespace>WarehouseSummaryTables</RootNamespace>
@@ -22,6 +22,7 @@
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseSet>True</TargetDatabaseSet>
     <Recovery>SIMPLE</Recovery>
+    <DacApplicationName>WarehouseSummaryTables2</DacApplicationName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -73,7 +74,6 @@
     <Build Include="Tables\BankCategorySummary.sql" />
     <Build Include="Tables\DailyTestSummary.sql" />
     <Build Include="Tables\SummaryTestNames.sql" />
-    <Build Include="Views\TestKeys_vw.sql" />
     <Build Include="Security\DailyTestSummarySeq.sql" />
     <Build Include="Views\SummaryTestNames_vw.sql" />
     <Build Include="Procedures and Functions\DailySummaryInsert.sql" />
@@ -92,27 +92,20 @@
     <Build Include="Procedures and Functions\uspDailyTestQuestionUsageMaint.sql" />
     <Build Include="Procedures and Functions\uspQuestionStatsAnalysis.sql" />
     <Build Include="Tables\KeyCrossReference.sql" />
+    <Build Include="Scripts\Synomyms.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Dev.publish.xml" />
     <None Include="QA.publish.xml" />
   </ItemGroup>
   <ItemGroup>
-    <SqlCmdVariable Include="DW_SummaryTables">
-      <DefaultValue>DW_SummaryTables</DefaultValue>
-      <Value>$(SqlCmdVar__2)</Value>
+    <SqlCmdVariable Include="PSIDatawarehouse">
+      <DefaultValue>PSI_DW</DefaultValue>
+      <Value>$(SqlCmdVar__10)</Value>
     </SqlCmdVariable>
     <SqlCmdVariable Include="PSIReporting">
-      <DefaultValue>PSI_Reporting</DefaultValue>
-      <Value>$(SqlCmdVar__6)</Value>
-    </SqlCmdVariable>
-    <SqlCmdVariable Include="PSI_DW">
-      <DefaultValue>PSI_DW</DefaultValue>
-      <Value>$(SqlCmdVar__7)</Value>
-    </SqlCmdVariable>
-    <SqlCmdVariable Include="PSI_Reporting">
-      <DefaultValue>PSI_Reporting</DefaultValue>
-      <Value>$(SqlCmdVar__4)</Value>
+      <DefaultValue>PSIReporting</DefaultValue>
+      <Value>$(SqlCmdVar__9)</Value>
     </SqlCmdVariable>
   </ItemGroup>
   <ItemGroup>
@@ -131,7 +124,7 @@
       <Project>{052aae7b-06cc-40dc-8928-6f949b2feb89}</Project>
       <Private>True</Private>
       <SuppressMissingDependenciesErrors>True</SuppressMissingDependenciesErrors>
-      <DatabaseSqlCmdVariable>PSI_DW</DatabaseSqlCmdVariable>
+      <DatabaseSqlCmdVariable>PSIDatawarehouse</DatabaseSqlCmdVariable>
     </ProjectReference>
   </ItemGroup>
 </Project>

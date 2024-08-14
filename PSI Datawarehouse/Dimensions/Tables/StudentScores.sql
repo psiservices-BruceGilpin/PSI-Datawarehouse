@@ -37,6 +37,9 @@
     [LoadDate]             DATETIME         DEFAULT (getdate()) NOT NULL,
     [AmpFormKey] INT NULL, 
     [Email] VARCHAR(200) NULL, 
+    [DmPoints] DECIMAL(10, 4) NULL, 
+    [IGPoints] DECIMAL(10, 4) NULL, 
+    [RescoreDate] DATETIME NULL, 
     PRIMARY KEY CLUSTERED ([StudentScoreId] ASC)
 );
 

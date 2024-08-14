@@ -1,5 +1,9 @@
 ﻿CREATE PROCEDURE [dbo].[uspQuestionStatsAnalysis]
-	@ClientTitle	varchar(50)
+	@ClientTitle	varchar(50),
+	@startyear		varchar(4),
+	@startmonth		varchar(2),
+	@endyear		varchar(4),
+	@endmonth		varchar(2)
 AS
 	create table #ItemResults (
 	ClientCode					Varchar(12),
@@ -7,12 +11,11 @@ AS
 	VerisionNum					smallint,
 	Firstdate					date,
 	lastdate					date,
-	avgscore					decimal(7,2),
 	Nt							int,
 	Ny							int,
 	SigmaX						int,
 	SigmaY						int,
-	SigmaSQX					int,
+	SigmaSQX					bigint,
 	PassingCnt					int,
 	PassingRate					decimal(7,2),
 	Firstattempt				int,
@@ -21,9 +24,10 @@ AS
 	RPB							decimal(6,4)
 	)
 
+
 	Insert into #itemResults (
 		ClientCode,
-		QuestionTitle,
+		QuestionTitle,50
 		FirstDate,
 		lastdate,
 		Nt,
@@ -46,7 +50,7 @@ AS
 	count(*) Nt,																									--Nt
 	sum(case when k.Points > 0 then 1 else 0 end) Ny,																--Ny
 	sum(f.finalpoints) TotalScore,																					--SigmaX
-	sum(square(f.finalpoints)) SquareScore,																			--SigmaSQX
+	cast(sum(square(f.finalpoints)) as bigint) SquareScore,																			--SigmaSQX
 	sum(case when k.points > 0 then f.finalpoints else 0 end),																	--SigmaY
 	sum(case when f.passfail = 'P' then 1 else 0 end) PassingCount,
 	cast(sum(case when f.passfail = 'P' then 1 else 0 end) * 1.0 / count(*) as decimal(5,2)) PassingRate,
@@ -85,7 +89,9 @@ AS
 	[$(PSI_DW)].Dimensions.StudentResponses_vw k on
 		j.StudentItemDBID = k.StudentItemKey
 	where 	
-	h.AreaTitle = @ClientTitle
+	h.AreaTitle = @ClientTitle and
+	e.testdate between @startdate and @enddate
+
 
 	group by
 	h.areatitle,

@@ -1,16 +1,22 @@
 ﻿CREATE VIEW [dbo].[StudentTestAnswers_VW]
 	AS 
 	SELECT 
-	 a.StudentItemDBId,
-	 b.NumericChoice + 1 NumericChoice,
-	 b.ResponseIndex,
-	 b.Points,
-	 b.stringchoice
+	 b.StudentScoreKey,
+	 c.questionsequence,
+	 A.NumericChoice + 1 NumericChoice,
+	 a.ResponseIndex,
+	 a.Points,
+	 a.StringChoice,
+	 b.ElapsedTime,
+	 b.StudentItemDBId,
+	 a.StudentResponseDBID,
+	 b.TestQuestionKey
 
-	From	
-	[$(PSI_DW)].dimensions.StudentItems a	
-	join
-	[$(PSI_DW)].Dimensions.StudentResponses b on
-		a.StudentItemDBId = b.StudentItemKey
-	
+  FROM [$(PSI_DW)].[Dimensions].[StudentResponses] a
+  join
+  [$(PSI_DW)].Dimensions.StudentItems b on
+	a.StudentItemKey = b.StudentItemDBID 
+  join
+  [$(PSI_DW)].dimensions.TestQuestions c on
+	b.TestQuestionKey = c.TestQuestionDBID 
 

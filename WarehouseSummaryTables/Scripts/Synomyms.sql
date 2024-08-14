@@ -1,0 +1,1 @@
+﻿CREATE SYNONYM Tests_vw FOR [psi_reporting].Dimensions.Tests_vw

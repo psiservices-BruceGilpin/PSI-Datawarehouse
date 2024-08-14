@@ -7,7 +7,8 @@
     [SummaryTestName] VARCHAR(2000) NOT NULL, 
     [DimensionsTestKey] INT NOT NULL, 
     [LoadDate] DATETIME NOT NULL DEFAULT getdate(), 
-    [PackageKey] INT NULL 
+    [PackageKey] INT NULL, 
+    [StudentGroupKey] INT NULL 
 )
 
 GO

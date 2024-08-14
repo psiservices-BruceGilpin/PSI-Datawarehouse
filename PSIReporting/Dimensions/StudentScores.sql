@@ -30,7 +30,9 @@
 		Proctored,
 		NewSchedEnd,
 		FinalPoints,
-		ScaledScore
+		ScaledScore,
+		IGPoints,
+		DmPoints
 	from
 	[$(PSI_DW)].Dimensions.StudentScores (nolock)
 	where

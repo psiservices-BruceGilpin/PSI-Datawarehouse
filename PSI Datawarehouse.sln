@@ -8,6 +8,10 @@ EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "PSIReporting", "PSIReporting\PSIReporting.sqlproj", "{5291DCFE-4BFE-4D5B-8935-BF5332621248}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "WarehouseSummaryTables", "WarehouseSummaryTables\WarehouseSummaryTables.sqlproj", "{A34539FB-4B1F-4C5C-B3F9-16317EB76BD3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{052AAE7B-06CC-40DC-8928-6F949B2FEB89} = {052AAE7B-06CC-40DC-8928-6F949B2FEB89}
+		{5291DCFE-4BFE-4D5B-8935-BF5332621248} = {5291DCFE-4BFE-4D5B-8935-BF5332621248}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

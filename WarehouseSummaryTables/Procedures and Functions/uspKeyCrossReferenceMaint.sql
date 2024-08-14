@@ -4,10 +4,10 @@ AS
 	Begin Try
 		truncate table KeyCrossReference
 		Insert into KeyCrossReference ( Studentkey, StudentScoreKey, testdate,  
-										 SummaryTestName, DimensionsTestKey, PackageKey )
+										 SummaryTestName, DimensionsTestKey, PackageKey, StudentGroupKey )
 
-		SELECT   a.StudentDBID, d.StudentScoreDBID, d.StartDate,  
-				   i.summarytestname, i.DimensionsTestKey, e.TestPackageKey
+		SELECT distinct  a.StudentDBID, d.StudentScoreDBID, d.StartDate,  
+				   i.summarytestname, i.DimensionsTestKey, e.TestPackageKey, c.StudentGroupKey
   
 		  FROM 
 			[$(PSIReporting)].Dimensions.Students_vw a 
