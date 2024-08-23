@@ -20,3 +20,8 @@ CREATE NONCLUSTERED INDEX [IX_StudentCodes_Column]
     ON [Dimensions].[StudentCodes]([PoolCodeGroupKey] ASC)
     INCLUDE([StudentScoresKey]);
 
+
+GO
+
+CREATE INDEX [IX_StudentCodes_PoolCodes] ON [Dimensions].[StudentCodes] ([PoolCode])
+Include ([StudentScoresKey])

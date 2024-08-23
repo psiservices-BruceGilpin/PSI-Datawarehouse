@@ -57,8 +57,11 @@ AS
 		from
 			PSI_Dw.dimensions.tests
 		where 
-			currentflag = 0 and
-			testdesc is null
+			currentflag = 0 
+			--and
+	--		testdesc is null
+
+
 		Update 
 		  #testnames
 		set 

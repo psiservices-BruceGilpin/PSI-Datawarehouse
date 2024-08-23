@@ -46,7 +46,7 @@ CREATE NONCLUSTERED INDEX [IX_TestLists_TestTitle]
 GO
 CREATE NONCLUSTERED INDEX [IX_TestLists_CurrentFlag]
     ON [Dimensions].[TestLists]([CurrentFlag] ASC)
-    INCLUDE([TestListDBID], [Testkey]);
+    INCLUDE([TestListDBID], [Testkey],[TestPackageKey],[TestTitle]);
 
 
 GO

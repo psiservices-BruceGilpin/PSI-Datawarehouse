@@ -23,11 +23,11 @@ AS
 	FirstTimePassRate			decimal(7,2),
 	RPB							decimal(6,4)
 	)
-
+	declare @startdate date, @enddate date
 
 	Insert into #itemResults (
 		ClientCode,
-		QuestionTitle,50
+		QuestionTitle,
 		FirstDate,
 		lastdate,
 		Nt,

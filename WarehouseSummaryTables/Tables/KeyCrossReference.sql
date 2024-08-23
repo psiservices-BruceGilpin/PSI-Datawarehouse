@@ -15,3 +15,8 @@ GO
 
 CREATE INDEX [IX_KeyCrossReference_DimensionsTesttKey] ON [dbo].[KeyCrossReference] ([DimensionsTestKey])
 Include ([StudentKey])
+
+GO
+
+CREATE INDEX [IX_KeyCrossReference_TestDate] ON [dbo].[KeyCrossReference] ([Testdate])
+INCLUDE ([Studentkey],[StudentScoreKey],[DimensionsTestKey],[PackageKey])

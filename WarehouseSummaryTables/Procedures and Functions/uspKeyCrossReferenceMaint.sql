@@ -11,7 +11,7 @@ AS
   
 		  FROM 
 			[$(PSIReporting)].Dimensions.Students_vw a 
-			join
+			left join
 			[$(PSIReporting)].Dimensions.StudentTestAttributes_vw b on
 				a.StudentDBID = b.StudentKey
 			join
@@ -20,7 +20,7 @@ AS
 			join
 			[$(PSIReporting)].Dimensions.StudentScores_vw d on
 				c.StudentListDBID = d.StudentListKey
-			join
+			Left join
 			[$(PSIReporting)].dimensions.TestSchedules_vw e on
 				d.TestScheduleKey = e.TestScheduleDBID and b.TestScheduleKey = e.TestScheduleDBID
 			join

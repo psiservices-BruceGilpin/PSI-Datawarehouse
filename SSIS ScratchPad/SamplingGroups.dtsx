@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="156"
-  DTS:VersionGUID="{8B2BACC5-800B-48B6-B4B9-EC23A07F3038}">
+  DTS:VersionBuild="164"
+  DTS:VersionGUID="{757C5D44-3A70-4949-B855-9D9B7A2254D6}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADEKgGwSjGQhwYn+qge5+0DAAAAAASAAACgAAAAEAAAAJG7/1zHFrrLRER9rAbgX9kwAAAAAu9Zq9m+ouSHHhiz08u0oyeA3jvUGekRNS5QSSmVLiXbFKHwdRmq5/NAlLeqm5SAFAAAAHZaskb9TXFS9+iyeYx0UHsVtsPc</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABMvD9s3pWtIst3Ojd5lh4TAAAAAASAAACgAAAAEAAAAFKLPZLxQ+0/cBAZAH3Ku7YwAAAAuw3K/X7bzBFtVpBy5vNmeQdJhpMggSGrqyYN8t0w0rYFDvbzPuF7QWYAKgQTnqx0FAAAAA5AZ83mPrH407pelu1KQ0YjsJEF</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,7 +46,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAYxx2sflnqtnuXVaEI4eIFAAAAAASAAACgAAAAEAAAAEw/KD2nA01iuhyF8G+LTTAwAAAAjcMN6KCPRWsUx85+hhwi5U4cUgiDKTGHUWQAoLmOIOaUBjWvYep3k8OIfD9SlrS7FAAAAFtfDK+munLhoUdq+d1I5JYCbubT</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAARxp2L8cnIuej+rRyOgDrdAAAAAASAAACgAAAAEAAAAGX4i9tGOhijzK0Sr1sHDdowAAAAoaBlppzQLAfgM/cREcnWrbicfqAzuYgGdHw3zI1ROMT/e5n+jmVqHNeX9nk9eYnZFAAAAANopzRGIEObfcd0zi+uzqtaXoYH</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -61,7 +61,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACvPH1UTwJTBh9K0db6za/TAAAAAASAAACgAAAAEAAAANT+vXNrLJ2NC77m01vMg0swAAAAFtUdbpGNeqxM5P0cMMvdVXz6HymhdQOGSyH5mKHlvJONwvCkBQ2zsa3BOsHjuaqbFAAAAOLIJCjXVzuLhYFJ5uZBKlj9idZ5</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADErmU1RaSyPX/FRKQJiKehAAAAAASAAACgAAAAEAAAAHf5P0HccXSj0XWtTaZn2AEwAAAALYMulCq8F5YWrTrc4LZKuJdMdBvpXbpslWJJqKgqZDmVRFuKGYM7MHAo5ZNym8ZvFAAAADzH6XY13FQauQLQr7KAxGMH8JGE</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -174,7 +174,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABcKxB81vKvl4MxO/YTe9w1AAAAAASAAACgAAAAEAAAANfdMCQDNEPz70WNK3yzowYwAAAAnQiZ80vir+UYk/Q1NQV418jka6T4nfLI2Ncg2diQrTp7rCyPeOGXVYgh/yLMZyg9FAAAAHcCoFMtx5SBfrOjnfQ1h/Sg6I/n</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABcF0LZ2pGsuquZkBBDci5uAAAAAASAAACgAAAAEAAAAACoz7YWAUaULy613GpBImkwAAAAIEedsg9m0D1S5IgpQdtpNjn+5zSLQBDC4MyPSasSgwln6/RF6vuvfaYMUT8rrnCKFAAAADYXd2MToxFPl1jfn3hXfIhopJtB</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -191,7 +191,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADM+NorJgumzDfC+SbMwICZAAAAAASAAACgAAAAEAAAAOzy8zhuy+4xewYoQ9kc+pkwAAAA8OzMUYcCHDSjjSCxopphvBKpjM39GCaihA1bm4/ZuP1zvDPQ9FNI1V9zRPP6rT+fFAAAAPy2vs8x5i6wmZhl/5WGq+ScBVat</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADgBSsxfmNRH9W0t1ITa1l5AAAAAASAAACgAAAAEAAAAHk6Yn0Lsi3oKTUzjTY6+YowAAAAUN4zP5gGed5loH6ZVGN4nt9p6NycLD7lVSUYsAqHdKDRYHzRXhusZejcSUw/ymV3FAAAAMSkGSkCs7bppQuCTgVMzx8AiN0y</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -206,7 +206,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAC03w9K0v3HaSu81nYwSguFAAAAAASAAACgAAAAEAAAAENiTaD/w1Eo+TCgjh3QXWkwAAAA7uyev1n3Mtw8cV/ZBMvCZxruAdzVqOxg8f39me9fi/ye3kgENDti1CFdm8nESte8FAAAAOOCMDo/qjY0h9LrB9IS8uOC1szy</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADZkJEXGELPTlaryBrpCMNlAAAAAASAAACgAAAAEAAAALBJY/A2FlFH840G52mGhfowAAAABOb6GjIT42vy1A2Gynu415VIEz/SNNjo81QYbx/aLZyPvNo3RhdqyonD+hRwMqS4FAAAAIK/ZKOcC3pwlLz34gTAfevsx+Vs</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -6686,6 +6686,452 @@ where [refTable].[SourceSystemID] = ?</property>
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
+      DTS:refId="Package\SchoolClassCodes"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{ECD466B3-4F35-4887-B0C9-ADC1FEFC2864}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="SchoolClassCodes"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\SchoolClassCodes\Data Conversion"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\SchoolClassCodes\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\SchoolClassCodes\Data Conversion.Inputs[Data Conversion Input].Columns[pcod-title]"
+                      cachedDataType="wstr"
+                      cachedLength="200"
+                      cachedName="pcod-title"
+                      lineageId="Package\SchoolClassCodes\OLE DB Source.Outputs[OLE DB Source Output].Columns[pcod-title]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\SchoolClassCodes\Data Conversion.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\SchoolClassCodes\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\SchoolClassCodes\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of pcod-title]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="200"
+                      lineageId="Package\SchoolClassCodes\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of pcod-title]"
+                      name="Copy of pcod-title"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\SchoolClassCodes\OLE DB Source.Outputs[OLE DB Source Output].Columns[pcod-title]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\SchoolClassCodes\Data Conversion.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\SchoolClassCodes\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\SchoolClassCodes\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\SchoolClassCodes\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\SchoolClassCodes\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\SchoolClassCodes\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\SchoolClassCodes\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[SchoolclassCodes]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\SchoolClassCodes\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[dev-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[dev-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\SchoolClassCodes\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\SchoolClassCodes\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[sscr-guid]"
+                      cachedDataType="guid"
+                      cachedName="sscr-guid"
+                      externalMetadataColumnId="Package\SchoolClassCodes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[sscr-guid]"
+                      lineageId="Package\SchoolClassCodes\OLE DB Source.Outputs[OLE DB Source Output].Columns[sscr-guid]" />
+                    <inputColumn
+                      refId="Package\SchoolClassCodes\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Codevalue]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="Codevalue"
+                      externalMetadataColumnId="Package\SchoolClassCodes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Codevalue]"
+                      lineageId="Package\SchoolClassCodes\OLE DB Source.Outputs[OLE DB Source Output].Columns[Codevalue]" />
+                    <inputColumn
+                      refId="Package\SchoolClassCodes\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[pcod-title]"
+                      cachedDataType="wstr"
+                      cachedLength="200"
+                      cachedName="pcod-title"
+                      externalMetadataColumnId="Package\SchoolClassCodes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[pcod-title]"
+                      lineageId="Package\SchoolClassCodes\OLE DB Source.Outputs[OLE DB Source Output].Columns[pcod-title]" />
+                    <inputColumn
+                      refId="Package\SchoolClassCodes\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of pcod-title]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="200"
+                      cachedName="Copy of pcod-title"
+                      externalMetadataColumnId="Package\SchoolClassCodes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Copy of pcod-title]"
+                      lineageId="Package\SchoolClassCodes\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of pcod-title]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\SchoolClassCodes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[sscr-guid]"
+                      dataType="guid"
+                      name="sscr-guid" />
+                    <externalMetadataColumn
+                      refId="Package\SchoolClassCodes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[pcod-title]"
+                      dataType="wstr"
+                      length="200"
+                      name="pcod-title" />
+                    <externalMetadataColumn
+                      refId="Package\SchoolClassCodes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Codevalue]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="Codevalue" />
+                    <externalMetadataColumn
+                      refId="Package\SchoolClassCodes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Copy of pcod-title]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      name="Copy of pcod-title" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\SchoolClassCodes\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\SchoolClassCodes\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\SchoolClassCodes\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\SchoolClassCodes\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\SchoolClassCodes\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\SchoolClassCodes\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\SchoolClassCodes\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select
+d.[sscr-guid], b.[pcod-title], 'SchoolCode' Codevalue
+from
+studentcodes a 
+join
+poolcodes b on
+	a.[scod-pcod] = b.[pcod-guid]
+join
+poolcodegroups c on
+	b.[pcod-pcgr] = c.[pcgr-guid]
+join
+studentscores d on
+a.[scod-data] = d.[sscr-guid]
+where
+c.[pcgr-title] in ('Schoolcode')
+and
+d.[sscr-startdate] &gt;= '1/1/2024'
+union
+select
+d.[sscr-guid], b.[pcod-title], 'ClassCode'
+from
+studentcodes a 
+join
+poolcodes b on
+	a.[scod-pcod] = b.[pcod-guid]
+join
+poolcodegroups c on
+	b.[pcod-pcgr] = c.[pcgr-guid]
+join
+studentscores d on
+a.[scod-data] = d.[sscr-guid]
+where
+c.[pcgr-title] in ( 'classcode')
+and
+d.[sscr-startdate] &gt;= '1/1/2022'</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\SchoolClassCodes\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[ol-ok-sql2.LXRdata]"
+                  connectionManagerRefId="Package.ConnectionManagers[ol-ok-sql2.LXRdata]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\SchoolClassCodes\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\SchoolClassCodes\OLE DB Source.Outputs[OLE DB Source Output].Columns[sscr-guid]"
+                      dataType="guid"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SchoolClassCodes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[sscr-guid]"
+                      lineageId="Package\SchoolClassCodes\OLE DB Source.Outputs[OLE DB Source Output].Columns[sscr-guid]"
+                      name="sscr-guid"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\SchoolClassCodes\OLE DB Source.Outputs[OLE DB Source Output].Columns[Codevalue]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SchoolClassCodes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Codevalue]"
+                      length="10"
+                      lineageId="Package\SchoolClassCodes\OLE DB Source.Outputs[OLE DB Source Output].Columns[Codevalue]"
+                      name="Codevalue"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\SchoolClassCodes\OLE DB Source.Outputs[OLE DB Source Output].Columns[pcod-title]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SchoolClassCodes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[pcod-title]"
+                      length="200"
+                      lineageId="Package\SchoolClassCodes\OLE DB Source.Outputs[OLE DB Source Output].Columns[pcod-title]"
+                      name="pcod-title"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\SchoolClassCodes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[sscr-guid]"
+                      dataType="guid"
+                      name="sscr-guid" />
+                    <externalMetadataColumn
+                      refId="Package\SchoolClassCodes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Codevalue]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="Codevalue" />
+                    <externalMetadataColumn
+                      refId="Package\SchoolClassCodes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[pcod-title]"
+                      dataType="wstr"
+                      length="200"
+                      name="pcod-title" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\SchoolClassCodes\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\SchoolClassCodes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[sscr-guid]"
+                      dataType="guid"
+                      lineageId="Package\SchoolClassCodes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[sscr-guid]"
+                      name="sscr-guid" />
+                    <outputColumn
+                      refId="Package\SchoolClassCodes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[pcod-title]"
+                      dataType="wstr"
+                      length="200"
+                      lineageId="Package\SchoolClassCodes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[pcod-title]"
+                      name="pcod-title" />
+                    <outputColumn
+                      refId="Package\SchoolClassCodes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Codevalue]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      lineageId="Package\SchoolClassCodes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Codevalue]"
+                      name="Codevalue" />
+                    <outputColumn
+                      refId="Package\SchoolClassCodes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\SchoolClassCodes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\SchoolClassCodes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\SchoolClassCodes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\SchoolClassCodes.Paths[Data Conversion Output]"
+              endId="Package\SchoolClassCodes\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Data Conversion Output"
+              startId="Package\SchoolClassCodes\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\SchoolClassCodes.Paths[OLE DB Source Output]"
+              endId="Package\SchoolClassCodes\Data Conversion.Inputs[Data Conversion Input]"
+              name="OLE DB Source Output"
+              startId="Package\SchoolClassCodes\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
       DTS:refId="Package\ScoreReportData Update"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
@@ -7129,6 +7575,839 @@ order by
               endId="Package\ScoreReportData Update\Data Conversion.Inputs[Data Conversion Input]"
               name="OLE DB Source Output"
               startId="Package\ScoreReportData Update\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Student Codes"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{4A8869BA-DC9B-4CD0-85D7-88C425AFC463}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Student Codes"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Student Codes\Lookup"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from [Dimensions].[PoolCodes]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from (select * from [Dimensions].[PoolCodes]) [refTable]
+where [refTable].[SourcePoolCodeKey] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="PoolCodeId" dataType="DT_I8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SourceSystemKey" dataType="DT_I2" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SourcePoolCodeKey" dataType="DT_GUID" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="PoolCodeGroupKey" dataType="DT_I8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="PoolTitle" dataType="DT_STR" length="200" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="PoolDescription" dataType="DT_STR" length="2000" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="LoadDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="PoolCodeDBID" dataType="DT_I8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CheckSum" dataType="DT_I8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CurrentFlag" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\Student Codes\OLE DB Source.Outputs[OLE DB Source Output].Columns[pcod-guid]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Student Codes\Lookup.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[dev-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin]"
+                  connectionManagerRefId="Package.ConnectionManagers[dev-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Student Codes\Lookup.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Student Codes\Lookup.Inputs[Lookup Input].Columns[pcod-guid]"
+                      cachedDataType="guid"
+                      cachedName="pcod-guid"
+                      lineageId="Package\Student Codes\OLE DB Source.Outputs[OLE DB Source Output].Columns[pcod-guid]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">SourcePoolCodeKey</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Student Codes\Lookup.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  errorRowDisposition="IgnoreFailure"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\Student Codes\Lookup.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Student Codes\Lookup.Outputs[Lookup Match Output].Columns[PoolCodeId]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\Student Codes\Lookup.Outputs[Lookup Match Output].Columns[PoolCodeId]"
+                      name="PoolCodeId"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">PoolCodeId</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Student Codes\Lookup.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\Student Codes\Lookup.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Student Codes\Lookup.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\Student Codes\Lookup.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Student Codes\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Student Codes\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Student Codes\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Student Codes\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Student Codes\Lookup 1"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup 1"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from [Dimensions].[PoolCodeGroups]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from (select * from [Dimensions].[PoolCodeGroups]) [refTable]
+where [refTable].[SourcePoolGroupID] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="PoolCodeGroupId" dataType="DT_I8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SourceSystemKey" dataType="DT_I2" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SourcePoolGroupID" dataType="DT_GUID" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="PoolCodeGroupDBID" dataType="DT_I8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="PoolKey" dataType="DT_I8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="PoolGroupTitle" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="PoolGroupDescription" dataType="DT_STR" length="2000" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="LoadDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CurrentFlag" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CheckSum" dataType="DT_I8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\Student Codes\OLE DB Source.Outputs[OLE DB Source Output].Columns[PCGR-GUID]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Student Codes\Lookup 1.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[dev-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin]"
+                  connectionManagerRefId="Package.ConnectionManagers[dev-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Student Codes\Lookup 1.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Student Codes\Lookup 1.Inputs[Lookup Input].Columns[PCGR-GUID]"
+                      cachedDataType="guid"
+                      cachedName="PCGR-GUID"
+                      lineageId="Package\Student Codes\OLE DB Source.Outputs[OLE DB Source Output].Columns[PCGR-GUID]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">SourcePoolGroupID</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Student Codes\Lookup 1.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  errorRowDisposition="IgnoreFailure"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\Student Codes\Lookup 1.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Student Codes\Lookup 1.Outputs[Lookup Match Output].Columns[PoolCodeGroupDBID]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\Student Codes\Lookup 1.Outputs[Lookup Match Output].Columns[PoolCodeGroupDBID]"
+                      name="PoolCodeGroupDBID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">PoolCodeGroupDBID</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Student Codes\Lookup 1.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\Student Codes\Lookup 1.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Student Codes\Lookup 1.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\Student Codes\Lookup 1.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Student Codes\Lookup 1.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Student Codes\Lookup 1.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Student Codes\Lookup 1.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Student Codes\Lookup 1.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Student Codes\Lookup 3"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup 3"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from [Dimensions].[StudentScores_vw]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from (select * from [Dimensions].[StudentScores_vw]) [refTable]
+where [refTable].[SourceStudentScoreID] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="StudentScoreDBID" dataType="DT_I8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SourceStudentScoreID" dataType="DT_GUID" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="StudentListKey" dataType="DT_I8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="TestScheduleKey" dataType="DT_I8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="TestListKey" dataType="DT_I8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="TestCenterKey" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="AmpFormKey" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ScoreStatus" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="StartDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Enddate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ScorePoints" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Restarts" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Version" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="OrderSeed" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="HowLong" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Warn" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Retake" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ExtraTime" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ExtraTimeUsed" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ReportDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Reports" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Sim" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="PFA" dataType="DT_STR" length="2" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="AdaTime" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ExtraStatus" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ExtraStart" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ExtraEnd" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Proctored" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="NewSchedEnd" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="FinalPoints" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ScaledScore" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="IGPoints" dataType="DT_NUMERIC" length="0" precision="10" scale="4" codePage="0"/&gt;&lt;referenceColumn name="DmPoints" dataType="DT_NUMERIC" length="0" precision="10" scale="4" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\Student Codes\OLE DB Source.Outputs[OLE DB Source Output].Columns[sscr-guid]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Student Codes\Lookup 3.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[dev-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin]"
+                  connectionManagerRefId="Package.ConnectionManagers[dev-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Student Codes\Lookup 3.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Student Codes\Lookup 3.Inputs[Lookup Input].Columns[sscr-guid]"
+                      cachedDataType="guid"
+                      cachedName="sscr-guid"
+                      lineageId="Package\Student Codes\OLE DB Source.Outputs[OLE DB Source Output].Columns[sscr-guid]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">SourceStudentScoreID</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Student Codes\Lookup 3.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  errorRowDisposition="IgnoreFailure"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\Student Codes\Lookup 3.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Student Codes\Lookup 3.Outputs[Lookup Match Output].Columns[StudentScoreDBID]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\Student Codes\Lookup 3.Outputs[Lookup Match Output].Columns[StudentScoreDBID]"
+                      name="StudentScoreDBID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">StudentScoreDBID</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Student Codes\Lookup 3.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\Student Codes\Lookup 3.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Student Codes\Lookup 3.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\Student Codes\Lookup 3.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Student Codes\Lookup 3.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Student Codes\Lookup 3.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Student Codes\Lookup 3.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Student Codes\Lookup 3.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Student Codes\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[SchoolClassCodes]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Student Codes\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[dev-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[dev-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Student Codes\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Student Codes\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PCGR-GUID]"
+                      cachedDataType="guid"
+                      cachedName="PCGR-GUID"
+                      externalMetadataColumnId="Package\Student Codes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PCGR-GUID]"
+                      lineageId="Package\Student Codes\OLE DB Source.Outputs[OLE DB Source Output].Columns[PCGR-GUID]" />
+                    <inputColumn
+                      refId="Package\Student Codes\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[sscr-guid]"
+                      cachedDataType="guid"
+                      cachedName="sscr-guid"
+                      externalMetadataColumnId="Package\Student Codes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[sscr-guid]"
+                      lineageId="Package\Student Codes\OLE DB Source.Outputs[OLE DB Source Output].Columns[sscr-guid]" />
+                    <inputColumn
+                      refId="Package\Student Codes\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[pcod-guid]"
+                      cachedDataType="guid"
+                      cachedName="pcod-guid"
+                      externalMetadataColumnId="Package\Student Codes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[pcod-guid]"
+                      lineageId="Package\Student Codes\OLE DB Source.Outputs[OLE DB Source Output].Columns[pcod-guid]" />
+                    <inputColumn
+                      refId="Package\Student Codes\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PoolCodeId]"
+                      cachedDataType="i8"
+                      cachedName="PoolCodeId"
+                      externalMetadataColumnId="Package\Student Codes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PoolCodeId]"
+                      lineageId="Package\Student Codes\Lookup.Outputs[Lookup Match Output].Columns[PoolCodeId]" />
+                    <inputColumn
+                      refId="Package\Student Codes\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PoolCodeGroupDBID]"
+                      cachedDataType="i8"
+                      cachedName="PoolCodeGroupDBID"
+                      externalMetadataColumnId="Package\Student Codes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PoolCodeGroupDBID]"
+                      lineageId="Package\Student Codes\Lookup 1.Outputs[Lookup Match Output].Columns[PoolCodeGroupDBID]" />
+                    <inputColumn
+                      refId="Package\Student Codes\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[StudentScoreDBID]"
+                      cachedDataType="i8"
+                      cachedName="StudentScoreDBID"
+                      externalMetadataColumnId="Package\Student Codes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StudentScoreDBID]"
+                      lineageId="Package\Student Codes\Lookup 3.Outputs[Lookup Match Output].Columns[StudentScoreDBID]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Student Codes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PCGR-GUID]"
+                      dataType="guid"
+                      name="PCGR-GUID" />
+                    <externalMetadataColumn
+                      refId="Package\Student Codes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[sscr-guid]"
+                      dataType="guid"
+                      name="sscr-guid" />
+                    <externalMetadataColumn
+                      refId="Package\Student Codes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[pcod-guid]"
+                      dataType="guid"
+                      name="pcod-guid" />
+                    <externalMetadataColumn
+                      refId="Package\Student Codes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PoolCodeId]"
+                      dataType="i8"
+                      name="PoolCodeId" />
+                    <externalMetadataColumn
+                      refId="Package\Student Codes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PoolCodeGroupDBID]"
+                      dataType="i8"
+                      name="PoolCodeGroupDBID" />
+                    <externalMetadataColumn
+                      refId="Package\Student Codes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StudentScoreDBID]"
+                      dataType="i8"
+                      name="StudentScoreDBID" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Student Codes\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Student Codes\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Student Codes\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Student Codes\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Student Codes\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Student Codes\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Student Codes\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select
+  d.[PCGR-GUID], c.[sscr-guid], b.[pcod-guid]
+  from
+  studentcodes a join
+  PoolCodes b on
+	a.[SCOD-PCOD] = b.[pcod-GUID]
+ join
+	StudentScores c on
+		a.[SCOD-DATA] = c.[SSCR-GUID]
+ join
+	PoolCodeGroups d on
+		b.[PCOD-PCGR] = d.[PCGR-GUID]
+  where [pcgr-title] in ('schoolcode', 'classcode')
+  and
+  c.[SSCR-STARTDATE] &gt;= '1/1/2022'</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Student Codes\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[ol-ok-sql2.lxrdata1]"
+                  connectionManagerRefId="Package.ConnectionManagers[ol-ok-sql2.lxrdata1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Student Codes\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Student Codes\OLE DB Source.Outputs[OLE DB Source Output].Columns[PCGR-GUID]"
+                      dataType="guid"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Student Codes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[PCGR-GUID]"
+                      lineageId="Package\Student Codes\OLE DB Source.Outputs[OLE DB Source Output].Columns[PCGR-GUID]"
+                      name="PCGR-GUID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Student Codes\OLE DB Source.Outputs[OLE DB Source Output].Columns[sscr-guid]"
+                      dataType="guid"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Student Codes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[sscr-guid]"
+                      lineageId="Package\Student Codes\OLE DB Source.Outputs[OLE DB Source Output].Columns[sscr-guid]"
+                      name="sscr-guid"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Student Codes\OLE DB Source.Outputs[OLE DB Source Output].Columns[pcod-guid]"
+                      dataType="guid"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Student Codes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[pcod-guid]"
+                      lineageId="Package\Student Codes\OLE DB Source.Outputs[OLE DB Source Output].Columns[pcod-guid]"
+                      name="pcod-guid"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Student Codes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[PCGR-GUID]"
+                      dataType="guid"
+                      name="PCGR-GUID" />
+                    <externalMetadataColumn
+                      refId="Package\Student Codes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[sscr-guid]"
+                      dataType="guid"
+                      name="sscr-guid" />
+                    <externalMetadataColumn
+                      refId="Package\Student Codes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[pcod-guid]"
+                      dataType="guid"
+                      name="pcod-guid" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Student Codes\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Student Codes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PCGR-GUID]"
+                      dataType="guid"
+                      lineageId="Package\Student Codes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PCGR-GUID]"
+                      name="PCGR-GUID" />
+                    <outputColumn
+                      refId="Package\Student Codes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[sscr-guid]"
+                      dataType="guid"
+                      lineageId="Package\Student Codes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[sscr-guid]"
+                      name="sscr-guid" />
+                    <outputColumn
+                      refId="Package\Student Codes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[pcod-guid]"
+                      dataType="guid"
+                      lineageId="Package\Student Codes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[pcod-guid]"
+                      name="pcod-guid" />
+                    <outputColumn
+                      refId="Package\Student Codes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Student Codes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Student Codes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Student Codes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Student Codes.Paths[Lookup Match Output]"
+              endId="Package\Student Codes\Lookup 1.Inputs[Lookup Input]"
+              name="Lookup Match Output"
+              startId="Package\Student Codes\Lookup.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Student Codes.Paths[Lookup Match Output1]"
+              endId="Package\Student Codes\Lookup 3.Inputs[Lookup Input]"
+              name="Lookup Match Output"
+              startId="Package\Student Codes\Lookup 1.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Student Codes.Paths[Lookup Match Output2]"
+              endId="Package\Student Codes\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Lookup Match Output"
+              startId="Package\Student Codes\Lookup 3.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Student Codes.Paths[OLE DB Source Output]"
+              endId="Package\Student Codes\Lookup.Inputs[Lookup Input]"
+              name="OLE DB Source Output"
+              startId="Package\Student Codes\OLE DB Source.Outputs[OLE DB Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -8216,7 +9495,7 @@ from
 Studentscores
 where [sscr-rescoredate] is not null
 and
-[sscr-startdate] &gt; '2024-02-29 17:23:39.697'
+[sscr-startdate] &gt;= '2022-01-01'
 order by
 [sscr-startdate]</property>
                 <property
@@ -9544,9 +10823,17 @@ where [refTable].[SourceTestScheduleID] = ?</property>
           Id="Package\Sampling Items"
           TopLeft="1228,117" />
         <NodeLayout
+          Size="172,42"
+          Id="Package\SchoolClassCodes"
+          TopLeft="551,325" />
+        <NodeLayout
           Size="202,42"
           Id="Package\ScoreReportData Update"
           TopLeft="720,160" />
+        <NodeLayout
+          Size="152,42"
+          Id="Package\Student Codes"
+          TopLeft="1134,350" />
         <NodeLayout
           Size="156,42"
           Id="Package\Student Groups"
@@ -10625,6 +11912,91 @@ where [refTable].[SourceTestScheduleID] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
+    design-time-name="Package\SchoolClassCodes">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="157,42"
+          Id="Package\SchoolClassCodes\OLE DB Source"
+          TopLeft="455,74" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\SchoolClassCodes\OLE DB Destination"
+          TopLeft="450,381" />
+        <NodeLayout
+          Size="161,42"
+          Id="Package\SchoolClassCodes\Data Conversion"
+          TopLeft="459,198" />
+        <EdgeLayout
+          Id="Package\SchoolClassCodes.Paths[OLE DB Source Output]"
+          TopLeft="536.5,116">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,82"
+              Start="0,0"
+              End="0,74.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,74.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\SchoolClassCodes.Paths[Data Conversion Output]"
+          TopLeft="539,240">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,141"
+              Start="0,0"
+              End="0,133.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,133.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\SchoolClassCodes\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\SchoolClassCodes\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
     design-time-name="Package\ScoreReportData Update">
     <LayoutInfo>
       <GraphLayout
@@ -10722,6 +12094,218 @@ where [refTable].[SourceTestScheduleID] = ?</property>
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Student Codes">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Student Codes\OLE DB Source"
+          TopLeft="786,110" />
+        <NodeLayout
+          Size="115,42"
+          Id="Package\Student Codes\Lookup"
+          TopLeft="812,207" />
+        <EdgeLayout
+          Id="Package\Student Codes.Paths[OLE DB Source Output]"
+          TopLeft="867,152">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,55"
+              Start="0,0"
+              End="0,47.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,47.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="124,42"
+          Id="Package\Student Codes\Lookup 1"
+          TopLeft="809,296" />
+        <EdgeLayout
+          Id="Package\Student Codes.Paths[Lookup Match Output]"
+          TopLeft="870.25,249">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,47"
+              Start="0,0"
+              End="0,39.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,39.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,13.9453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Student Codes\OLE DB Destination"
+          TopLeft="796,524" />
+        <NodeLayout
+          Size="124,42"
+          Id="Package\Student Codes\Lookup 3"
+          TopLeft="815,380" />
+        <EdgeLayout
+          Id="Package\Student Codes.Paths[Lookup Match Output1]"
+          TopLeft="874,338">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,42"
+              Start="0,0"
+              End="0,34.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,11.4453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Student Codes.Paths[Lookup Match Output2]"
+          TopLeft="880.75,422">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,102"
+              Start="0,0"
+              End="0,94.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,94.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,41.4453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Student Codes\Lookup 1">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[Dimensions].[PoolCodeGroups]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Student Codes\Lookup 3">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[Dimensions].[StudentScores_vw]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">3</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Student Codes\Lookup">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[Dimensions].[PoolCodes]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Student Codes\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Student Codes\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -10843,13 +12427,25 @@ where [refTable].[SourceTestScheduleID] = ?</property>
           Id="Package\StudentScores\OLE DB Source"
           TopLeft="338,68" />
         <NodeLayout
-          Size="177,42"
-          Id="Package\StudentScores\OLE DB Destination"
-          TopLeft="342,501" />
+          Size="134,42"
+          Id="Package\StudentScores\StudentList"
+          TopLeft="355,251" />
+        <NodeLayout
+          Size="152,42"
+          Id="Package\StudentScores\TestSchedules"
+          TopLeft="365,333" />
+        <NodeLayout
+          Size="123,42"
+          Id="Package\StudentScores\TestLists"
+          TopLeft="384,416" />
         <NodeLayout
           Size="161,42"
           Id="Package\StudentScores\Data Conversion"
           TopLeft="339,169" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\StudentScores\OLE DB Destination"
+          TopLeft="342,501" />
         <EdgeLayout
           Id="Package\StudentScores.Paths[OLE DB Source Output]"
           TopLeft="418,110">
@@ -10870,100 +12466,6 @@ where [refTable].[SourceTestScheduleID] = ?</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="134,42"
-          Id="Package\StudentScores\StudentList"
-          TopLeft="355,251" />
-        <EdgeLayout
-          Id="Package\StudentScores.Paths[Data Conversion Output]"
-          TopLeft="420.75,211">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,40"
-              Start="0,0"
-              End="0,32.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,32.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="152,42"
-          Id="Package\StudentScores\TestSchedules"
-          TopLeft="365,333" />
-        <EdgeLayout
-          Id="Package\StudentScores.Paths[Lookup Match Output]"
-          TopLeft="422,293">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="19,40"
-              Start="0,0"
-              End="19,32.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16"
-                    Point2="0,20"
-                    Point3="4,20" />
-                  <mssgle:LineSegment
-                    End="15,20" />
-                  <mssgle:CubicBezierSegment
-                    Point1="15,20"
-                    Point2="19,20"
-                    Point3="19,24" />
-                  <mssgle:LineSegment
-                    End="19,32.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-38.69138671875,25,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="123,42"
-          Id="Package\StudentScores\TestLists"
-          TopLeft="384,416" />
-        <EdgeLayout
-          Id="Package\StudentScores.Paths[Lookup Match Output1]"
-          TopLeft="443.25,375">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,41"
-              Start="0,0"
-              End="0,33.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,33.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,10.9453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11002,22 +12504,91 @@ where [refTable].[SourceTestScheduleID] = ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\StudentScores.Paths[Lookup Match Output1]"
+          TopLeft="443.25,375">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,41"
+              Start="0,0"
+              End="0,33.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,10.9453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\StudentScores.Paths[Lookup Match Output]"
+          TopLeft="422,293">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="19,40"
+              Start="0,0"
+              End="19,32.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16"
+                    Point2="0,20"
+                    Point3="4,20" />
+                  <mssgle:LineSegment
+                    End="15,20" />
+                  <mssgle:CubicBezierSegment
+                    Point1="15,20"
+                    Point2="19,20"
+                    Point3="19,24" />
+                  <mssgle:LineSegment
+                    End="19,32.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-38.69138671875,25,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\StudentScores.Paths[Data Conversion Output]"
+          TopLeft="420.75,211">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,40"
+              Start="0,0"
+              End="0,32.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\StudentScores\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\StudentScores\OLE DB Source">
     <Properties>
@@ -11032,7 +12603,7 @@ where [refTable].[SourceTestScheduleID] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -11042,7 +12613,7 @@ where [refTable].[SourceTestScheduleID] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11055,7 +12626,7 @@ where [refTable].[SourceTestScheduleID] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -11065,7 +12636,7 @@ where [refTable].[SourceTestScheduleID] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11078,7 +12649,7 @@ where [refTable].[SourceTestScheduleID] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -11088,10 +12659,23 @@ where [refTable].[SourceTestScheduleID] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\StudentScores\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
