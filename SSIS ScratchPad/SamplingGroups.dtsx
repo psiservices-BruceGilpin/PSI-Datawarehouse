@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="164"
-  DTS:VersionGUID="{757C5D44-3A70-4949-B855-9D9B7A2254D6}">
+  DTS:VersionBuild="165"
+  DTS:VersionGUID="{1E0378B6-E9E0-4D21-91B8-D840662B3B19}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABMvD9s3pWtIst3Ojd5lh4TAAAAAASAAACgAAAAEAAAAFKLPZLxQ+0/cBAZAH3Ku7YwAAAAuw3K/X7bzBFtVpBy5vNmeQdJhpMggSGrqyYN8t0w0rYFDvbzPuF7QWYAKgQTnqx0FAAAAA5AZ83mPrH407pelu1KQ0YjsJEF</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAC6VTA4ebKiDZK6Mf50hi5mAAAAAASAAACgAAAAEAAAAG5HFlwW0CbPVdIKTrNsbV8wAAAAP415IFc4nogkK3wlRKxmk3BXlh6lBSLPQCm7/lDeGDt/tdyEOFY6vxlwlxDWqE/9FAAAAKGrBIPkNk7YTSyHZi0lB8a2n+0R</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,7 +46,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAARxp2L8cnIuej+rRyOgDrdAAAAAASAAACgAAAAEAAAAGX4i9tGOhijzK0Sr1sHDdowAAAAoaBlppzQLAfgM/cREcnWrbicfqAzuYgGdHw3zI1ROMT/e5n+jmVqHNeX9nk9eYnZFAAAAANopzRGIEObfcd0zi+uzqtaXoYH</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAXBU2cWtAhdNJCHdeN7P+dAAAAAASAAACgAAAAEAAAAEga3RzJcDoCHlQTgavl9IUwAAAAlD7a5HqJPVIC4HQhnULIeKI6BSWOGxpZIw3syjcUOZNR/1c5Lt8aCI6XLf00nWo5FAAAAEk+gjszAcS3Ptc1yuBKVI34lug0</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -61,7 +61,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADErmU1RaSyPX/FRKQJiKehAAAAAASAAACgAAAAEAAAAHf5P0HccXSj0XWtTaZn2AEwAAAALYMulCq8F5YWrTrc4LZKuJdMdBvpXbpslWJJqKgqZDmVRFuKGYM7MHAo5ZNym8ZvFAAAADzH6XY13FQauQLQr7KAxGMH8JGE</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADC6gDuI/asZ3erdbKtA+sEAAAAAASAAACgAAAAEAAAAPLWKOm39EuaMF2cspUNlvEwAAAA//gz4e2yghylS+BWzTl2VeraJPf0gdlNjCCvTlv0Hd/fKSPmK1JPEQ8igioAZXEBFAAAAKOPXm3WFQSBeHtWRsM5KYJm1Es6</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -174,7 +174,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABcF0LZ2pGsuquZkBBDci5uAAAAAASAAACgAAAAEAAAAACoz7YWAUaULy613GpBImkwAAAAIEedsg9m0D1S5IgpQdtpNjn+5zSLQBDC4MyPSasSgwln6/RF6vuvfaYMUT8rrnCKFAAAADYXd2MToxFPl1jfn3hXfIhopJtB</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAASHkjEpnPjUmqS4e8pGPnAAAAAASAAACgAAAAEAAAAK7CBDQsufTtwFdivK9a5QAwAAAA/6vHcuNzYpBSVeSSLbuvhdvSwJADq9ElW7r/R2TjkQLkad9gYDHlK9mfs/tBnJ+jFAAAAH00SRvvVp13+QluKxcH2cnT+AdT</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -191,7 +191,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADgBSsxfmNRH9W0t1ITa1l5AAAAAASAAACgAAAAEAAAAHk6Yn0Lsi3oKTUzjTY6+YowAAAAUN4zP5gGed5loH6ZVGN4nt9p6NycLD7lVSUYsAqHdKDRYHzRXhusZejcSUw/ymV3FAAAAMSkGSkCs7bppQuCTgVMzx8AiN0y</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACatDh5xMKsLYn0L2dpP0nXAAAAAASAAACgAAAAEAAAADrm5/bRuF0dWiMxmS40JBgwAAAAoAU/JOcpB3G/s+MxllUcE/CvHeIZ57RU1e4BDqbC92FmkGBnIxiMZdS04KdYybJ6FAAAAFaSsC8IfTEIDhHhaJ8PJRBB9nzd</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -206,7 +206,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADZkJEXGELPTlaryBrpCMNlAAAAAASAAACgAAAAEAAAALBJY/A2FlFH840G52mGhfowAAAABOb6GjIT42vy1A2Gynu415VIEz/SNNjo81QYbx/aLZyPvNo3RhdqyonD+hRwMqS4FAAAAIK/ZKOcC3pwlLz34gTAfevsx+Vs</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAANuHRfqgmanlWltG1o6uH/AAAAAASAAACgAAAAEAAAAFuTFbgC6IfXK9QT/+p/Se0wAAAAXWVbqqu0WbZ6mAfHOFPcUQkrrgMvc8IBsfyWXg9TQ3ExxIVFWHppB6YRfFtNnFEkFAAAADgOJFrdB3UKM+yi30u1BpehVOii</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -6793,7 +6793,7 @@ where [refTable].[SourceSystemID] = ?</property>
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[SchoolclassCodes]</property>
+                  name="OpenRowset">[Schoolclasscodes]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -6836,8 +6836,8 @@ where [refTable].[SourceSystemID] = ?</property>
               <connections>
                 <connection
                   refId="Package\SchoolClassCodes\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[dev-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin 1]"
-                  connectionManagerRefId="Package.ConnectionManagers[dev-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin 1]"
+                  connectionManagerID="Package.ConnectionManagers[uat-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin]"
+                  connectionManagerRefId="Package.ConnectionManagers[uat-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -11917,10 +11917,6 @@ where [refTable].[SourceTestScheduleID] = ?</property>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="157,42"
-          Id="Package\SchoolClassCodes\OLE DB Source"
-          TopLeft="455,74" />
-        <NodeLayout
           Size="177,42"
           Id="Package\SchoolClassCodes\OLE DB Destination"
           TopLeft="450,381" />
@@ -11928,6 +11924,10 @@ where [refTable].[SourceTestScheduleID] = ?</property>
           Size="161,42"
           Id="Package\SchoolClassCodes\Data Conversion"
           TopLeft="459,198" />
+        <NodeLayout
+          Size="157,42"
+          Id="Package\SchoolClassCodes\OLE DB Source"
+          TopLeft="455,74" />
         <EdgeLayout
           Id="Package\SchoolClassCodes.Paths[OLE DB Source Output]"
           TopLeft="536.5,116">

@@ -105,7 +105,7 @@ begin try
 
 		Insert into #Daily (CrossRefKey, AsOfDate,DailyN, DailyPass, DailyFirstTime, DailyFirstimePass, DailyScoreTotal, DailyAvg, DailyVar, DailySTD)
 		 select
-			b.CrossRefKey,
+			c.CrossReferenceId,
 			a.testdate,
 			count(*) DailyCandidateN,
 			sum(case when a.passfail = 'P' then 1 else 0 end) DailyCandidatePass,
@@ -116,13 +116,17 @@ begin try
 			var(a.FinalPoints) DailyVariance,
 			STDEV(a.FinalPoints) DailySTD
 			from
-			students.studenttestsummary a join
+			students.studenttestsummary a 
+			join
 			tests.SummaryTestNames b on
 				a.DWTestKey = b.DimensionsTestKey
+			join
+			KeyCrossReference c on
+				b.SummaryTestName = c.SummaryTestName
 			where 
 				  a.TestDate  between @start and @end 
 			group by
-			b.CrossRefKey, a.TestDate
+			c.CrossReferenceId, a.TestDate
 
 		  Insert into #ytd (CrossRefKey, asofDate, YTDN, YTDPass, YTDFirstTime,  ytdFirstimePass, ytdScoreTotal, YTDAvg, YTDVar, YTDStd)
 		  
@@ -223,7 +227,6 @@ begin try
 		TestDate,
 		ScaleCut,
 		RawCut,
-		ItemCount,
 		DailyN,
 		DailyPass,
 		DailyPassRate,
@@ -257,23 +260,21 @@ begin try
 		YTDStdDev,
 		YTDReliabilityEst,
 		YTDTotalScore,
-		YTDStdErrMean,
-		CrossRefKey)
+		YTDStdErrMean)
 	select distinct
 		a.AccountCode,
 		a.SummaryTestName,
 		b.asofdate,
 		a.ScaleCut,
 		a.RawCut,
-		a.itemcount,
 		b.dailyn,  b.DailyPass, b.DailyPassRate, b.DailyFirstTimeN, b.DailyFirstTimePass, b.DailyFirstTimePassRate, b.DailyMeanRawScore, b.DailySTD, b.DailyVariance, b.DailyScoreTotal, b.DailyStDErrMean,
 		b.TotalN,  b.TotalPass, b.TotalPassRate, b.TotalFirstTimeN, b.TotalFirstTimePass, b.TotalFirstTimeRate, b.TotalMeanRawScore, b.TotalStdDev, b.TotalVariance, b.TotalAllScores, b.TotalSQRAllScores, YTDStdErrmean,
-		b.YTDN,	   b.ytdpass,   b.YtdPassRate,   b.YtdFirstTimeN,   b.YTDFirstTimePass,   b.YTDFirstTimeRate,   b.YTDMeanRawScore,   b.YTDSTD,      b.YTDVariance, b.YTDScoreTotal, YTDStdErrMean, b.CrossRefKey
+		b.YTDN,	   b.ytdpass,   b.YtdPassRate,   b.YtdFirstTimeN,   b.YTDFirstTimePass,   b.YTDFirstTimeRate,   b.YTDMeanRawScore,   b.YTDSTD,      b.YTDVariance, b.YTDScoreTotal, YTDStdErrMean
 	from
-		(select distinct SummaryTestName, Crossrefkey, AccountCode, Scalecut, max(RawCut) RawCut, ItemCount from Tests.SummaryTestNames
-				group by SummaryTestName, Crossrefkey, AccountCode, Scalecut, ItemCount) a  join
+		(select distinct SummaryTestName,  AccountCode, Scalecut, max(RawCut) RawCut from Tests.SummaryTestNames
+				group by SummaryTestName,  AccountCode, Scalecut) a  join
 		#results b on
-			a.CrossRefKey = b.crossrefkey
+			a.SummaryTestName = b.t
 	where a.AccountCode is not null
 	
 end try

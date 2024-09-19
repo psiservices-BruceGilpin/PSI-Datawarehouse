@@ -18,3 +18,8 @@ CREATE NONCLUSTERED INDEX [IXPoolCodeGroupsSourcePoolGroupID]
     ON [Dimensions].[PoolCodeGroups]([SourcePoolGroupID] ASC)
     INCLUDE([LoadDate]);
 
+
+GO
+
+CREATE INDEX [IX_PoolCodeGroups_PoolCodeGroups] ON [Dimensions].[PoolCodeGroups] ([PoolCodeGroupdbid],[PoolGroupTitle],[Currentflag])
+

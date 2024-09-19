@@ -11,9 +11,6 @@ AS
   
 		  FROM 
 			[$(PSIReporting)].Dimensions.Students_vw a 
-			left join
-			[$(PSIReporting)].Dimensions.StudentTestAttributes_vw b on
-				a.StudentDBID = b.StudentKey
 			join
 			[$(PSIReporting)].Dimensions.StudentLists_vw c on
 				a.StudentDBID = c.StudentKey
@@ -22,16 +19,17 @@ AS
 				c.StudentListDBID = d.StudentListKey
 			Left join
 			[$(PSIReporting)].dimensions.TestSchedules_vw e on
-				d.TestScheduleKey = e.TestScheduleDBID and b.TestScheduleKey = e.TestScheduleDBID
+				d.TestScheduleKey = e.TestScheduleDBID 
 			join
 			[$(PSIReporting)].Dimensions.TestLists_vw f on
 				d.TestListKey = f.TestListDbId
 			join
 			[$(PSIReporting)].Dimensions.Tests_vw g on
-				f.TestKey = g.TestDbID
+				f.TestKey = g.TestDbID and
+				g.testtitle not like '%survey%' and g.testtitle not like '%practice%'
 			join dw_summarytables.tests.SummaryTestNames  i on
 					g.TestDbID = i.dimensionstestkey 
-
+--comment
 
 		where d.StartDate >= '1/1/2022'
 	End Try

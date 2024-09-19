@@ -36,3 +36,8 @@ Include (TestDBID, AreaKey)
 GO
 
 CREATE INDEX [IX_Tests_SourceTestID] ON [Dimensions].[Tests] ([SourceTestID])
+
+GO
+
+CREATE INDEX [IX_Tests_AreaKey] ON [Dimensions].[Tests] ([Currentflag],[Areakey])
+include ([Testdbid], [TestTitle])

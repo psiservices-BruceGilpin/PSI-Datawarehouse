@@ -22,3 +22,8 @@ CREATE NONCLUSTERED INDEX [IXPoolCodesSourcePoolCodeKey]
 GO
 
 CREATE INDEX [IX_PoolCodes_Poolcodes] ON [Dimensions].[PoolCodes] ([Pooltitle], [Currentflag])
+
+GO
+
+CREATE INDEX [IX_PoolCodes_PoolCodeDBID] ON [Dimensions].[PoolCodes] ([PoolCodeDBID], [Currentflag])
+Include ([PoolCodeGroupKey], [PoolTitle])
