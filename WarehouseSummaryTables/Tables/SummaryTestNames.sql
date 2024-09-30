@@ -2,7 +2,7 @@
 (
 	[SummaryTestNamesDBID] INT NOT NULL Identity(1,1) PRIMARY KEY, 
     [DimensionsTestKey] INT NOT NULL, 
-    [SummaryTestName] VARCHAR(2000) NOT NULL, 
+    [SummaryTestName] VARCHAR(450) NOT NULL, 
     [AccountCode] Varchar(12),
     [CreateDate] DATETIME NOT NULL DEFAULT getdate(), 
     [Scalecut] INT NULL, 

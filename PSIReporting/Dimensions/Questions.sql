@@ -4,6 +4,8 @@
 		SourceQuestionID,
 		QuestionTitle,
 		QuestionDescription,
+		ContentAreaKey,
+		ContentSubAreaKey,
 		QuestionType,
 		QuestionStatus,
 		VersionNum,

@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="165"
-  DTS:VersionGUID="{1E0378B6-E9E0-4D21-91B8-D840662B3B19}">
+  DTS:VersionBuild="207"
+  DTS:VersionGUID="{83F4DFD8-05A9-4DA9-810F-CB20FA0F8A66}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAC6VTA4ebKiDZK6Mf50hi5mAAAAAASAAACgAAAAEAAAAG5HFlwW0CbPVdIKTrNsbV8wAAAAP415IFc4nogkK3wlRKxmk3BXlh6lBSLPQCm7/lDeGDt/tdyEOFY6vxlwlxDWqE/9FAAAAKGrBIPkNk7YTSyHZi0lB8a2n+0R</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACYbivyonKJUGAZlkceRrzYAAAAAASAAACgAAAAEAAAAG5S6J3cdnTmq4wCTKF9U9UwAAAACOGgXow93WZoopVOkaZtYlUlngnKXSfT3zMnVR/Y4u7kp+6qlVDfbW8sdC7iImW4FAAAADpHMHAnySng9hLG3/oz60NLxpMB</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,7 +46,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAXBU2cWtAhdNJCHdeN7P+dAAAAAASAAACgAAAAEAAAAEga3RzJcDoCHlQTgavl9IUwAAAAlD7a5HqJPVIC4HQhnULIeKI6BSWOGxpZIw3syjcUOZNR/1c5Lt8aCI6XLf00nWo5FAAAAEk+gjszAcS3Ptc1yuBKVI34lug0</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAA67WaYrB7OARSvT3e4e6DZAAAAAASAAACgAAAAEAAAAKuXT4oHUI/YrdkvtqJZfgswAAAAe+KWoUBBJ1zShqs6/0SDCpmblgePMzI2nO1OL2A1E9cWHj1jZzf6MgBf/3IZ0w4uFAAAABxUC65nljIQvF8uh87gjuHnnNuD</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -61,7 +61,24 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADC6gDuI/asZ3erdbKtA+sEAAAAAASAAACgAAAAEAAAAPLWKOm39EuaMF2cspUNlvEwAAAA//gz4e2yghylS+BWzTl2VeraJPf0gdlNjCCvTlv0Hd/fKSPmK1JPEQ8igioAZXEBFAAAAKOPXm3WFQSBeHtWRsM5KYJm1Es6</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABPyIudD2uLeWugaGGARIHkAAAAAASAAACgAAAAEAAAAPiGy+vr52xaZPpNcWeSinAwAAAABo5ddQ8GYAB4m886osgACKhtqQRd9LiS4iA0bEPQwzE+CB+mCAqwe3nZrYFWLw2LFAAAAFGiQJEHPMRV8dz18s2OB+eDNG8C</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[lcprodreportingdb.resources.psi.psi_db.bruce.gilpin 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{D768E8BA-3F22-451B-A088-64E5A32CB553}"
+      DTS:ObjectName="lcprodreportingdb.resources.psi.psi_db.bruce.gilpin 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=lcprodreportingdb.resources.psi;User ID=bruce.gilpin;Initial Catalog=psi_db;Provider=SQLNCLI11.1;Application Name=SSIS-Package1-{D768E8BA-3F22-451B-A088-64E5A32CB553}lcprodreportingdb.resources.psi.psi_db.bruce.gilpin 1;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADRvc7RUYM2BmnQEQt8oG76AAAAAASAAACgAAAAEAAAAE2uQg+UMkYx7eRuUtvD1AsYAAAAvE6QY/+gN9QDHy0ZkqB0FkCLE5m/rrGcFAAAAMrC01MYZrSmh9odKYSt84Uv11KL</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -174,7 +191,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAASHkjEpnPjUmqS4e8pGPnAAAAAASAAACgAAAAEAAAAK7CBDQsufTtwFdivK9a5QAwAAAA/6vHcuNzYpBSVeSSLbuvhdvSwJADq9ElW7r/R2TjkQLkad9gYDHlK9mfs/tBnJ+jFAAAAH00SRvvVp13+QluKxcH2cnT+AdT</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAD8fQgZr6iFCcWex1+etIopAAAAAASAAACgAAAAEAAAAFEF34CcE5nESyOT6LrC6BEwAAAAxpLUAtE6EOCuCF9PnCqHy6S2UH2/E+ymUYByGyh0CyqoJnneZkqblbnKNUR09Jg6FAAAAHoKvrPs7iZWd3cskbCcnPFgYpsP</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -191,7 +208,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACatDh5xMKsLYn0L2dpP0nXAAAAAASAAACgAAAAEAAAADrm5/bRuF0dWiMxmS40JBgwAAAAoAU/JOcpB3G/s+MxllUcE/CvHeIZ57RU1e4BDqbC92FmkGBnIxiMZdS04KdYybJ6FAAAAFaSsC8IfTEIDhHhaJ8PJRBB9nzd</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAP1lOsrh/Yths7j3s02Ce8AAAAAASAAACgAAAAEAAAAAKsCoVb1pivozUhjezN8K4wAAAAOdwInHq1dou12kfITUUhQJjr0hZExZg5qbxI89NlxsnylzizQsfD1GsFWJztsT14FAAAANrvZhFahRGnyW32Y1BdaQ3VfrY+</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -206,7 +223,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAANuHRfqgmanlWltG1o6uH/AAAAAASAAACgAAAAEAAAAFuTFbgC6IfXK9QT/+p/Se0wAAAAXWVbqqu0WbZ6mAfHOFPcUQkrrgMvc8IBsfyWXg9TQ3ExxIVFWHppB6YRfFtNnFEkFAAAADgOJFrdB3UKM+yi30u1BpehVOii</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACVpY34gRsw6dkWdQpHR5YgAAAAAASAAACgAAAAEAAAALNtj84ATFG5th6fQ5AJPscwAAAAF/YGboDpU43sPRHXkKiYIkRCZFTSBRE3gjuusuz3Le8cdGkn+v4MkBZPYFNK9Sv2FAAAAA/aFJZ41Gw05UGhubeoP9RhJDAN</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1712,6 +1729,351 @@ banks</property>
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
+      DTS:refId="Package\Booking codes"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{03071B72-8E26-4CE4-B10F-430BB5DFF16C}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Booking codes"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Booking codes\Dev PSI_dw"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="Dev PSI_dw"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[GlobalTestID]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Booking codes\Dev PSI_dw.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[dev-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[dev-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Booking codes\Dev PSI_dw.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Booking codes\Dev PSI_dw.Inputs[OLE DB Destination Input].Columns[Schedule_id]"
+                      cachedDataType="i8"
+                      cachedName="Schedule_id"
+                      externalMetadataColumnId="Package\Booking codes\Dev PSI_dw.Inputs[OLE DB Destination Input].ExternalColumns[Schedule_id]"
+                      lineageId="Package\Booking codes\Prod PSI_DB.Outputs[OLE DB Source Output].Columns[Schedule_id]" />
+                    <inputColumn
+                      refId="Package\Booking codes\Dev PSI_dw.Inputs[OLE DB Destination Input].Columns[global_schedule_Id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="20"
+                      cachedName="global_schedule_Id"
+                      externalMetadataColumnId="Package\Booking codes\Dev PSI_dw.Inputs[OLE DB Destination Input].ExternalColumns[global_schedule_Id]"
+                      lineageId="Package\Booking codes\Prod PSI_DB.Outputs[OLE DB Source Output].Columns[global_schedule_Id]" />
+                    <inputColumn
+                      refId="Package\Booking codes\Dev PSI_dw.Inputs[OLE DB Destination Input].Columns[TestRegn_ID]"
+                      cachedDataType="i8"
+                      cachedName="TestRegn_ID"
+                      externalMetadataColumnId="Package\Booking codes\Dev PSI_dw.Inputs[OLE DB Destination Input].ExternalColumns[TestRegn_ID]"
+                      lineageId="Package\Booking codes\Prod PSI_DB.Outputs[OLE DB Source Output].Columns[TestRegn_ID]" />
+                    <inputColumn
+                      refId="Package\Booking codes\Dev PSI_dw.Inputs[OLE DB Destination Input].Columns[date]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="date"
+                      externalMetadataColumnId="Package\Booking codes\Dev PSI_dw.Inputs[OLE DB Destination Input].ExternalColumns[schdate]"
+                      lineageId="Package\Booking codes\Prod PSI_DB.Outputs[OLE DB Source Output].Columns[date]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Booking codes\Dev PSI_dw.Inputs[OLE DB Destination Input].ExternalColumns[Schedule_id]"
+                      dataType="i8"
+                      name="Schedule_id" />
+                    <externalMetadataColumn
+                      refId="Package\Booking codes\Dev PSI_dw.Inputs[OLE DB Destination Input].ExternalColumns[global_schedule_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      name="global_schedule_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Booking codes\Dev PSI_dw.Inputs[OLE DB Destination Input].ExternalColumns[TestRegn_ID]"
+                      dataType="i8"
+                      name="TestRegn_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Booking codes\Dev PSI_dw.Inputs[OLE DB Destination Input].ExternalColumns[schdate]"
+                      dataType="dbDate"
+                      name="schdate" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Booking codes\Dev PSI_dw.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Booking codes\Dev PSI_dw.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Booking codes\Dev PSI_dw.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Booking codes\Dev PSI_dw.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Booking codes\Dev PSI_dw.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Booking codes\Dev PSI_dw.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Booking codes\Prod PSI_DB"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="Prod PSI_DB"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT 
+a.Schedule_id, a.global_schedule_Id, a.TestRegn_ID, b.date
+  FROM [Candidate_TestSchedule] a 
+  join
+  candidate_testassignment b on
+	a.Schedule_ID = b.Schedule_ID
+where b.date &gt;= '2024-08-29'
+order by b.date asc</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Booking codes\Prod PSI_DB.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[lcprodreportingdb.resources.psi.psi_db.bruce.gilpin 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[lcprodreportingdb.resources.psi.psi_db.bruce.gilpin 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Booking codes\Prod PSI_DB.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Booking codes\Prod PSI_DB.Outputs[OLE DB Source Output].Columns[Schedule_id]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Booking codes\Prod PSI_DB.Outputs[OLE DB Source Output].ExternalColumns[Schedule_id]"
+                      lineageId="Package\Booking codes\Prod PSI_DB.Outputs[OLE DB Source Output].Columns[Schedule_id]"
+                      name="Schedule_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Booking codes\Prod PSI_DB.Outputs[OLE DB Source Output].Columns[global_schedule_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Booking codes\Prod PSI_DB.Outputs[OLE DB Source Output].ExternalColumns[global_schedule_Id]"
+                      length="20"
+                      lineageId="Package\Booking codes\Prod PSI_DB.Outputs[OLE DB Source Output].Columns[global_schedule_Id]"
+                      name="global_schedule_Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Booking codes\Prod PSI_DB.Outputs[OLE DB Source Output].Columns[TestRegn_ID]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Booking codes\Prod PSI_DB.Outputs[OLE DB Source Output].ExternalColumns[TestRegn_ID]"
+                      lineageId="Package\Booking codes\Prod PSI_DB.Outputs[OLE DB Source Output].Columns[TestRegn_ID]"
+                      name="TestRegn_ID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Booking codes\Prod PSI_DB.Outputs[OLE DB Source Output].Columns[date]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Booking codes\Prod PSI_DB.Outputs[OLE DB Source Output].ExternalColumns[date]"
+                      lineageId="Package\Booking codes\Prod PSI_DB.Outputs[OLE DB Source Output].Columns[date]"
+                      name="date"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Booking codes\Prod PSI_DB.Outputs[OLE DB Source Output].ExternalColumns[Schedule_id]"
+                      dataType="i8"
+                      name="Schedule_id" />
+                    <externalMetadataColumn
+                      refId="Package\Booking codes\Prod PSI_DB.Outputs[OLE DB Source Output].ExternalColumns[global_schedule_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      name="global_schedule_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Booking codes\Prod PSI_DB.Outputs[OLE DB Source Output].ExternalColumns[TestRegn_ID]"
+                      dataType="i8"
+                      name="TestRegn_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Booking codes\Prod PSI_DB.Outputs[OLE DB Source Output].ExternalColumns[date]"
+                      dataType="dbTimeStamp"
+                      name="date" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Booking codes\Prod PSI_DB.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Booking codes\Prod PSI_DB.Outputs[OLE DB Source Error Output].Columns[Schedule_id]"
+                      dataType="i8"
+                      lineageId="Package\Booking codes\Prod PSI_DB.Outputs[OLE DB Source Error Output].Columns[Schedule_id]"
+                      name="Schedule_id" />
+                    <outputColumn
+                      refId="Package\Booking codes\Prod PSI_DB.Outputs[OLE DB Source Error Output].Columns[global_schedule_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      lineageId="Package\Booking codes\Prod PSI_DB.Outputs[OLE DB Source Error Output].Columns[global_schedule_Id]"
+                      name="global_schedule_Id" />
+                    <outputColumn
+                      refId="Package\Booking codes\Prod PSI_DB.Outputs[OLE DB Source Error Output].Columns[TestRegn_ID]"
+                      dataType="i8"
+                      lineageId="Package\Booking codes\Prod PSI_DB.Outputs[OLE DB Source Error Output].Columns[TestRegn_ID]"
+                      name="TestRegn_ID" />
+                    <outputColumn
+                      refId="Package\Booking codes\Prod PSI_DB.Outputs[OLE DB Source Error Output].Columns[date]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Booking codes\Prod PSI_DB.Outputs[OLE DB Source Error Output].Columns[date]"
+                      name="date" />
+                    <outputColumn
+                      refId="Package\Booking codes\Prod PSI_DB.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Booking codes\Prod PSI_DB.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Booking codes\Prod PSI_DB.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Booking codes\Prod PSI_DB.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Booking codes.Paths[OLE DB Source Output]"
+              endId="Package\Booking codes\Dev PSI_dw.Inputs[OLE DB Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\Booking codes\Prod PSI_DB.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
       DTS:refId="Package\Dev to QA Transfer"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
@@ -1741,7 +2103,7 @@ banks</property>
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[DmIGFinalPoints]</property>
+                  name="OpenRowset">[dbo].[GlobalTestID]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -1798,48 +2160,52 @@ banks</property>
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Dev to QA Transfer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[sscr-guid]"
-                      cachedDataType="guid"
-                      cachedName="sscr-guid"
-                      externalMetadataColumnId="Package\Dev to QA Transfer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[sscr-Guid]"
-                      lineageId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Output].Columns[sscr-guid]" />
+                      refId="Package\Dev to QA Transfer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Schedule_id]"
+                      cachedDataType="i8"
+                      cachedName="Schedule_id"
+                      externalMetadataColumnId="Package\Dev to QA Transfer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Schedule_id]"
+                      lineageId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Output].Columns[Schedule_id]" />
                     <inputColumn
-                      refId="Package\Dev to QA Transfer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[sscr-dmfinalpoints]"
-                      cachedDataType="r4"
-                      cachedName="sscr-dmfinalpoints"
-                      externalMetadataColumnId="Package\Dev to QA Transfer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[sscr-dmfinalpoints]"
-                      lineageId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Output].Columns[sscr-dmfinalpoints]" />
+                      refId="Package\Dev to QA Transfer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[global_schedule_Id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="20"
+                      cachedName="global_schedule_Id"
+                      externalMetadataColumnId="Package\Dev to QA Transfer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[global_schedule_Id]"
+                      lineageId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Output].Columns[global_schedule_Id]" />
                     <inputColumn
-                      refId="Package\Dev to QA Transfer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[sscr-igfinalpoints]"
-                      cachedDataType="r4"
-                      cachedName="sscr-igfinalpoints"
-                      externalMetadataColumnId="Package\Dev to QA Transfer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[sscr-igfinalpoints]"
-                      lineageId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Output].Columns[sscr-igfinalpoints]" />
+                      refId="Package\Dev to QA Transfer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TestRegn_ID]"
+                      cachedDataType="i8"
+                      cachedName="TestRegn_ID"
+                      externalMetadataColumnId="Package\Dev to QA Transfer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TestRegn_ID]"
+                      lineageId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Output].Columns[TestRegn_ID]" />
                     <inputColumn
-                      refId="Package\Dev to QA Transfer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[sscr-startdate]"
-                      cachedDataType="dbTimeStamp"
-                      cachedName="sscr-startdate"
-                      externalMetadataColumnId="Package\Dev to QA Transfer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[sscr-startdate]"
-                      lineageId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Output].Columns[sscr-startdate]" />
+                      refId="Package\Dev to QA Transfer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[schdate]"
+                      cachedDataType="dbDate"
+                      cachedName="schdate"
+                      externalMetadataColumnId="Package\Dev to QA Transfer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[schdate]"
+                      lineageId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Output].Columns[schdate]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Dev to QA Transfer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[sscr-Guid]"
-                      dataType="guid"
-                      name="sscr-Guid" />
+                      refId="Package\Dev to QA Transfer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Schedule_id]"
+                      dataType="i8"
+                      name="Schedule_id" />
                     <externalMetadataColumn
-                      refId="Package\Dev to QA Transfer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[sscr-dmfinalpoints]"
-                      dataType="r4"
-                      name="sscr-dmfinalpoints" />
+                      refId="Package\Dev to QA Transfer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[global_schedule_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      name="global_schedule_Id" />
                     <externalMetadataColumn
-                      refId="Package\Dev to QA Transfer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[sscr-igfinalpoints]"
-                      dataType="r4"
-                      name="sscr-igfinalpoints" />
+                      refId="Package\Dev to QA Transfer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TestRegn_ID]"
+                      dataType="i8"
+                      name="TestRegn_ID" />
                     <externalMetadataColumn
-                      refId="Package\Dev to QA Transfer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[sscr-startdate]"
-                      dataType="dbTimeStamp"
-                      name="sscr-startdate" />
+                      refId="Package\Dev to QA Transfer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[schdate]"
+                      dataType="dbDate"
+                      name="schdate" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -1884,7 +2250,7 @@ banks</property>
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[DmIGFinalPoints]</property>
+                  name="OpenRowset">[dbo].[GlobalTestID]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -1893,15 +2259,14 @@ banks</property>
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">Select
-[sscr-guid],
-[sscr-dmfinalpoints],
-[sscr-igfinalpoints],
-[sscr-startdate]
-from DMIGFinalPoints
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT [Schedule_id]
+      ,[global_schedule_Id]
+      ,[TestRegn_ID]
+      ,[schdate]
+  FROM [dbo].[GlobalTestID]
 where
-[sscr-startdate] &gt; '2022-11-28 18:51:52.967'
-order by [sscr-startdate]</property>
+schdate between '2024-09-10' and '2024-09-26'
+order by schdate asc</property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -1938,60 +2303,64 @@ order by [sscr-startdate]</property>
                   name="OLE DB Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Output].Columns[sscr-dmfinalpoints]"
-                      dataType="r4"
+                      refId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Output].Columns[Schedule_id]"
+                      dataType="i8"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[sscr-dmfinalpoints]"
-                      lineageId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Output].Columns[sscr-dmfinalpoints]"
-                      name="sscr-dmfinalpoints"
+                      externalMetadataColumnId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Schedule_id]"
+                      lineageId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Output].Columns[Schedule_id]"
+                      name="Schedule_id"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Output].Columns[sscr-igfinalpoints]"
-                      dataType="r4"
+                      refId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Output].Columns[global_schedule_Id]"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[sscr-igfinalpoints]"
-                      lineageId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Output].Columns[sscr-igfinalpoints]"
-                      name="sscr-igfinalpoints"
+                      externalMetadataColumnId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[global_schedule_Id]"
+                      length="20"
+                      lineageId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Output].Columns[global_schedule_Id]"
+                      name="global_schedule_Id"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Output].Columns[sscr-startdate]"
-                      dataType="dbTimeStamp"
+                      refId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Output].Columns[TestRegn_ID]"
+                      dataType="i8"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[sscr-startdate]"
-                      lineageId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Output].Columns[sscr-startdate]"
-                      name="sscr-startdate"
+                      externalMetadataColumnId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[TestRegn_ID]"
+                      lineageId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Output].Columns[TestRegn_ID]"
+                      name="TestRegn_ID"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Output].Columns[sscr-guid]"
-                      dataType="guid"
+                      refId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Output].Columns[schdate]"
+                      dataType="dbDate"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[sscr-guid]"
-                      lineageId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Output].Columns[sscr-guid]"
-                      name="sscr-guid"
+                      externalMetadataColumnId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[schdate]"
+                      lineageId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Output].Columns[schdate]"
+                      name="schdate"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[sscr-dmfinalpoints]"
-                      dataType="r4"
-                      name="sscr-dmfinalpoints" />
+                      refId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Schedule_id]"
+                      dataType="i8"
+                      name="Schedule_id" />
                     <externalMetadataColumn
-                      refId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[sscr-igfinalpoints]"
-                      dataType="r4"
-                      name="sscr-igfinalpoints" />
+                      refId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[global_schedule_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      name="global_schedule_Id" />
                     <externalMetadataColumn
-                      refId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[sscr-startdate]"
-                      dataType="dbTimeStamp"
-                      name="sscr-startdate" />
+                      refId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[TestRegn_ID]"
+                      dataType="i8"
+                      name="TestRegn_ID" />
                     <externalMetadataColumn
-                      refId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[sscr-guid]"
-                      dataType="guid"
-                      name="sscr-guid" />
+                      refId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[schdate]"
+                      dataType="dbDate"
+                      name="schdate" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -2000,25 +2369,27 @@ order by [sscr-startdate]</property>
                   name="OLE DB Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[sscr-guid]"
-                      dataType="guid"
-                      lineageId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[sscr-guid]"
-                      name="sscr-guid" />
+                      refId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Schedule_id]"
+                      dataType="i8"
+                      lineageId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Schedule_id]"
+                      name="Schedule_id" />
                     <outputColumn
-                      refId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[sscr-dmfinalpoints]"
-                      dataType="r4"
-                      lineageId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[sscr-dmfinalpoints]"
-                      name="sscr-dmfinalpoints" />
+                      refId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[global_schedule_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      lineageId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[global_schedule_Id]"
+                      name="global_schedule_Id" />
                     <outputColumn
-                      refId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[sscr-igfinalpoints]"
-                      dataType="r4"
-                      lineageId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[sscr-igfinalpoints]"
-                      name="sscr-igfinalpoints" />
+                      refId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[TestRegn_ID]"
+                      dataType="i8"
+                      lineageId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[TestRegn_ID]"
+                      name="TestRegn_ID" />
                     <outputColumn
-                      refId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[sscr-startdate]"
-                      dataType="dbTimeStamp"
-                      lineageId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[sscr-startdate]"
-                      name="sscr-startdate" />
+                      refId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[schdate]"
+                      dataType="dbDate"
+                      lineageId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[schdate]"
+                      name="schdate" />
                     <outputColumn
                       refId="Package\Dev to QA Transfer\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
@@ -10795,6 +11166,10 @@ where [refTable].[SourceTestScheduleID] = ?</property>
           Id="Package\Banks"
           TopLeft="221,84" />
         <NodeLayout
+          Size="151,42"
+          Id="Package\Booking codes"
+          TopLeft="347,336" />
+        <NodeLayout
           Size="173,42"
           Id="Package\Dev to QA Transfer"
           TopLeft="344,156" />
@@ -11029,10 +11404,69 @@ where [refTable].[SourceTestScheduleID] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
+    design-time-name="Package\Booking codes">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="144,42"
+          Id="Package\Booking codes\Prod PSI_DB"
+          TopLeft="263,59" />
+        <NodeLayout
+          Size="139,42"
+          Id="Package\Booking codes\Dev PSI_dw"
+          TopLeft="259,215" />
+        <EdgeLayout
+          Id="Package\Booking codes.Paths[OLE DB Source Output]"
+          TopLeft="331.75,101">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,114"
+              Start="0,0"
+              End="0,106.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,106.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Booking codes\Dev PSI_dw">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Booking codes\Prod PSI_DB">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
     design-time-name="Package\Dev to QA Transfer">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="157,42"
           Id="Package\Dev to QA Transfer\OLE DB Source"
@@ -11072,9 +11506,7 @@ where [refTable].[SourceTestScheduleID] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -11915,7 +12347,7 @@ where [refTable].[SourceTestScheduleID] = ?</property>
     design-time-name="Package\SchoolClassCodes">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="177,42"
           Id="Package\SchoolClassCodes\OLE DB Destination"
@@ -11947,7 +12379,9 @@ where [refTable].[SourceTestScheduleID] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11969,7 +12403,9 @@ where [refTable].[SourceTestScheduleID] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -12103,6 +12539,14 @@ where [refTable].[SourceTestScheduleID] = ?</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="124,42"
+          Id="Package\Student Codes\Lookup 1"
+          TopLeft="809,296" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Student Codes\OLE DB Destination"
+          TopLeft="796,524" />
+        <NodeLayout
           Size="157,42"
           Id="Package\Student Codes\OLE DB Source"
           TopLeft="786,110" />
@@ -12110,64 +12554,34 @@ where [refTable].[SourceTestScheduleID] = ?</property>
           Size="115,42"
           Id="Package\Student Codes\Lookup"
           TopLeft="812,207" />
-        <EdgeLayout
-          Id="Package\Student Codes.Paths[OLE DB Source Output]"
-          TopLeft="867,152">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,55"
-              Start="0,0"
-              End="0,47.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,47.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <NodeLayout
           Size="124,42"
-          Id="Package\Student Codes\Lookup 1"
-          TopLeft="809,296" />
+          Id="Package\Student Codes\Lookup 3"
+          TopLeft="815,380" />
         <EdgeLayout
-          Id="Package\Student Codes.Paths[Lookup Match Output]"
-          TopLeft="870.25,249">
+          Id="Package\Student Codes.Paths[Lookup Match Output2]"
+          TopLeft="880.75,422">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,47"
+              EndConnector="0,102"
               Start="0,0"
-              End="0,39.5">
+              End="0,94.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,39.5" />
+                    End="0,94.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,13.9453125,96.3827734375,11.609375"
+              BoundingBox="-48.19138671875,41.4453125,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="177,42"
-          Id="Package\Student Codes\OLE DB Destination"
-          TopLeft="796,524" />
-        <NodeLayout
-          Size="124,42"
-          Id="Package\Student Codes\Lookup 3"
-          TopLeft="815,380" />
         <EdgeLayout
           Id="Package\Student Codes.Paths[Lookup Match Output1]"
           TopLeft="874,338">
@@ -12193,26 +12607,50 @@ where [refTable].[SourceTestScheduleID] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Student Codes.Paths[Lookup Match Output2]"
-          TopLeft="880.75,422">
+          Id="Package\Student Codes.Paths[Lookup Match Output]"
+          TopLeft="870.25,249">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,102"
+              EndConnector="0,47"
               Start="0,0"
-              End="0,94.5">
+              End="0,39.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,94.5" />
+                    End="0,39.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,41.4453125,96.3827734375,11.609375"
+              BoundingBox="-48.19138671875,13.9453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Student Codes.Paths[OLE DB Source Output]"
+          TopLeft="867,152">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,55"
+              Start="0,0"
+              End="0,47.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,47.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -12465,7 +12903,9 @@ where [refTable].[SourceTestScheduleID] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12583,7 +13023,9 @@ where [refTable].[SourceTestScheduleID] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

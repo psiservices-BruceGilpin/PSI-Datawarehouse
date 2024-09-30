@@ -20,6 +20,8 @@ CREATE VIEW [Candidate].[CandidateSchedule_vw]
       ,[PriorDeliveryMethod]
       ,[SecureBrowserURL]
       ,[DeliveryMethodKey]
+      ,[BookingCode]
+      ,[TestRegnKey]
   FROM [$(PSI_DW)].Candidate.[TestSchedule] a left join
        [$(PSI_DW)].dbo.DimLookups b on
         a.[Status] = b.LookupName join

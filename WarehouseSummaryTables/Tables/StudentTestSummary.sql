@@ -36,7 +36,8 @@
     [Recertification] CHAR NULL, 
     [Reapplicant] CHAR NULL, 
     [Checksum] BIGINT NOT NULL, 
-    [CorrectPercentage] DECIMAL(6, 2) NULL 
+    [CorrectPercentage] DECIMAL(6, 2) NULL, 
+    [CrossRefKey] INT NULL 
 )
 
 GO
@@ -61,3 +62,7 @@ GO
 
 CREATE INDEX [IX_StudentTestSummary_TestTitle] ON [Students].[StudentTestSummary] ([TestTitle])
 Include ([DWTestKey],[DWStudentKey])
+
+GO
+
+CREATE INDEX [IX_StudentTestSummary_CrossRefKey] ON [Students].[StudentTestSummary] ([CrossRefKey])

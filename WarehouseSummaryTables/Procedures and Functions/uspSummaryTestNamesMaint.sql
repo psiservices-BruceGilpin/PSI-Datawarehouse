@@ -3,29 +3,32 @@
 AS
 	Begin Try
 		Insert into Tests.SummaryTestNames
-		(DimensionsTestKey, SummaryTestName, AccountCode, Scalecut, RawCut)
-		select 
-			a.testdbid, b.testdesc, a.AreaKey, c.ScaleCut, c.Rawcut
-		from
-			psi_reporting.dimensions.tests_vw a
-		Join
-			(
-			select
-			distinct
-			testdesc
-			from
-			psi_reporting.dimensions.tests_vw ) b
-			on 
-			a.TestDesc = b.TestDesc
+(DimensionsTestKey, SummaryTestName, AccountCode, Scalecut, RawCut)
+select 
+	a.testdbid, isnull(a.testdesc,a.testtitle), a.AreaKey, c.ScaleCut, c.Rawcut
+from
+	
+	(
+	select distinct
+	TestDbID,
+	testdesc,
+	TestTitle,
+	AreaKey
+	from
+	psi_reporting.dimensions.tests_vw ) a
 
-		left join
-			psi_reporting.dimensions.ampforms_vw c on
-		 		a.TestDbID = c.FormTestKey
-		left join
-			dw_summarytables.tests.summarytestnames d on
-			a.testdbid = d.DimensionsTestKey
-		where
-			d.DimensionsTestKey is null
+left join
+	psi_reporting.dimensions.ampforms_vw c on
+ 		a.TestDbID = c.FormTestKey
+left join
+	dw_summarytables.tests.summarytestnames d on
+	a.testdbid = d.DimensionsTestKey
+join
+	PSI_Reporting.dimensions.areas_vw e on
+	 a.AreaKey = e.AreaDBID
+where
+	d.summarytestnamesdbid is null
+	
 
 
 

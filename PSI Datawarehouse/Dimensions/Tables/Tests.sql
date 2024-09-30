@@ -31,13 +31,10 @@ GO
 
 
 CREATE INDEX [IX_Tests_CurrentFlag] ON [Dimensions].[Tests] ([CurrentFlag],[TestTitle])
-Include (TestDBID, AreaKey)
+Include (TestDBID, AreaKey,  TestDesc)
 
 GO
 
 CREATE INDEX [IX_Tests_SourceTestID] ON [Dimensions].[Tests] ([SourceTestID])
 
 GO
-
-CREATE INDEX [IX_Tests_AreaKey] ON [Dimensions].[Tests] ([Currentflag],[Areakey])
-include ([Testdbid], [TestTitle])

@@ -83,6 +83,9 @@ AS
 		declare @maxloaddate datetime
 		select @maxloaddate = max(loaddatetime)
 		from DW_SummaryTables.Students.StudentTestSummary
+
+		if @maxloaddate < '1/1/2022'  
+			set @maxloaddate = '1/1/2022'
 		
 		Insert #testdelta (
 			[DWTestScoreKey],
@@ -150,13 +153,13 @@ AS
 	,d.Restarts
 	,g.TestVersnum
 	,d.Loaddate
-	,checksum(testdbid, b.clientcode, e.testpackagekey,a.studentdbid, a.studentaltid,a.firstname, a.lastname,isnull(a.maidenname,' '),g.testtitle,h.formname,e.schedulestart,d.startdate,d.howlong,d.finalpoints,isnull(d.scaledscore,0),d.scorepoints,d.retake, d.AdaTime,d.extratime)
+	,checksum(testdbid, b.clientcode, e.testpackagekey,a.studentdbid, a.studentaltid,a.firstname, a.lastname,isnull(a.maidenname,' '),g.testtitle,h.formname,e.schedulestart,d.startdate,d.howlong,d.finalpoints,isnull(d.scaledscore,0),d.scorepoints,d.Retake, d.AdaTime,d.extratime)
 
 from 
   [PSI_DW].dimensions.Students_vw a 
   join [PSI_DW].Dimensions.StudentTestAttributes b on a.studentdbid = b.StudentKey
   join [PSI_DW].dimensions.studentlists_vw c on a.studentdbid = c.studentkey 
-  join [PSI_DW].dimensions.StudentScores d on c.studentlistdbid = d.studentlistkey and d.CurrentFlag = 0
+  join [PSI_DW].dimensions.StudentScores d on c.studentlistdbid = d.studentlistkey and d.currentflag = 0
   join [PSI_DW].dimensions.TestSchedules_vw e on d.TestScheduleKey = e.TestScheduleDBID and b.TestScheduleKey = e.testscheduledbid
   join [PSI_DW].dimensions.testlists_vw f on d.testlistkey = f.testlistdbid 
   join [PSI_DW].Dimensions.Tests_vw g on f.testkey = g.testdbid 
@@ -167,8 +170,9 @@ from
 
 where 		
 			j.DWTestScoreKey is null and
-			d.pfa is not null
+			d.pfa in ('P','F','A','G')
 		and j.DWStudentKey is null or d.loaddate > @Maxloaddate
+		and a.lastname != 'MYLASTNAMEISLONGER'
 	
 		create index idx1 on #TestDelta (dwStudentKey, DWTestKey, TestDate asc);
 			

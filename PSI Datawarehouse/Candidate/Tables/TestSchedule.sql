@@ -21,6 +21,8 @@
     [PriorDeliveryMethod]       VARCHAR (20)   NULL,
     [SecureBrowserURL]          VARCHAR (1000) NULL,
     [DeliveryMethodKey]         INT            NULL,
+    [BookingCode] VARCHAR(25) NULL, 
+    [TestRegnKey] BIGINT NULL, 
     PRIMARY KEY CLUSTERED ([CandidateTestScheduleId] ASC),
     CONSTRAINT [FK_TestSchedule_Candidates] FOREIGN KEY ([CandidateKey]) REFERENCES [Candidate].[Candidates] ([CandidateId]),
     CONSTRAINT [FK_TestSchedule_DimCountries] FOREIGN KEY ([CountryKey]) REFERENCES [dbo].[DimCountries] ([CountryID]),
@@ -42,4 +44,10 @@ CREATE NONCLUSTERED INDEX [IX_TestSchedule_CandidateKey]
 GO
 CREATE NONCLUSTERED INDEX [IX_TestSchedule_CandidateTestScheduleDBID]
     ON [Candidate].[TestSchedule]([CandidateTestScheduleDBID] ASC) WHERE ([CurrentFlag]=(0));
+
+
+GO
+
+CREATE INDEX [BookingCode] ON [Candidate].[TestSchedule] ([BookingCode])
+INCLUDE ([SourceTestScheduleKey],[SourceSystemKey],[CandidateKey],[TestCenterScheduleKey],[ScheduleDate],[CountryKey],[TimeZoneKey],[CreatedDate],[runid],[Checksum],[IsReschedule],[Status],[CandidateTestScheduleDBID],[CurrentFlag],[PDiddyID],[ResultsExported],[PDiddyTimeStamp],[MultiMediaReady],[PriorDeliveryMethod],[SecureBrowserURL],[DeliveryMethodKey],[TestRegnKey])
 
