@@ -4,7 +4,6 @@
 CREATE VIEW [Test].[Tests_vw]
 as
 SELECT [TestDBKey] TestDBID
-      ,[SourceTestKey]
       ,[SourceSystemKey]
       ,[TestName]
       ,[TestDescription]
@@ -18,8 +17,6 @@ SELECT [TestDBKey] TestDBID
       ,[ContentType]
       ,[ExamID]
       ,[ApiToken]
-      ,[CreatedDate]
-      ,[RunID]
       ,[TestStatusKey]
       ,[TestTypeKey]
      
