@@ -413,4 +413,81 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="YTDScoreTotal" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="b2f1ed1b-1508-448a-99b1-bfefb60c6300" ChangeDateTime="10/10/2024 15:32:42">
+    <Property Name="ElementName" Value="[AtlasLC].[CandidateTestResults].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[AtlasLC].[CandidateTestResults]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TestResultId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ddf8a096-878a-4627-ac80-b7bfb9027254" ChangeDateTime="10/10/2024 15:35:14">
+    <Property Name="ElementName" Value="[AtlasLC].[CandidateTestResults].[CandidateID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[AtlasLC].[CandidateTestResults]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CandidateKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="da9625e7-33e5-49d3-84c9-7440dbd7683a" ChangeDateTime="10/10/2024 15:41:17">
+    <Property Name="ElementName" Value="[Candidate].[IDTypes].[CandidateType]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Candidate].[IDTypes]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CandidateIDType" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d4d617ea-5ac8-4d97-89b1-b3877000f101" ChangeDateTime="10/10/2024 18:30:37">
+    <Property Name="ElementName" Value="[AtlasLC].[CandidateTestResults].[TestResultId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[AtlasLC].[CandidateTestResults]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TestResultDBId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d8b8a9be-e909-48e6-891d-d8466fbae38b" ChangeDateTime="10/10/2024 18:42:54">
+    <Property Name="ElementName" Value="[AtlasLC].[CandidateTestResults].[IX_CandidateTestResults_Column]" />
+    <Property Name="ElementType" Value="SqlIndex" />
+    <Property Name="ParentElementName" Value="[AtlasLC].[CandidateTestResults]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[IX_CandidateTestResults_TestKey]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="25775e10-d254-4eb6-a4aa-051deae50d97" ChangeDateTime="10/11/2024 13:33:31">
+    <Property Name="ElementName" Value="[Staging].[AtlasLCKeys].[Sch]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Staging].[AtlasLCKeys]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ScheduleID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6b8655a2-3529-434f-bec0-3db8f3866876" ChangeDateTime="10/11/2024 15:39:02">
+    <Property Name="ElementName" Value="[Candidates].[IDTypes].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Candidates].[IDTypes]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CandidateTypeId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="56931df6-035d-40e6-81cc-9d7f443c50f3" ChangeDateTime="10/11/2024 15:40:03">
+    <Property Name="ElementName" Value="[Staging].[AtlasLCKeys].[CandidateIDType]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Staging].[AtlasLCKeys]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CandidateIDTypeKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="1c933ba0-c878-48d6-8cec-8208b7e6d957" ChangeDateTime="10/11/2024 15:51:25">
+    <Property Name="ElementName" Value="[AtlasLC].[CandidateTestResultKeys].[CandidateIDType]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[AtlasLC].[CandidateTestResultKeys]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CandidateIDTypeKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="af4f2715-8db8-4d3d-a958-478f6caf9f69" ChangeDateTime="10/11/2024 15:53:50">
+    <Property Name="ElementName" Value="[AtlasLC].[CandidateTestResultKeys].[AssignedPortion]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[AtlasLC].[CandidateTestResultKeys]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AssignedPortionKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6837e3c7-90ba-4744-b6ae-430c23ffa767" ChangeDateTime="10/11/2024 15:53:54">
+    <Property Name="ElementName" Value="[AtlasLC].[CandidateTestResultKeys].[TestPortion]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[AtlasLC].[CandidateTestResultKeys]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TestPortionKey" />
+  </Operation>
 </Operations>

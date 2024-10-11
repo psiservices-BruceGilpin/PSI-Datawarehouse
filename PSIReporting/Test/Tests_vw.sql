@@ -5,6 +5,7 @@ CREATE VIEW [Test].[Tests_vw]
 as
 SELECT [TestDBKey] TestDBID
       ,[SourceSystemKey]
+      ,[SourceTestKey]
       ,[TestName]
       ,[TestDescription]
       ,[CategoryKey]

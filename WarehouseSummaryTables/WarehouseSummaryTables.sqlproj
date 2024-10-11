@@ -68,7 +68,6 @@
     <Build Include="Security\Tests.sql" />
     <Build Include="Security\Students.sql" />
     <Build Include="Tables\StudentTestSummary.sql" />
-    <Build Include="Security\Schema1.sql" />
     <Build Include="Security\AtlasLC.sql" />
     <Build Include="Tables\BankGroupSummary.sql" />
     <Build Include="Tables\BankCategorySummary.sql" />
@@ -78,7 +77,6 @@
     <Build Include="Views\SummaryTestNames_vw.sql" />
     <Build Include="Procedures and Functions\DailySummaryInsert.sql" />
     <Build Include="Security\Tdlr.sql" />
-    <Build Include="Security\Schema1_1.sql" />
     <Build Include="Security\cai.sql" />
     <Build Include="Tables\DailyItemSummary.sql" />
     <Build Include="Tables\TestScoreSummary.sql" />
@@ -93,6 +91,13 @@
     <Build Include="Procedures and Functions\uspQuestionStatsAnalysis.sql" />
     <Build Include="Tables\KeyCrossReference.sql" />
     <Build Include="Scripts\Synomyms.sql" />
+    <Build Include="Tables\CandidateTestResultKeys.sql" />
+    <Build Include="Tables\IDTypes.sql" />
+    <Build Include="Security\Candidates.sql" />
+    <Build Include="Security\Dimensions.sql" />
+    <Build Include="Security\Staging.sql" />
+    <Build Include="Tables\AtlasLCKeys.sql" />
+    <Build Include="Procedures and Functions\uspLoadAtlasLCKeys.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Dev.publish.xml" />

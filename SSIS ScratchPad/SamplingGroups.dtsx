@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="207"
-  DTS:VersionGUID="{83F4DFD8-05A9-4DA9-810F-CB20FA0F8A66}">
+  DTS:VersionBuild="220"
+  DTS:VersionGUID="{97727797-2158-4B46-9B7C-3E2C2D2F2B39}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACYbivyonKJUGAZlkceRrzYAAAAAASAAACgAAAAEAAAAG5S6J3cdnTmq4wCTKF9U9UwAAAACOGgXow93WZoopVOkaZtYlUlngnKXSfT3zMnVR/Y4u7kp+6qlVDfbW8sdC7iImW4FAAAADpHMHAnySng9hLG3/oz60NLxpMB</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAB0xyk2T/dY+pMofV+Jick/AAAAAASAAACgAAAAEAAAAOAYUOOqB13BvFPWxmlbpTIwAAAAt2ED21O3JVV5/MSEXxE6tpg6g8V9sQas/J5+btqSGMC4CszHrGWk1U9tly38+iN5FAAAAK72UgUYL1KPbaYogAsO/EDTKtKB</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -42,11 +42,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=dev-dwdb01.a0f90e80fb41.database.windows.net;User ID=bruce.gilpin;Initial Catalog=PSI_DW;Provider=MSOLEDBSQL19.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=dev-dwdb01.a0f90e80fb41.database.windows.net;User ID=bruce.gilpin;Initial Catalog=DW_SummaryTables;Provider=MSOLEDBSQL19.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Package1-{9F869DD0-FE30-4D36-9F7F-6AE56DF2EDC3}dev-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin 1;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAA67WaYrB7OARSvT3e4e6DZAAAAAASAAACgAAAAEAAAAKuXT4oHUI/YrdkvtqJZfgswAAAAe+KWoUBBJ1zShqs6/0SDCpmblgePMzI2nO1OL2A1E9cWHj1jZzf6MgBf/3IZ0w4uFAAAABxUC65nljIQvF8uh87gjuHnnNuD</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAMSKgyb3C+H1eebP0Yk71oAAAAAASAAACgAAAAEAAAAKIrRCovnlVH3u0m9AS0fZAwAAAA2YlbYtwEUlJArbbT02D1YLw3lFTfaL7kOWvUfdVRGK5qiAHZ8IdCAzVOsUMonWDjFAAAAPZxOr7oml4LAh1xJg/BgNKbokTz</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -61,7 +61,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABPyIudD2uLeWugaGGARIHkAAAAAASAAACgAAAAEAAAAPiGy+vr52xaZPpNcWeSinAwAAAABo5ddQ8GYAB4m886osgACKhtqQRd9LiS4iA0bEPQwzE+CB+mCAqwe3nZrYFWLw2LFAAAAFGiQJEHPMRV8dz18s2OB+eDNG8C</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACxSYjqhqZ490yvEfPE6583AAAAAASAAACgAAAAEAAAAMTxI3rCm4tf5+rlxvfcU+swAAAAJ8IaS+3L90UVbIV7KSqJhK52iXyOc63R2mWrfx2/+ia4iY+gwkdyb1prHzZXT2LRFAAAAGvx4+TwrmUQTH9iMFgGJd92KK1z</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -78,7 +78,24 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADRvc7RUYM2BmnQEQt8oG76AAAAAASAAACgAAAAEAAAAE2uQg+UMkYx7eRuUtvD1AsYAAAAvE6QY/+gN9QDHy0ZkqB0FkCLE5m/rrGcFAAAAMrC01MYZrSmh9odKYSt84Uv11KL</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAB1KP34C9kb3q017+0gAqK8AAAAAASAAACgAAAAEAAAANSaskw53N35wn1GP0L6ldQYAAAAXK9sq/ncCLsnFnP8ycxJ7V8Is7PYpB7pFAAAAIQgcs6wbu4IRrqJE1wZxdTPMaxz</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[lcprodreportingdb.resources.psi.psi_db.bruce.gilpin 2]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{67C4213B-4009-426C-B426-AB929FE6875A}"
+      DTS:ObjectName="lcprodreportingdb.resources.psi.psi_db.bruce.gilpin 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=lcprodreportingdb.resources.psi;User ID=bruce.gilpin;Initial Catalog=psi_db;Provider=SQLNCLI11.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAD0VyLIBRlcUpdnhPB72/QpAAAAAASAAACgAAAAEAAAACTTngtlDlS7+FbT+x6fJbAYAAAAMw45kremmucJZtrJBTvhn04W0a6P6IQxFAAAANKbRFkE0t4gfMV7w25eA8SKWiKI</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -191,7 +208,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAD8fQgZr6iFCcWex1+etIopAAAAAASAAACgAAAAEAAAAFEF34CcE5nESyOT6LrC6BEwAAAAxpLUAtE6EOCuCF9PnCqHy6S2UH2/E+ymUYByGyh0CyqoJnneZkqblbnKNUR09Jg6FAAAAHoKvrPs7iZWd3cskbCcnPFgYpsP</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABoXTcja3OhIRS5VXGqDeH+AAAAAASAAACgAAAAEAAAALi6UJNop71yPUKy+hIOcVMwAAAAgIz8vqCbunFd55RqPmFgTx//SkHsjqRvctw5duB0pPGX/dfLZVnriSoP+6ud5PO1FAAAAHMO6wwNGxek/mfiKp13W4OS/do9</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -204,11 +221,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=uat-dwdb01.a0f90e80fb41.database.windows.net;User ID=Bruce.gilpin;Initial Catalog=PSI_DW;Provider=MSOLEDBSQL19.1;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=uat-dwdb01.a0f90e80fb41.database.windows.net;User ID=Bruce.Gilpin;Initial Catalog=DW_SummaryTables;Provider=MSOLEDBSQL19.1;Auto Translate=False;Application Name=SSIS-Package1-{C2A4F23A-DDDF-4C91-B0E1-DB46AC72A43B}uat-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.Bruce.gilpin;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAP1lOsrh/Yths7j3s02Ce8AAAAAASAAACgAAAAEAAAAAKsCoVb1pivozUhjezN8K4wAAAAOdwInHq1dou12kfITUUhQJjr0hZExZg5qbxI89NlxsnylzizQsfD1GsFWJztsT14FAAAANrvZhFahRGnyW32Y1BdaQ3VfrY+</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACaVOG+PT4mU9Ga0GgEFj/iAAAAAASAAACgAAAAEAAAAG5Yrd+cYWC965zjvRvcwaswAAAAdZZTIzqO24RmpHRGvcgOHCIvAHQQQ6styr7Be+w+0x2IN8i3soloVvo6iTBmoIBaFAAAAGaa2UeRgXo1OMPv3wkJ93jDMEAr</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -219,11 +236,11 @@
       DTS:ObjectName="uat-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin1">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=uat-dwdb01.a0f90e80fb41.database.windows.net;User ID=bruce.gilpin;Initial Catalog=PSI_DW;Persist Security Info=True;Application Name=SSIS-Package1-{E5F16C73-7844-4E4C-9D03-2E72F13621FA}uat-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin1;">
+          DTS:ConnectionString="Data Source=uat-dwdb01.a0f90e80fb41.database.windows.net;User ID=bruce.gilpin;Initial Catalog=DW_SummaryTables;Persist Security Info=True;Application Name=SSIS-Package1-{E5F16C73-7844-4E4C-9D03-2E72F13621FA}uat-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin1;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACVpY34gRsw6dkWdQpHR5YgAAAAAASAAACgAAAAEAAAALNtj84ATFG5th6fQ5AJPscwAAAAF/YGboDpU43sPRHXkKiYIkRCZFTSBRE3gjuusuz3Le8cdGkn+v4MkBZPYFNK9Sv2FAAAAA/aFJZ41Gw05UGhubeoP9RhJDAN</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUjUaO4oLvkGMmbzJS3AWrgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAOq1KGPEEp0HTs3oE3ocb7AAAAAASAAACgAAAAEAAAAPqegQhjpR1L7yaemohUipYwAAAAJIWlxvlKaqucOi2CVU2gRA5l7NoBYSa8n6yuUMtc+9Oz1PELMwoIq8kbJZCr1Ih4FAAAAHimIYRHpz0kyCLTfs2D07L+dPuN</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -261,6 +278,886 @@
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Atlas Key Table Staging"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{E0143080-F058-4B7E-8B5C-005CD1B22180}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Atlas Key Table Staging"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Atlas Key Table Staging\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[Staging].[AtlasLCKeys]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Atlas Key Table Staging\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[dev-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[dev-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.bruce.gilpin 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Atlas Key Table Staging\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TestRegn_id]"
+                      cachedDataType="i8"
+                      cachedName="TestRegn_id"
+                      externalMetadataColumnId="Package\Atlas Key Table Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TestRegnID]"
+                      lineageId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[TestRegn_id]" />
+                    <inputColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Candidate_id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Candidate_id"
+                      externalMetadataColumnId="Package\Atlas Key Table Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CandidateID]"
+                      lineageId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[Candidate_id]" />
+                    <inputColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Candidate_ID_Type]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Candidate_ID_Type"
+                      externalMetadataColumnId="Package\Atlas Key Table Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CandidateIDType]"
+                      lineageId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[Candidate_ID_Type]" />
+                    <inputColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Test_ID]"
+                      cachedDataType="i4"
+                      cachedName="Test_ID"
+                      externalMetadataColumnId="Package\Atlas Key Table Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TestID]"
+                      lineageId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[Test_ID]" />
+                    <inputColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[School_id]"
+                      cachedDataType="i4"
+                      cachedName="School_id"
+                      externalMetadataColumnId="Package\Atlas Key Table Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SchoolID]"
+                      lineageId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[School_id]" />
+                    <inputColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Schedule_Id]"
+                      cachedDataType="i8"
+                      cachedName="Schedule_Id"
+                      externalMetadataColumnId="Package\Atlas Key Table Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ScheduleID]"
+                      lineageId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[Schedule_Id]" />
+                    <inputColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[date]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="date"
+                      externalMetadataColumnId="Package\Atlas Key Table Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TestDate]"
+                      lineageId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[date]" />
+                    <inputColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TestAssignment_ID]"
+                      cachedDataType="i4"
+                      cachedName="TestAssignment_ID"
+                      externalMetadataColumnId="Package\Atlas Key Table Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TestAssignmentID]"
+                      lineageId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[TestAssignment_ID]" />
+                    <inputColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Portion_ID]"
+                      cachedDataType="i4"
+                      cachedName="Portion_ID"
+                      externalMetadataColumnId="Package\Atlas Key Table Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PortionID]"
+                      lineageId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[Portion_ID]" />
+                    <inputColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Account_ID]"
+                      cachedDataType="i4"
+                      cachedName="Account_ID"
+                      externalMetadataColumnId="Package\Atlas Key Table Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AccountID]"
+                      lineageId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[Account_ID]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AtlasLCKeysId]"
+                      dataType="i4"
+                      name="AtlasLCKeysId" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TestRegnID]"
+                      dataType="i4"
+                      name="TestRegnID" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CandidateID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      name="CandidateID" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CandidateIDType]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CandidateIDType" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TestID]"
+                      dataType="i4"
+                      name="TestID" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SchoolID]"
+                      dataType="i4"
+                      name="SchoolID" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ScheduleID]"
+                      dataType="i4"
+                      name="ScheduleID" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TestDate]"
+                      dataType="dbTimeStamp"
+                      name="TestDate" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TestAssignmentID]"
+                      dataType="i4"
+                      name="TestAssignmentID" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PortionID]"
+                      dataType="i4"
+                      name="PortionID" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AccountID]"
+                      dataType="i4"
+                      name="AccountID" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Atlas Key Table Staging\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Atlas Key Table Staging\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Atlas Key Table Staging\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Atlas Key Table Staging\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Atlas Key Table Staging\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select distinct
+TestRegn_id, Candidate_id, Candidate_ID_Type, Test_ID, School_id, Schedule_Id, [date], 
+TestAssignment_ID, Portion_ID, Account_ID
+from candidate_data
+where [date] &gt;= '2024-08-10' and
+candidate_id is not null and
+test_id is not null
+order by [date]</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Atlas Key Table Staging\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[lcprodreportingdb.resources.psi.psi_db.bruce.gilpin 2]"
+                  connectionManagerRefId="Package.ConnectionManagers[lcprodreportingdb.resources.psi.psi_db.bruce.gilpin 2]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[TestRegn_id]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[TestRegn_id]"
+                      lineageId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[TestRegn_id]"
+                      name="TestRegn_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[Candidate_id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Candidate_id]"
+                      length="50"
+                      lineageId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[Candidate_id]"
+                      name="Candidate_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[Candidate_ID_Type]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Candidate_ID_Type]"
+                      length="50"
+                      lineageId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[Candidate_ID_Type]"
+                      name="Candidate_ID_Type"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[Test_ID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Test_ID]"
+                      lineageId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[Test_ID]"
+                      name="Test_ID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[School_id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[School_id]"
+                      lineageId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[School_id]"
+                      name="School_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[Schedule_Id]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Schedule_Id]"
+                      lineageId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[Schedule_Id]"
+                      name="Schedule_Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[date]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[date]"
+                      lineageId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[date]"
+                      name="date"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[TestAssignment_ID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[TestAssignment_ID]"
+                      lineageId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[TestAssignment_ID]"
+                      name="TestAssignment_ID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[Portion_ID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Portion_ID]"
+                      lineageId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[Portion_ID]"
+                      name="Portion_ID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[Account_ID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Account_ID]"
+                      lineageId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[Account_ID]"
+                      name="Account_ID"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[TestRegn_id]"
+                      dataType="i8"
+                      name="TestRegn_id" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Candidate_id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Candidate_id" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Candidate_ID_Type]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Candidate_ID_Type" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Test_ID]"
+                      dataType="i4"
+                      name="Test_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[School_id]"
+                      dataType="i4"
+                      name="School_id" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Schedule_Id]"
+                      dataType="i8"
+                      name="Schedule_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[date]"
+                      dataType="dbTimeStamp"
+                      name="date" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[TestAssignment_ID]"
+                      dataType="i4"
+                      name="TestAssignment_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Portion_ID]"
+                      dataType="i4"
+                      name="Portion_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Account_ID]"
+                      dataType="i4"
+                      name="Account_ID" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[TestRegn_id]"
+                      dataType="i8"
+                      lineageId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[TestRegn_id]"
+                      name="TestRegn_id" />
+                    <outputColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Candidate_id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Candidate_id]"
+                      name="Candidate_id" />
+                    <outputColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Candidate_ID_Type]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Candidate_ID_Type]"
+                      name="Candidate_ID_Type" />
+                    <outputColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Test_ID]"
+                      dataType="i4"
+                      lineageId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Test_ID]"
+                      name="Test_ID" />
+                    <outputColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[School_id]"
+                      dataType="i4"
+                      lineageId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[School_id]"
+                      name="School_id" />
+                    <outputColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Schedule_Id]"
+                      dataType="i8"
+                      lineageId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Schedule_Id]"
+                      name="Schedule_Id" />
+                    <outputColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[date]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[date]"
+                      name="date" />
+                    <outputColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[TestAssignment_ID]"
+                      dataType="i4"
+                      lineageId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[TestAssignment_ID]"
+                      name="TestAssignment_ID" />
+                    <outputColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Portion_ID]"
+                      dataType="i4"
+                      lineageId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Portion_ID]"
+                      name="Portion_ID" />
+                    <outputColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Account_ID]"
+                      dataType="i4"
+                      lineageId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Account_ID]"
+                      name="Account_ID" />
+                    <outputColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Atlas Key Table Staging.Paths[OLE DB Source Output]"
+              endId="Package\Atlas Key Table Staging\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\Atlas Key Table Staging\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Atlas StudentID Types"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{C43BCD69-A77F-4299-A18F-C48D9F8F5F27}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Atlas StudentID Types"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Atlas StudentID Types\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Atlas StudentID Types\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Atlas StudentID Types\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Atlas StudentID Types\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Atlas StudentID Types\Derived Column.Outputs[Derived Column Output].Columns[SourceSystemId]"
+                      dataType="i2"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Atlas StudentID Types\Derived Column.Outputs[Derived Column Output].Columns[SourceSystemId]"
+                      name="SourceSystemId"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_I2)1</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_I2)1</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Atlas StudentID Types\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Atlas StudentID Types\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Atlas StudentID Types\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Atlas StudentID Types\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Atlas StudentID Types\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Atlas StudentID Types\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Atlas StudentID Types\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[Candidates].[IDTypes]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Atlas StudentID Types\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[uat-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.Bruce.gilpin]"
+                  connectionManagerRefId="Package.ConnectionManagers[uat-dwdb01.a0f90e80fb41.database.windows.net.PSI_DW.Bruce.gilpin]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Atlas StudentID Types\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Atlas StudentID Types\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SourceSystemId]"
+                      cachedDataType="i2"
+                      cachedName="SourceSystemId"
+                      externalMetadataColumnId="Package\Atlas StudentID Types\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SourceSystemkey]"
+                      lineageId="Package\Atlas StudentID Types\Derived Column.Outputs[Derived Column Output].Columns[SourceSystemId]" />
+                    <inputColumn
+                      refId="Package\Atlas StudentID Types\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[candidate_id_type]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="candidate_id_type"
+                      externalMetadataColumnId="Package\Atlas StudentID Types\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CandidateIDType]"
+                      lineageId="Package\Atlas StudentID Types\OLE DB Source.Outputs[OLE DB Source Output].Columns[candidate_id_type]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Atlas StudentID Types\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Id]"
+                      dataType="i4"
+                      name="Id" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas StudentID Types\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SourceSystemkey]"
+                      dataType="i2"
+                      name="SourceSystemkey" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas StudentID Types\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CandidateIDType]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CandidateIDType" />
+                    <externalMetadataColumn
+                      refId="Package\Atlas StudentID Types\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LoadDate]"
+                      dataType="dbTimeStamp"
+                      name="LoadDate" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Atlas StudentID Types\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Atlas StudentID Types\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Atlas StudentID Types\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Atlas StudentID Types\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Atlas StudentID Types\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Atlas StudentID Types\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Atlas StudentID Types\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select
+isnull(candidate_id_type,'unknown') candidate_id_type
+from Candidate_TestAssignment
+group by candidate_id_type</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Atlas StudentID Types\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[lcprodreportingdb.resources.psi.psi_db.bruce.gilpin 2]"
+                  connectionManagerRefId="Package.ConnectionManagers[lcprodreportingdb.resources.psi.psi_db.bruce.gilpin 2]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Atlas StudentID Types\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Atlas StudentID Types\OLE DB Source.Outputs[OLE DB Source Output].Columns[candidate_id_type]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Atlas StudentID Types\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[candidate_id_type]"
+                      length="50"
+                      lineageId="Package\Atlas StudentID Types\OLE DB Source.Outputs[OLE DB Source Output].Columns[candidate_id_type]"
+                      name="candidate_id_type"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Atlas StudentID Types\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[candidate_id_type]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="candidate_id_type" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Atlas StudentID Types\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Atlas StudentID Types\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[candidate_id_type]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Atlas StudentID Types\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[candidate_id_type]"
+                      name="candidate_id_type" />
+                    <outputColumn
+                      refId="Package\Atlas StudentID Types\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Atlas StudentID Types\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Atlas StudentID Types\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Atlas StudentID Types\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Atlas StudentID Types.Paths[Derived Column Output]"
+              endId="Package\Atlas StudentID Types\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Derived Column Output"
+              startId="Package\Atlas StudentID Types\Derived Column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Atlas StudentID Types.Paths[OLE DB Source Output]"
+              endId="Package\Atlas StudentID Types\Derived Column.Inputs[Derived Column Input]"
+              name="OLE DB Source Output"
+              startId="Package\Atlas StudentID Types\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\Atlas7 Clients"
       DTS:CreationName="Microsoft.Pipeline"
@@ -11156,7 +12053,15 @@ where [refTable].[SourceTestScheduleID] = ?</property>
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="196,42"
+          Id="Package\Atlas Key Table Staging"
+          TopLeft="974,93" />
+        <NodeLayout
+          Size="188,42"
+          Id="Package\Atlas StudentID Types"
+          TopLeft="1294,247" />
         <NodeLayout
           Size="146,42"
           Id="Package\Atlas7 Clients"
@@ -11220,6 +12125,178 @@ where [refTable].[SourceTestScheduleID] = ?</property>
       </GraphLayout>
     </LayoutInfo>
   </Package>
+  <TaskHost
+    design-time-name="Package\Atlas Key Table Staging">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Atlas Key Table Staging\OLE DB Source"
+          TopLeft="438,72" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Atlas Key Table Staging\OLE DB Destination"
+          TopLeft="432,230" />
+        <EdgeLayout
+          Id="Package\Atlas Key Table Staging.Paths[OLE DB Source Output]"
+          TopLeft="518.5,114">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,116"
+              Start="0,0"
+              End="0,108.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,108.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Atlas Key Table Staging\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Atlas Key Table Staging\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Atlas StudentID Types">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Atlas StudentID Types\OLE DB Source"
+          TopLeft="177,51" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Atlas StudentID Types\OLE DB Destination"
+          TopLeft="178,335" />
+        <NodeLayout
+          Size="158,42"
+          Id="Package\Atlas StudentID Types\Derived Column"
+          TopLeft="165,150" />
+        <EdgeLayout
+          Id="Package\Atlas StudentID Types.Paths[OLE DB Source Output]"
+          TopLeft="255.5,93">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-11.5,57"
+              Start="0,0"
+              End="-11.5,49.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24.5"
+                    Point2="0,28.5"
+                    Point3="-4,28.5" />
+                  <mssgle:LineSegment
+                    End="-7.5,28.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-7.5,28.5"
+                    Point2="-11.5,28.5"
+                    Point3="-11.5,32.5" />
+                  <mssgle:LineSegment
+                    End="-11.5,49.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Atlas StudentID Types.Paths[Derived Column Output]"
+          TopLeft="244,192">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="22.5,143"
+              Start="0,0"
+              End="22.5,135.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,67.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,67.5"
+                    Point2="0,71.5"
+                    Point3="4,71.5" />
+                  <mssgle:LineSegment
+                    End="18.5,71.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="18.5,71.5"
+                    Point2="22.5,71.5"
+                    Point3="22.5,75.5" />
+                  <mssgle:LineSegment
+                    End="22.5,135.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Atlas StudentID Types\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Atlas StudentID Types\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Atlas7 Clients">
     <LayoutInfo>
@@ -11407,7 +12484,7 @@ where [refTable].[SourceTestScheduleID] = ?</property>
     design-time-name="Package\Booking codes">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="144,42"
           Id="Package\Booking codes\Prod PSI_DB"
@@ -11435,7 +12512,9 @@ where [refTable].[SourceTestScheduleID] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -11466,7 +12545,7 @@ where [refTable].[SourceTestScheduleID] = ?</property>
     design-time-name="Package\Dev to QA Transfer">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="157,42"
           Id="Package\Dev to QA Transfer\OLE DB Source"
@@ -11506,7 +12585,9 @@ where [refTable].[SourceTestScheduleID] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
