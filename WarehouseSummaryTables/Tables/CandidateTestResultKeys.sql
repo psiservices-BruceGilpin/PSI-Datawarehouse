@@ -33,3 +33,4 @@ include (CandidateKey)
 GO
 
 CREATE INDEX [IX_CandidateTestResultKeys_AccountKey] ON [AtlasLC].[CandidateTestResultKeys] ([AccountKey])
+Include ([TestKey])

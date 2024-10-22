@@ -8,7 +8,8 @@
     [DimensionsTestKey] INT NOT NULL, 
     [LoadDate] DATETIME NOT NULL DEFAULT getdate(), 
     [PackageKey] INT NULL, 
-    [StudentGroupKey] INT NULL 
+    [StudentGroupKey] INT NULL, 
+    [TestCenterKey] INT NULL 
 )
 
 GO

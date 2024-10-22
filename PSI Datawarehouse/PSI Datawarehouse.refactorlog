@@ -385,4 +385,32 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="TestQuestionDBID" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="8c832cf6-e581-4471-90f9-d5b61994b1fd" ChangeDateTime="10/22/2024 18:22:40">
+    <Property Name="ElementName" Value="[Dimensions].[SamplingSpecifications].[PublicationPoolId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[SamplingSpecifications]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SamplingSpecId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8eccbe12-0ac6-491a-8f4e-3bdafe1212cb" ChangeDateTime="10/22/2024 18:22:53">
+    <Property Name="ElementName" Value="[Dimensions].[SamplingSpecifications].[PublicationPoolDBId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[SamplingSpecifications]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SamplingSpecDBId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9fddd0c6-9b68-4d68-8ce7-e37a0c639334" ChangeDateTime="10/22/2024 18:38:59">
+    <Property Name="ElementName" Value="[Dimensions].[SamplingSpecifications].[IX_SamplingSpecifications_Column]" />
+    <Property Name="ElementType" Value="SqlIndex" />
+    <Property Name="ParentElementName" Value="[Dimensions].[SamplingSpecifications]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[IX_SamplingSpecifications_CurrentFlag]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="2d771125-8692-4325-8435-89d66e656c01" ChangeDateTime="10/22/2024 19:01:19">
+    <Property Name="ElementName" Value="[Dimensions].[SamplingGroups].[IX_SamplingGroups_Column]" />
+    <Property Name="ElementType" Value="SqlIndex" />
+    <Property Name="ParentElementName" Value="[Dimensions].[SamplingGroups]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[IX_SamplingGroups_CurrentFlag]" />
+  </Operation>
 </Operations>

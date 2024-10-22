@@ -5,7 +5,7 @@ Begin Try
 	select  distinct CandidateIDTypeKey
 	into #candidateTypes
 	from
-	staging.AtlasLCKeys
+	PSI_Staging.staging.AtlasLCKeys
 
 	insert  Candidates.IDTypes (CandidateIDType, SourceSystemkey)
 
@@ -46,7 +46,7 @@ Begin Try
 		h.PortionDBID,
 		a.[Checksum]
 	from
-		staging.AtlasLCKeys a 
+		PSI_Staging.staging.AtlasLCKeys a 
 		join
 		psi_dw.candidate.candidates_vw b on
 		a.candidateid = b.CandidateAltKey

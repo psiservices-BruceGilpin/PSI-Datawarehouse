@@ -20,6 +20,7 @@
     [PartitionValue]        INT             NOT NULL,
     [ResponseChoiceKey]     BIGINT          NULL,
     [Comments]              VARCHAR (1500)  NULL,
+    [TopicAreaKey] INT NULL, 
     CONSTRAINT [PK_CandidateResponse] PRIMARY KEY CLUSTERED ([PartitionValue] ASC, [CandidateResponseId] ASC) ON [CandidateResponse] ([PartitionValue])
 ) ON [CandidateResponse] ([PartitionValue]);
 
@@ -27,24 +28,24 @@
 GO
 CREATE NONCLUSTERED INDEX [IX_Responses_PortionKey]
     ON [Candidate].[Responses]([TestAssignPortionKey] ASC)
-    ON [CandidateResponse] ([PartitionValue]);
+    
 
 
 GO
 CREATE NONCLUSTERED INDEX [IX_Responses_ItemBankKey]
     ON [Candidate].[Responses]([ItemBankKey] ASC)
-    ON [CandidateResponse] ([PartitionValue]);
+    
 
 
 GO
 CREATE NONCLUSTERED INDEX [IX_Responses_CandidateResponseDBID]
     ON [Candidate].[Responses]([CandidateResponseDBId] ASC) WHERE ([CurrentFlag]=(0))
-    ON [CandidateResponse] ([PartitionValue]);
+    
 
 
 GO
 CREATE NONCLUSTERED INDEX [IX_Responses_CurrentFlag]
     ON [Candidate].[Responses]([CurrentFlag] ASC)
-    INCLUDE([TestAssignPortionKey], [CandidateResponseDBId], [FixedFormKey], [TimeElapsed])
-    ON [CandidateResponse] ([PartitionValue]);
+    INCLUDE([TestAssignPortionKey],  [FixedFormKey])
+    
 

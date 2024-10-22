@@ -13,3 +13,5 @@
     [AccountID] INT NOT NULL, 
     [Checksum] BIGINT NULL
 )
+
+GO
