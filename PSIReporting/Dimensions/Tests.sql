@@ -5,7 +5,7 @@
 		TestTitle,
 		TestDesc,
 		TestStatus,
-		TestResultKey,
+
 		TestBankKey,
 		TestSim,
 		TotalPoints,
@@ -17,7 +17,9 @@
 		TestClass,
 		TestLocked,
 		TestVersnum,
-		AreaKey
+		AreaKey,
+		TestLevelResultKey,
+		SectionLevelResultKey
 
 	from
 		[$(PSI_DW)].Dimensions.Tests (nolock)

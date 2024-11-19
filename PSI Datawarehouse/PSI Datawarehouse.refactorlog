@@ -413,4 +413,74 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="[IX_SamplingGroups_CurrentFlag]" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="c33322cd-3248-49d9-8fa5-2e914c9246f6" ChangeDateTime="10/25/2024 20:17:16">
+    <Property Name="ElementName" Value="[Dimensions].[Results].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[Results]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ResultId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="39418cc4-42ab-4fbe-9fc1-37cf0813c868" ChangeDateTime="10/28/2024 14:17:47">
+    <Property Name="ElementName" Value="[Dimensions].[TestGrading].[LoadDate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[TestGrading]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CreateDate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f97b4c07-0086-4057-9ff9-371abcbb46da" ChangeDateTime="10/28/2024 14:18:49">
+    <Property Name="ElementName" Value="[Dimensions].[TestGrading].[TestGradeingId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[TestGrading]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TestGradingId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="153d1aea-de37-4b48-9a74-7346ec05b28a" ChangeDateTime="10/28/2024 14:19:05">
+    <Property Name="ElementName" Value="[Dimensions].[TestGrading].[Sc]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[TestGrading]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TestGradeTitle" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8a0fc7d2-8181-44e6-9333-9c3bd43cf61e" ChangeDateTime="10/28/2024 14:20:53">
+    <Property Name="ElementName" Value="[Dimensions].[TestGrading].[Gra]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[TestGrading]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TestGradeDescription" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="bbf8b9a2-d8e8-4fe6-907f-de4a9bd54fd5" ChangeDateTime="10/28/2024 14:22:16">
+    <Property Name="ElementName" Value="[Dimensions].[TestGrading].[FullMasteryScoe]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[TestGrading]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="FullMasteryScore" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5d974d65-fc30-49e4-ba86-7e31131031fb" ChangeDateTime="10/28/2024 14:22:20">
+    <Property Name="ElementName" Value="[Dimensions].[TestGrading].[PartialMastery]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[TestGrading]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PartialMasteryScore" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="0cb80c26-cc56-471d-983d-2937995ce347" ChangeDateTime="10/28/2024 19:30:11">
+    <Property Name="ElementName" Value="[Dimensions].[TestGradeLevels].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[TestGradeLevels]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TestGradeLevelsId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d4e22448-46ba-4b86-8934-106202d7eff3" ChangeDateTime="10/28/2024 19:33:44">
+    <Property Name="ElementName" Value="[Dimensions].[TestGradeLevels].[ResultG]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[TestGradeLevels]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="GradeLowRange" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="486f97a9-cf82-4d69-97e3-cb7e08f46692" ChangeDateTime="10/31/2024 14:17:49">
+    <Property Name="ElementName" Value="[Dimensions].[Tests].[TestLevelResultKey]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Dimensions].[Tests]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TestResultKey" />
+  </Operation>
 </Operations>

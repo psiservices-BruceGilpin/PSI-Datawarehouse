@@ -21,5 +21,5 @@ SELECT [TestDBKey] TestDBID
       ,[TestStatusKey]
       ,[TestTypeKey]
      
-  FROM [$(PSI_DW)].[Test].[Tests] with (nolock)
+  FROM [$(PSI_DW)].[Test].[Tests] nolock
   where  [CurrentFlag] = 0

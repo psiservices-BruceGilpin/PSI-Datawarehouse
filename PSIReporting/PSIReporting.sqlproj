@@ -118,7 +118,6 @@
     <Build Include="Summary\ItemStatsuByAccountTest_vw.sql" />
     <Build Include="Summary\PassRates_vw.sql" />
     <Build Include="Summary\PassRatesCalendar_VW.sql" />
-    <Build Include="Summary\TestItemsWithMeasures.sql" />
     <Build Include="Summary\TestPassRates_vw.sql" />
     <Build Include="Test\FixedForm_vw.sql" />
     <Build Include="Test\FixedFormItem_vw.sql" />

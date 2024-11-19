@@ -459,6 +459,10 @@
     <Build Include="Dimensions\Tables\SamplingSpecifications.sql" />
     <Build Include="Dimensions\Tables\SamplingGroups.sql" />
     <Build Include="Dimensions\Tables\SamplingGroupItems.sql" />
+    <Build Include="Dimensions\Stored Proceedures\uspLoadSamplingSpecs.sql" />
+    <Build Include="Dimensions\Tables\Results.sql" />
+    <Build Include="Dimensions\Tables\TestGrading.sql" />
+    <Build Include="Dimensions\Tables\TestGradeLevels.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="PSI Datawarehouse.refactorlog" />

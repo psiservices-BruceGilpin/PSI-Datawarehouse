@@ -7,7 +7,6 @@
     [TestTitle]       VARCHAR (50)     NOT NULL,
     [TestDesc]        VARCHAR (2000)   NULL,
     [TestStatus]      TINYINT          NOT NULL,
-    [TestResultKey]   BIGINT           NULL,
     [TestBankKey]     BIGINT           NULL,
     [TestSim]         BIT              NULL,
     [TotalPoints]     INT              NULL,
@@ -23,6 +22,8 @@
     [CheckSum]        BIGINT           NULL,
     [LoadDate]        DATETIME         DEFAULT (getdate()) NOT NULL,
     [AreaKey]         INT              NULL,
+    [TestLevelResultKey] INT NULL, 
+    [SectionLevelResultKey] INT NULL, 
     PRIMARY KEY CLUSTERED ([TestId] ASC)
 );
 
